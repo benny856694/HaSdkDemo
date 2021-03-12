@@ -132,10 +132,22 @@
     <value>Enable Rotation</value>
   </data>
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>705, 24</value>
+    <value>725, 21</value>
   </data>
   <data name="button34.Text" xml:space="preserve">
     <value>Set</value>
+  </data>
+  <data name="textBox60.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 24</value>
+  </data>
+  <data name="label72.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 28</value>
+  </data>
+  <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="label72.Text" xml:space="preserve">
+    <value>SDK Password：</value>
   </data>
   <data name="button1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -223,6 +235,9 @@
   </data>
   <data name="button65.Text" xml:space="preserve">
     <value>Connect multiple cameras</value>
+  </data>
+  <data name="button26.Text" xml:space="preserve">
+    <value>Turn on/off streaming</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>Show ROI</value>
@@ -362,6 +377,9 @@
   <data name="button57.Text" xml:space="preserve">
     <value>Check</value>
   </data>
+  <data name="textBox86.Text" xml:space="preserve">
+    <value>Double-click to select a picture, one face in the picture, face width and height &gt; 100 pixels, front, clear</value>
+  </data>
   <data name="label101.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
   </data>
@@ -395,6 +413,9 @@
   <data name="button89.Text" xml:space="preserve">
     <value>Modify individual item</value>
   </data>
+  <data name="label100.Location" type="System.Drawing.Point, System.Drawing">
+    <value>783, 49</value>
+  </data>
   <data name="label100.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
   </data>
@@ -419,6 +440,12 @@
   <data name="label24.Text" xml:space="preserve">
     <value>Valid To：</value>
   </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Wiegand Card No.：</value>
+  </data>
   <data name="button5.Text" xml:space="preserve">
     <value>Modify</value>
   </data>
@@ -427,6 +454,9 @@
   </data>
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>437, 20</value>
+  </data>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>Double-click to select a picture, one face in the picture, face width and height &gt; 100 pixels, front, clear</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 13</value>
@@ -493,6 +523,9 @@
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>437, 20</value>
+  </data>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>Double-click to select a picture, one face in the picture, face width and height &gt; 100 pixels, front, clear</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 13</value>
@@ -696,7 +729,13 @@
     <value>Set</value>
   </data>
   <data name="checkBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 66</value>
+    <value>578, 66</value>
+  </data>
+  <data name="checkBox23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 17</value>
+  </data>
+  <data name="checkBox23.Text" xml:space="preserve">
+    <value>Auto Clean Up Expired Registration</value>
   </data>
   <data name="button11.Text" xml:space="preserve">
     <value>Set</value>
@@ -740,8 +779,23 @@
   <data name="button39.Text" xml:space="preserve">
     <value>Play Audio</value>
   </data>
+  <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>SDK Password：</value>
+  </data>
+  <data name="button33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 123</value>
+  </data>
   <data name="button33.Text" xml:space="preserve">
     <value>Set</value>
+  </data>
+  <data name="textBox59.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 126</value>
+  </data>
+  <data name="groupBox21.Text" xml:space="preserve">
+    <value>SDK Password</value>
   </data>
   <data name="button31.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 95</value>
@@ -800,6 +854,186 @@
   <data name="tabPage8.Text" xml:space="preserve">
     <value>Misc 2</value>
   </data>
+  <data name="button86.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 25</value>
+  </data>
+  <data name="button86.Text" xml:space="preserve">
+    <value>Extract normalized image</value>
+  </data>
+  <data name="textBox104.Text" xml:space="preserve">
+    <value>Double-click to choose image</value>
+  </data>
+  <data name="button77.Location" type="System.Drawing.Point, System.Drawing">
+    <value>955, 480</value>
+  </data>
+  <data name="button77.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button76.Location" type="System.Drawing.Point, System.Drawing">
+    <value>863, 481</value>
+  </data>
+  <data name="button76.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="checkBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="checkBox41.Text" xml:space="preserve">
+    <value>enable</value>
+  </data>
+  <data name="label134.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="label134.Text" xml:space="preserve">
+    <value>Mask Detect</value>
+  </data>
+  <data name="button75.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="button75.Text" xml:space="preserve">
+    <value>Send JSON Command</value>
+  </data>
+  <data name="button74.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1046, 436</value>
+  </data>
+  <data name="button74.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button73.Location" type="System.Drawing.Point, System.Drawing">
+    <value>966, 436</value>
+  </data>
+  <data name="button73.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="textBox103.Location" type="System.Drawing.Point, System.Drawing">
+    <value>876, 436</value>
+  </data>
+  <data name="textBox103.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="checkBox40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>821, 438</value>
+  </data>
+  <data name="checkBox40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="checkBox40.Text" xml:space="preserve">
+    <value>enable</value>
+  </data>
+  <data name="label132.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 439</value>
+  </data>
+  <data name="label132.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="label132.Text" xml:space="preserve">
+    <value>Temp must be satisfied</value>
+  </data>
+  <data name="button72.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 432</value>
+  </data>
+  <data name="button72.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button71.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 432</value>
+  </data>
+  <data name="button71.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="label131.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 438</value>
+  </data>
+  <data name="label131.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="label131.Text" xml:space="preserve">
+    <value>Body Temp. Detect</value>
+  </data>
+  <data name="checkBox39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 437</value>
+  </data>
+  <data name="checkBox39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="checkBox39.Text" xml:space="preserve">
+    <value>enable</value>
+  </data>
+  <data name="label121.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 551</value>
+  </data>
+  <data name="textBox102.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 548</value>
+  </data>
+  <data name="label120.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="label120.Text" xml:space="preserve">
+    <value>Display Brightness</value>
+  </data>
+  <data name="checkBox38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="checkBox38.Text" xml:space="preserve">
+    <value>Mirror Display</value>
+  </data>
+  <data name="label119.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label119.Text" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="checkBox37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 485</value>
+  </data>
+  <data name="checkBox37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="checkBox37.Text" xml:space="preserve">
+    <value>User-defined Item</value>
+  </data>
+  <data name="checkBox36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 485</value>
+  </data>
+  <data name="checkBox36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox36.Text" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="checkBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 485</value>
+  </data>
+  <data name="checkBox35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="checkBox35.Text" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="checkBox34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 484</value>
+  </data>
+  <data name="checkBox34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="checkBox34.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="label118.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 485</value>
+  </data>
+  <data name="label118.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="label118.Text" xml:space="preserve">
+    <value>Matching Result OSD:</value>
+  </data>
+  <data name="button70.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button69.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
   <data name="checkBox33.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 17</value>
   </data>
@@ -830,14 +1064,29 @@
   <data name="button66.Location" type="System.Drawing.Point, System.Drawing">
     <value>798, 363</value>
   </data>
+  <data name="button66.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 25</value>
+  </data>
+  <data name="button66.Text" xml:space="preserve">
+    <value>Play built-in audio</value>
+  </data>
   <data name="button64.Location" type="System.Drawing.Point, System.Drawing">
     <value>639, 363</value>
+  </data>
+  <data name="button64.Text" xml:space="preserve">
+    <value>Set Volume</value>
   </data>
   <data name="button63.Location" type="System.Drawing.Point, System.Drawing">
     <value>558, 363</value>
   </data>
+  <data name="button63.Text" xml:space="preserve">
+    <value>Get Volume</value>
+  </data>
   <data name="button60.Location" type="System.Drawing.Point, System.Drawing">
     <value>772, 297</value>
+  </data>
+  <data name="button60.Text" xml:space="preserve">
+    <value>Get</value>
   </data>
   <data name="button59.Location" type="System.Drawing.Point, System.Drawing">
     <value>691, 297</value>
@@ -973,6 +1222,12 @@
   </data>
   <data name="label96.Text" xml:space="preserve">
     <value>Port</value>
+  </data>
+  <data name="button53.Text" xml:space="preserve">
+    <value>Play Audio</value>
+  </data>
+  <data name="button52.Text" xml:space="preserve">
+    <value>Set OSD</value>
   </data>
   <data name="button51.Text" xml:space="preserve">
     <value>Set</value>
@@ -1154,6 +1409,52 @@
   <data name="label123.Text" xml:space="preserve">
     <value>Type:</value>
   </data>
+  <data name="label122.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="label122.Text" xml:space="preserve">
+    <value>Card Access or GPIO callback</value>
+  </data>
+  <data name="button68.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button67.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="label111.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="label111.Text" xml:space="preserve">
+    <value>Relay Closing Duration</value>
+  </data>
+  <data name="button49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 165</value>
+  </data>
+  <data name="button49.Text" xml:space="preserve">
+    <value>Force Open</value>
+  </data>
+  <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 165</value>
+  </data>
+  <data name="label46.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 126</value>
+  </data>
+  <data name="label46.Text" xml:space="preserve">
+    <value>Online Mode:
+      Gate won't open by itself.  If someone passes through, it will send a gate opening request to the server (through SDK connection or active connection to TCP server)
+Only when the server authorized can the gate be opened.
+
+In the following options:
+    if "release all" is selected, all opening requests will be responded
+    If "disable all" is selected, all opening requests are rejected
+    If "self determination" is selected, an option dialog box will pop up</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>Setting</value>
+  </data>
   <data name="groupBox14.Text" xml:space="preserve">
     <value>Gate Open Log</value>
   </data>
@@ -1178,8 +1479,215 @@
   <data name="tabPage6.Text" xml:space="preserve">
     <value>Working Mode</value>
   </data>
+  <data name="checkBox29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="checkBox29.Text" xml:space="preserve">
+    <value>enable</value>
+  </data>
+  <data name="button62.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button61.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="label105.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="label105.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="label107.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="label107.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="label108.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="label108.Text" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="checkBox28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="checkBox28.Text" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
+  <data name="label112.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="label112.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="tabPage19.Text" xml:space="preserve">
+    <value>comet long polling</value>
+  </data>
+  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="label115.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="tabPage20.Text" xml:space="preserve">
+    <value>comet stream</value>
+  </data>
+  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>Device 5 IP：</value>
+  </data>
+  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>Device 4 IP：</value>
+  </data>
+  <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>Device 3 IP：</value>
+  </data>
+  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>Device 2 IP：</value>
+  </data>
+  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label56.Text" xml:space="preserve">
+    <value>Device 1 IP：</value>
+  </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 17</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>Send to multiple devices</value>
+  </data>
+  <data name="button25.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="textBox42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 20</value>
+  </data>
+  <data name="textBox42.Text" xml:space="preserve">
+    <value>Same as template 1 (optional)</value>
+  </data>
+  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label55.Text" xml:space="preserve">
+    <value>Template 5：</value>
+  </data>
+  <data name="textBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 20</value>
+  </data>
+  <data name="textBox41.Text" xml:space="preserve">
+    <value>Same as template 1 (optional)</value>
+  </data>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label54.Text" xml:space="preserve">
+    <value>Template 4：</value>
+  </data>
+  <data name="textBox40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 20</value>
+  </data>
+  <data name="textBox40.Text" xml:space="preserve">
+    <value>Same as template 1 (optional)</value>
+  </data>
+  <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label53.Text" xml:space="preserve">
+    <value>Template 3：</value>
+  </data>
+  <data name="textBox39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 20</value>
+  </data>
+  <data name="textBox39.Text" xml:space="preserve">
+    <value>Same as template 1 (optional)</value>
+  </data>
+  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label52.Text" xml:space="preserve">
+    <value>Template 2：</value>
+  </data>
+  <data name="textBox36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 20</value>
+  </data>
+  <data name="textBox36.Text" xml:space="preserve">
+    <value>Double-click to select a picture, one face in the picture, face width and height &gt; 100 pixels, front, clear</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Template 1：</value>
+  </data>
+  <data name="dateTimePicker3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 38</value>
+  </data>
+  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 38</value>
+  </data>
+  <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 41</value>
+  </data>
+  <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label47.Text" xml:space="preserve">
+    <value>Valid To：</value>
+  </data>
+  <data name="textBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 38</value>
+  </data>
+  <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 41</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Wiegand Card No.：</value>
+  </data>
+  <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 14</value>
+  </data>
+  <data name="textBox37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 14</value>
+  </data>
+  <data name="textBox38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 14</value>
+  </data>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>Person No.：</value>
+  </data>
+  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 17</value>
+  </data>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>Name：</value>
+  </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>1177, 280</value>
+  </data>
+  <data name="groupBox16.Text" xml:space="preserve">
+    <value>Add Feature</value>
   </data>
   <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
     <value>1177, 644</value>
