@@ -300,7 +300,7 @@ namespace SDKClientSharp
             }
             else
             {
-                MessageBox.Show("录入失败！" + HaCamera.GetErrorDescribe(_cam.GetLastError()));
+                MessageBox.Show("录入失败！" + HaCamera.GetErrorDescribe(_cam.GetLastError()) + "," + _cam.GetLastError());
             }
         }
 
