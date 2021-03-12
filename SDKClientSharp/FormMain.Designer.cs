@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button84 = new System.Windows.Forms.Button();
@@ -130,6 +131,7 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button89 = new System.Windows.Forms.Button();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label100 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
@@ -148,6 +150,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button88 = new System.Windows.Forms.Button();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label99 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
@@ -485,14 +488,6 @@
             this.textBox49 = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button27 = new System.Windows.Forms.Button();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
@@ -503,8 +498,14 @@
             this.folder1 = new System.Windows.Forms.FolderBrowserDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button88 = new System.Windows.Forms.Button();
-            this.button89 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -557,6 +558,7 @@
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -568,15 +570,13 @@
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage11);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1114, 618);
-            this.tabControl1.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.tabControl1, resources.GetString("tabControl1.ToolTip"));
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.button84);
             this.tabPage1.Controls.Add(this.button34);
             this.tabPage1.Controls.Add(this.textBox60);
@@ -585,102 +585,78 @@
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "第一步，初始化环境";
+            this.toolTip1.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button84
             // 
-            this.button84.Location = new System.Drawing.Point(382, 22);
+            resources.ApplyResources(this.button84, "button84");
             this.button84.Name = "button84";
-            this.button84.Size = new System.Drawing.Size(75, 23);
-            this.button84.TabIndex = 7;
-            this.button84.Text = "打开旋转";
+            this.toolTip1.SetToolTip(this.button84, resources.GetString("button84.ToolTip"));
             this.button84.UseVisualStyleBackColor = true;
             this.button84.Click += new System.EventHandler(this.button84_Click);
             // 
             // button34
             // 
-            this.button34.Location = new System.Drawing.Point(705, 25);
+            resources.ApplyResources(this.button34, "button34");
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(75, 23);
-            this.button34.TabIndex = 6;
-            this.button34.Text = "设置";
+            this.toolTip1.SetToolTip(this.button34, resources.GetString("button34.ToolTip"));
             this.button34.UseVisualStyleBackColor = true;
             this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // textBox60
             // 
-            this.textBox60.Location = new System.Drawing.Point(599, 25);
+            resources.ApplyResources(this.textBox60, "textBox60");
             this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(100, 21);
-            this.textBox60.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox60, resources.GetString("textBox60.ToolTip"));
             // 
             // label72
             // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(528, 30);
+            resources.ApplyResources(this.label72, "label72");
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(65, 12);
-            this.label72.TabIndex = 4;
-            this.label72.Text = "二级密码：";
+            this.toolTip1.SetToolTip(this.label72, resources.GetString("label72.ToolTip"));
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 80);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(234, 22);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "初始化";
+            this.toolTip1.SetToolTip(this.button1, resources.GetString("button1.ToolTip"));
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 22);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "9";
+            this.toolTip1.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 25);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "预期接入数量：";
+            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // tabPage2
             // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.groupBox11);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "第二步，搜索设备（非必须）";
+            this.toolTip1.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip"));
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox11
             // 
+            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Controls.Add(this.button16);
             this.groupBox11.Controls.Add(this.textBox26);
             this.groupBox11.Controls.Add(this.label37);
@@ -690,90 +666,70 @@
             this.groupBox11.Controls.Add(this.label35);
             this.groupBox11.Controls.Add(this.textBox23);
             this.groupBox11.Controls.Add(this.label34);
-            this.groupBox11.Location = new System.Drawing.Point(147, 53);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(922, 48);
-            this.groupBox11.TabIndex = 52;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "设置IP(无需连接到设备)";
+            this.toolTip1.SetToolTip(this.groupBox11, resources.GetString("groupBox11.ToolTip"));
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(768, 16);
+            resources.ApplyResources(this.button16, "button16");
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 8;
-            this.button16.Text = "设 置";
+            this.toolTip1.SetToolTip(this.button16, resources.GetString("button16.ToolTip"));
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(585, 18);
+            resources.ApplyResources(this.textBox26, "textBox26");
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(151, 21);
-            this.textBox26.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox26, resources.GetString("textBox26.ToolTip"));
             // 
             // label37
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(538, 21);
+            resources.ApplyResources(this.label37, "label37");
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(41, 12);
-            this.label37.TabIndex = 6;
-            this.label37.Text = "网关：";
+            this.toolTip1.SetToolTip(this.label37, resources.GetString("label37.ToolTip"));
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(398, 18);
+            resources.ApplyResources(this.textBox25, "textBox25");
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(134, 21);
-            this.textBox25.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox25, resources.GetString("textBox25.ToolTip"));
             // 
             // label36
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(351, 21);
+            resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(41, 12);
-            this.label36.TabIndex = 4;
-            this.label36.Text = "掩码：";
+            this.toolTip1.SetToolTip(this.label36, resources.GetString("label36.ToolTip"));
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(218, 18);
+            resources.ApplyResources(this.textBox24, "textBox24");
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(127, 21);
-            this.textBox24.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox24, resources.GetString("textBox24.ToolTip"));
             // 
             // label35
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(189, 21);
+            resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(23, 12);
-            this.label35.TabIndex = 2;
-            this.label35.Text = "IP:";
+            this.toolTip1.SetToolTip(this.label35, resources.GetString("label35.ToolTip"));
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(41, 18);
+            resources.ApplyResources(this.textBox23, "textBox23");
             this.textBox23.Name = "textBox23";
             this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(142, 21);
-            this.textBox23.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox23, resources.GetString("textBox23.ToolTip"));
             // 
             // label34
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 21);
+            resources.ApplyResources(this.label34, "label34");
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(29, 12);
-            this.label34.TabIndex = 0;
-            this.label34.Text = "MAC:";
+            this.toolTip1.SetToolTip(this.label34, resources.GetString("label34.ToolTip"));
             // 
             // dataGridView1
             // 
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -785,79 +741,72 @@
             this.colPlate,
             this.colSystem,
             this.colVersion});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1100, 482);
-            this.dataGridView1.TabIndex = 51;
+            this.toolTip1.SetToolTip(this.dataGridView1, resources.GetString("dataGridView1.ToolTip"));
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
             // 
             // colIP
             // 
-            this.colIP.HeaderText = "Ip";
+            resources.ApplyResources(this.colIP, "colIP");
             this.colIP.Name = "colIP";
             this.colIP.ReadOnly = true;
             // 
             // colMac
             // 
-            this.colMac.HeaderText = "Mac";
+            resources.ApplyResources(this.colMac, "colMac");
             this.colMac.Name = "colMac";
             this.colMac.ReadOnly = true;
             // 
             // colNetmask
             // 
-            this.colNetmask.HeaderText = "子网掩码";
+            resources.ApplyResources(this.colNetmask, "colNetmask");
             this.colNetmask.Name = "colNetmask";
             this.colNetmask.ReadOnly = true;
             // 
             // colMan
             // 
-            this.colMan.HeaderText = "厂商";
+            resources.ApplyResources(this.colMan, "colMan");
             this.colMan.Name = "colMan";
             this.colMan.ReadOnly = true;
             // 
             // colPlate
             // 
-            this.colPlate.HeaderText = "平台";
+            resources.ApplyResources(this.colPlate, "colPlate");
             this.colPlate.Name = "colPlate";
             this.colPlate.ReadOnly = true;
             // 
             // colSystem
             // 
-            this.colSystem.HeaderText = "系统";
+            resources.ApplyResources(this.colSystem, "colSystem");
             this.colSystem.Name = "colSystem";
             this.colSystem.ReadOnly = true;
             // 
             // colVersion
             // 
-            this.colVersion.HeaderText = "版本";
+            resources.ApplyResources(this.colVersion, "colVersion");
             this.colVersion.Name = "colVersion";
             this.colVersion.ReadOnly = true;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 28);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(377, 12);
-            this.label3.TabIndex = 50;
-            this.label3.Text = "如果已知设备IP，则不进行此步骤，直接在第三步填入IP进行连接即可";
+            this.toolTip1.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(52, 63);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "搜索相机";
+            this.toolTip1.SetToolTip(this.button2, resources.GetString("button2.ToolTip"));
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tabPage3
             // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.button65);
             this.tabPage3.Controls.Add(this.button26);
             this.tabPage3.Controls.Add(this.label11);
@@ -875,74 +824,57 @@
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.textBox12);
             this.tabPage3.Controls.Add(this.textBox11);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "第三步，连接相机";
+            this.toolTip1.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip"));
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button65
             // 
-            this.button65.Location = new System.Drawing.Point(392, 83);
+            resources.ApplyResources(this.button65, "button65");
             this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(155, 23);
-            this.button65.TabIndex = 61;
-            this.button65.Text = "连接多台设备测试";
+            this.toolTip1.SetToolTip(this.button65, resources.GetString("button65.ToolTip"));
             this.button65.UseVisualStyleBackColor = true;
             this.button65.Click += new System.EventHandler(this.button65_Click);
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(474, 20);
+            resources.ApplyResources(this.button26, "button26");
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(99, 47);
-            this.button26.TabIndex = 60;
-            this.button26.Text = "切换视频流传输\r\n（从相机端）";
+            this.toolTip1.SetToolTip(this.button26, resources.GetString("button26.ToolTip"));
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(196, 94);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(167, 12);
-            this.label11.TabIndex = 59;
-            this.label11.Text = "特征值管理请至后一个Tab页面";
+            this.toolTip1.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(42, 89);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 23);
-            this.button3.TabIndex = 58;
-            this.button3.Text = "显示识别区域";
+            this.toolTip1.SetToolTip(this.button3, resources.GetString("button3.ToolTip"));
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Location = new System.Drawing.Point(18, 129);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(521, 460);
-            this.groupBox3.TabIndex = 57;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "操作日志：";
+            this.toolTip1.SetToolTip(this.groupBox3, resources.GetString("groupBox3.ToolTip"));
             // 
             // textBox2
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 17);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(515, 440);
-            this.textBox2.TabIndex = 56;
+            this.toolTip1.SetToolTip(this.textBox2, resources.GetString("textBox2.ToolTip"));
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.label133);
             this.groupBox2.Controls.Add(this.label130);
             this.groupBox2.Controls.Add(this.label127);
@@ -952,227 +884,158 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Location = new System.Drawing.Point(620, 325);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(483, 264);
-            this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "人脸抓拍：";
+            this.toolTip1.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
             // 
             // label133
             // 
-            this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(308, 55);
+            resources.ApplyResources(this.label133, "label133");
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(53, 12);
-            this.label133.TabIndex = 8;
-            this.label133.Text = "label133";
+            this.toolTip1.SetToolTip(this.label133, resources.GetString("label133.ToolTip"));
             // 
             // label130
             // 
-            this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(308, 238);
+            resources.ApplyResources(this.label130, "label130");
             this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(53, 12);
-            this.label130.TabIndex = 7;
-            this.label130.Text = "label130";
+            this.toolTip1.SetToolTip(this.label130, resources.GetString("label130.ToolTip"));
             // 
             // label127
             // 
-            this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(308, 212);
+            resources.ApplyResources(this.label127, "label127");
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(53, 12);
-            this.label127.TabIndex = 6;
-            this.label127.Text = "label127";
+            this.toolTip1.SetToolTip(this.label127, resources.GetString("label127.ToolTip"));
             // 
             // label40
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(308, 183);
+            resources.ApplyResources(this.label40, "label40");
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(47, 12);
-            this.label40.TabIndex = 5;
-            this.label40.Text = "label40";
+            this.toolTip1.SetToolTip(this.label40, resources.GetString("label40.ToolTip"));
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(308, 160);
+            resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(47, 12);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "label22";
+            this.toolTip1.SetToolTip(this.label22, resources.GetString("label22.ToolTip"));
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(308, 134);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 12);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "label10";
+            this.toolTip1.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(308, 108);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 12);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "label9";
+            this.toolTip1.SetToolTip(this.label9, resources.GetString("label9.ToolTip"));
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(308, 76);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 12);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "label8";
+            this.toolTip1.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 37);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.pictureBox11);
-            this.groupBox1.Location = new System.Drawing.Point(617, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(486, 290);
-            this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "设备实时画面：";
+            this.toolTip1.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.pictureBox11, "pictureBox11");
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(480, 270);
-            this.pictureBox11.TabIndex = 52;
             this.pictureBox11.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox11, resources.GetString("pictureBox11.ToolTip"));
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(392, 50);
-            this.button22.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.button22, "button22");
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 23);
-            this.button22.TabIndex = 50;
-            this.button22.Text = "断开连接";
+            this.toolTip1.SetToolTip(this.button22, resources.GetString("button22.ToolTip"));
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(392, 19);
-            this.button21.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.button21, "button21");
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 23);
-            this.button21.TabIndex = 49;
-            this.button21.Text = "连接";
+            this.toolTip1.SetToolTip(this.button21, resources.GetString("button21.ToolTip"));
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(101, 52);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.textBox13, "textBox13");
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(148, 21);
-            this.textBox13.TabIndex = 48;
-            this.textBox13.Text = "admin";
+            this.toolTip1.SetToolTip(this.textBox13, resources.GetString("textBox13.ToolTip"));
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 55);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "用户名密码：";
+            this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(257, 55);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 12);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "：";
+            this.toolTip1.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(276, 52);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.textBox14, "textBox14");
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(108, 21);
-            this.textBox14.TabIndex = 47;
-            this.textBox14.Text = "admin";
+            this.toolTip1.SetToolTip(this.textBox14, resources.GetString("textBox14.ToolTip"));
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(257, 23);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(17, 12);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "：";
+            this.toolTip1.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 23);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "IP端口：";
+            this.toolTip1.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(276, 19);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.textBox12, "textBox12");
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(108, 21);
-            this.textBox12.TabIndex = 44;
-            this.textBox12.Text = "9527";
+            this.toolTip1.SetToolTip(this.textBox12, resources.GetString("textBox12.ToolTip"));
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(101, 19);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(148, 21);
-            this.textBox11.TabIndex = 45;
-            this.textBox11.Text = "192.168.5.101";
+            this.toolTip1.SetToolTip(this.textBox11, resources.GetString("textBox11.ToolTip"));
             // 
             // tabPage4
             // 
+            resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Controls.Add(this.groupBox8);
             this.tabPage4.Controls.Add(this.groupBox6);
             this.tabPage4.Controls.Add(this.groupBox5);
             this.tabPage4.Controls.Add(this.groupBox4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "第三步，特征值库管理";
+            this.toolTip1.SetToolTip(this.tabPage4, resources.GetString("tabPage4.ToolTip"));
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
+            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Controls.Add(this.dateTimePicker9);
             this.groupBox8.Controls.Add(this.dateTimePicker8);
             this.groupBox8.Controls.Add(this.checkBox22);
@@ -1197,229 +1060,175 @@
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.comboBox3);
             this.groupBox8.Controls.Add(this.dataGridView2);
-            this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox8.Location = new System.Drawing.Point(0, 199);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(1106, 393);
-            this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "查询特征值（分页）";
+            this.toolTip1.SetToolTip(this.groupBox8, resources.GetString("groupBox8.ToolTip"));
             // 
             // dateTimePicker9
             // 
-            this.dateTimePicker9.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker9, "dateTimePicker9");
             this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker9.Location = new System.Drawing.Point(862, 88);
             this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(157, 21);
-            this.dateTimePicker9.TabIndex = 54;
+            this.toolTip1.SetToolTip(this.dateTimePicker9, resources.GetString("dateTimePicker9.ToolTip"));
             // 
             // dateTimePicker8
             // 
-            this.dateTimePicker8.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker8, "dateTimePicker8");
             this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker8.Location = new System.Drawing.Point(664, 88);
             this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(164, 21);
-            this.dateTimePicker8.TabIndex = 53;
+            this.toolTip1.SetToolTip(this.dateTimePicker8, resources.GetString("dateTimePicker8.ToolTip"));
             // 
             // checkBox22
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(538, 93);
+            resources.ApplyResources(this.checkBox22, "checkBox22");
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(120, 16);
-            this.checkBox22.TabIndex = 52;
-            this.checkBox22.Text = "有效起始时间查询";
+            this.toolTip1.SetToolTip(this.checkBox22, resources.GetString("checkBox22.ToolTip"));
             this.checkBox22.UseVisualStyleBackColor = true;
             // 
             // comboBox11
             // 
+            resources.ApplyResources(this.comboBox11, "comboBox11");
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
-            "精确查询",
-            "模糊查询"});
-            this.comboBox11.Location = new System.Drawing.Point(659, 26);
+            resources.GetString("comboBox11.Items"),
+            resources.GetString("comboBox11.Items1")});
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(95, 20);
-            this.comboBox11.TabIndex = 51;
+            this.toolTip1.SetToolTip(this.comboBox11, resources.GetString("comboBox11.ToolTip"));
             // 
             // dateTimePicker7
             // 
-            this.dateTimePicker7.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker7, "dateTimePicker7");
             this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker7.Location = new System.Drawing.Point(862, 56);
             this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(157, 21);
-            this.dateTimePicker7.TabIndex = 50;
+            this.toolTip1.SetToolTip(this.dateTimePicker7, resources.GetString("dateTimePicker7.ToolTip"));
             // 
             // dateTimePicker6
             // 
-            this.dateTimePicker6.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker6, "dateTimePicker6");
             this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker6.Location = new System.Drawing.Point(664, 56);
             this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(164, 21);
-            this.dateTimePicker6.TabIndex = 49;
+            this.toolTip1.SetToolTip(this.dateTimePicker6, resources.GetString("dateTimePicker6.ToolTip"));
             // 
             // checkBox21
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(538, 61);
+            resources.ApplyResources(this.checkBox21, "checkBox21");
             this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(120, 16);
-            this.checkBox21.TabIndex = 48;
-            this.checkBox21.Text = "有效截止时间查询";
+            this.toolTip1.SetToolTip(this.checkBox21, resources.GetString("checkBox21.ToolTip"));
             this.checkBox21.UseVisualStyleBackColor = true;
             // 
             // textBox64
             // 
-            this.textBox64.Location = new System.Drawing.Point(413, 56);
+            resources.ApplyResources(this.textBox64, "textBox64");
             this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(100, 21);
-            this.textBox64.TabIndex = 47;
+            this.toolTip1.SetToolTip(this.textBox64, resources.GetString("textBox64.ToolTip"));
             // 
             // checkBox20
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(357, 61);
+            resources.ApplyResources(this.checkBox20, "checkBox20");
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(60, 16);
-            this.checkBox20.TabIndex = 46;
-            this.checkBox20.Text = "伟根号";
+            this.toolTip1.SetToolTip(this.checkBox20, resources.GetString("checkBox20.ToolTip"));
             this.checkBox20.UseVisualStyleBackColor = true;
             // 
             // textBox63
             // 
-            this.textBox63.Location = new System.Drawing.Point(230, 56);
+            resources.ApplyResources(this.textBox63, "textBox63");
             this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(100, 21);
-            this.textBox63.TabIndex = 45;
+            this.toolTip1.SetToolTip(this.textBox63, resources.GetString("textBox63.ToolTip"));
             // 
             // checkBox19
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(179, 56);
+            resources.ApplyResources(this.checkBox19, "checkBox19");
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(48, 16);
-            this.checkBox19.TabIndex = 44;
-            this.checkBox19.Text = "姓名";
+            this.toolTip1.SetToolTip(this.checkBox19, resources.GetString("checkBox19.ToolTip"));
             this.checkBox19.UseVisualStyleBackColor = true;
             // 
             // textBox62
             // 
-            this.textBox62.Location = new System.Drawing.Point(73, 56);
+            resources.ApplyResources(this.textBox62, "textBox62");
             this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(100, 21);
-            this.textBox62.TabIndex = 43;
+            this.toolTip1.SetToolTip(this.textBox62, resources.GetString("textBox62.ToolTip"));
             // 
             // checkBox18
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(22, 56);
+            resources.ApplyResources(this.checkBox18, "checkBox18");
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(36, 16);
-            this.checkBox18.TabIndex = 42;
-            this.checkBox18.Text = "ID";
+            this.toolTip1.SetToolTip(this.checkBox18, resources.GetString("checkBox18.ToolTip"));
             this.checkBox18.UseVisualStyleBackColor = true;
             // 
             // label69
             // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(1056, 31);
+            resources.ApplyResources(this.label69, "label69");
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(0, 12);
-            this.label69.TabIndex = 41;
+            this.toolTip1.SetToolTip(this.label69, resources.GetString("label69.ToolTip"));
             // 
             // label70
             // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(1014, 31);
+            resources.ApplyResources(this.label70, "label70");
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(41, 12);
-            this.label70.TabIndex = 40;
-            this.label70.Text = "总数：";
+            this.toolTip1.SetToolTip(this.label70, resources.GetString("label70.ToolTip"));
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(786, 24);
+            resources.ApplyResources(this.button10, "button10");
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 17;
-            this.button10.Text = "查询";
+            this.toolTip1.SetToolTip(this.button10, resources.GetString("button10.ToolTip"));
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
+            resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(538, 27);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(108, 16);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "抓取特征值数据";
+            this.toolTip1.SetToolTip(this.checkBox1, resources.GetString("checkBox1.ToolTip"));
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(413, 24);
+            resources.ApplyResources(this.textBox16, "textBox16");
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 21);
-            this.textBox16.TabIndex = 15;
-            this.textBox16.Text = "19";
+            this.toolTip1.SetToolTip(this.textBox16, resources.GetString("textBox16.ToolTip"));
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(355, 28);
+            resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(53, 12);
-            this.label21.TabIndex = 14;
-            this.label21.Text = "页大小：";
+            this.toolTip1.SetToolTip(this.label21, resources.GetString("label21.ToolTip"));
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(230, 25);
+            resources.ApplyResources(this.textBox15, "textBox15");
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 21);
-            this.textBox15.TabIndex = 13;
-            this.textBox15.Text = "1";
+            this.toolTip1.SetToolTip(this.textBox15, resources.GetString("textBox15.ToolTip"));
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(177, 28);
+            resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 12);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "页码：";
+            this.toolTip1.SetToolTip(this.label20, resources.GetString("label20.ToolTip"));
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(20, 28);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 12);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "角色：";
+            this.toolTip1.SetToolTip(this.label19, resources.GetString("label19.ToolTip"));
             // 
             // comboBox3
             // 
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "普通人员",
-            "白名单",
-            "黑名单"});
-            this.comboBox3.Location = new System.Drawing.Point(73, 25);
+            resources.GetString("comboBox3.Items"),
+            resources.GetString("comboBox3.Items1"),
+            resources.GetString("comboBox3.Items2")});
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(80, 20);
-            this.comboBox3.TabIndex = 10;
+            this.toolTip1.SetToolTip(this.comboBox3, resources.GetString("comboBox3.ToolTip"));
             // 
             // dataGridView2
             // 
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1430,52 +1239,50 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 115);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(1100, 275);
-            this.dataGridView2.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.dataGridView2, resources.GetString("dataGridView2.ToolTip"));
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "编号";
+            resources.ApplyResources(this.Column1, "Column1");
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "姓名";
+            resources.ApplyResources(this.Column2, "Column2");
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "角色";
+            resources.ApplyResources(this.Column3, "Column3");
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "特征值个数";
+            resources.ApplyResources(this.Column4, "Column4");
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "韦根卡号";
+            resources.ApplyResources(this.Column5, "Column5");
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "有效期止";
+            resources.ApplyResources(this.Column6, "Column6");
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
             // groupBox6
             // 
+            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Controls.Add(this.button57);
             this.groupBox6.Controls.Add(this.textBox86);
             this.groupBox6.Controls.Add(this.label101);
@@ -1483,80 +1290,62 @@
             this.groupBox6.Controls.Add(this.button6);
             this.groupBox6.Controls.Add(this.textBox9);
             this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox6.Location = new System.Drawing.Point(0, 129);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1106, 70);
-            this.groupBox6.TabIndex = 7;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "删除特征值";
+            this.toolTip1.SetToolTip(this.groupBox6, resources.GetString("groupBox6.ToolTip"));
             // 
             // button57
             // 
-            this.button57.Location = new System.Drawing.Point(1007, 27);
+            resources.ApplyResources(this.button57, "button57");
             this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(75, 23);
-            this.button57.TabIndex = 16;
-            this.button57.Text = "检测";
+            this.toolTip1.SetToolTip(this.button57, resources.GetString("button57.ToolTip"));
             this.button57.UseVisualStyleBackColor = true;
             this.button57.Click += new System.EventHandler(this.button57_Click);
             // 
             // textBox86
             // 
-            this.textBox86.Location = new System.Drawing.Point(580, 29);
+            resources.ApplyResources(this.textBox86, "textBox86");
             this.textBox86.Name = "textBox86";
-            this.textBox86.Size = new System.Drawing.Size(421, 21);
-            this.textBox86.TabIndex = 15;
-            this.textBox86.Text = "双击以选取图片，请保持图片中只有一张人脸，人脸宽高需大于100像素，正面，清晰";
+            this.toolTip1.SetToolTip(this.textBox86, resources.GetString("textBox86.ToolTip"));
             this.textBox86.DoubleClick += new System.EventHandler(this.textBox86_DoubleClick);
             // 
             // label101
             // 
-            this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(498, 34);
+            resources.ApplyResources(this.label101, "label101");
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(53, 12);
-            this.label101.TabIndex = 14;
-            this.label101.Text = "选择图片";
+            this.toolTip1.SetToolTip(this.label101, resources.GetString("label101.ToolTip"));
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(327, 29);
+            resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "清空";
+            this.toolTip1.SetToolTip(this.button7, resources.GetString("button7.ToolTip"));
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(223, 29);
+            resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "删除";
+            this.toolTip1.SetToolTip(this.button6, resources.GetString("button6.ToolTip"));
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(84, 29);
+            resources.ApplyResources(this.textBox9, "textBox9");
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 21);
-            this.textBox9.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.textBox9, resources.GetString("textBox9.ToolTip"));
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(13, 32);
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 12);
-            this.label18.TabIndex = 11;
-            this.label18.Text = "人员编号：";
+            this.toolTip1.SetToolTip(this.label18, resources.GetString("label18.ToolTip"));
             // 
             // groupBox5
             // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.button89);
             this.groupBox5.Controls.Add(this.comboBox14);
             this.groupBox5.Controls.Add(this.label100);
@@ -1575,179 +1364,148 @@
             this.groupBox5.Controls.Add(this.textBox8);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox5.Location = new System.Drawing.Point(0, 62);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1106, 67);
-            this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "修改特征值";
+            this.toolTip1.SetToolTip(this.groupBox5, resources.GetString("groupBox5.ToolTip"));
+            // 
+            // button89
+            // 
+            resources.ApplyResources(this.button89, "button89");
+            this.button89.Name = "button89";
+            this.toolTip1.SetToolTip(this.button89, resources.GetString("button89.ToolTip"));
+            this.button89.UseVisualStyleBackColor = true;
+            this.button89.Click += new System.EventHandler(this.button89_Click);
             // 
             // comboBox14
             // 
+            resources.ApplyResources(this.comboBox14, "comboBox14");
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Items.AddRange(new object[] {
-            "不使用",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.comboBox14.Location = new System.Drawing.Point(862, 41);
+            resources.GetString("comboBox14.Items"),
+            resources.GetString("comboBox14.Items1"),
+            resources.GetString("comboBox14.Items2"),
+            resources.GetString("comboBox14.Items3"),
+            resources.GetString("comboBox14.Items4"),
+            resources.GetString("comboBox14.Items5")});
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(121, 20);
-            this.comboBox14.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.comboBox14, resources.GetString("comboBox14.ToolTip"));
             // 
             // label100
             // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(799, 47);
+            resources.ApplyResources(this.label100, "label100");
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(53, 12);
-            this.label100.TabIndex = 30;
-            this.label100.Text = "调度模式";
+            this.toolTip1.SetToolTip(this.label100, resources.GetString("label100.ToolTip"));
             // 
             // label78
             // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(549, 42);
+            resources.ApplyResources(this.label78, "label78");
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(53, 12);
-            this.label78.TabIndex = 29;
-            this.label78.Text = "起始时间";
+            this.toolTip1.SetToolTip(this.label78, resources.GetString("label78.ToolTip"));
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(365, 41);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(167, 21);
-            this.dateTimePicker2.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.dateTimePicker2, resources.GetString("dateTimePicker2.ToolTip"));
             // 
             // dateTimePicker11
             // 
-            this.dateTimePicker11.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker11, "dateTimePicker11");
             this.dateTimePicker11.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker11.Location = new System.Drawing.Point(614, 38);
             this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.Size = new System.Drawing.Size(167, 21);
-            this.dateTimePicker11.TabIndex = 28;
+            this.toolTip1.SetToolTip(this.dateTimePicker11, resources.GetString("dateTimePicker11.ToolTip"));
             // 
             // combTime_m
             // 
+            resources.ApplyResources(this.combTime_m, "combTime_m");
             this.combTime_m.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combTime_m.FormattingEnabled = true;
             this.combTime_m.Items.AddRange(new object[] {
-            "永不过期",
-            "永久失效",
-            "给定时间=>"});
-            this.combTime_m.Location = new System.Drawing.Point(261, 41);
+            resources.GetString("combTime_m.Items"),
+            resources.GetString("combTime_m.Items1"),
+            resources.GetString("combTime_m.Items2")});
             this.combTime_m.Name = "combTime_m";
-            this.combTime_m.Size = new System.Drawing.Size(100, 20);
-            this.combTime_m.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.combTime_m, resources.GetString("combTime_m.ToolTip"));
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(190, 44);
+            resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(65, 12);
-            this.label24.TabIndex = 18;
-            this.label24.Text = "有效期止：";
+            this.toolTip1.SetToolTip(this.label24, resources.GetString("label24.ToolTip"));
             // 
             // txtwg_m
             // 
-            this.txtwg_m.Location = new System.Drawing.Point(84, 41);
+            resources.ApplyResources(this.txtwg_m, "txtwg_m");
             this.txtwg_m.Name = "txtwg_m";
-            this.txtwg_m.Size = new System.Drawing.Size(100, 21);
-            this.txtwg_m.TabIndex = 17;
-            this.txtwg_m.Text = "0";
+            this.toolTip1.SetToolTip(this.txtwg_m, resources.GetString("txtwg_m.ToolTip"));
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(13, 44);
+            resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(65, 12);
-            this.label23.TabIndex = 16;
-            this.label23.Text = "韦根卡号：";
+            this.toolTip1.SetToolTip(this.label23, resources.GetString("label23.ToolTip"));
             // 
             // comboBox2
             // 
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "普通人员",
-            "白名单",
-            "黑名单"});
-            this.comboBox2.Location = new System.Drawing.Point(381, 17);
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2")});
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(80, 20);
-            this.comboBox2.TabIndex = 15;
+            this.toolTip1.SetToolTip(this.comboBox2, resources.GetString("comboBox2.ToolTip"));
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1016, 16);
+            resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "修改";
+            this.toolTip1.SetToolTip(this.button5, resources.GetString("button5.ToolTip"));
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(538, 18);
+            resources.ApplyResources(this.textBox6, "textBox6");
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(463, 21);
-            this.textBox6.TabIndex = 13;
-            this.textBox6.Text = "双击以选取图片，请保持图片中只有一张人脸，人脸宽高需大于100像素，正面，清晰";
+            this.toolTip1.SetToolTip(this.textBox6, resources.GetString("textBox6.ToolTip"));
             this.textBox6.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(467, 21);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 12);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "模板图片：";
+            this.toolTip1.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(84, 17);
+            resources.ApplyResources(this.textBox7, "textBox7");
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 10;
+            this.toolTip1.SetToolTip(this.textBox7, resources.GetString("textBox7.ToolTip"));
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(261, 17);
+            resources.ApplyResources(this.textBox8, "textBox8");
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
-            this.textBox8.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.textBox8, resources.GetString("textBox8.ToolTip"));
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 20);
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 12);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "人员编号：";
+            this.toolTip1.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(190, 20);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 12);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "人员姓名：";
+            this.toolTip1.SetToolTip(this.label17, resources.GetString("label17.ToolTip"));
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.button88);
             this.groupBox4.Controls.Add(this.comboBox13);
             this.groupBox4.Controls.Add(this.label99);
@@ -1766,193 +1524,160 @@
             this.groupBox4.Controls.Add(this.textBox4);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1106, 62);
-            this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "添加特征值";
+            this.toolTip1.SetToolTip(this.groupBox4, resources.GetString("groupBox4.ToolTip"));
+            // 
+            // button88
+            // 
+            resources.ApplyResources(this.button88, "button88");
+            this.button88.Name = "button88";
+            this.toolTip1.SetToolTip(this.button88, resources.GetString("button88.ToolTip"));
+            this.button88.UseVisualStyleBackColor = true;
+            this.button88.Click += new System.EventHandler(this.button88_Click);
             // 
             // comboBox13
             // 
+            resources.ApplyResources(this.comboBox13, "comboBox13");
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Items.AddRange(new object[] {
-            "不使用",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.comboBox13.Location = new System.Drawing.Point(858, 34);
+            resources.GetString("comboBox13.Items"),
+            resources.GetString("comboBox13.Items1"),
+            resources.GetString("comboBox13.Items2"),
+            resources.GetString("comboBox13.Items3"),
+            resources.GetString("comboBox13.Items4"),
+            resources.GetString("comboBox13.Items5")});
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(121, 20);
-            this.comboBox13.TabIndex = 29;
+            this.toolTip1.SetToolTip(this.comboBox13, resources.GetString("comboBox13.ToolTip"));
             // 
             // label99
             // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(799, 38);
+            resources.ApplyResources(this.label99, "label99");
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(53, 12);
-            this.label99.TabIndex = 28;
-            this.label99.Text = "调度模式";
+            this.toolTip1.SetToolTip(this.label99, resources.GetString("label99.ToolTip"));
             // 
             // label77
             // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(561, 38);
+            resources.ApplyResources(this.label77, "label77");
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(53, 12);
-            this.label77.TabIndex = 27;
-            this.label77.Text = "起始时间";
+            this.toolTip1.SetToolTip(this.label77, resources.GetString("label77.ToolTip"));
             // 
             // dateTimePicker10
             // 
-            this.dateTimePicker10.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker10, "dateTimePicker10");
             this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker10.Location = new System.Drawing.Point(626, 34);
             this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(167, 21);
-            this.dateTimePicker10.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.dateTimePicker10, resources.GetString("dateTimePicker10.ToolTip"));
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(365, 35);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(167, 21);
-            this.dateTimePicker1.TabIndex = 25;
+            this.toolTip1.SetToolTip(this.dateTimePicker1, resources.GetString("dateTimePicker1.ToolTip"));
             // 
             // combTime_a
             // 
+            resources.ApplyResources(this.combTime_a, "combTime_a");
             this.combTime_a.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combTime_a.FormattingEnabled = true;
             this.combTime_a.Items.AddRange(new object[] {
-            "永不过期",
-            "永久失效",
-            "给定时间=>"});
-            this.combTime_a.Location = new System.Drawing.Point(261, 35);
+            resources.GetString("combTime_a.Items"),
+            resources.GetString("combTime_a.Items1"),
+            resources.GetString("combTime_a.Items2")});
             this.combTime_a.Name = "combTime_a";
-            this.combTime_a.Size = new System.Drawing.Size(100, 20);
-            this.combTime_a.TabIndex = 24;
+            this.toolTip1.SetToolTip(this.combTime_a, resources.GetString("combTime_a.ToolTip"));
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(190, 38);
+            resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(65, 12);
-            this.label25.TabIndex = 23;
-            this.label25.Text = "有效期止：";
+            this.toolTip1.SetToolTip(this.label25, resources.GetString("label25.ToolTip"));
             // 
             // txtwg_a
             // 
-            this.txtwg_a.Location = new System.Drawing.Point(84, 35);
+            resources.ApplyResources(this.txtwg_a, "txtwg_a");
             this.txtwg_a.Name = "txtwg_a";
-            this.txtwg_a.Size = new System.Drawing.Size(100, 21);
-            this.txtwg_a.TabIndex = 22;
-            this.txtwg_a.Text = "0";
+            this.toolTip1.SetToolTip(this.txtwg_a, resources.GetString("txtwg_a.ToolTip"));
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(13, 38);
+            resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(65, 12);
-            this.label26.TabIndex = 21;
-            this.label26.Text = "韦根卡号：";
+            this.toolTip1.SetToolTip(this.label26, resources.GetString("label26.ToolTip"));
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "普通人员",
-            "白名单",
-            "黑名单"});
-            this.comboBox1.Location = new System.Drawing.Point(381, 13);
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2")});
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(80, 20);
-            this.comboBox1.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.comboBox1, resources.GetString("comboBox1.ToolTip"));
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1016, 11);
+            resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "录入";
+            this.toolTip1.SetToolTip(this.button4, resources.GetString("button4.ToolTip"));
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(538, 13);
+            resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(463, 21);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.Text = "双击以选取图片，请保持图片中只有一张人脸，人脸宽高需大于100像素，正面，清晰";
+            this.toolTip1.SetToolTip(this.textBox5, resources.GetString("textBox5.ToolTip"));
             this.textBox5.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(467, 16);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 12);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "模板图片：";
+            this.toolTip1.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 13);
+            resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox3, resources.GetString("textBox3.ToolTip"));
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(261, 13);
+            resources.ApplyResources(this.textBox4, "textBox4");
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
-            this.textBox4.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.textBox4, resources.GetString("textBox4.ToolTip"));
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 16);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 12);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "人员编号：";
+            this.toolTip1.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(190, 16);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 12);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "人员姓名：";
+            this.toolTip1.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
             // 
             // tabPage5
             // 
+            resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Controls.Add(this.groupBox13);
             this.tabPage5.Controls.Add(this.groupBox12);
             this.tabPage5.Controls.Add(this.groupBox10);
             this.tabPage5.Controls.Add(this.groupBox9);
             this.tabPage5.Controls.Add(this.groupBox7);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "其他功能";
+            this.toolTip1.SetToolTip(this.tabPage5, resources.GetString("tabPage5.ToolTip"));
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
+            resources.ApplyResources(this.groupBox13, "groupBox13");
             this.groupBox13.Controls.Add(this.button20);
             this.groupBox13.Controls.Add(this.checkBox2);
             this.groupBox13.Controls.Add(this.textBox33);
@@ -1963,102 +1688,76 @@
             this.groupBox13.Controls.Add(this.label42);
             this.groupBox13.Controls.Add(this.textBox32);
             this.groupBox13.Controls.Add(this.label43);
-            this.groupBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox13.Location = new System.Drawing.Point(0, 476);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(1106, 116);
-            this.groupBox13.TabIndex = 4;
             this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "登陆验证";
+            this.toolTip1.SetToolTip(this.groupBox13, resources.GetString("groupBox13.ToolTip"));
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(639, 40);
+            resources.ApplyResources(this.button20, "button20");
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(99, 23);
-            this.button20.TabIndex = 15;
-            this.button20.Text = "修改登陆验证";
+            this.toolTip1.SetToolTip(this.button20, resources.GetString("button20.ToolTip"));
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(447, 78);
+            resources.ApplyResources(this.checkBox2, "checkBox2");
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(96, 16);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "启用登陆验证";
+            this.toolTip1.SetToolTip(this.checkBox2, resources.GetString("checkBox2.ToolTip"));
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // textBox33
             // 
-            this.textBox33.Location = new System.Drawing.Point(447, 51);
+            resources.ApplyResources(this.textBox33, "textBox33");
             this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(156, 21);
-            this.textBox33.TabIndex = 13;
+            this.toolTip1.SetToolTip(this.textBox33, resources.GetString("textBox33.ToolTip"));
             // 
             // label44
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(386, 54);
+            resources.ApplyResources(this.label44, "label44");
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(53, 12);
-            this.label44.TabIndex = 12;
-            this.label44.Text = "新密码：";
+            this.toolTip1.SetToolTip(this.label44, resources.GetString("label44.ToolTip"));
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(193, 20);
+            resources.ApplyResources(this.textBox30, "textBox30");
             this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(156, 21);
-            this.textBox30.TabIndex = 11;
-            this.textBox30.Text = "admin";
+            this.toolTip1.SetToolTip(this.textBox30, resources.GetString("textBox30.ToolTip"));
             // 
             // label41
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(376, 23);
+            resources.ApplyResources(this.label41, "label41");
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(65, 12);
-            this.label41.TabIndex = 10;
-            this.label41.Text = "新用户名：";
+            this.toolTip1.SetToolTip(this.label41, resources.GetString("label41.ToolTip"));
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(193, 47);
+            resources.ApplyResources(this.textBox31, "textBox31");
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(156, 21);
-            this.textBox31.TabIndex = 9;
-            this.textBox31.Text = "admin";
+            this.toolTip1.SetToolTip(this.textBox31, resources.GetString("textBox31.ToolTip"));
             // 
             // label42
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(122, 51);
+            resources.ApplyResources(this.label42, "label42");
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(65, 12);
-            this.label42.TabIndex = 8;
-            this.label42.Text = "原始密码：";
+            this.toolTip1.SetToolTip(this.label42, resources.GetString("label42.ToolTip"));
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(447, 20);
+            resources.ApplyResources(this.textBox32, "textBox32");
             this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(156, 21);
-            this.textBox32.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox32, resources.GetString("textBox32.ToolTip"));
             // 
             // label43
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(110, 23);
+            resources.ApplyResources(this.label43, "label43");
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(77, 12);
-            this.label43.TabIndex = 6;
-            this.label43.Text = "原始用户名：";
+            this.toolTip1.SetToolTip(this.label43, resources.GetString("label43.ToolTip"));
             // 
             // groupBox12
             // 
+            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Controls.Add(this.textBox29);
             this.groupBox12.Controls.Add(this.button19);
             this.groupBox12.Controls.Add(this.button18);
@@ -2067,87 +1766,69 @@
             this.groupBox12.Controls.Add(this.label39);
             this.groupBox12.Controls.Add(this.label38);
             this.groupBox12.Controls.Add(this.textBox27);
-            this.groupBox12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox12.Location = new System.Drawing.Point(0, 336);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(1106, 140);
-            this.groupBox12.TabIndex = 3;
             this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "设置时间";
+            this.toolTip1.SetToolTip(this.groupBox12, resources.GetString("groupBox12.ToolTip"));
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(156, 50);
+            resources.ApplyResources(this.textBox29, "textBox29");
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(156, 21);
-            this.textBox29.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox29, resources.GetString("textBox29.ToolTip"));
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(318, 90);
+            resources.ApplyResources(this.button19, "button19");
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(121, 23);
-            this.button19.TabIndex = 6;
-            this.button19.Text = "设置本机时间到设备";
+            this.toolTip1.SetToolTip(this.button19, resources.GetString("button19.ToolTip"));
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(320, 48);
+            resources.ApplyResources(this.button18, "button18");
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(85, 23);
-            this.button18.TabIndex = 5;
-            this.button18.Text = "设置设备时间";
+            this.toolTip1.SetToolTip(this.button18, resources.GetString("button18.ToolTip"));
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(318, 19);
+            resources.ApplyResources(this.button17, "button17");
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(87, 23);
-            this.button17.TabIndex = 4;
-            this.button17.Text = "读取设备时间";
+            this.toolTip1.SetToolTip(this.button17, resources.GetString("button17.ToolTip"));
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(156, 92);
+            resources.ApplyResources(this.textBox28, "textBox28");
             this.textBox28.Name = "textBox28";
             this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(156, 21);
-            this.textBox28.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox28, resources.GetString("textBox28.ToolTip"));
             // 
             // label39
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(85, 95);
+            resources.ApplyResources(this.label39, "label39");
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(65, 12);
-            this.label39.TabIndex = 2;
-            this.label39.Text = "本机时间：";
+            this.toolTip1.SetToolTip(this.label39, resources.GetString("label39.ToolTip"));
             // 
             // label38
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(85, 24);
+            resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(65, 12);
-            this.label38.TabIndex = 1;
-            this.label38.Text = "相机时间：";
+            this.toolTip1.SetToolTip(this.label38, resources.GetString("label38.ToolTip"));
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(156, 21);
+            resources.ApplyResources(this.textBox27, "textBox27");
             this.textBox27.Name = "textBox27";
             this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(156, 21);
-            this.textBox27.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.textBox27, resources.GetString("textBox27.ToolTip"));
             // 
             // groupBox10
             // 
+            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Controls.Add(this.button37);
             this.groupBox10.Controls.Add(this.button38);
             this.groupBox10.Controls.Add(this.textBox61);
@@ -2160,152 +1841,118 @@
             this.groupBox10.Controls.Add(this.label32);
             this.groupBox10.Controls.Add(this.textBox20);
             this.groupBox10.Controls.Add(this.label31);
-            this.groupBox10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox10.Location = new System.Drawing.Point(0, 226);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1106, 110);
-            this.groupBox10.TabIndex = 2;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "设备信息";
+            this.toolTip1.SetToolTip(this.groupBox10, resources.GetString("groupBox10.ToolTip"));
             // 
             // button37
             // 
-            this.button37.Location = new System.Drawing.Point(904, 75);
+            resources.ApplyResources(this.button37, "button37");
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(75, 23);
-            this.button37.TabIndex = 11;
-            this.button37.Text = "写 入";
+            this.toolTip1.SetToolTip(this.button37, resources.GetString("button37.ToolTip"));
             this.button37.UseVisualStyleBackColor = true;
             this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // button38
             // 
-            this.button38.Location = new System.Drawing.Point(904, 40);
+            resources.ApplyResources(this.button38, "button38");
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(75, 23);
-            this.button38.TabIndex = 10;
-            this.button38.Text = "读 取";
+            this.toolTip1.SetToolTip(this.button38, resources.GetString("button38.ToolTip"));
             this.button38.UseVisualStyleBackColor = true;
             this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // textBox61
             // 
-            this.textBox61.Location = new System.Drawing.Point(702, 51);
+            resources.ApplyResources(this.textBox61, "textBox61");
             this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(156, 21);
-            this.textBox61.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox61, resources.GetString("textBox61.ToolTip"));
             // 
             // label74
             // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(619, 54);
+            resources.ApplyResources(this.label74, "label74");
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(77, 12);
-            this.label74.TabIndex = 8;
-            this.label74.Text = "用户校验码：";
+            this.toolTip1.SetToolTip(this.label74, resources.GetString("label74.ToolTip"));
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(373, 67);
+            resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 7;
-            this.button15.Text = "设 置";
+            this.toolTip1.SetToolTip(this.button15, resources.GetString("button15.ToolTip"));
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(373, 32);
+            resources.ApplyResources(this.button14, "button14");
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 6;
-            this.button14.Text = "读 取";
+            this.toolTip1.SetToolTip(this.button14, resources.GetString("button14.ToolTip"));
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(156, 75);
+            resources.ApplyResources(this.textBox22, "textBox22");
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(156, 21);
-            this.textBox22.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox22, resources.GetString("textBox22.ToolTip"));
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(85, 78);
+            resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(65, 12);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "点位名称：";
+            this.toolTip1.SetToolTip(this.label33, resources.GetString("label33.ToolTip"));
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(156, 47);
+            resources.ApplyResources(this.textBox21, "textBox21");
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(156, 21);
-            this.textBox21.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox21, resources.GetString("textBox21.ToolTip"));
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(85, 51);
+            resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(65, 12);
-            this.label32.TabIndex = 2;
-            this.label32.Text = "点位编号：";
+            this.toolTip1.SetToolTip(this.label32, resources.GetString("label32.ToolTip"));
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(156, 20);
+            resources.ApplyResources(this.textBox20, "textBox20");
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(156, 21);
-            this.textBox20.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox20, resources.GetString("textBox20.ToolTip"));
             // 
             // label31
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(85, 24);
+            resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(65, 12);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "设备编号：";
+            this.toolTip1.SetToolTip(this.label31, resources.GetString("label31.ToolTip"));
             // 
             // groupBox9
             // 
+            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Controls.Add(this.button13);
             this.groupBox9.Controls.Add(this.button12);
-            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox9.Location = new System.Drawing.Point(0, 126);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(1106, 100);
-            this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "IO输入输出";
+            this.toolTip1.SetToolTip(this.groupBox9, resources.GetString("groupBox9.ToolTip"));
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(63, 60);
+            resources.ApplyResources(this.button13, "button13");
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "黑名单开闸";
+            this.toolTip1.SetToolTip(this.button13, resources.GetString("button13.ToolTip"));
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(63, 31);
+            resources.ApplyResources(this.button12, "button12");
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "白名单开闸";
+            this.toolTip1.SetToolTip(this.button12, resources.GetString("button12.ToolTip"));
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // groupBox7
             // 
+            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Controls.Add(this.button46);
             this.groupBox7.Controls.Add(this.button45);
             this.groupBox7.Controls.Add(this.checkBox23);
@@ -2319,131 +1966,101 @@
             this.groupBox7.Controls.Add(this.label28);
             this.groupBox7.Controls.Add(this.textBox10);
             this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox7.Location = new System.Drawing.Point(0, 0);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1106, 126);
-            this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "修改IP";
+            this.toolTip1.SetToolTip(this.groupBox7, resources.GetString("groupBox7.ToolTip"));
             // 
             // button46
             // 
-            this.button46.Location = new System.Drawing.Point(877, 56);
+            resources.ApplyResources(this.button46, "button46");
             this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(75, 23);
-            this.button46.TabIndex = 13;
-            this.button46.Text = "读取";
+            this.toolTip1.SetToolTip(this.button46, resources.GetString("button46.ToolTip"));
             this.button46.UseVisualStyleBackColor = true;
             this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // button45
             // 
-            this.button45.Location = new System.Drawing.Point(787, 56);
+            resources.ApplyResources(this.button45, "button45");
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(75, 23);
-            this.button45.TabIndex = 12;
-            this.button45.Text = "设置";
+            this.toolTip1.SetToolTip(this.button45, resources.GetString("button45.ToolTip"));
             this.button45.UseVisualStyleBackColor = true;
             this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
             // checkBox23
             // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(661, 60);
+            resources.ApplyResources(this.checkBox23, "checkBox23");
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(120, 16);
-            this.checkBox23.TabIndex = 11;
-            this.checkBox23.Text = "过期自动清理开关";
+            this.toolTip1.SetToolTip(this.checkBox23, resources.GetString("checkBox23.ToolTip"));
             this.checkBox23.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(264, 71);
+            resources.ApplyResources(this.button11, "button11");
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "设 置";
+            this.toolTip1.SetToolTip(this.button11, resources.GetString("button11.ToolTip"));
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(264, 33);
+            resources.ApplyResources(this.button9, "button9");
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "读 取";
+            this.toolTip1.SetToolTip(this.button9, resources.GetString("button9.ToolTip"));
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(132, 95);
+            resources.ApplyResources(this.textBox19, "textBox19");
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 21);
-            this.textBox19.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox19, resources.GetString("textBox19.ToolTip"));
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(61, 98);
+            resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(65, 12);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "默认网关：";
+            this.toolTip1.SetToolTip(this.label30, resources.GetString("label30.ToolTip"));
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(132, 68);
+            resources.ApplyResources(this.textBox18, "textBox18");
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 21);
-            this.textBox18.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox18, resources.GetString("textBox18.ToolTip"));
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(61, 71);
+            resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(65, 12);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "子网掩码：";
+            this.toolTip1.SetToolTip(this.label29, resources.GetString("label29.ToolTip"));
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(132, 41);
+            resources.ApplyResources(this.textBox17, "textBox17");
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(100, 21);
-            this.textBox17.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox17, resources.GetString("textBox17.ToolTip"));
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(91, 44);
+            resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(35, 12);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "MAC：";
+            this.toolTip1.SetToolTip(this.label28, resources.GetString("label28.ToolTip"));
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(132, 14);
+            resources.ApplyResources(this.textBox10, "textBox10");
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 21);
-            this.textBox10.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox10, resources.GetString("textBox10.ToolTip"));
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(97, 17);
+            resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(29, 12);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "IP：";
+            this.toolTip1.SetToolTip(this.label27, resources.GetString("label27.ToolTip"));
             // 
             // tabPage8
             // 
+            resources.ApplyResources(this.tabPage8, "tabPage8");
             this.tabPage8.Controls.Add(this.button39);
             this.tabPage8.Controls.Add(this.groupBox21);
             this.tabPage8.Controls.Add(this.groupBox20);
@@ -2451,191 +2068,150 @@
             this.tabPage8.Controls.Add(this.groupBox19);
             this.tabPage8.Controls.Add(this.groupBox18);
             this.tabPage8.Controls.Add(this.checkBox4);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "其他功能2";
+            this.toolTip1.SetToolTip(this.tabPage8, resources.GetString("tabPage8.ToolTip"));
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // button39
             // 
-            this.button39.Location = new System.Drawing.Point(907, 21);
+            resources.ApplyResources(this.button39, "button39");
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(75, 23);
-            this.button39.TabIndex = 23;
-            this.button39.Text = "播放音频";
+            this.toolTip1.SetToolTip(this.button39, resources.GetString("button39.ToolTip"));
             this.button39.UseVisualStyleBackColor = true;
             this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // groupBox21
             // 
+            resources.ApplyResources(this.groupBox21, "groupBox21");
             this.groupBox21.Controls.Add(this.label71);
             this.groupBox21.Controls.Add(this.button33);
             this.groupBox21.Controls.Add(this.textBox59);
-            this.groupBox21.Location = new System.Drawing.Point(644, 302);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(454, 282);
-            this.groupBox21.TabIndex = 22;
             this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "双重密码";
+            this.toolTip1.SetToolTip(this.groupBox21, resources.GetString("groupBox21.ToolTip"));
             // 
             // label71
             // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(61, 119);
-            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label71, "label71");
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(65, 12);
-            this.label71.TabIndex = 52;
-            this.label71.Text = "二级密码：";
+            this.toolTip1.SetToolTip(this.label71, resources.GetString("label71.ToolTip"));
             // 
             // button33
             // 
-            this.button33.Location = new System.Drawing.Point(250, 114);
-            this.button33.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.button33, "button33");
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(75, 23);
-            this.button33.TabIndex = 51;
-            this.button33.Text = "设置";
+            this.toolTip1.SetToolTip(this.button33, resources.GetString("button33.ToolTip"));
             this.button33.UseVisualStyleBackColor = true;
             this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // textBox59
             // 
-            this.textBox59.Location = new System.Drawing.Point(134, 114);
-            this.textBox59.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.textBox59, "textBox59");
             this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(108, 21);
-            this.textBox59.TabIndex = 50;
+            this.toolTip1.SetToolTip(this.textBox59, resources.GetString("textBox59.ToolTip"));
             // 
             // groupBox20
             // 
+            resources.ApplyResources(this.groupBox20, "groupBox20");
             this.groupBox20.Controls.Add(this.button31);
             this.groupBox20.Controls.Add(this.button32);
-            this.groupBox20.Location = new System.Drawing.Point(350, 302);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(288, 282);
-            this.groupBox20.TabIndex = 21;
             this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "录像";
+            this.toolTip1.SetToolTip(this.groupBox20, resources.GetString("groupBox20.ToolTip"));
             // 
             // button31
             // 
-            this.button31.Location = new System.Drawing.Point(105, 58);
+            resources.ApplyResources(this.button31, "button31");
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(75, 23);
-            this.button31.TabIndex = 19;
-            this.button31.Text = "录像";
+            this.toolTip1.SetToolTip(this.button31, resources.GetString("button31.ToolTip"));
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
-            this.button32.Location = new System.Drawing.Point(105, 190);
+            resources.ApplyResources(this.button32, "button32");
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(75, 23);
-            this.button32.TabIndex = 20;
-            this.button32.Text = "停止录像";
+            this.toolTip1.SetToolTip(this.button32, resources.GetString("button32.ToolTip"));
             this.button32.UseVisualStyleBackColor = true;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button30
             // 
-            this.button30.Location = new System.Drawing.Point(997, 21);
+            resources.ApplyResources(this.button30, "button30");
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 23);
-            this.button30.TabIndex = 18;
-            this.button30.Text = "重启设备";
+            this.toolTip1.SetToolTip(this.button30, resources.GetString("button30.ToolTip"));
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // groupBox19
             // 
+            resources.ApplyResources(this.groupBox19, "groupBox19");
             this.groupBox19.Controls.Add(this.button28);
             this.groupBox19.Controls.Add(this.pictureBox2);
-            this.groupBox19.Location = new System.Drawing.Point(8, 302);
             this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(336, 282);
-            this.groupBox19.TabIndex = 17;
             this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "截图";
+            this.toolTip1.SetToolTip(this.groupBox19, resources.GetString("groupBox19.ToolTip"));
             // 
             // button28
             // 
-            this.button28.Location = new System.Drawing.Point(121, 253);
+            resources.ApplyResources(this.button28, "button28");
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 23);
-            this.button28.TabIndex = 1;
-            this.button28.Text = "截图";
+            this.toolTip1.SetToolTip(this.button28, resources.GetString("button28.ToolTip"));
             this.button28.UseVisualStyleBackColor = true;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 20);
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(324, 215);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
             // 
             // groupBox18
             // 
+            resources.ApplyResources(this.groupBox18, "groupBox18");
             this.groupBox18.Controls.Add(this.button85);
             this.groupBox18.Controls.Add(this.textBox58);
             this.groupBox18.Controls.Add(this.button8);
-            this.groupBox18.Location = new System.Drawing.Point(8, 55);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(1090, 241);
-            this.groupBox18.TabIndex = 16;
             this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "查询所有人员编号";
+            this.toolTip1.SetToolTip(this.groupBox18, resources.GetString("groupBox18.ToolTip"));
             // 
             // button85
             // 
-            this.button85.Location = new System.Drawing.Point(989, 20);
+            resources.ApplyResources(this.button85, "button85");
             this.button85.Name = "button85";
-            this.button85.Size = new System.Drawing.Size(75, 23);
-            this.button85.TabIndex = 2;
-            this.button85.Text = "获取版本信息";
+            this.toolTip1.SetToolTip(this.button85, resources.GetString("button85.ToolTip"));
             this.button85.UseVisualStyleBackColor = true;
             this.button85.Click += new System.EventHandler(this.button85_Click);
             // 
             // textBox58
             // 
-            this.textBox58.Location = new System.Drawing.Point(44, 74);
-            this.textBox58.Multiline = true;
+            resources.ApplyResources(this.textBox58, "textBox58");
             this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(976, 161);
-            this.textBox58.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox58, resources.GetString("textBox58.ToolTip"));
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(44, 30);
+            resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "查询";
+            this.toolTip1.SetToolTip(this.button8, resources.GetString("button8.ToolTip"));
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // checkBox4
             // 
-            this.checkBox4.AutoSize = true;
+            resources.ApplyResources(this.checkBox4, "checkBox4");
             this.checkBox4.Checked = true;
             this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.Location = new System.Drawing.Point(176, 21);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(144, 16);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.Text = "注册模板图片质量校验";
-            this.toolTip1.SetToolTip(this.checkBox4, "取消此勾选时注册模板质量不被校验（噪点较多或者人脸倾角大的图片也能被注册）");
+            this.toolTip1.SetToolTip(this.checkBox4, resources.GetString("checkBox4.ToolTip"));
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // tabPage10
             // 
+            resources.ApplyResources(this.tabPage10, "tabPage10");
             this.tabPage10.Controls.Add(this.button86);
             this.tabPage10.Controls.Add(this.textBox104);
             this.tabPage10.Controls.Add(this.button77);
@@ -2715,537 +2291,404 @@
             this.tabPage10.Controls.Add(this.button40);
             this.tabPage10.Controls.Add(this.button41);
             this.tabPage10.Controls.Add(this.label75);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "其他功能3";
+            this.toolTip1.SetToolTip(this.tabPage10, resources.GetString("tabPage10.ToolTip"));
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // button86
             // 
-            this.button86.Location = new System.Drawing.Point(595, 518);
+            resources.ApplyResources(this.button86, "button86");
             this.button86.Name = "button86";
-            this.button86.Size = new System.Drawing.Size(105, 23);
-            this.button86.TabIndex = 89;
-            this.button86.Text = "提取新归一化";
+            this.toolTip1.SetToolTip(this.button86, resources.GetString("button86.ToolTip"));
             this.button86.UseVisualStyleBackColor = true;
             this.button86.Click += new System.EventHandler(this.button86_Click);
             // 
             // textBox104
             // 
-            this.textBox104.Location = new System.Drawing.Point(361, 518);
+            resources.ApplyResources(this.textBox104, "textBox104");
             this.textBox104.Name = "textBox104";
-            this.textBox104.Size = new System.Drawing.Size(216, 21);
-            this.textBox104.TabIndex = 88;
-            this.textBox104.Text = "双击选图片";
+            this.toolTip1.SetToolTip(this.textBox104, resources.GetString("textBox104.ToolTip"));
             this.textBox104.DoubleClick += new System.EventHandler(this.textBox104_DoubleClick);
             // 
             // button77
             // 
-            this.button77.Location = new System.Drawing.Point(934, 443);
+            resources.ApplyResources(this.button77, "button77");
             this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(75, 23);
-            this.button77.TabIndex = 87;
-            this.button77.Text = "设置";
+            this.toolTip1.SetToolTip(this.button77, resources.GetString("button77.ToolTip"));
             this.button77.UseVisualStyleBackColor = true;
             this.button77.Click += new System.EventHandler(this.button77_Click);
             // 
             // button76
             // 
-            this.button76.Location = new System.Drawing.Point(842, 444);
+            resources.ApplyResources(this.button76, "button76");
             this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(75, 23);
-            this.button76.TabIndex = 86;
-            this.button76.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button76, resources.GetString("button76.ToolTip"));
             this.button76.UseVisualStyleBackColor = true;
             this.button76.Click += new System.EventHandler(this.button76_Click);
             // 
             // checkBox41
             // 
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.Location = new System.Drawing.Point(800, 448);
+            resources.ApplyResources(this.checkBox41, "checkBox41");
             this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(36, 16);
-            this.checkBox41.TabIndex = 85;
-            this.checkBox41.Text = "开";
+            this.toolTip1.SetToolTip(this.checkBox41, resources.GetString("checkBox41.ToolTip"));
             this.checkBox41.UseVisualStyleBackColor = true;
             // 
             // label134
             // 
-            this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(704, 449);
+            resources.ApplyResources(this.label134, "label134");
             this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(77, 12);
-            this.label134.TabIndex = 84;
-            this.label134.Text = "口罩检查开关";
+            this.toolTip1.SetToolTip(this.label134, resources.GetString("label134.ToolTip"));
             // 
             // button75
             // 
-            this.button75.Location = new System.Drawing.Point(441, 448);
+            resources.ApplyResources(this.button75, "button75");
             this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(75, 23);
-            this.button75.TabIndex = 83;
-            this.button75.Text = "发送json命令";
+            this.toolTip1.SetToolTip(this.button75, resources.GetString("button75.ToolTip"));
             this.button75.UseVisualStyleBackColor = true;
             this.button75.Click += new System.EventHandler(this.button75_Click);
             // 
             // button74
             // 
-            this.button74.Location = new System.Drawing.Point(1028, 402);
+            resources.ApplyResources(this.button74, "button74");
             this.button74.Name = "button74";
-            this.button74.Size = new System.Drawing.Size(75, 23);
-            this.button74.TabIndex = 82;
-            this.button74.Text = "设置";
+            this.toolTip1.SetToolTip(this.button74, resources.GetString("button74.ToolTip"));
             this.button74.UseVisualStyleBackColor = true;
             this.button74.Click += new System.EventHandler(this.button74_Click);
             // 
             // button73
             // 
-            this.button73.Location = new System.Drawing.Point(948, 402);
+            resources.ApplyResources(this.button73, "button73");
             this.button73.Name = "button73";
-            this.button73.Size = new System.Drawing.Size(75, 23);
-            this.button73.TabIndex = 81;
-            this.button73.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button73, resources.GetString("button73.ToolTip"));
             this.button73.UseVisualStyleBackColor = true;
             this.button73.Click += new System.EventHandler(this.button73_Click);
             // 
             // textBox103
             // 
-            this.textBox103.Location = new System.Drawing.Point(842, 402);
+            resources.ApplyResources(this.textBox103, "textBox103");
             this.textBox103.Name = "textBox103";
-            this.textBox103.Size = new System.Drawing.Size(100, 21);
-            this.textBox103.TabIndex = 80;
+            this.toolTip1.SetToolTip(this.textBox103, resources.GetString("textBox103.ToolTip"));
             // 
             // checkBox40
             // 
-            this.checkBox40.AutoSize = true;
-            this.checkBox40.Location = new System.Drawing.Point(800, 404);
+            resources.ApplyResources(this.checkBox40, "checkBox40");
             this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(36, 16);
-            this.checkBox40.TabIndex = 79;
-            this.checkBox40.Text = "开";
+            this.toolTip1.SetToolTip(this.checkBox40, resources.GetString("checkBox40.ToolTip"));
             this.checkBox40.UseVisualStyleBackColor = true;
             // 
             // label132
             // 
-            this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(693, 407);
+            resources.ApplyResources(this.label132, "label132");
             this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(101, 12);
-            this.label132.TabIndex = 78;
-            this.label132.Text = "设置是否限制体温";
+            this.toolTip1.SetToolTip(this.label132, resources.GetString("label132.ToolTip"));
             // 
             // button72
             // 
-            this.button72.Location = new System.Drawing.Point(583, 400);
+            resources.ApplyResources(this.button72, "button72");
             this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(75, 23);
-            this.button72.TabIndex = 77;
-            this.button72.Text = "设置";
+            this.toolTip1.SetToolTip(this.button72, resources.GetString("button72.ToolTip"));
             this.button72.UseVisualStyleBackColor = true;
             this.button72.Click += new System.EventHandler(this.button72_Click);
             // 
             // button71
             // 
-            this.button71.Location = new System.Drawing.Point(494, 400);
+            resources.ApplyResources(this.button71, "button71");
             this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(75, 23);
-            this.button71.TabIndex = 76;
-            this.button71.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button71, resources.GetString("button71.ToolTip"));
             this.button71.UseVisualStyleBackColor = true;
             this.button71.Click += new System.EventHandler(this.button71_Click);
             // 
             // label131
             // 
-            this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(356, 405);
+            resources.ApplyResources(this.label131, "label131");
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(77, 12);
-            this.label131.TabIndex = 75;
-            this.label131.Text = "设置体温检测";
+            this.toolTip1.SetToolTip(this.label131, resources.GetString("label131.ToolTip"));
             // 
             // checkBox39
             // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(447, 404);
+            resources.ApplyResources(this.checkBox39, "checkBox39");
             this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(36, 16);
-            this.checkBox39.TabIndex = 74;
-            this.checkBox39.Text = "开";
+            this.toolTip1.SetToolTip(this.checkBox39, resources.GetString("checkBox39.ToolTip"));
             this.checkBox39.UseVisualStyleBackColor = true;
             // 
             // label121
             // 
-            this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(213, 509);
+            resources.ApplyResources(this.label121, "label121");
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(35, 12);
-            this.label121.TabIndex = 73;
-            this.label121.Text = "1-100";
+            this.toolTip1.SetToolTip(this.label121, resources.GetString("label121.ToolTip"));
             // 
             // textBox102
             // 
-            this.textBox102.Location = new System.Drawing.Point(88, 506);
+            resources.ApplyResources(this.textBox102, "textBox102");
             this.textBox102.Name = "textBox102";
-            this.textBox102.Size = new System.Drawing.Size(100, 21);
-            this.textBox102.TabIndex = 72;
+            this.toolTip1.SetToolTip(this.textBox102, resources.GetString("textBox102.ToolTip"));
             // 
             // label120
             // 
-            this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(27, 509);
+            resources.ApplyResources(this.label120, "label120");
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(53, 12);
-            this.label120.TabIndex = 71;
-            this.label120.Text = "屏幕亮度";
+            this.toolTip1.SetToolTip(this.label120, resources.GetString("label120.ToolTip"));
             // 
             // checkBox38
             // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.Location = new System.Drawing.Point(88, 481);
+            resources.ApplyResources(this.checkBox38, "checkBox38");
             this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(66, 16);
-            this.checkBox38.TabIndex = 70;
-            this.checkBox38.Text = "lcd镜像";
+            this.toolTip1.SetToolTip(this.checkBox38, resources.GetString("checkBox38.ToolTip"));
             this.checkBox38.UseVisualStyleBackColor = true;
             // 
             // label119
             // 
-            this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(27, 481);
+            resources.ApplyResources(this.label119, "label119");
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(29, 12);
-            this.label119.TabIndex = 69;
-            this.label119.Text = "其他";
+            this.toolTip1.SetToolTip(this.label119, resources.GetString("label119.ToolTip"));
             // 
             // checkBox37
             // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.Location = new System.Drawing.Point(272, 448);
+            resources.ApplyResources(this.checkBox37, "checkBox37");
             this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(84, 16);
-            this.checkBox37.TabIndex = 68;
-            this.checkBox37.Text = "自定义字段";
+            this.toolTip1.SetToolTip(this.checkBox37, resources.GetString("checkBox37.ToolTip"));
             this.checkBox37.UseVisualStyleBackColor = true;
             // 
             // checkBox36
             // 
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.Location = new System.Drawing.Point(218, 448);
+            resources.ApplyResources(this.checkBox36, "checkBox36");
             this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(48, 16);
-            this.checkBox36.TabIndex = 67;
-            this.checkBox36.Text = "时间";
+            this.toolTip1.SetToolTip(this.checkBox36, resources.GetString("checkBox36.ToolTip"));
             this.checkBox36.UseVisualStyleBackColor = true;
             // 
             // checkBox35
             // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(164, 448);
+            resources.ApplyResources(this.checkBox35, "checkBox35");
             this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(48, 16);
-            this.checkBox35.TabIndex = 66;
-            this.checkBox35.Text = "图像";
+            this.toolTip1.SetToolTip(this.checkBox35, resources.GetString("checkBox35.ToolTip"));
             this.checkBox35.UseVisualStyleBackColor = true;
             // 
             // checkBox34
             // 
-            this.checkBox34.AutoSize = true;
-            this.checkBox34.Location = new System.Drawing.Point(110, 447);
+            resources.ApplyResources(this.checkBox34, "checkBox34");
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(48, 16);
-            this.checkBox34.TabIndex = 65;
-            this.checkBox34.Text = "姓名";
+            this.toolTip1.SetToolTip(this.checkBox34, resources.GetString("checkBox34.ToolTip"));
             this.checkBox34.UseVisualStyleBackColor = true;
             // 
             // label118
             // 
-            this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(27, 448);
+            resources.ApplyResources(this.label118, "label118");
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(77, 12);
-            this.label118.TabIndex = 64;
-            this.label118.Text = "比对的显示项";
+            this.toolTip1.SetToolTip(this.label118, resources.GetString("label118.ToolTip"));
             // 
             // button70
             // 
-            this.button70.Location = new System.Drawing.Point(142, 543);
+            resources.ApplyResources(this.button70, "button70");
             this.button70.Name = "button70";
-            this.button70.Size = new System.Drawing.Size(75, 23);
-            this.button70.TabIndex = 63;
-            this.button70.Text = "设置";
+            this.toolTip1.SetToolTip(this.button70, resources.GetString("button70.ToolTip"));
             this.button70.UseVisualStyleBackColor = true;
             this.button70.Click += new System.EventHandler(this.button70_Click);
             // 
             // button69
             // 
-            this.button69.Location = new System.Drawing.Point(44, 543);
+            resources.ApplyResources(this.button69, "button69");
             this.button69.Name = "button69";
-            this.button69.Size = new System.Drawing.Size(75, 23);
-            this.button69.TabIndex = 62;
-            this.button69.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button69, resources.GetString("button69.ToolTip"));
             this.button69.UseVisualStyleBackColor = true;
             this.button69.Click += new System.EventHandler(this.button69_Click);
             // 
             // checkBox33
             // 
-            this.checkBox33.AutoSize = true;
-            this.checkBox33.Location = new System.Drawing.Point(231, 407);
+            resources.ApplyResources(this.checkBox33, "checkBox33");
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(84, 16);
-            this.checkBox33.TabIndex = 60;
-            this.checkBox33.Text = "人脸库数量";
+            this.toolTip1.SetToolTip(this.checkBox33, resources.GetString("checkBox33.ToolTip"));
             this.checkBox33.UseVisualStyleBackColor = true;
             // 
             // checkBox32
             // 
-            this.checkBox32.AutoSize = true;
-            this.checkBox32.Location = new System.Drawing.Point(192, 408);
+            resources.ApplyResources(this.checkBox32, "checkBox32");
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(36, 16);
-            this.checkBox32.TabIndex = 59;
-            this.checkBox32.Text = "ip";
+            this.toolTip1.SetToolTip(this.checkBox32, resources.GetString("checkBox32.ToolTip"));
             this.checkBox32.UseVisualStyleBackColor = true;
             // 
             // checkBox31
             // 
-            this.checkBox31.AutoSize = true;
-            this.checkBox31.Location = new System.Drawing.Point(142, 407);
+            resources.ApplyResources(this.checkBox31, "checkBox31");
             this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(48, 16);
-            this.checkBox31.TabIndex = 58;
-            this.checkBox31.Text = "时间";
+            this.toolTip1.SetToolTip(this.checkBox31, resources.GetString("checkBox31.ToolTip"));
             this.checkBox31.UseVisualStyleBackColor = true;
             // 
             // checkBox30
             // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(88, 407);
+            resources.ApplyResources(this.checkBox30, "checkBox30");
             this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(48, 16);
-            this.checkBox30.TabIndex = 57;
-            this.checkBox30.Text = "标题";
+            this.toolTip1.SetToolTip(this.checkBox30, resources.GetString("checkBox30.ToolTip"));
             this.checkBox30.UseVisualStyleBackColor = true;
             // 
             // label117
             // 
-            this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(35, 408);
+            resources.ApplyResources(this.label117, "label117");
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(41, 12);
-            this.label117.TabIndex = 56;
-            this.label117.Text = "显示项";
+            this.toolTip1.SetToolTip(this.label117, resources.GetString("label117.ToolTip"));
             // 
             // button66
             // 
-            this.button66.Location = new System.Drawing.Point(804, 341);
+            resources.ApplyResources(this.button66, "button66");
             this.button66.Name = "button66";
-            this.button66.Size = new System.Drawing.Size(93, 23);
-            this.button66.TabIndex = 55;
-            this.button66.Text = "播放内置音频";
+            this.toolTip1.SetToolTip(this.button66, resources.GetString("button66.ToolTip"));
             this.button66.UseVisualStyleBackColor = true;
             this.button66.Click += new System.EventHandler(this.button66_Click);
             // 
             // button64
             // 
-            this.button64.Location = new System.Drawing.Point(628, 338);
+            resources.ApplyResources(this.button64, "button64");
             this.button64.Name = "button64";
-            this.button64.Size = new System.Drawing.Size(75, 23);
-            this.button64.TabIndex = 54;
-            this.button64.Text = "设置音量";
+            this.toolTip1.SetToolTip(this.button64, resources.GetString("button64.ToolTip"));
             this.button64.UseVisualStyleBackColor = true;
             this.button64.Click += new System.EventHandler(this.button64_Click);
             // 
             // button63
             // 
-            this.button63.Location = new System.Drawing.Point(547, 338);
+            resources.ApplyResources(this.button63, "button63");
             this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(75, 23);
-            this.button63.TabIndex = 53;
-            this.button63.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button63, resources.GetString("button63.ToolTip"));
             this.button63.UseVisualStyleBackColor = true;
             this.button63.Click += new System.EventHandler(this.button63_Click);
             // 
             // label110
             // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(382, 341);
+            resources.ApplyResources(this.label110, "label110");
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(35, 12);
-            this.label110.TabIndex = 52;
-            this.label110.Text = "1-100";
+            this.toolTip1.SetToolTip(this.label110, resources.GetString("label110.ToolTip"));
             // 
             // textBox95
             // 
-            this.textBox95.Location = new System.Drawing.Point(441, 338);
+            resources.ApplyResources(this.textBox95, "textBox95");
             this.textBox95.Name = "textBox95";
-            this.textBox95.Size = new System.Drawing.Size(100, 21);
-            this.textBox95.TabIndex = 51;
+            this.toolTip1.SetToolTip(this.textBox95, resources.GetString("textBox95.ToolTip"));
             // 
             // button60
             // 
-            this.button60.Location = new System.Drawing.Point(706, 276);
+            resources.ApplyResources(this.button60, "button60");
             this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(75, 23);
-            this.button60.TabIndex = 50;
-            this.button60.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button60, resources.GetString("button60.ToolTip"));
             this.button60.UseVisualStyleBackColor = true;
             this.button60.Click += new System.EventHandler(this.button60_Click);
             // 
             // button59
             // 
-            this.button59.Location = new System.Drawing.Point(625, 276);
+            resources.ApplyResources(this.button59, "button59");
             this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(75, 23);
-            this.button59.TabIndex = 49;
-            this.button59.Text = "设置去重复";
+            this.toolTip1.SetToolTip(this.button59, resources.GetString("button59.ToolTip"));
             this.button59.UseVisualStyleBackColor = true;
             this.button59.Click += new System.EventHandler(this.button59_Click);
             // 
             // checkBox27
             // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(583, 279);
+            resources.ApplyResources(this.checkBox27, "checkBox27");
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(36, 16);
-            this.checkBox27.TabIndex = 48;
-            this.checkBox27.Text = "开";
+            this.toolTip1.SetToolTip(this.checkBox27, resources.GetString("checkBox27.ToolTip"));
             this.checkBox27.UseVisualStyleBackColor = true;
             // 
             // textBox89
             // 
-            this.textBox89.Location = new System.Drawing.Point(441, 276);
+            resources.ApplyResources(this.textBox89, "textBox89");
             this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(100, 21);
-            this.textBox89.TabIndex = 47;
+            this.toolTip1.SetToolTip(this.textBox89, resources.GetString("textBox89.ToolTip"));
             // 
             // label104
             // 
-            this.label104.AutoSize = true;
-            this.label104.Location = new System.Drawing.Point(390, 279);
+            resources.ApplyResources(this.label104, "label104");
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(35, 12);
-            this.label104.TabIndex = 46;
-            this.label104.Text = "1-60s";
+            this.toolTip1.SetToolTip(this.label104, resources.GetString("label104.ToolTip"));
             // 
             // label103
             // 
-            this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(581, 217);
+            resources.ApplyResources(this.label103, "label103");
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(89, 12);
-            this.label103.TabIndex = 45;
-            this.label103.Text = "请选择存放目录";
+            this.toolTip1.SetToolTip(this.label103, resources.GetString("label103.ToolTip"));
             // 
             // label102
             // 
-            this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(366, 217);
+            resources.ApplyResources(this.label102, "label102");
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(65, 12);
-            this.label102.TabIndex = 44;
-            this.label102.Text = "请选择照片";
+            this.toolTip1.SetToolTip(this.label102, resources.GetString("label102.ToolTip"));
             // 
             // textBox88
             // 
-            this.textBox88.Location = new System.Drawing.Point(676, 214);
+            resources.ApplyResources(this.textBox88, "textBox88");
             this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(128, 21);
-            this.textBox88.TabIndex = 43;
-            this.textBox88.Text = "双击以选取图片";
+            this.toolTip1.SetToolTip(this.textBox88, resources.GetString("textBox88.ToolTip"));
             this.textBox88.DoubleClick += new System.EventHandler(this.textBox88_DoubleClick);
             // 
             // textBox87
             // 
-            this.textBox87.Location = new System.Drawing.Point(441, 214);
+            resources.ApplyResources(this.textBox87, "textBox87");
             this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(128, 21);
-            this.textBox87.TabIndex = 42;
-            this.textBox87.Text = "双击以选取图片";
+            this.toolTip1.SetToolTip(this.textBox87, resources.GetString("textBox87.ToolTip"));
             this.textBox87.DoubleClick += new System.EventHandler(this.textBox87_DoubleClick);
             // 
             // button58
             // 
-            this.button58.Location = new System.Drawing.Point(826, 212);
+            resources.ApplyResources(this.button58, "button58");
             this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(140, 23);
-            this.button58.TabIndex = 41;
-            this.button58.Text = "提取特征值到指定目录";
+            this.toolTip1.SetToolTip(this.button58, resources.GetString("button58.ToolTip"));
             this.button58.UseVisualStyleBackColor = true;
             this.button58.Click += new System.EventHandler(this.button58_Click);
             // 
             // button56
             // 
-            this.button56.Location = new System.Drawing.Point(568, 154);
+            resources.ApplyResources(this.button56, "button56");
             this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(102, 23);
-            this.button56.TabIndex = 40;
-            this.button56.Text = "获取设备信息";
+            this.toolTip1.SetToolTip(this.button56, resources.GetString("button56.ToolTip"));
             this.button56.UseVisualStyleBackColor = true;
             this.button56.Click += new System.EventHandler(this.button56_Click);
             // 
             // textBox85
             // 
-            this.textBox85.Location = new System.Drawing.Point(459, 154);
+            resources.ApplyResources(this.textBox85, "textBox85");
             this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(100, 21);
-            this.textBox85.TabIndex = 39;
+            this.toolTip1.SetToolTip(this.textBox85, resources.GetString("textBox85.ToolTip"));
             // 
             // label98
             // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(388, 157);
+            resources.ApplyResources(this.label98, "label98");
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(65, 12);
-            this.label98.TabIndex = 38;
-            this.label98.Text = "相机序列号";
+            this.toolTip1.SetToolTip(this.label98, resources.GetString("label98.ToolTip"));
             // 
             // button55
             // 
-            this.button55.Location = new System.Drawing.Point(62, 354);
+            resources.ApplyResources(this.button55, "button55");
             this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(75, 23);
-            this.button55.TabIndex = 37;
-            this.button55.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button55, resources.GetString("button55.ToolTip"));
             this.button55.UseVisualStyleBackColor = true;
             this.button55.Click += new System.EventHandler(this.button55_Click);
             // 
             // button54
             // 
-            this.button54.Location = new System.Drawing.Point(156, 354);
+            resources.ApplyResources(this.button54, "button54");
             this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(75, 23);
-            this.button54.TabIndex = 36;
-            this.button54.Text = "设置";
+            this.toolTip1.SetToolTip(this.button54, resources.GetString("button54.ToolTip"));
             this.button54.UseVisualStyleBackColor = true;
             this.button54.Click += new System.EventHandler(this.button54_Click);
             // 
             // tabControl2
             // 
+            resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.Controls.Add(this.tabPage12);
             this.tabControl2.Controls.Add(this.tabPage13);
             this.tabControl2.Controls.Add(this.tabPage14);
             this.tabControl2.Controls.Add(this.tabPage15);
             this.tabControl2.Controls.Add(this.tabPage16);
-            this.tabControl2.Location = new System.Drawing.Point(25, 135);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(304, 213);
-            this.tabControl2.TabIndex = 35;
+            this.toolTip1.SetToolTip(this.tabControl2, resources.GetString("tabControl2.ToolTip"));
             // 
             // tabPage12
             // 
-            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage12, "tabPage12");
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(296, 187);
-            this.tabPage12.TabIndex = 0;
-            this.tabPage12.Text = "关闭";
+            this.toolTip1.SetToolTip(this.tabPage12, resources.GetString("tabPage12.ToolTip"));
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // tabPage13
             // 
+            resources.ApplyResources(this.tabPage13, "tabPage13");
             this.tabPage13.Controls.Add(this.textBox73);
             this.tabPage13.Controls.Add(this.textBox72);
             this.tabPage13.Controls.Add(this.textBox71);
@@ -3255,90 +2698,68 @@
             this.tabPage13.Controls.Add(this.textBox70);
             this.tabPage13.Controls.Add(this.label83);
             this.tabPage13.Controls.Add(this.checkBox25);
-            this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(296, 187);
-            this.tabPage13.TabIndex = 1;
-            this.tabPage13.Text = "TCP";
+            this.toolTip1.SetToolTip(this.tabPage13, resources.GetString("tabPage13.ToolTip"));
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
             // textBox73
             // 
-            this.textBox73.Location = new System.Drawing.Point(90, 133);
+            resources.ApplyResources(this.textBox73, "textBox73");
             this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(100, 21);
-            this.textBox73.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox73, resources.GetString("textBox73.ToolTip"));
             // 
             // textBox72
             // 
-            this.textBox72.Location = new System.Drawing.Point(90, 106);
+            resources.ApplyResources(this.textBox72, "textBox72");
             this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(100, 21);
-            this.textBox72.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.textBox72, resources.GetString("textBox72.ToolTip"));
             // 
             // textBox71
             // 
-            this.textBox71.Location = new System.Drawing.Point(90, 78);
+            resources.ApplyResources(this.textBox71, "textBox71");
             this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(100, 21);
-            this.textBox71.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox71, resources.GetString("textBox71.ToolTip"));
             // 
             // label86
             // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(33, 139);
+            resources.ApplyResources(this.label86, "label86");
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(29, 12);
-            this.label86.TabIndex = 5;
-            this.label86.Text = "端口";
+            this.toolTip1.SetToolTip(this.label86, resources.GetString("label86.ToolTip"));
             // 
             // label85
             // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(33, 106);
+            resources.ApplyResources(this.label85, "label85");
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(17, 12);
-            this.label85.TabIndex = 4;
-            this.label85.Text = "IP";
+            this.toolTip1.SetToolTip(this.label85, resources.GetString("label85.ToolTip"));
             // 
             // label84
             // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(33, 78);
+            resources.ApplyResources(this.label84, "label84");
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(29, 12);
-            this.label84.TabIndex = 3;
-            this.label84.Text = "密码";
+            this.toolTip1.SetToolTip(this.label84, resources.GetString("label84.ToolTip"));
             // 
             // textBox70
             // 
-            this.textBox70.Location = new System.Drawing.Point(90, 44);
+            resources.ApplyResources(this.textBox70, "textBox70");
             this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(100, 21);
-            this.textBox70.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.textBox70, resources.GetString("textBox70.ToolTip"));
             // 
             // label83
             // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(33, 47);
+            resources.ApplyResources(this.label83, "label83");
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(41, 12);
-            this.label83.TabIndex = 1;
-            this.label83.Text = "用户名";
+            this.toolTip1.SetToolTip(this.label83, resources.GetString("label83.ToolTip"));
             // 
             // checkBox25
             // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(17, 18);
+            resources.ApplyResources(this.checkBox25, "checkBox25");
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(48, 16);
-            this.checkBox25.TabIndex = 0;
-            this.checkBox25.Text = "验证";
+            this.toolTip1.SetToolTip(this.checkBox25, resources.GetString("checkBox25.ToolTip"));
             this.checkBox25.UseVisualStyleBackColor = true;
             // 
             // tabPage14
             // 
+            resources.ApplyResources(this.tabPage14, "tabPage14");
             this.tabPage14.Controls.Add(this.textBox78);
             this.tabPage14.Controls.Add(this.textBox77);
             this.tabPage14.Controls.Add(this.textBox76);
@@ -3349,95 +2770,73 @@
             this.tabPage14.Controls.Add(this.label89);
             this.tabPage14.Controls.Add(this.label88);
             this.tabPage14.Controls.Add(this.label87);
-            this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(296, 187);
-            this.tabPage14.TabIndex = 2;
-            this.tabPage14.Text = "FTP";
+            this.toolTip1.SetToolTip(this.tabPage14, resources.GetString("tabPage14.ToolTip"));
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
             // textBox78
             // 
-            this.textBox78.Location = new System.Drawing.Point(102, 133);
+            resources.ApplyResources(this.textBox78, "textBox78");
             this.textBox78.Name = "textBox78";
-            this.textBox78.Size = new System.Drawing.Size(100, 21);
-            this.textBox78.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox78, resources.GetString("textBox78.ToolTip"));
             // 
             // textBox77
             // 
-            this.textBox77.Location = new System.Drawing.Point(102, 104);
+            resources.ApplyResources(this.textBox77, "textBox77");
             this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(100, 21);
-            this.textBox77.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.textBox77, resources.GetString("textBox77.ToolTip"));
             // 
             // textBox76
             // 
-            this.textBox76.Location = new System.Drawing.Point(102, 74);
+            resources.ApplyResources(this.textBox76, "textBox76");
             this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(100, 21);
-            this.textBox76.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox76, resources.GetString("textBox76.ToolTip"));
             // 
             // textBox75
             // 
-            this.textBox75.Location = new System.Drawing.Point(102, 43);
+            resources.ApplyResources(this.textBox75, "textBox75");
             this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(100, 21);
-            this.textBox75.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.textBox75, resources.GetString("textBox75.ToolTip"));
             // 
             // textBox74
             // 
-            this.textBox74.Location = new System.Drawing.Point(102, 12);
+            resources.ApplyResources(this.textBox74, "textBox74");
             this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(100, 21);
-            this.textBox74.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox74, resources.GetString("textBox74.ToolTip"));
             // 
             // label91
             // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(31, 133);
+            resources.ApplyResources(this.label91, "label91");
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(53, 12);
-            this.label91.TabIndex = 4;
-            this.label91.Text = "上传路径";
+            this.toolTip1.SetToolTip(this.label91, resources.GetString("label91.ToolTip"));
             // 
             // label90
             // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(31, 104);
+            resources.ApplyResources(this.label90, "label90");
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(29, 12);
-            this.label90.TabIndex = 3;
-            this.label90.Text = "密码";
+            this.toolTip1.SetToolTip(this.label90, resources.GetString("label90.ToolTip"));
             // 
             // label89
             // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(31, 74);
+            resources.ApplyResources(this.label89, "label89");
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(41, 12);
-            this.label89.TabIndex = 2;
-            this.label89.Text = "用户名";
+            this.toolTip1.SetToolTip(this.label89, resources.GetString("label89.ToolTip"));
             // 
             // label88
             // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(31, 46);
+            resources.ApplyResources(this.label88, "label88");
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(29, 12);
-            this.label88.TabIndex = 1;
-            this.label88.Text = "端口";
+            this.toolTip1.SetToolTip(this.label88, resources.GetString("label88.ToolTip"));
             // 
             // label87
             // 
-            this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(31, 15);
+            resources.ApplyResources(this.label87, "label87");
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(17, 12);
-            this.label87.TabIndex = 0;
-            this.label87.Text = "IP";
+            this.toolTip1.SetToolTip(this.label87, resources.GetString("label87.ToolTip"));
             // 
             // tabPage15
             // 
+            resources.ApplyResources(this.tabPage15, "tabPage15");
             this.tabPage15.Controls.Add(this.textBox81);
             this.tabPage15.Controls.Add(this.textBox80);
             this.tabPage15.Controls.Add(this.textBox79);
@@ -3445,368 +2844,283 @@
             this.tabPage15.Controls.Add(this.label93);
             this.tabPage15.Controls.Add(this.label92);
             this.tabPage15.Controls.Add(this.checkBox26);
-            this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Size = new System.Drawing.Size(296, 187);
-            this.tabPage15.TabIndex = 3;
-            this.tabPage15.Text = "HTTP";
+            this.toolTip1.SetToolTip(this.tabPage15, resources.GetString("tabPage15.ToolTip"));
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
             // textBox81
             // 
-            this.textBox81.Location = new System.Drawing.Point(102, 126);
+            resources.ApplyResources(this.textBox81, "textBox81");
             this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(100, 21);
-            this.textBox81.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.textBox81, resources.GetString("textBox81.ToolTip"));
             // 
             // textBox80
             // 
-            this.textBox80.Location = new System.Drawing.Point(102, 96);
+            resources.ApplyResources(this.textBox80, "textBox80");
             this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(100, 21);
-            this.textBox80.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox80, resources.GetString("textBox80.ToolTip"));
             // 
             // textBox79
             // 
-            this.textBox79.Location = new System.Drawing.Point(102, 63);
+            resources.ApplyResources(this.textBox79, "textBox79");
             this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(100, 21);
-            this.textBox79.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.textBox79, resources.GetString("textBox79.ToolTip"));
             // 
             // label94
             // 
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(49, 129);
+            resources.ApplyResources(this.label94, "label94");
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(23, 12);
-            this.label94.TabIndex = 3;
-            this.label94.Text = "url";
+            this.toolTip1.SetToolTip(this.label94, resources.GetString("label94.ToolTip"));
             // 
             // label93
             // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(49, 96);
+            resources.ApplyResources(this.label93, "label93");
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(29, 12);
-            this.label93.TabIndex = 2;
-            this.label93.Text = "端口";
+            this.toolTip1.SetToolTip(this.label93, resources.GetString("label93.ToolTip"));
             // 
             // label92
             // 
-            this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(49, 66);
+            resources.ApplyResources(this.label92, "label92");
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(17, 12);
-            this.label92.TabIndex = 1;
-            this.label92.Text = "IP";
+            this.toolTip1.SetToolTip(this.label92, resources.GetString("label92.ToolTip"));
             // 
             // checkBox26
             // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(48, 30);
+            resources.ApplyResources(this.checkBox26, "checkBox26");
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(48, 16);
-            this.checkBox26.TabIndex = 0;
-            this.checkBox26.Text = "心跳";
+            this.toolTip1.SetToolTip(this.checkBox26, resources.GetString("checkBox26.ToolTip"));
             this.checkBox26.UseVisualStyleBackColor = true;
             // 
             // tabPage16
             // 
+            resources.ApplyResources(this.tabPage16, "tabPage16");
             this.tabPage16.Controls.Add(this.textBox84);
             this.tabPage16.Controls.Add(this.textBox83);
             this.tabPage16.Controls.Add(this.textBox82);
             this.tabPage16.Controls.Add(this.label97);
             this.tabPage16.Controls.Add(this.label96);
             this.tabPage16.Controls.Add(this.label95);
-            this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(296, 187);
-            this.tabPage16.TabIndex = 4;
-            this.tabPage16.Text = "WebService";
+            this.toolTip1.SetToolTip(this.tabPage16, resources.GetString("tabPage16.ToolTip"));
             this.tabPage16.UseVisualStyleBackColor = true;
             // 
             // textBox84
             // 
-            this.textBox84.Location = new System.Drawing.Point(115, 124);
+            resources.ApplyResources(this.textBox84, "textBox84");
             this.textBox84.Name = "textBox84";
-            this.textBox84.Size = new System.Drawing.Size(100, 21);
-            this.textBox84.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox84, resources.GetString("textBox84.ToolTip"));
             // 
             // textBox83
             // 
-            this.textBox83.Location = new System.Drawing.Point(115, 85);
+            resources.ApplyResources(this.textBox83, "textBox83");
             this.textBox83.Name = "textBox83";
-            this.textBox83.Size = new System.Drawing.Size(100, 21);
-            this.textBox83.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.textBox83, resources.GetString("textBox83.ToolTip"));
             // 
             // textBox82
             // 
-            this.textBox82.Location = new System.Drawing.Point(115, 46);
+            resources.ApplyResources(this.textBox82, "textBox82");
             this.textBox82.Name = "textBox82";
-            this.textBox82.Size = new System.Drawing.Size(100, 21);
-            this.textBox82.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox82, resources.GetString("textBox82.ToolTip"));
             // 
             // label97
             // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(59, 127);
+            resources.ApplyResources(this.label97, "label97");
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(23, 12);
-            this.label97.TabIndex = 2;
-            this.label97.Text = "url";
+            this.toolTip1.SetToolTip(this.label97, resources.GetString("label97.ToolTip"));
             // 
             // label96
             // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(59, 88);
+            resources.ApplyResources(this.label96, "label96");
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(29, 12);
-            this.label96.TabIndex = 1;
-            this.label96.Text = "端口";
+            this.toolTip1.SetToolTip(this.label96, resources.GetString("label96.ToolTip"));
             // 
             // label95
             // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(59, 49);
+            resources.ApplyResources(this.label95, "label95");
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(17, 12);
-            this.label95.TabIndex = 0;
-            this.label95.Text = "ip";
+            this.toolTip1.SetToolTip(this.label95, resources.GetString("label95.ToolTip"));
             // 
             // button53
             // 
-            this.button53.Location = new System.Drawing.Point(910, 66);
+            resources.ApplyResources(this.button53, "button53");
             this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(75, 23);
-            this.button53.TabIndex = 34;
-            this.button53.Text = "播放语音";
+            this.toolTip1.SetToolTip(this.button53, resources.GetString("button53.ToolTip"));
             this.button53.UseVisualStyleBackColor = true;
             this.button53.Click += new System.EventHandler(this.button53_Click);
             // 
             // button52
             // 
-            this.button52.Location = new System.Drawing.Point(816, 66);
+            resources.ApplyResources(this.button52, "button52");
             this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(75, 23);
-            this.button52.TabIndex = 33;
-            this.button52.Text = "设置屏显";
+            this.toolTip1.SetToolTip(this.button52, resources.GetString("button52.ToolTip"));
             this.button52.UseVisualStyleBackColor = true;
             this.button52.Click += new System.EventHandler(this.button52_Click);
             // 
             // textBox69
             // 
-            this.textBox69.Location = new System.Drawing.Point(686, 68);
+            resources.ApplyResources(this.textBox69, "textBox69");
             this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(100, 21);
-            this.textBox69.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.textBox69, resources.GetString("textBox69.ToolTip"));
             // 
             // button51
             // 
-            this.button51.Location = new System.Drawing.Point(568, 66);
+            resources.ApplyResources(this.button51, "button51");
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(75, 23);
-            this.button51.TabIndex = 31;
-            this.button51.Text = "设置";
+            this.toolTip1.SetToolTip(this.button51, resources.GetString("button51.ToolTip"));
             this.button51.UseVisualStyleBackColor = true;
             this.button51.Click += new System.EventHandler(this.button51_Click);
             // 
             // button50
             // 
-            this.button50.Location = new System.Drawing.Point(487, 67);
+            resources.ApplyResources(this.button50, "button50");
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(75, 23);
-            this.button50.TabIndex = 30;
-            this.button50.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button50, resources.GetString("button50.ToolTip"));
             this.button50.UseVisualStyleBackColor = true;
             this.button50.Click += new System.EventHandler(this.button50_Click);
             // 
             // textBox67
             // 
-            this.textBox67.Location = new System.Drawing.Point(415, 69);
+            resources.ApplyResources(this.textBox67, "textBox67");
             this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(20, 21);
-            this.textBox67.TabIndex = 29;
-            this.textBox67.Text = "0";
+            this.toolTip1.SetToolTip(this.textBox67, resources.GetString("textBox67.ToolTip"));
             // 
             // textBox68
             // 
-            this.textBox68.Location = new System.Drawing.Point(441, 69);
+            resources.ApplyResources(this.textBox68, "textBox68");
             this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(20, 21);
-            this.textBox68.TabIndex = 28;
-            this.textBox68.Text = "0";
+            this.toolTip1.SetToolTip(this.textBox68, resources.GetString("textBox68.ToolTip"));
             // 
             // label82
             // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(356, 72);
+            resources.ApplyResources(this.label82, "label82");
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(53, 12);
-            this.label82.TabIndex = 27;
-            this.label82.Text = "关闭时间";
+            this.toolTip1.SetToolTip(this.label82, resources.GetString("label82.ToolTip"));
             // 
             // textBox66
             // 
-            this.textBox66.Location = new System.Drawing.Point(321, 69);
+            resources.ApplyResources(this.textBox66, "textBox66");
             this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(20, 21);
-            this.textBox66.TabIndex = 26;
-            this.textBox66.Text = "0";
+            this.toolTip1.SetToolTip(this.textBox66, resources.GetString("textBox66.ToolTip"));
             // 
             // textBox65
             // 
-            this.textBox65.Location = new System.Drawing.Point(295, 69);
+            resources.ApplyResources(this.textBox65, "textBox65");
             this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(20, 21);
-            this.textBox65.TabIndex = 25;
-            this.textBox65.Text = "0";
+            this.toolTip1.SetToolTip(this.textBox65, resources.GetString("textBox65.ToolTip"));
             // 
             // label81
             // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(223, 72);
+            resources.ApplyResources(this.label81, "label81");
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(53, 12);
-            this.label81.TabIndex = 24;
-            this.label81.Text = "打开时间";
+            this.toolTip1.SetToolTip(this.label81, resources.GetString("label81.ToolTip"));
             // 
             // comboBox12
             // 
+            resources.ApplyResources(this.comboBox12, "comboBox12");
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
-            "关",
-            "常开",
-            "按时间段开关"});
-            this.comboBox12.Location = new System.Drawing.Point(88, 69);
+            resources.GetString("comboBox12.Items"),
+            resources.GetString("comboBox12.Items1"),
+            resources.GetString("comboBox12.Items2")});
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(121, 20);
-            this.comboBox12.TabIndex = 23;
+            this.toolTip1.SetToolTip(this.comboBox12, resources.GetString("comboBox12.ToolTip"));
             // 
             // label80
             // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(23, 72);
+            resources.ApplyResources(this.label80, "label80");
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(47, 12);
-            this.label80.TabIndex = 22;
-            this.label80.Text = "宽动态:";
+            this.toolTip1.SetToolTip(this.label80, resources.GetString("label80.ToolTip"));
             // 
             // checkBox24
             // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(804, 23);
+            resources.ApplyResources(this.checkBox24, "checkBox24");
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(15, 14);
-            this.checkBox24.TabIndex = 21;
+            this.toolTip1.SetToolTip(this.checkBox24, resources.GetString("checkBox24.ToolTip"));
             this.checkBox24.UseVisualStyleBackColor = true;
             // 
             // button47
             // 
-            this.button47.Location = new System.Drawing.Point(934, 18);
+            resources.ApplyResources(this.button47, "button47");
             this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(75, 23);
-            this.button47.TabIndex = 20;
-            this.button47.Text = "设置";
+            this.toolTip1.SetToolTip(this.button47, resources.GetString("button47.ToolTip"));
             this.button47.UseVisualStyleBackColor = true;
             this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // button48
             // 
-            this.button48.Location = new System.Drawing.Point(853, 18);
+            resources.ApplyResources(this.button48, "button48");
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(75, 23);
-            this.button48.TabIndex = 19;
-            this.button48.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button48, resources.GetString("button48.ToolTip"));
             this.button48.UseVisualStyleBackColor = true;
             this.button48.Click += new System.EventHandler(this.button48_Click);
             // 
             // label79
             // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(673, 25);
+            resources.ApplyResources(this.label79, "label79");
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(113, 12);
-            this.label79.TabIndex = 18;
-            this.label79.Text = "未带安全帽禁止通行";
+            this.toolTip1.SetToolTip(this.label79, resources.GetString("label79.ToolTip"));
             // 
             // checkBox17
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(447, 23);
+            resources.ApplyResources(this.checkBox17, "checkBox17");
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(15, 14);
-            this.checkBox17.TabIndex = 17;
+            this.toolTip1.SetToolTip(this.checkBox17, resources.GetString("checkBox17.ToolTip"));
             this.checkBox17.UseVisualStyleBackColor = true;
             // 
             // button42
             // 
-            this.button42.Location = new System.Drawing.Point(568, 20);
+            resources.ApplyResources(this.button42, "button42");
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(75, 23);
-            this.button42.TabIndex = 16;
-            this.button42.Text = "设置";
+            this.toolTip1.SetToolTip(this.button42, resources.GetString("button42.ToolTip"));
             this.button42.UseVisualStyleBackColor = true;
             this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // button43
             // 
-            this.button43.Location = new System.Drawing.Point(487, 20);
+            resources.ApplyResources(this.button43, "button43");
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(75, 23);
-            this.button43.TabIndex = 15;
-            this.button43.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button43, resources.GetString("button43.ToolTip"));
             this.button43.UseVisualStyleBackColor = true;
             this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // label76
             // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(366, 25);
+            resources.ApplyResources(this.label76, "label76");
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(77, 12);
-            this.label76.TabIndex = 14;
-            this.label76.Text = "安全帽检测：";
+            this.toolTip1.SetToolTip(this.label76, resources.GetString("label76.ToolTip"));
             // 
             // checkBox16
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(104, 20);
+            resources.ApplyResources(this.checkBox16, "checkBox16");
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(15, 14);
-            this.checkBox16.TabIndex = 13;
+            this.toolTip1.SetToolTip(this.checkBox16, resources.GetString("checkBox16.ToolTip"));
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
             // button40
             // 
-            this.button40.Location = new System.Drawing.Point(225, 17);
+            resources.ApplyResources(this.button40, "button40");
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(75, 23);
-            this.button40.TabIndex = 12;
-            this.button40.Text = "设置";
+            this.toolTip1.SetToolTip(this.button40, resources.GetString("button40.ToolTip"));
             this.button40.UseVisualStyleBackColor = true;
             this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // button41
             // 
-            this.button41.Location = new System.Drawing.Point(144, 17);
+            resources.ApplyResources(this.button41, "button41");
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(75, 23);
-            this.button41.TabIndex = 11;
-            this.button41.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button41, resources.GetString("button41.ToolTip"));
             this.button41.UseVisualStyleBackColor = true;
             this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // label75
             // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(23, 22);
+            resources.ApplyResources(this.label75, "label75");
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(65, 12);
-            this.label75.TabIndex = 10;
-            this.label75.Text = "活体检测：";
+            this.toolTip1.SetToolTip(this.label75, resources.GetString("label75.ToolTip"));
             // 
             // tabPage6
             // 
+            resources.ApplyResources(this.tabPage6, "tabPage6");
             this.tabPage6.Controls.Add(this.button35);
             this.tabPage6.Controls.Add(this.button36);
             this.tabPage6.Controls.Add(this.comboBox10);
@@ -3817,64 +3131,54 @@
             this.tabPage6.Controls.Add(this.button23);
             this.tabPage6.Controls.Add(this.comboBox4);
             this.tabPage6.Controls.Add(this.label45);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "工作模式";
+            this.toolTip1.SetToolTip(this.tabPage6, resources.GetString("tabPage6.ToolTip"));
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // button35
             // 
-            this.button35.Location = new System.Drawing.Point(847, 18);
+            resources.ApplyResources(this.button35, "button35");
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 9;
-            this.button35.Text = "设置";
+            this.toolTip1.SetToolTip(this.button35, resources.GetString("button35.ToolTip"));
             this.button35.UseVisualStyleBackColor = true;
             this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button36
             // 
-            this.button36.Location = new System.Drawing.Point(766, 18);
+            resources.ApplyResources(this.button36, "button36");
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 23);
-            this.button36.TabIndex = 8;
-            this.button36.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button36, resources.GetString("button36.ToolTip"));
             this.button36.UseVisualStyleBackColor = true;
             this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // comboBox10
             // 
+            resources.ApplyResources(this.comboBox10, "comboBox10");
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
-            "未初始化",
-            "刷脸+白名单开闸",
-            "刷脸+刷身份证开闸",
-            "刷脸+刷身份证+白名单开闸",
-            "刷卡+白名单开闸",
-            "刷脸+刷卡+白名单开闸",
-            "过人开闸",
-            "刷脸+白名单开闸或者刷卡+白名单开闸",
-            "刷脸或刷身份证",
-            "刷脸或RFID全景快照"});
-            this.comboBox10.Location = new System.Drawing.Point(639, 20);
+            resources.GetString("comboBox10.Items"),
+            resources.GetString("comboBox10.Items1"),
+            resources.GetString("comboBox10.Items2"),
+            resources.GetString("comboBox10.Items3"),
+            resources.GetString("comboBox10.Items4"),
+            resources.GetString("comboBox10.Items5"),
+            resources.GetString("comboBox10.Items6"),
+            resources.GetString("comboBox10.Items7"),
+            resources.GetString("comboBox10.Items8"),
+            resources.GetString("comboBox10.Items9")});
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 20);
-            this.comboBox10.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.comboBox10, resources.GetString("comboBox10.ToolTip"));
             // 
             // label73
             // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(568, 23);
+            resources.ApplyResources(this.label73, "label73");
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(65, 12);
-            this.label73.TabIndex = 6;
-            this.label73.Text = "对比模式：";
+            this.toolTip1.SetToolTip(this.label73, resources.GetString("label73.ToolTip"));
             // 
             // groupBox15
             // 
+            resources.ApplyResources(this.groupBox15, "groupBox15");
             this.groupBox15.Controls.Add(this.button83);
             this.groupBox15.Controls.Add(this.button82);
             this.groupBox15.Controls.Add(this.checkBox44);
@@ -3900,374 +3204,285 @@
             this.groupBox15.Controls.Add(this.button49);
             this.groupBox15.Controls.Add(this.comboBox5);
             this.groupBox15.Controls.Add(this.label46);
-            this.groupBox15.Location = new System.Drawing.Point(445, 44);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(477, 537);
-            this.groupBox15.TabIndex = 5;
             this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "刷新";
+            this.toolTip1.SetToolTip(this.groupBox15, resources.GetString("groupBox15.ToolTip"));
             // 
             // button83
             // 
-            this.button83.Location = new System.Drawing.Point(275, 498);
+            resources.ApplyResources(this.button83, "button83");
             this.button83.Name = "button83";
-            this.button83.Size = new System.Drawing.Size(75, 23);
-            this.button83.TabIndex = 24;
-            this.button83.Text = "设置";
+            this.toolTip1.SetToolTip(this.button83, resources.GetString("button83.ToolTip"));
             this.button83.UseVisualStyleBackColor = true;
             this.button83.Click += new System.EventHandler(this.button83_Click);
             // 
             // button82
             // 
-            this.button82.Location = new System.Drawing.Point(190, 498);
+            resources.ApplyResources(this.button82, "button82");
             this.button82.Name = "button82";
-            this.button82.Size = new System.Drawing.Size(75, 23);
-            this.button82.TabIndex = 23;
-            this.button82.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button82, resources.GetString("button82.ToolTip"));
             this.button82.UseVisualStyleBackColor = true;
             this.button82.Click += new System.EventHandler(this.button82_Click);
             // 
             // checkBox44
             // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.Location = new System.Drawing.Point(132, 502);
+            resources.ApplyResources(this.checkBox44, "checkBox44");
             this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(36, 16);
-            this.checkBox44.TabIndex = 22;
-            this.checkBox44.Text = "开";
+            this.toolTip1.SetToolTip(this.checkBox44, resources.GetString("checkBox44.ToolTip"));
             this.checkBox44.UseVisualStyleBackColor = true;
             // 
             // label136
             // 
-            this.label136.AutoSize = true;
-            this.label136.Location = new System.Drawing.Point(61, 503);
+            resources.ApplyResources(this.label136, "label136");
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(65, 12);
-            this.label136.TabIndex = 21;
-            this.label136.Text = "白名单触发";
+            this.toolTip1.SetToolTip(this.label136, resources.GetString("label136.ToolTip"));
             // 
             // button81
             // 
-            this.button81.Location = new System.Drawing.Point(275, 463);
+            resources.ApplyResources(this.button81, "button81");
             this.button81.Name = "button81";
-            this.button81.Size = new System.Drawing.Size(75, 23);
-            this.button81.TabIndex = 20;
-            this.button81.Text = "设置";
+            this.toolTip1.SetToolTip(this.button81, resources.GetString("button81.ToolTip"));
             this.button81.UseVisualStyleBackColor = true;
             this.button81.Click += new System.EventHandler(this.button81_Click);
             // 
             // button80
             // 
-            this.button80.Location = new System.Drawing.Point(190, 463);
+            resources.ApplyResources(this.button80, "button80");
             this.button80.Name = "button80";
-            this.button80.Size = new System.Drawing.Size(75, 23);
-            this.button80.TabIndex = 19;
-            this.button80.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button80, resources.GetString("button80.ToolTip"));
             this.button80.UseVisualStyleBackColor = true;
             this.button80.Click += new System.EventHandler(this.button80_Click);
             // 
             // checkBox43
             // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.Location = new System.Drawing.Point(63, 470);
+            resources.ApplyResources(this.checkBox43, "checkBox43");
             this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(96, 16);
-            this.checkBox43.TabIndex = 18;
-            this.checkBox43.Text = "比对失败图像";
+            this.toolTip1.SetToolTip(this.checkBox43, resources.GetString("checkBox43.ToolTip"));
             this.checkBox43.UseVisualStyleBackColor = true;
             // 
             // button79
             // 
-            this.button79.Location = new System.Drawing.Point(271, 428);
+            resources.ApplyResources(this.button79, "button79");
             this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(75, 23);
-            this.button79.TabIndex = 17;
-            this.button79.Text = "设置";
+            this.toolTip1.SetToolTip(this.button79, resources.GetString("button79.ToolTip"));
             this.button79.UseVisualStyleBackColor = true;
             this.button79.Click += new System.EventHandler(this.button79_Click);
             // 
             // button78
             // 
-            this.button78.Location = new System.Drawing.Point(190, 428);
+            resources.ApplyResources(this.button78, "button78");
             this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(75, 23);
-            this.button78.TabIndex = 16;
-            this.button78.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button78, resources.GetString("button78.ToolTip"));
             this.button78.UseVisualStyleBackColor = true;
             this.button78.Click += new System.EventHandler(this.button78_Click);
             // 
             // checkBox42
             // 
-            this.checkBox42.AutoSize = true;
-            this.checkBox42.Location = new System.Drawing.Point(125, 432);
+            resources.ApplyResources(this.checkBox42, "checkBox42");
             this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(48, 16);
-            this.checkBox42.TabIndex = 15;
-            this.checkBox42.Text = "常开";
+            this.toolTip1.SetToolTip(this.checkBox42, resources.GetString("checkBox42.ToolTip"));
             this.checkBox42.UseVisualStyleBackColor = true;
             // 
             // label135
             // 
-            this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(60, 432);
+            resources.ApplyResources(this.label135, "label135");
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(53, 12);
-            this.label135.TabIndex = 14;
-            this.label135.Text = "gpio状态";
+            this.toolTip1.SetToolTip(this.label135, resources.GetString("label135.ToolTip"));
             // 
             // label129
             // 
-            this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(58, 401);
+            resources.ApplyResources(this.label129, "label129");
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(29, 12);
-            this.label129.TabIndex = 13;
-            this.label129.Text = "code";
+            this.toolTip1.SetToolTip(this.label129, resources.GetString("label129.ToolTip"));
             // 
             // label128
             // 
-            this.label128.AutoSize = true;
-            this.label128.Location = new System.Drawing.Point(58, 368);
+            resources.ApplyResources(this.label128, "label128");
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(89, 12);
-            this.label128.TabIndex = 12;
-            this.label128.Text = "收到二维码数据";
+            this.toolTip1.SetToolTip(this.label128, resources.GetString("label128.ToolTip"));
             // 
             // label126
             // 
-            this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(212, 326);
+            resources.ApplyResources(this.label126, "label126");
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(53, 12);
-            this.label126.TabIndex = 11;
-            this.label126.Text = "label126";
+            this.toolTip1.SetToolTip(this.label126, resources.GetString("label126.ToolTip"));
             this.label126.Click += new System.EventHandler(this.label126_Click);
             // 
             // label125
             // 
-            this.label125.AutoSize = true;
-            this.label125.Location = new System.Drawing.Point(168, 326);
+            resources.ApplyResources(this.label125, "label125");
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(35, 12);
-            this.label125.TabIndex = 10;
-            this.label125.Text = "卡号:";
+            this.toolTip1.SetToolTip(this.label125, resources.GetString("label125.ToolTip"));
             // 
             // label124
             // 
-            this.label124.AutoSize = true;
-            this.label124.Location = new System.Drawing.Point(93, 326);
+            resources.ApplyResources(this.label124, "label124");
             this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(53, 12);
-            this.label124.TabIndex = 9;
-            this.label124.Text = "label124";
+            this.toolTip1.SetToolTip(this.label124, resources.GetString("label124.ToolTip"));
             // 
             // label123
             // 
-            this.label123.AutoSize = true;
-            this.label123.Location = new System.Drawing.Point(58, 326);
+            resources.ApplyResources(this.label123, "label123");
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(35, 12);
-            this.label123.TabIndex = 8;
-            this.label123.Text = "类型:";
+            this.toolTip1.SetToolTip(this.label123, resources.GetString("label123.ToolTip"));
             // 
             // label122
             // 
-            this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(58, 289);
+            resources.ApplyResources(this.label122, "label122");
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(137, 12);
-            this.label122.TabIndex = 7;
-            this.label122.Text = "刷卡获取伟根或gopi回调";
+            this.toolTip1.SetToolTip(this.label122, resources.GetString("label122.ToolTip"));
             // 
             // button68
             // 
-            this.button68.Location = new System.Drawing.Point(378, 209);
+            resources.ApplyResources(this.button68, "button68");
             this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(75, 23);
-            this.button68.TabIndex = 6;
-            this.button68.Text = "设置";
+            this.toolTip1.SetToolTip(this.button68, resources.GetString("button68.ToolTip"));
             this.button68.UseVisualStyleBackColor = true;
             this.button68.Click += new System.EventHandler(this.button68_Click);
             // 
             // button67
             // 
-            this.button67.Location = new System.Drawing.Point(297, 209);
+            resources.ApplyResources(this.button67, "button67");
             this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(75, 23);
-            this.button67.TabIndex = 5;
-            this.button67.Text = "获取";
+            this.toolTip1.SetToolTip(this.button67, resources.GetString("button67.ToolTip"));
             this.button67.UseVisualStyleBackColor = true;
             this.button67.Click += new System.EventHandler(this.button67_Click);
             // 
             // label111
             // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(49, 214);
+            resources.ApplyResources(this.label111, "label111");
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(113, 12);
-            this.label111.TabIndex = 4;
-            this.label111.Text = "继电器闭合持续时间";
+            this.toolTip1.SetToolTip(this.label111, resources.GetString("label111.ToolTip"));
             // 
             // textBox96
             // 
-            this.textBox96.Location = new System.Drawing.Point(170, 211);
+            resources.ApplyResources(this.textBox96, "textBox96");
             this.textBox96.Name = "textBox96";
-            this.textBox96.Size = new System.Drawing.Size(121, 21);
-            this.textBox96.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox96, resources.GetString("textBox96.ToolTip"));
             // 
             // button49
             // 
-            this.button49.Location = new System.Drawing.Point(51, 139);
+            resources.ApplyResources(this.button49, "button49");
             this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(75, 23);
-            this.button49.TabIndex = 2;
-            this.button49.Text = "强制开闸";
+            this.toolTip1.SetToolTip(this.button49, resources.GetString("button49.ToolTip"));
             this.button49.UseVisualStyleBackColor = true;
             this.button49.Click += new System.EventHandler(this.button49_Click);
             // 
             // comboBox5
             // 
+            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "全部放行",
-            "全部禁止",
-            "自行判定"});
-            this.comboBox5.Location = new System.Drawing.Point(170, 139);
+            resources.GetString("comboBox5.Items"),
+            resources.GetString("comboBox5.Items1"),
+            resources.GetString("comboBox5.Items2")});
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 20);
-            this.comboBox5.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.comboBox5, resources.GetString("comboBox5.ToolTip"));
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // label46
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(6, 20);
+            resources.ApplyResources(this.label46, "label46");
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(461, 84);
-            this.label46.TabIndex = 0;
-            this.label46.Text = "处于“在线模式”下的设备，不会自行开闸\r\n如果有人通过，则会向服务端（通过SDK连接或主动向TCP服务器的连接）发起开闸请求\r\n服务端授权通过的，才允许放行\r\n\r" +
-    "\n下面的选项中，如果选择“全部放行”则所有开闸请求都被响应\r\n        如果选择“全部禁止”则所有开闸请求都被拒绝\r\n        如果选择“自行判定”" +
-    "则界面弹出对话框，选择是否放行";
+            this.toolTip1.SetToolTip(this.label46, resources.GetString("label46.ToolTip"));
             // 
             // groupBox14
             // 
+            resources.ApplyResources(this.groupBox14, "groupBox14");
             this.groupBox14.Controls.Add(this.textBox34);
-            this.groupBox14.Location = new System.Drawing.Point(23, 44);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(416, 540);
-            this.groupBox14.TabIndex = 4;
             this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "开闸记录";
+            this.toolTip1.SetToolTip(this.groupBox14, resources.GetString("groupBox14.ToolTip"));
             // 
             // textBox34
             // 
-            this.textBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox34.Location = new System.Drawing.Point(3, 17);
-            this.textBox34.Multiline = true;
+            resources.ApplyResources(this.textBox34, "textBox34");
             this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(410, 520);
-            this.textBox34.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.textBox34, resources.GetString("textBox34.ToolTip"));
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(310, 16);
+            resources.ApplyResources(this.button24, "button24");
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
-            this.button24.TabIndex = 3;
-            this.button24.Text = "设置";
+            this.toolTip1.SetToolTip(this.button24, resources.GetString("button24.ToolTip"));
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
-            this.button23.Location = new System.Drawing.Point(229, 16);
+            resources.ApplyResources(this.button23, "button23");
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 2;
-            this.button23.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button23, resources.GetString("button23.ToolTip"));
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // comboBox4
             // 
+            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "自动模式",
-            "在线模式",
-            "离线模式"});
-            this.comboBox4.Location = new System.Drawing.Point(102, 18);
+            resources.GetString("comboBox4.Items"),
+            resources.GetString("comboBox4.Items1"),
+            resources.GetString("comboBox4.Items2")});
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 20);
-            this.comboBox4.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.comboBox4, resources.GetString("comboBox4.ToolTip"));
             // 
             // label45
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(31, 21);
+            resources.ApplyResources(this.label45, "label45");
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(65, 12);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "工作模式：";
+            this.toolTip1.SetToolTip(this.label45, resources.GetString("label45.ToolTip"));
             // 
             // tabPage7
             // 
+            resources.ApplyResources(this.tabPage7, "tabPage7");
             this.tabPage7.Controls.Add(this.checkBox29);
             this.tabPage7.Controls.Add(this.button62);
             this.tabPage7.Controls.Add(this.button61);
             this.tabPage7.Controls.Add(this.tabControl3);
             this.tabPage7.Controls.Add(this.groupBox16);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "多人脸添加";
+            this.toolTip1.SetToolTip(this.tabPage7, resources.GetString("tabPage7.ToolTip"));
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // checkBox29
             // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(19, 266);
+            resources.ApplyResources(this.checkBox29, "checkBox29");
             this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(48, 16);
-            this.checkBox29.TabIndex = 39;
-            this.checkBox29.Text = "使能";
+            this.toolTip1.SetToolTip(this.checkBox29, resources.GetString("checkBox29.ToolTip"));
             this.checkBox29.UseVisualStyleBackColor = true;
             // 
             // button62
             // 
-            this.button62.Location = new System.Drawing.Point(180, 507);
+            resources.ApplyResources(this.button62, "button62");
             this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(75, 23);
-            this.button62.TabIndex = 38;
-            this.button62.Text = "设置";
+            this.toolTip1.SetToolTip(this.button62, resources.GetString("button62.ToolTip"));
             this.button62.UseVisualStyleBackColor = true;
             this.button62.Click += new System.EventHandler(this.button62_Click);
             // 
             // button61
             // 
-            this.button61.Location = new System.Drawing.Point(54, 507);
+            resources.ApplyResources(this.button61, "button61");
             this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(75, 23);
-            this.button61.TabIndex = 37;
-            this.button61.Text = "刷新";
+            this.toolTip1.SetToolTip(this.button61, resources.GetString("button61.ToolTip"));
             this.button61.UseVisualStyleBackColor = true;
             this.button61.Click += new System.EventHandler(this.button61_Click);
             // 
             // tabControl3
             // 
+            resources.ApplyResources(this.tabControl3, "tabControl3");
             this.tabControl3.Controls.Add(this.tabPage18);
             this.tabControl3.Controls.Add(this.tabPage19);
             this.tabControl3.Controls.Add(this.tabPage20);
-            this.tabControl3.Location = new System.Drawing.Point(15, 288);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(304, 213);
-            this.tabControl3.TabIndex = 36;
+            this.toolTip1.SetToolTip(this.tabControl3, resources.GetString("tabControl3.ToolTip"));
             // 
             // tabPage18
             // 
+            resources.ApplyResources(this.tabPage18, "tabPage18");
             this.tabPage18.Controls.Add(this.textBox90);
             this.tabPage18.Controls.Add(this.textBox91);
             this.tabPage18.Controls.Add(this.textBox92);
@@ -4277,216 +3492,166 @@
             this.tabPage18.Controls.Add(this.textBox93);
             this.tabPage18.Controls.Add(this.label108);
             this.tabPage18.Controls.Add(this.checkBox28);
-            this.tabPage18.Location = new System.Drawing.Point(4, 22);
             this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(296, 187);
-            this.tabPage18.TabIndex = 1;
-            this.tabPage18.Text = "TCP";
+            this.toolTip1.SetToolTip(this.tabPage18, resources.GetString("tabPage18.ToolTip"));
             this.tabPage18.UseVisualStyleBackColor = true;
             // 
             // textBox90
             // 
-            this.textBox90.Location = new System.Drawing.Point(90, 133);
+            resources.ApplyResources(this.textBox90, "textBox90");
             this.textBox90.Name = "textBox90";
-            this.textBox90.Size = new System.Drawing.Size(100, 21);
-            this.textBox90.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox90, resources.GetString("textBox90.ToolTip"));
             // 
             // textBox91
             // 
-            this.textBox91.Location = new System.Drawing.Point(90, 106);
+            resources.ApplyResources(this.textBox91, "textBox91");
             this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(100, 21);
-            this.textBox91.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.textBox91, resources.GetString("textBox91.ToolTip"));
             // 
             // textBox92
             // 
-            this.textBox92.Location = new System.Drawing.Point(90, 78);
+            resources.ApplyResources(this.textBox92, "textBox92");
             this.textBox92.Name = "textBox92";
-            this.textBox92.Size = new System.Drawing.Size(100, 21);
-            this.textBox92.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox92, resources.GetString("textBox92.ToolTip"));
             // 
             // label105
             // 
-            this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(33, 139);
+            resources.ApplyResources(this.label105, "label105");
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(29, 12);
-            this.label105.TabIndex = 5;
-            this.label105.Text = "端口";
+            this.toolTip1.SetToolTip(this.label105, resources.GetString("label105.ToolTip"));
             // 
             // label106
             // 
-            this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(33, 106);
+            resources.ApplyResources(this.label106, "label106");
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(17, 12);
-            this.label106.TabIndex = 4;
-            this.label106.Text = "IP";
+            this.toolTip1.SetToolTip(this.label106, resources.GetString("label106.ToolTip"));
             // 
             // label107
             // 
-            this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(33, 78);
+            resources.ApplyResources(this.label107, "label107");
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(29, 12);
-            this.label107.TabIndex = 3;
-            this.label107.Text = "密码";
+            this.toolTip1.SetToolTip(this.label107, resources.GetString("label107.ToolTip"));
             // 
             // textBox93
             // 
-            this.textBox93.Location = new System.Drawing.Point(90, 44);
+            resources.ApplyResources(this.textBox93, "textBox93");
             this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(100, 21);
-            this.textBox93.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.textBox93, resources.GetString("textBox93.ToolTip"));
             // 
             // label108
             // 
-            this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(33, 47);
+            resources.ApplyResources(this.label108, "label108");
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(41, 12);
-            this.label108.TabIndex = 1;
-            this.label108.Text = "用户名";
+            this.toolTip1.SetToolTip(this.label108, resources.GetString("label108.ToolTip"));
             // 
             // checkBox28
             // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(17, 18);
+            resources.ApplyResources(this.checkBox28, "checkBox28");
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(48, 16);
-            this.checkBox28.TabIndex = 0;
-            this.checkBox28.Text = "验证";
+            this.toolTip1.SetToolTip(this.checkBox28, resources.GetString("checkBox28.ToolTip"));
             this.checkBox28.UseVisualStyleBackColor = true;
             // 
             // tabPage19
             // 
+            resources.ApplyResources(this.tabPage19, "tabPage19");
             this.tabPage19.Controls.Add(this.textBox94);
             this.tabPage19.Controls.Add(this.textBox97);
             this.tabPage19.Controls.Add(this.textBox98);
             this.tabPage19.Controls.Add(this.label109);
             this.tabPage19.Controls.Add(this.label112);
             this.tabPage19.Controls.Add(this.label113);
-            this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Size = new System.Drawing.Size(296, 187);
-            this.tabPage19.TabIndex = 2;
-            this.tabPage19.Text = "comet长轮询";
+            this.toolTip1.SetToolTip(this.tabPage19, resources.GetString("tabPage19.ToolTip"));
             this.tabPage19.UseVisualStyleBackColor = true;
             // 
             // textBox94
             // 
-            this.textBox94.Location = new System.Drawing.Point(136, 113);
+            resources.ApplyResources(this.textBox94, "textBox94");
             this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(100, 21);
-            this.textBox94.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox94, resources.GetString("textBox94.ToolTip"));
             // 
             // textBox97
             // 
-            this.textBox97.Location = new System.Drawing.Point(136, 75);
+            resources.ApplyResources(this.textBox97, "textBox97");
             this.textBox97.Name = "textBox97";
-            this.textBox97.Size = new System.Drawing.Size(100, 21);
-            this.textBox97.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.textBox97, resources.GetString("textBox97.ToolTip"));
             // 
             // textBox98
             // 
-            this.textBox98.Location = new System.Drawing.Point(136, 44);
+            resources.ApplyResources(this.textBox98, "textBox98");
             this.textBox98.Name = "textBox98";
-            this.textBox98.Size = new System.Drawing.Size(100, 21);
-            this.textBox98.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox98, resources.GetString("textBox98.ToolTip"));
             // 
             // label109
             // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(65, 113);
+            resources.ApplyResources(this.label109, "label109");
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(23, 12);
-            this.label109.TabIndex = 4;
-            this.label109.Text = "url";
+            this.toolTip1.SetToolTip(this.label109, resources.GetString("label109.ToolTip"));
             // 
             // label112
             // 
-            this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(65, 78);
+            resources.ApplyResources(this.label112, "label112");
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(29, 12);
-            this.label112.TabIndex = 1;
-            this.label112.Text = "端口";
+            this.toolTip1.SetToolTip(this.label112, resources.GetString("label112.ToolTip"));
             // 
             // label113
             // 
-            this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(65, 47);
+            resources.ApplyResources(this.label113, "label113");
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(17, 12);
-            this.label113.TabIndex = 0;
-            this.label113.Text = "IP";
+            this.toolTip1.SetToolTip(this.label113, resources.GetString("label113.ToolTip"));
             // 
             // tabPage20
             // 
+            resources.ApplyResources(this.tabPage20, "tabPage20");
             this.tabPage20.Controls.Add(this.textBox99);
             this.tabPage20.Controls.Add(this.textBox100);
             this.tabPage20.Controls.Add(this.textBox101);
             this.tabPage20.Controls.Add(this.label114);
             this.tabPage20.Controls.Add(this.label115);
             this.tabPage20.Controls.Add(this.label116);
-            this.tabPage20.Location = new System.Drawing.Point(4, 22);
             this.tabPage20.Name = "tabPage20";
-            this.tabPage20.Size = new System.Drawing.Size(296, 187);
-            this.tabPage20.TabIndex = 3;
-            this.tabPage20.Text = "comet流";
+            this.toolTip1.SetToolTip(this.tabPage20, resources.GetString("tabPage20.ToolTip"));
             this.tabPage20.UseVisualStyleBackColor = true;
             // 
             // textBox99
             // 
-            this.textBox99.Location = new System.Drawing.Point(102, 126);
+            resources.ApplyResources(this.textBox99, "textBox99");
             this.textBox99.Name = "textBox99";
-            this.textBox99.Size = new System.Drawing.Size(100, 21);
-            this.textBox99.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.textBox99, resources.GetString("textBox99.ToolTip"));
             // 
             // textBox100
             // 
-            this.textBox100.Location = new System.Drawing.Point(102, 96);
+            resources.ApplyResources(this.textBox100, "textBox100");
             this.textBox100.Name = "textBox100";
-            this.textBox100.Size = new System.Drawing.Size(100, 21);
-            this.textBox100.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox100, resources.GetString("textBox100.ToolTip"));
             // 
             // textBox101
             // 
-            this.textBox101.Location = new System.Drawing.Point(102, 63);
+            resources.ApplyResources(this.textBox101, "textBox101");
             this.textBox101.Name = "textBox101";
-            this.textBox101.Size = new System.Drawing.Size(100, 21);
-            this.textBox101.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.textBox101, resources.GetString("textBox101.ToolTip"));
             // 
             // label114
             // 
-            this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(49, 129);
+            resources.ApplyResources(this.label114, "label114");
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(23, 12);
-            this.label114.TabIndex = 3;
-            this.label114.Text = "url";
+            this.toolTip1.SetToolTip(this.label114, resources.GetString("label114.ToolTip"));
             // 
             // label115
             // 
-            this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(49, 96);
+            resources.ApplyResources(this.label115, "label115");
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(29, 12);
-            this.label115.TabIndex = 2;
-            this.label115.Text = "端口";
+            this.toolTip1.SetToolTip(this.label115, resources.GetString("label115.ToolTip"));
             // 
             // label116
             // 
-            this.label116.AutoSize = true;
-            this.label116.Location = new System.Drawing.Point(49, 66);
+            resources.ApplyResources(this.label116, "label116");
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(17, 12);
-            this.label116.TabIndex = 1;
-            this.label116.Text = "IP";
+            this.toolTip1.SetToolTip(this.label116, resources.GetString("label116.ToolTip"));
             // 
             // groupBox16
             // 
+            resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Controls.Add(this.textBox47);
             this.groupBox16.Controls.Add(this.label60);
             this.groupBox16.Controls.Add(this.textBox46);
@@ -4519,313 +3684,237 @@
             this.groupBox16.Controls.Add(this.textBox38);
             this.groupBox16.Controls.Add(this.label50);
             this.groupBox16.Controls.Add(this.label51);
-            this.groupBox16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox16.Location = new System.Drawing.Point(0, 0);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(1106, 258);
-            this.groupBox16.TabIndex = 6;
             this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "添加特征值";
+            this.toolTip1.SetToolTip(this.groupBox16, resources.GetString("groupBox16.ToolTip"));
             // 
             // textBox47
             // 
-            this.textBox47.Location = new System.Drawing.Point(730, 164);
+            resources.ApplyResources(this.textBox47, "textBox47");
             this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(175, 21);
-            this.textBox47.TabIndex = 47;
+            this.toolTip1.SetToolTip(this.textBox47, resources.GetString("textBox47.ToolTip"));
             // 
             // label60
             // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(665, 167);
+            resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(59, 12);
-            this.label60.TabIndex = 46;
-            this.label60.Text = "设备5IP：";
+            this.toolTip1.SetToolTip(this.label60, resources.GetString("label60.ToolTip"));
             // 
             // textBox46
             // 
-            this.textBox46.Location = new System.Drawing.Point(730, 137);
+            resources.ApplyResources(this.textBox46, "textBox46");
             this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(175, 21);
-            this.textBox46.TabIndex = 45;
+            this.toolTip1.SetToolTip(this.textBox46, resources.GetString("textBox46.ToolTip"));
             // 
             // label59
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(665, 140);
+            resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(59, 12);
-            this.label59.TabIndex = 44;
-            this.label59.Text = "设备4IP：";
+            this.toolTip1.SetToolTip(this.label59, resources.GetString("label59.ToolTip"));
             // 
             // textBox45
             // 
-            this.textBox45.Location = new System.Drawing.Point(730, 110);
+            resources.ApplyResources(this.textBox45, "textBox45");
             this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(175, 21);
-            this.textBox45.TabIndex = 43;
+            this.toolTip1.SetToolTip(this.textBox45, resources.GetString("textBox45.ToolTip"));
             // 
             // label58
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(665, 113);
+            resources.ApplyResources(this.label58, "label58");
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(59, 12);
-            this.label58.TabIndex = 42;
-            this.label58.Text = "设备3IP：";
+            this.toolTip1.SetToolTip(this.label58, resources.GetString("label58.ToolTip"));
             // 
             // textBox44
             // 
-            this.textBox44.Location = new System.Drawing.Point(730, 83);
+            resources.ApplyResources(this.textBox44, "textBox44");
             this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(175, 21);
-            this.textBox44.TabIndex = 41;
+            this.toolTip1.SetToolTip(this.textBox44, resources.GetString("textBox44.ToolTip"));
             // 
             // label57
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(665, 86);
+            resources.ApplyResources(this.label57, "label57");
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(59, 12);
-            this.label57.TabIndex = 40;
-            this.label57.Text = "设备2IP：";
+            this.toolTip1.SetToolTip(this.label57, resources.GetString("label57.ToolTip"));
             // 
             // textBox43
             // 
-            this.textBox43.Location = new System.Drawing.Point(730, 56);
+            resources.ApplyResources(this.textBox43, "textBox43");
             this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(175, 21);
-            this.textBox43.TabIndex = 39;
+            this.toolTip1.SetToolTip(this.textBox43, resources.GetString("textBox43.ToolTip"));
             // 
             // label56
             // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(665, 59);
+            resources.ApplyResources(this.label56, "label56");
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(59, 12);
-            this.label56.TabIndex = 38;
-            this.label56.Text = "设备1IP：";
+            this.toolTip1.SetToolTip(this.label56, resources.GetString("label56.ToolTip"));
             // 
             // checkBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(664, 15);
+            resources.ApplyResources(this.checkBox3, "checkBox3");
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(108, 16);
-            this.checkBox3.TabIndex = 37;
-            this.checkBox3.Text = "下发到多个设备";
+            this.toolTip1.SetToolTip(this.checkBox3, resources.GetString("checkBox3.ToolTip"));
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(472, 220);
+            resources.ApplyResources(this.button25, "button25");
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 23);
-            this.button25.TabIndex = 36;
-            this.button25.Text = "录入";
+            this.toolTip1.SetToolTip(this.button25, resources.GetString("button25.ToolTip"));
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // textBox42
             // 
-            this.textBox42.Location = new System.Drawing.Point(84, 182);
+            resources.ApplyResources(this.textBox42, "textBox42");
             this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(463, 21);
-            this.textBox42.TabIndex = 35;
-            this.textBox42.Text = "双击以选取图片，要求与模板图片1一致，可不选";
+            this.toolTip1.SetToolTip(this.textBox42, resources.GetString("textBox42.ToolTip"));
             this.textBox42.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label55
             // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(13, 185);
+            resources.ApplyResources(this.label55, "label55");
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(71, 12);
-            this.label55.TabIndex = 34;
-            this.label55.Text = "模板图片5：";
+            this.toolTip1.SetToolTip(this.label55, resources.GetString("label55.ToolTip"));
             // 
             // textBox41
             // 
-            this.textBox41.Location = new System.Drawing.Point(84, 155);
+            resources.ApplyResources(this.textBox41, "textBox41");
             this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(463, 21);
-            this.textBox41.TabIndex = 33;
-            this.textBox41.Text = "双击以选取图片，要求与模板图片1一致，可不选";
+            this.toolTip1.SetToolTip(this.textBox41, resources.GetString("textBox41.ToolTip"));
             this.textBox41.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label54
             // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(13, 158);
+            resources.ApplyResources(this.label54, "label54");
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(71, 12);
-            this.label54.TabIndex = 32;
-            this.label54.Text = "模板图片4：";
+            this.toolTip1.SetToolTip(this.label54, resources.GetString("label54.ToolTip"));
             // 
             // textBox40
             // 
-            this.textBox40.Location = new System.Drawing.Point(84, 128);
+            resources.ApplyResources(this.textBox40, "textBox40");
             this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(463, 21);
-            this.textBox40.TabIndex = 31;
-            this.textBox40.Text = "双击以选取图片，要求与模板图片1一致，可不选";
+            this.toolTip1.SetToolTip(this.textBox40, resources.GetString("textBox40.ToolTip"));
             this.textBox40.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label53
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(13, 131);
+            resources.ApplyResources(this.label53, "label53");
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(71, 12);
-            this.label53.TabIndex = 30;
-            this.label53.Text = "模板图片3：";
+            this.toolTip1.SetToolTip(this.label53, resources.GetString("label53.ToolTip"));
             // 
             // textBox39
             // 
-            this.textBox39.Location = new System.Drawing.Point(84, 101);
+            resources.ApplyResources(this.textBox39, "textBox39");
             this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(463, 21);
-            this.textBox39.TabIndex = 29;
-            this.textBox39.Text = "双击以选取图片，要求与模板图片1一致，可不选";
+            this.toolTip1.SetToolTip(this.textBox39, resources.GetString("textBox39.ToolTip"));
             this.textBox39.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label52
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(13, 104);
+            resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(71, 12);
-            this.label52.TabIndex = 28;
-            this.label52.Text = "模板图片2：";
+            this.toolTip1.SetToolTip(this.label52, resources.GetString("label52.ToolTip"));
             // 
             // textBox36
             // 
-            this.textBox36.Location = new System.Drawing.Point(84, 74);
+            resources.ApplyResources(this.textBox36, "textBox36");
             this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(463, 21);
-            this.textBox36.TabIndex = 27;
-            this.textBox36.Text = "双击以选取图片，请保持图片中只有一张人脸，人脸宽高需大于100像素，正面，清晰";
+            this.toolTip1.SetToolTip(this.textBox36, resources.GetString("textBox36.ToolTip"));
             this.textBox36.DoubleClick += new System.EventHandler(this.textBox5_DoubleClick);
             // 
             // label49
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(13, 77);
+            resources.ApplyResources(this.label49, "label49");
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(71, 12);
-            this.label49.TabIndex = 26;
-            this.label49.Text = "模板图片1：";
+            this.toolTip1.SetToolTip(this.label49, resources.GetString("label49.ToolTip"));
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker3, "dateTimePicker3");
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(365, 35);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(167, 21);
-            this.dateTimePicker3.TabIndex = 25;
+            this.toolTip1.SetToolTip(this.dateTimePicker3, resources.GetString("dateTimePicker3.ToolTip"));
             // 
             // comboBox6
             // 
+            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
-            "永不过期",
-            "永久失效",
-            "给定时间=>"});
-            this.comboBox6.Location = new System.Drawing.Point(261, 35);
+            resources.GetString("comboBox6.Items"),
+            resources.GetString("comboBox6.Items1"),
+            resources.GetString("comboBox6.Items2")});
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(100, 20);
-            this.comboBox6.TabIndex = 24;
+            this.toolTip1.SetToolTip(this.comboBox6, resources.GetString("comboBox6.ToolTip"));
             // 
             // label47
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(190, 38);
+            resources.ApplyResources(this.label47, "label47");
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(65, 12);
-            this.label47.TabIndex = 23;
-            this.label47.Text = "有效期止：";
+            this.toolTip1.SetToolTip(this.label47, resources.GetString("label47.ToolTip"));
             // 
             // textBox35
             // 
-            this.textBox35.Location = new System.Drawing.Point(84, 35);
+            resources.ApplyResources(this.textBox35, "textBox35");
             this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(100, 21);
-            this.textBox35.TabIndex = 22;
-            this.textBox35.Text = "0";
+            this.toolTip1.SetToolTip(this.textBox35, resources.GetString("textBox35.ToolTip"));
             // 
             // label48
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(13, 38);
+            resources.ApplyResources(this.label48, "label48");
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(65, 12);
-            this.label48.TabIndex = 21;
-            this.label48.Text = "韦根卡号：";
+            this.toolTip1.SetToolTip(this.label48, resources.GetString("label48.ToolTip"));
             // 
             // comboBox7
             // 
+            resources.ApplyResources(this.comboBox7, "comboBox7");
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
-            "普通人员",
-            "白名单",
-            "黑名单"});
-            this.comboBox7.Location = new System.Drawing.Point(381, 13);
+            resources.GetString("comboBox7.Items"),
+            resources.GetString("comboBox7.Items1"),
+            resources.GetString("comboBox7.Items2")});
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(80, 20);
-            this.comboBox7.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.comboBox7, resources.GetString("comboBox7.ToolTip"));
             // 
             // textBox37
             // 
-            this.textBox37.Location = new System.Drawing.Point(84, 13);
+            resources.ApplyResources(this.textBox37, "textBox37");
             this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(100, 21);
-            this.textBox37.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox37, resources.GetString("textBox37.ToolTip"));
             // 
             // textBox38
             // 
-            this.textBox38.Location = new System.Drawing.Point(261, 13);
+            resources.ApplyResources(this.textBox38, "textBox38");
             this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(100, 21);
-            this.textBox38.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.textBox38, resources.GetString("textBox38.ToolTip"));
             // 
             // label50
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(13, 16);
+            resources.ApplyResources(this.label50, "label50");
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(65, 12);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "人员编号：";
+            this.toolTip1.SetToolTip(this.label50, resources.GetString("label50.ToolTip"));
             // 
             // label51
             // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(190, 16);
+            resources.ApplyResources(this.label51, "label51");
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(65, 12);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "人员姓名：";
+            this.toolTip1.SetToolTip(this.label51, resources.GetString("label51.ToolTip"));
             // 
             // tabPage9
             // 
+            resources.ApplyResources(this.tabPage9, "tabPage9");
             this.tabPage9.Controls.Add(this.groupBox17);
             this.tabPage9.Controls.Add(this.button27);
             this.tabPage9.Controls.Add(this.checkBox6);
             this.tabPage9.Controls.Add(this.checkBox5);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "脱机记录";
+            this.toolTip1.SetToolTip(this.tabPage9, resources.GetString("tabPage9.ToolTip"));
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // groupBox17
             // 
+            resources.ApplyResources(this.groupBox17, "groupBox17");
             this.groupBox17.Controls.Add(this.label68);
             this.groupBox17.Controls.Add(this.label67);
             this.groupBox17.Controls.Add(this.checkBox15);
@@ -4859,301 +3948,228 @@
             this.groupBox17.Controls.Add(this.textBox49);
             this.groupBox17.Controls.Add(this.label62);
             this.groupBox17.Controls.Add(this.dataGridView3);
-            this.groupBox17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox17.Location = new System.Drawing.Point(0, 80);
             this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(1106, 512);
-            this.groupBox17.TabIndex = 11;
             this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "查询历史数据（分页）";
+            this.toolTip1.SetToolTip(this.groupBox17, resources.GetString("groupBox17.ToolTip"));
             // 
             // label68
             // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(1051, 138);
+            resources.ApplyResources(this.label68, "label68");
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(0, 12);
-            this.label68.TabIndex = 39;
+            this.toolTip1.SetToolTip(this.label68, resources.GetString("label68.ToolTip"));
             // 
             // label67
             // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(1009, 138);
+            resources.ApplyResources(this.label67, "label67");
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(41, 12);
-            this.label67.TabIndex = 38;
-            this.label67.Text = "总数：";
+            this.toolTip1.SetToolTip(this.label67, resources.GetString("label67.ToolTip"));
             // 
             // checkBox15
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(304, 67);
+            resources.ApplyResources(this.checkBox15, "checkBox15");
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(156, 16);
-            this.checkBox15.TabIndex = 37;
-            this.checkBox15.Text = "模糊查询（姓名和编号）";
+            this.toolTip1.SetToolTip(this.checkBox15, resources.GetString("checkBox15.ToolTip"));
             this.checkBox15.UseVisualStyleBackColor = true;
             // 
             // comboBox9
             // 
+            resources.ApplyResources(this.comboBox9, "comboBox9");
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
-            "已上传",
-            "未上传"});
-            this.comboBox9.Location = new System.Drawing.Point(412, 96);
+            resources.GetString("comboBox9.Items"),
+            resources.GetString("comboBox9.Items1")});
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(72, 20);
-            this.comboBox9.TabIndex = 36;
+            this.toolTip1.SetToolTip(this.comboBox9, resources.GetString("comboBox9.ToolTip"));
             // 
             // checkBox14
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(286, 98);
+            resources.ApplyResources(this.checkBox14, "checkBox14");
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(120, 16);
-            this.checkBox14.TabIndex = 35;
-            this.checkBox14.Text = "通过上传状态查询";
+            this.toolTip1.SetToolTip(this.checkBox14, resources.GetString("checkBox14.ToolTip"));
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
             // textBox55
             // 
-            this.textBox55.Location = new System.Drawing.Point(887, 62);
+            resources.ApplyResources(this.textBox55, "textBox55");
             this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(163, 21);
-            this.textBox55.TabIndex = 34;
+            this.toolTip1.SetToolTip(this.textBox55, resources.GetString("textBox55.ToolTip"));
             // 
             // checkBox12
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(761, 67);
+            resources.ApplyResources(this.checkBox12, "checkBox12");
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(120, 16);
-            this.checkBox12.TabIndex = 33;
-            this.checkBox12.Text = "通过人员姓名查询";
+            this.toolTip1.SetToolTip(this.checkBox12, resources.GetString("checkBox12.ToolTip"));
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // textBox54
             // 
-            this.textBox54.Location = new System.Drawing.Point(592, 62);
+            resources.ApplyResources(this.textBox54, "textBox54");
             this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(163, 21);
-            this.textBox54.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.textBox54, resources.GetString("textBox54.ToolTip"));
             // 
             // checkBox11
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(466, 67);
+            resources.ApplyResources(this.checkBox11, "checkBox11");
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(120, 16);
-            this.checkBox11.TabIndex = 31;
-            this.checkBox11.Text = "通过人员编号查询";
+            this.toolTip1.SetToolTip(this.checkBox11, resources.GetString("checkBox11.ToolTip"));
             this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // label66
             // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(192, 102);
+            resources.ApplyResources(this.label66, "label66");
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(11, 12);
-            this.label66.TabIndex = 30;
-            this.label66.Text = "~";
+            this.toolTip1.SetToolTip(this.label66, resources.GetString("label66.ToolTip"));
             // 
             // label65
             // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(171, 68);
+            resources.ApplyResources(this.label65, "label65");
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(11, 12);
-            this.label65.TabIndex = 30;
-            this.label65.Text = "~";
+            this.toolTip1.SetToolTip(this.label65, resources.GetString("label65.ToolTip"));
             // 
             // textBox57
             // 
-            this.textBox57.Location = new System.Drawing.Point(209, 96);
+            resources.ApplyResources(this.textBox57, "textBox57");
             this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(37, 21);
-            this.textBox57.TabIndex = 29;
+            this.toolTip1.SetToolTip(this.textBox57, resources.GetString("textBox57.ToolTip"));
             // 
             // textBox52
             // 
-            this.textBox52.Location = new System.Drawing.Point(188, 62);
+            resources.ApplyResources(this.textBox52, "textBox52");
             this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(37, 21);
-            this.textBox52.TabIndex = 29;
+            this.toolTip1.SetToolTip(this.textBox52, resources.GetString("textBox52.ToolTip"));
             // 
             // textBox56
             // 
-            this.textBox56.Location = new System.Drawing.Point(149, 96);
+            resources.ApplyResources(this.textBox56, "textBox56");
             this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(37, 21);
-            this.textBox56.TabIndex = 28;
+            this.toolTip1.SetToolTip(this.textBox56, resources.GetString("textBox56.ToolTip"));
             // 
             // textBox53
             // 
-            this.textBox53.Location = new System.Drawing.Point(128, 62);
+            resources.ApplyResources(this.textBox53, "textBox53");
             this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(37, 21);
-            this.textBox53.TabIndex = 28;
+            this.toolTip1.SetToolTip(this.textBox53, resources.GetString("textBox53.ToolTip"));
             // 
             // checkBox13
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(26, 101);
+            resources.ApplyResources(this.checkBox13, "checkBox13");
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(120, 16);
-            this.checkBox13.TabIndex = 27;
-            this.checkBox13.Text = "通过人像质量查询";
+            this.toolTip1.SetToolTip(this.checkBox13, resources.GetString("checkBox13.ToolTip"));
             this.checkBox13.UseVisualStyleBackColor = true;
             // 
             // checkBox10
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(26, 67);
+            resources.ApplyResources(this.checkBox10, "checkBox10");
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(96, 16);
-            this.checkBox10.TabIndex = 27;
-            this.checkBox10.Text = "通过年龄查询";
+            this.toolTip1.SetToolTip(this.checkBox10, resources.GetString("checkBox10.ToolTip"));
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // comboBox8
             // 
+            resources.ApplyResources(this.comboBox8, "comboBox8");
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
-            "男",
-            "女"});
-            this.comboBox8.Location = new System.Drawing.Point(887, 24);
+            resources.GetString("comboBox8.Items"),
+            resources.GetString("comboBox8.Items1")});
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(45, 20);
-            this.comboBox8.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.comboBox8, resources.GetString("comboBox8.ToolTip"));
             // 
             // checkBox9
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(785, 28);
+            resources.ApplyResources(this.checkBox9, "checkBox9");
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(96, 16);
-            this.checkBox9.TabIndex = 25;
-            this.checkBox9.Text = "通过性别查询";
+            this.toolTip1.SetToolTip(this.checkBox9, resources.GetString("checkBox9.ToolTip"));
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // label64
             // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(712, 32);
+            resources.ApplyResources(this.label64, "label64");
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(11, 12);
-            this.label64.TabIndex = 24;
-            this.label64.Text = "~";
+            this.toolTip1.SetToolTip(this.label64, resources.GetString("label64.ToolTip"));
             // 
             // textBox51
             // 
-            this.textBox51.Location = new System.Drawing.Point(729, 26);
+            resources.ApplyResources(this.textBox51, "textBox51");
             this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(37, 21);
-            this.textBox51.TabIndex = 23;
+            this.toolTip1.SetToolTip(this.textBox51, resources.GetString("textBox51.ToolTip"));
             // 
             // textBox50
             // 
-            this.textBox50.Location = new System.Drawing.Point(669, 26);
+            resources.ApplyResources(this.textBox50, "textBox50");
             this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(37, 21);
-            this.textBox50.TabIndex = 23;
+            this.toolTip1.SetToolTip(this.textBox50, resources.GetString("textBox50.ToolTip"));
             // 
             // checkBox8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(567, 31);
+            resources.ApplyResources(this.checkBox8, "checkBox8");
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(96, 16);
-            this.checkBox8.TabIndex = 22;
-            this.checkBox8.Text = "通过分数查询";
+            this.toolTip1.SetToolTip(this.checkBox8, resources.GetString("checkBox8.ToolTip"));
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker5
             // 
-            this.dateTimePicker5.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker5, "dateTimePicker5");
             this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker5.Location = new System.Drawing.Point(351, 26);
             this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePicker5.TabIndex = 21;
+            this.toolTip1.SetToolTip(this.dateTimePicker5, resources.GetString("dateTimePicker5.ToolTip"));
             // 
             // label63
             // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(334, 32);
+            resources.ApplyResources(this.label63, "label63");
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(11, 12);
-            this.label63.TabIndex = 20;
-            this.label63.Text = "~";
+            this.toolTip1.SetToolTip(this.label63, resources.GetString("label63.ToolTip"));
             // 
             // dateTimePicker4
             // 
-            this.dateTimePicker4.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePicker4, "dateTimePicker4");
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(128, 26);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePicker4.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.dateTimePicker4, resources.GetString("dateTimePicker4.ToolTip"));
             // 
             // checkBox7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(26, 31);
+            resources.ApplyResources(this.checkBox7, "checkBox7");
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(96, 16);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.Text = "通过时间查询";
+            this.toolTip1.SetToolTip(this.checkBox7, resources.GetString("checkBox7.ToolTip"));
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // button29
             // 
-            this.button29.Location = new System.Drawing.Point(367, 133);
+            resources.ApplyResources(this.button29, "button29");
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 23);
-            this.button29.TabIndex = 17;
-            this.button29.Text = "查询";
+            this.toolTip1.SetToolTip(this.button29, resources.GetString("button29.ToolTip"));
             this.button29.UseVisualStyleBackColor = true;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // textBox48
             // 
-            this.textBox48.Location = new System.Drawing.Point(251, 135);
+            resources.ApplyResources(this.textBox48, "textBox48");
             this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(100, 21);
-            this.textBox48.TabIndex = 15;
-            this.textBox48.Text = "10";
+            this.toolTip1.SetToolTip(this.textBox48, resources.GetString("textBox48.ToolTip"));
             // 
             // label61
             // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(193, 139);
+            resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(53, 12);
-            this.label61.TabIndex = 14;
-            this.label61.Text = "页大小：";
+            this.toolTip1.SetToolTip(this.label61, resources.GetString("label61.ToolTip"));
             // 
             // textBox49
             // 
-            this.textBox49.Location = new System.Drawing.Point(68, 136);
+            resources.ApplyResources(this.textBox49, "textBox49");
             this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(100, 21);
-            this.textBox49.TabIndex = 13;
-            this.textBox49.Text = "1";
+            this.toolTip1.SetToolTip(this.textBox49, resources.GetString("textBox49.ToolTip"));
             // 
             // label62
             // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(15, 139);
+            resources.ApplyResources(this.label62, "label62");
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(41, 12);
-            this.label62.TabIndex = 12;
-            this.label62.Text = "页码：";
+            this.toolTip1.SetToolTip(this.label62, resources.GetString("label62.ToolTip"));
             // 
             // dataGridView3
             // 
+            resources.ApplyResources(this.dataGridView3, "dataGridView3");
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AllowUserToDeleteRows = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -5166,135 +4182,68 @@
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 180);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowTemplate.Height = 23;
-            this.dataGridView3.Size = new System.Drawing.Size(1100, 329);
-            this.dataGridView3.TabIndex = 9;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "序号";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "抓拍时间";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "人员编号";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "姓名";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "年龄";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "性别";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "分数";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "角色";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
+            this.toolTip1.SetToolTip(this.dataGridView3, resources.GetString("dataGridView3.ToolTip"));
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(388, 13);
+            resources.ApplyResources(this.button27, "button27");
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(120, 23);
-            this.button27.TabIndex = 2;
-            this.button27.Text = "清空TF卡抓拍数据";
+            this.toolTip1.SetToolTip(this.button27, resources.GetString("button27.ToolTip"));
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // checkBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(190, 17);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.checkBox6, "checkBox6");
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(168, 16);
-            this.checkBox6.TabIndex = 1;
-            this.checkBox6.Text = "断点续传抓拍记录到服务器";
+            this.toolTip1.SetToolTip(this.checkBox6, resources.GetString("checkBox6.ToolTip"));
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(26, 17);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.checkBox5, "checkBox5");
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(132, 16);
-            this.checkBox5.TabIndex = 0;
-            this.checkBox5.Text = "存储抓拍记录到TF卡";
+            this.toolTip1.SetToolTip(this.checkBox5, resources.GetString("checkBox5.ToolTip"));
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // tabPage11
             // 
+            resources.ApplyResources(this.tabPage11, "tabPage11");
             this.tabPage11.Controls.Add(this.button87);
             this.tabPage11.Controls.Add(this.button44);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1106, 592);
-            this.tabPage11.TabIndex = 10;
-            this.tabPage11.Text = "开闸时间调度";
+            this.toolTip1.SetToolTip(this.tabPage11, resources.GetString("tabPage11.ToolTip"));
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
             // button87
             // 
-            this.button87.Location = new System.Drawing.Point(34, 21);
+            resources.ApplyResources(this.button87, "button87");
             this.button87.Name = "button87";
-            this.button87.Size = new System.Drawing.Size(169, 23);
-            this.button87.TabIndex = 1;
-            this.button87.Text = "设置15组以上调度规则";
+            this.toolTip1.SetToolTip(this.button87, resources.GetString("button87.ToolTip"));
             this.button87.UseVisualStyleBackColor = true;
             this.button87.Click += new System.EventHandler(this.button87_Click);
             // 
             // button44
             // 
-            this.button44.Location = new System.Drawing.Point(488, 204);
+            resources.ApplyResources(this.button44, "button44");
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(111, 23);
-            this.button44.TabIndex = 0;
-            this.button44.Text = "设置开闸时间调度";
+            this.toolTip1.SetToolTip(this.button44, resources.GetString("button44.ToolTip"));
             this.button44.UseVisualStyleBackColor = true;
             this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "所有图片格式|*.jpg;*.png;*.bmp";
+            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
             // folder1
             // 
-            this.folder1.Description = "请选择Txt所在文件夹";
+            resources.ApplyResources(this.folder1, "folder1");
             // 
             // timer1
             // 
@@ -5302,34 +4251,61 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button88
+            // dataGridViewTextBoxColumn1
             // 
-            this.button88.Location = new System.Drawing.Point(1016, 36);
-            this.button88.Name = "button88";
-            this.button88.Size = new System.Drawing.Size(75, 23);
-            this.button88.TabIndex = 30;
-            this.button88.Text = "无图注册";
-            this.button88.UseVisualStyleBackColor = true;
-            this.button88.Click += new System.EventHandler(this.button88_Click);
+            resources.ApplyResources(this.dataGridViewTextBoxColumn1, "dataGridViewTextBoxColumn1");
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // button89
+            // dataGridViewTextBoxColumn6
             // 
-            this.button89.Location = new System.Drawing.Point(1016, 42);
-            this.button89.Name = "button89";
-            this.button89.Size = new System.Drawing.Size(75, 23);
-            this.button89.TabIndex = 32;
-            this.button89.Text = "单项修改";
-            this.button89.UseVisualStyleBackColor = true;
-            this.button89.Click += new System.EventHandler(this.button89_Click);
+            resources.ApplyResources(this.dataGridViewTextBoxColumn6, "dataGridViewTextBoxColumn6");
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            resources.ApplyResources(this.dataGridViewTextBoxColumn3, "dataGridViewTextBoxColumn3");
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            resources.ApplyResources(this.dataGridViewTextBoxColumn2, "dataGridViewTextBoxColumn2");
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            resources.ApplyResources(this.Column7, "Column7");
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            resources.ApplyResources(this.Column8, "Column8");
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            resources.ApplyResources(this.Column9, "Column9");
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            resources.ApplyResources(this.Column10, "Column10");
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 618);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormMain";
-            this.Text = "(。・`ω´・)";
+            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -5427,13 +4403,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colIP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMac;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNetmask;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPlate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSystem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colVersion;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label4;
@@ -5494,12 +4463,6 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox combTime_m;
         private System.Windows.Forms.Label label24;
@@ -5675,14 +4638,6 @@
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.TextBox textBox61;
@@ -5894,5 +4849,26 @@
         private System.Windows.Forms.Button button87;
         private System.Windows.Forms.Button button89;
         private System.Windows.Forms.Button button88;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNetmask;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPlate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSystem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colVersion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }
