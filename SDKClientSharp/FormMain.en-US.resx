@@ -483,13 +483,16 @@
     <value>Modify Feature</value>
   </data>
   <data name="button88.Location" type="System.Drawing.Point, System.Drawing">
-    <value>985, 39</value>
+    <value>1017, 38</value>
   </data>
   <data name="button88.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 25</value>
   </data>
   <data name="button88.Text" xml:space="preserve">
     <value>Register w/o image</value>
+  </data>
+  <data name="comboBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>880, 37</value>
   </data>
   <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -1849,7 +1852,7 @@ In the following options:
     <value>1177, 644</value>
   </data>
   <data name="tabPage9.Text" xml:space="preserve">
-    <value>Offline Record</value>
+    <value>Record Query</value>
   </data>
   <data name="button87.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 25</value>
