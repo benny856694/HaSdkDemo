@@ -110,7 +110,8 @@ namespace HaSdkWrapper
 
         #region methods
         /// <summary>
-        /// 新版的sdk底层自行管理内存，无需设置预期连接数
+        /// <para>新版的sdk底层自行管理内存，无需设置预期连接数</para>
+        /// <para>Initialize the SDK</para>
         /// </summary>
         public static void InitEnvironment()
         {
@@ -120,8 +121,13 @@ namespace HaSdkWrapper
         /// <para>初始化SDK底层库，在进程中应该只需要调用一次</para>
         /// <para>除非是需要在不关闭进程的情况下更改连接数或者清理内存</para>
         /// <para>如果需要更改连接数或者清理内存，则需要先DeInit之后再行Init</para>
+        /// <para>Initialize the SDK, should be called only once unless you want to change connection number without exiting the process</para>
+        /// <para>If you want to change connection number, you should call DeInit then call Init again</para>
         /// </summary>
-        /// <param name="maxConnectNum">需要最大连接的设备数量；请尽量设置小额数量，因为程序会为每一个预期的连接立即分配内存</param>
+        /// <param name="maxConnectNum">
+        /// <para>需要最大连接的设备数量；请尽量设置小额数量，因为程序会为每一个预期的连接立即分配内存</para>
+        /// <para>Expected max connections: use number as small as possible, every connection will be allocated memory</para>
+        /// </param>
         public static void InitEnvironment(uint maxConnectNum)
         {
 
@@ -461,10 +467,17 @@ namespace HaSdkWrapper
             return Connect(default(IntPtr));
         }
         /// <summary>
-        /// 连接相机
+        /// <para>连接相机</para>
+        /// <para>Connect Camera</para>
         /// </summary>
-        /// <param name="hwnd">窗口的句柄，显示实时视频用，不需要显示视频的时候，传入default(IntPtr)</param>
-        /// <returns>是否连接成功</returns>
+        /// <param name="hwnd">
+        /// <para>窗口的句柄，显示实时视频用，不需要显示视频的时候，传入default(IntPtr)</para>
+        /// <para>Hand to the window for displaying live video</para>
+        /// </param>
+        /// <returns>
+        /// <para>是否连接成功</para>
+        /// <para>true: connected successfully, false: failed</para>
+        /// </returns>
         public bool Connect(IntPtr hwnd)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
@@ -573,15 +586,37 @@ namespace HaSdkWrapper
         }
 
         /// <summary>
-        /// 添加一张人脸模板到设备库中
+        /// <para>添加一张人脸模板到设备库中</para>
+        /// <para>Add one face to camera database</para>
         /// </summary>
-        /// <param name="personID">人员编号</param>
-        /// <param name="personName">人员姓名</param>
-        /// <param name="picPath">图片路径</param>
-        /// <param name="personRole">人员角色，0：普通人员。 1：白名单人员。 2：黑名单人员。</param>
-        /// <param name="wgNo">韦根卡号</param>
-        /// <param name="effectTime">过期时间 0xFFFFFFFF永不过期 0永久失效 其他值UTC秒数</param>
-        /// <returns>是否添加成功</returns>
+        /// <param name="personID">
+        /// <para>人员编号</para>
+        /// <para>Id of the face</para>
+        /// </param>
+        /// <param name="personName">
+        /// <para>人员姓名</para>
+        /// <para>Name</para>
+        /// </param>
+        /// <param name="picPath">
+        /// <para>图片路径</para>
+        /// <para>Path to the image</para>
+        /// </param>
+        /// <param name="personRole">
+        /// <para>人员角色，0：普通人员。 1：白名单人员。 2：黑名单人员。</para>
+        /// <para>type, 0: normal, 1: white name, 2: black name</para>
+        /// </param>
+        /// <param name="wgNo">
+        /// <para>韦根卡号</para>
+        /// <para>Wiegand card no</para>
+        /// </param>
+        /// <param name="effectTime">
+        /// <para>过期时间 0xFFFFFFFF永不过期 0永久失效 其他值UTC秒数</para>
+        /// <para>Expiration time, 0xFFFFFFFF: never expire, 0: always expired, other value: utc seconds</para>
+        /// </param>
+        /// <returns>
+        /// <para>是否添加成功</para>
+        /// <para>true: success, false: fail</para>
+        /// </returns>
         public bool AddFace(string personID, string personName, int personRole, string picPath, uint wgNo, uint effectTime, uint effectstarttime, byte ScheduleMode, String userParam)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
@@ -2093,7 +2128,8 @@ namespace HaSdkWrapper
             return ret == 0;
         }
         /// <summary>
-        /// 断开和相机的连接
+        /// <para>断开和相机的连接</para>
+        /// <para>Disconnect from camera</para>
         /// </summary>
         public void DisConnect()
         {
@@ -3517,9 +3553,13 @@ namespace HaSdkWrapper
         }
 
         /// <summary>
-        /// 打开检测旋转人脸 打开后自动修正旋转方向错误的图片 注:打开后会影响检测速度
+        /// <para>打开检测旋转人脸 打开后自动修正旋转方向错误的图片 注:打开后会影响检测速度</para>
+        /// <para>Enable face tilt correction: slowdown performance if enabled</para>
         /// </summary>
-        /// <param name="enable">enable 开关 0:关 !0:开</param>
+        /// <param name="enable">
+        /// <para>0:关 !0:开</para>
+        /// <para>0: disable, non-zero: enable</para>
+        /// </param>
         /// <returns></returns>
         public bool HA_SetFaceCheckRotate(int enable)
         {
@@ -3980,15 +4020,37 @@ namespace HaSdkWrapper
 
 
         /// <summary>
-        /// 只增加人员信息，不需要人脸
+        /// <para>只增加人员信息，不需要人脸</para>
+        /// <para>Add face without image</para>
         /// </summary>
-        /// <param name="personID">人员编号</param>
-        /// <param name="personName">人员姓名</param>
-        /// <param name="personRole">人员角色，0：普通人员。 1：白名单人员。 2：黑名单人员。</param>
-        /// <param name="wgNo">韦根卡号</param>
-        /// <param name="effectTime">过期时间 0xFFFFFFFF永不过期 0永久失效 其他值UTC秒数</param>
-        /// <param name="mod">1注册 2修改</param>
-        /// <returns>是否添加成功</returns>
+        /// <param name="personID">
+        /// <para>人员编号</para>
+        /// <para>Id of the face</para>
+        /// </param>
+        /// <param name="personName">
+        /// <para>人员姓名</para>
+        /// <para>Name</para>
+        /// </param>
+        /// <param name="personRole">
+        /// <para>人员角色，0：普通人员。 1：白名单人员。 2：黑名单人员。</para>
+        /// <para>Type, 0: normal, 1: white name, 2: black name</para>
+        /// </param>
+        /// <param name="wgNo">
+        /// <para>韦根卡号</para>
+        /// <para>Wiegand Card Number</para>
+        /// </param>
+        /// <param name="effectTime">
+        /// <para>过期时间 0xFFFFFFFF永不过期 0永久失效 其他值UTC秒数</para>
+        /// <para>Expiration Time,  0xFFFFFFFF: never expiry 0: always expired, other value: utc seconds</para>
+        /// </param>
+        /// <param name="mod">
+        /// <para>1注册 2修改</para>
+        /// <para>1: register, 2: update</para>
+        /// </param>
+        /// <returns>
+        /// <para>是否添加成功</para>
+        /// <para>true: success, false: fail</para>
+        /// </returns>
         public bool HA_AddFaceFlags(string personID, string personName, int personRole, uint wgNo, uint effectTime, uint effectstarttime, byte ScheduleMode, String userParam, byte mod)
         {
             FaceFlags ff = new FaceFlags();

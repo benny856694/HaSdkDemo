@@ -112,24 +112,24 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button84.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button84.Location" type="System.Drawing.Point, System.Drawing">
     <value>377, 22</value>
   </data>
   <data name="button84.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 25</value>
+    <value>132, 25</value>
   </data>
   <data name="button84.Text" xml:space="preserve">
-    <value>Enable Rotation</value>
+    <value>Enable Tilt Correction</value>
   </data>
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
     <value>725, 21</value>
@@ -258,25 +258,28 @@
     <value>Connect</value>
   </data>
   <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 56</value>
+    <value>132, 56</value>
   </data>
   <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>117, 20</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 59</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 13</value>
+    <value>127, 13</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>User name password：</value>
+    <value>User name &amp;&amp; password：</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 24</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>59, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>IP port：</value>
+    <value>IP &amp;&amp; port：</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
     <value>1177, 644</value>
@@ -284,11 +287,29 @@
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Step 3:  Connect Device</value>
   </data>
+  <data name="dateTimePicker9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>899, 95</value>
+  </data>
+  <data name="dateTimePicker8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 95</value>
+  </data>
+  <data name="checkBox22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 98</value>
+  </data>
   <data name="checkBox22.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 17</value>
   </data>
   <data name="checkBox22.Text" xml:space="preserve">
     <value>Valid From</value>
+  </data>
+  <data name="dateTimePicker7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>899, 61</value>
+  </data>
+  <data name="dateTimePicker6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 61</value>
+  </data>
+  <data name="checkBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 63</value>
   </data>
   <data name="checkBox21.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 17</value>
@@ -296,14 +317,20 @@
   <data name="checkBox21.Text" xml:space="preserve">
     <value>Valid To</value>
   </data>
+  <data name="textBox64.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 61</value>
+  </data>
+  <data name="textBox64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
   <data name="checkBox20.Location" type="System.Drawing.Point, System.Drawing">
     <value>345, 63</value>
   </data>
   <data name="checkBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
+    <value>114, 17</value>
   </data>
   <data name="checkBox20.Text" xml:space="preserve">
-    <value>Wiegand No.</value>
+    <value>Wiegand Card No.</value>
   </data>
   <data name="checkBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 17</value>
@@ -366,13 +393,13 @@
     <value>Expiration Date</value>
   </data>
   <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1171, 298</value>
+    <value>1253, 298</value>
   </data>
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 428</value>
+    <value>1259, 428</value>
   </data>
   <data name="groupBox8.Text" xml:space="preserve">
-    <value>Query Features（in page）</value>
+    <value>Query Faces（in page）</value>
   </data>
   <data name="button57.Text" xml:space="preserve">
     <value>Check</value>
@@ -402,10 +429,10 @@
     <value>Person Id：</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 76</value>
+    <value>1259, 76</value>
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
-    <value>Delete Feature</value>
+    <value>Delete Face</value>
   </data>
   <data name="button89.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
@@ -439,6 +466,15 @@
   </data>
   <data name="label24.Text" xml:space="preserve">
     <value>Valid To：</value>
+  </data>
+  <data name="txtwg_m.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 44</value>
+  </data>
+  <data name="txtwg_m.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 48</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 13</value>
@@ -477,10 +513,10 @@
     <value>Person Name：</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 73</value>
+    <value>1259, 73</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
-    <value>Modify Feature</value>
+    <value>Modify Face</value>
   </data>
   <data name="button88.Location" type="System.Drawing.Point, System.Drawing">
     <value>1017, 38</value>
@@ -512,11 +548,20 @@
   <data name="label25.Text" xml:space="preserve">
     <value>Valid To：</value>
   </data>
+  <data name="txtwg_a.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 38</value>
+  </data>
+  <data name="txtwg_a.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 41</value>
+  </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
+    <value>107, 13</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
-    <value>Wiegand No.：</value>
+    <value>Wiegand Card No.：</value>
   </data>
   <data name="button4.Text" xml:space="preserve">
     <value>Register</value>
@@ -549,16 +594,16 @@
     <value>Person Name：</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 67</value>
+    <value>1259, 67</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>Add Feature</value>
+    <value>Add Face</value>
   </data>
   <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage4.Text" xml:space="preserve">
-    <value>Feature Management</value>
+    <value>Face Management</value>
   </data>
   <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
     <value>693, 43</value>
@@ -1873,10 +1918,10 @@ In the following options:
     <value>Gate Open Scheduling</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1185, 670</value>
+    <value>1267, 670</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1185, 670</value>
+    <value>1267, 670</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>SDK Demo</value>

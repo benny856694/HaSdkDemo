@@ -336,11 +336,11 @@ namespace SDKClientSharp
             //}
             if (ret)
             {
-                MessageBox.Show("修改成功！");
+                MessageBox.Show("修改成功!(Update Success!)");
             }
             else
             {
-                MessageBox.Show("修改失败！" + HaCamera.GetErrorDescribe(_cam.GetLastError()));
+                MessageBox.Show("修改失败！(Update Failed!)" + HaCamera.GetErrorDescribe(_cam.GetLastError()));
             }
         }
 
