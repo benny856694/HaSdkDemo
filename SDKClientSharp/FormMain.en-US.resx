@@ -168,7 +168,7 @@
     <value>Expected  Camera Count：</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Ste 1:  Initialization</value>
@@ -207,7 +207,7 @@
     <value>Version</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1171, 522</value>
+    <value>1253, 522</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 13</value>
@@ -225,7 +225,7 @@
     <value>Search Camera</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Step 2:  Search Devices（can skip）</value>
@@ -282,7 +282,7 @@
     <value>IP &amp;&amp; port：</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Step 3:  Connect Device</value>
@@ -374,6 +374,15 @@
   <data name="label19.Text" xml:space="preserve">
     <value>Role：</value>
   </data>
+  <data name="comboBox3.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox3.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox3.Items2" xml:space="preserve">
+    <value>Black Name</value>
+  </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>No</value>
   </data>
@@ -399,7 +408,7 @@
     <value>1259, 428</value>
   </data>
   <data name="groupBox8.Text" xml:space="preserve">
-    <value>Query Faces（in page）</value>
+    <value>Paged Record Query</value>
   </data>
   <data name="button57.Text" xml:space="preserve">
     <value>Check</value>
@@ -461,6 +470,15 @@
   <data name="dateTimePicker11.Location" type="System.Drawing.Point, System.Drawing">
     <value>610, 47</value>
   </data>
+  <data name="combTime_m.Items" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="combTime_m.Items1" xml:space="preserve">
+    <value>Always Expired</value>
+  </data>
+  <data name="combTime_m.Items2" xml:space="preserve">
+    <value>Custom Defined=&gt;</value>
+  </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
   </data>
@@ -481,6 +499,15 @@
   </data>
   <data name="label23.Text" xml:space="preserve">
     <value>Wiegand Card No.：</value>
+  </data>
+  <data name="comboBox2.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox2.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox2.Items2" xml:space="preserve">
+    <value>Black Name</value>
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>Modify</value>
@@ -542,6 +569,15 @@
   <data name="label77.Text" xml:space="preserve">
     <value>Valid From</value>
   </data>
+  <data name="combTime_a.Items" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="combTime_a.Items1" xml:space="preserve">
+    <value>Always Expired</value>
+  </data>
+  <data name="combTime_a.Items2" xml:space="preserve">
+    <value>User Defined=&gt;</value>
+  </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
   </data>
@@ -562,6 +598,15 @@
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>Wiegand Card No.：</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>Black Name</value>
   </data>
   <data name="button4.Text" xml:space="preserve">
     <value>Register</value>
@@ -657,7 +702,7 @@
     <value>User Name：</value>
   </data>
   <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 128</value>
+    <value>1259, 128</value>
   </data>
   <data name="groupBox13.Text" xml:space="preserve">
     <value>Login Authentication</value>
@@ -699,7 +744,7 @@
     <value>Device Time：</value>
   </data>
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 152</value>
+    <value>1259, 152</value>
   </data>
   <data name="groupBox12.Text" xml:space="preserve">
     <value>Configure Time</value>
@@ -747,7 +792,7 @@
     <value>Device No.：</value>
   </data>
   <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 119</value>
+    <value>1259, 119</value>
   </data>
   <data name="groupBox10.Text" xml:space="preserve">
     <value>Device Info</value>
@@ -765,7 +810,7 @@
     <value>Open gate by white list</value>
   </data>
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 108</value>
+    <value>1259, 108</value>
   </data>
   <data name="groupBox9.Text" xml:space="preserve">
     <value>IO</value>
@@ -813,13 +858,13 @@
     <value>Mask：</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 137</value>
+    <value>1259, 137</value>
   </data>
   <data name="groupBox7.Text" xml:space="preserve">
     <value>Configure IP</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage5.Text" xml:space="preserve">
     <value>Misc</value>
@@ -897,7 +942,7 @@
     <value>Template Image Quality Verify</value>
   </data>
   <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage8.Text" xml:space="preserve">
     <value>Misc 2</value>
@@ -1350,7 +1395,7 @@
     <value>Liveness Detect：</value>
   </data>
   <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage10.Text" xml:space="preserve">
     <value>Misc 3</value>
@@ -1481,6 +1526,15 @@
   <data name="button49.Text" xml:space="preserve">
     <value>Force Open</value>
   </data>
+  <data name="comboBox5.Items" xml:space="preserve">
+    <value>Everyone can pass</value>
+  </data>
+  <data name="comboBox5.Items1" xml:space="preserve">
+    <value>No one can pass</value>
+  </data>
+  <data name="comboBox5.Items2" xml:space="preserve">
+    <value>Self determination</value>
+  </data>
   <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>170, 165</value>
   </data>
@@ -1496,9 +1550,9 @@
 Only when the server authorized can the gate be opened.
 
 In the following options:
-    if "release all" is selected, all opening requests will be responded
-    If "disable all" is selected, all opening requests are rejected
-    If "self determination" is selected, an option dialog box will pop up</value>
+    if "Every one can pass" is selected, all opening requests will be responded
+    If "No one can pass" is selected, all opening requests are rejected
+    If "Self determination" is selected, an option dialog box will pop up</value>
   </data>
   <data name="groupBox15.Text" xml:space="preserve">
     <value>Setting</value>
@@ -1512,6 +1566,15 @@ In the following options:
   <data name="button23.Text" xml:space="preserve">
     <value>Get</value>
   </data>
+  <data name="comboBox4.Items" xml:space="preserve">
+    <value>Auto Mode</value>
+  </data>
+  <data name="comboBox4.Items1" xml:space="preserve">
+    <value>Online Mode</value>
+  </data>
+  <data name="comboBox4.Items2" xml:space="preserve">
+    <value>Offline Mode</value>
+  </data>
   <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 25</value>
   </data>
@@ -1522,7 +1585,7 @@ In the following options:
     <value>Working Mode：</value>
   </data>
   <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage6.Text" xml:space="preserve">
     <value>Working Mode</value>
@@ -1707,6 +1770,15 @@ In the following options:
   <data name="label48.Text" xml:space="preserve">
     <value>Wiegand Card No.：</value>
   </data>
+  <data name="comboBox7.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox7.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox7.Items2" xml:space="preserve">
+    <value>Black Name</value>
+  </data>
   <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>406, 14</value>
   </data>
@@ -1732,13 +1804,13 @@ In the following options:
     <value>Name：</value>
   </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 280</value>
+    <value>1259, 280</value>
   </data>
   <data name="groupBox16.Text" xml:space="preserve">
     <value>Add Feature</value>
   </data>
   <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage7.Text" xml:space="preserve">
     <value>Bulk Register</value>
@@ -1754,6 +1826,12 @@ In the following options:
   </data>
   <data name="checkBox15.Text" xml:space="preserve">
     <value>Fuzzy Query（Name or number）</value>
+  </data>
+  <data name="comboBox9.Items" xml:space="preserve">
+    <value>Uploaded</value>
+  </data>
+  <data name="comboBox9.Items1" xml:space="preserve">
+    <value>Not uploaded</value>
   </data>
   <data name="checkBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 17</value>
@@ -1790,6 +1868,12 @@ In the following options:
   </data>
   <data name="checkBox10.Text" xml:space="preserve">
     <value>Age</value>
+  </data>
+  <data name="comboBox8.Items" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="comboBox8.Items1" xml:space="preserve">
+    <value>Female</value>
   </data>
   <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>811, 30</value>
@@ -1858,13 +1942,13 @@ In the following options:
     <value>3, 226</value>
   </data>
   <data name="dataGridView3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1171, 356</value>
+    <value>1253, 356</value>
   </data>
   <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 59</value>
   </data>
   <data name="groupBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 585</value>
+    <value>1259, 585</value>
   </data>
   <data name="groupBox17.Text" xml:space="preserve">
     <value>Query Capture Record</value>
@@ -1894,7 +1978,7 @@ In the following options:
     <value>Save Capture Record to TF Card</value>
   </data>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage9.Text" xml:space="preserve">
     <value>Record Query</value>
@@ -1912,7 +1996,7 @@ In the following options:
     <value>Set Open Gate Time Schedule</value>
   </data>
   <data name="tabPage11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 644</value>
+    <value>1259, 644</value>
   </data>
   <data name="tabPage11.Text" xml:space="preserve">
     <value>Gate Open Scheduling</value>
