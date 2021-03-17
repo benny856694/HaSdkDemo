@@ -22,7 +22,7 @@ namespace SDKClientSharp
         private void FormBasic_Load(object sender, EventArgs e)
         {
             HaCamera.InitEnvironment();
-            HaSdkWrapper.HaCamera.DeviceDiscovered += HaCamera_DeviceDiscovered;
+            HaCamera.DeviceDiscovered += HaCamera_DeviceDiscovered;
         }
 
         private void HaCamera_DeviceDiscovered(object sender, HaSdkWrapper.DeviceDiscoverdEventArgs e)
@@ -58,10 +58,31 @@ namespace SDKClientSharp
             _cam.Port = int.Parse(textBoxPort.Text);
             _cam.Username = textBoxUserName.Text;
             _cam.Password = textBoxPassword.Text;
+
+            _cam.FaceCaptured += _cam_FaceCaptured;
             var suc = _cam.Connect(pictureBoxLiveVideo.Handle);
-            LogMessage("connect to camera {0}",  suc ? "success" : "fail");
+            LogMessage("connect to camera {0} {1}", _cam.Ip,  suc ? "success" : "fail");
             
 
+        }
+
+        private void _cam_FaceCaptured(object sender, FaceCapturedEventArgs e)
+        {
+            BeginInvoke(
+                new Action(() =>
+                {
+                    dataGridViewCaptureResult.Rows.Insert(0,
+                        e.SequenceID,
+                        e.CaptureTime,
+                        e.PersonID, 
+                        e.PersonName,
+                        e.IsPersonMatched,
+                        e.MatchScore, 
+                        e.PersonRole
+                        );
+                })
+           );
+                
         }
 
         private void dataGridViewCameraList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

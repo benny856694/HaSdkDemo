@@ -60,9 +60,18 @@ namespace SDKClientSharp
             this.tabPageCameraSearchResult = new System.Windows.Forms.TabPage();
             this.tabPageLog = new System.Windows.Forms.TabPage();
             this.listBoxLog = new System.Windows.Forms.ListBox();
+            this.dataGridViewCaptureResult = new System.Windows.Forms.DataGridView();
+            this.ColumnSeqNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMatch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveVideo)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPageCaptureEvent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -77,6 +86,7 @@ namespace SDKClientSharp
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).BeginInit();
             this.tabPageCameraSearchResult.SuspendLayout();
             this.tabPageLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCaptureResult)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonConnect
@@ -225,6 +235,7 @@ namespace SDKClientSharp
             // 
             // tabPageCaptureEvent
             // 
+            this.tabPageCaptureEvent.Controls.Add(this.dataGridViewCaptureResult);
             this.tabPageCaptureEvent.Location = new System.Drawing.Point(4, 22);
             this.tabPageCaptureEvent.Name = "tabPageCaptureEvent";
             this.tabPageCaptureEvent.Padding = new System.Windows.Forms.Padding(3);
@@ -369,6 +380,7 @@ namespace SDKClientSharp
             // 
             this.dataGridViewCameraList.AllowUserToAddRows = false;
             this.dataGridViewCameraList.AllowUserToDeleteRows = false;
+            this.dataGridViewCameraList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCameraList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCameraList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnIP,
@@ -424,6 +436,69 @@ namespace SDKClientSharp
             this.listBoxLog.Size = new System.Drawing.Size(923, 221);
             this.listBoxLog.TabIndex = 0;
             // 
+            // dataGridViewCaptureResult
+            // 
+            this.dataGridViewCaptureResult.AllowUserToAddRows = false;
+            this.dataGridViewCaptureResult.AllowUserToDeleteRows = false;
+            this.dataGridViewCaptureResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCaptureResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCaptureResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnSeqNo,
+            this.ColumnCapTime,
+            this.ColumnId,
+            this.ColumnName,
+            this.ColumnMatch,
+            this.ColumnScore,
+            this.ColumnType});
+            this.dataGridViewCaptureResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCaptureResult.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewCaptureResult.Name = "dataGridViewCaptureResult";
+            this.dataGridViewCaptureResult.ReadOnly = true;
+            this.dataGridViewCaptureResult.Size = new System.Drawing.Size(923, 221);
+            this.dataGridViewCaptureResult.TabIndex = 0;
+            // 
+            // ColumnSeqNo
+            // 
+            this.ColumnSeqNo.HeaderText = "Seq No";
+            this.ColumnSeqNo.Name = "ColumnSeqNo";
+            this.ColumnSeqNo.ReadOnly = true;
+            // 
+            // ColumnCapTime
+            // 
+            this.ColumnCapTime.HeaderText = "CaptureTime";
+            this.ColumnCapTime.Name = "ColumnCapTime";
+            this.ColumnCapTime.ReadOnly = true;
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
+            // 
+            // ColumnMatch
+            // 
+            this.ColumnMatch.HeaderText = "Match";
+            this.ColumnMatch.Name = "ColumnMatch";
+            this.ColumnMatch.ReadOnly = true;
+            // 
+            // ColumnScore
+            // 
+            this.ColumnScore.HeaderText = "Score";
+            this.ColumnScore.Name = "ColumnScore";
+            this.ColumnScore.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
             // FormBasic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,6 +513,7 @@ namespace SDKClientSharp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveVideo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPageCaptureEvent.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -453,6 +529,7 @@ namespace SDKClientSharp
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).EndInit();
             this.tabPageCameraSearchResult.ResumeLayout(false);
             this.tabPageLog.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCaptureResult)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -490,5 +567,13 @@ namespace SDKClientSharp
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMac;
         private System.Windows.Forms.TabPage tabPageLog;
         private System.Windows.Forms.ListBox listBoxLog;
+        private System.Windows.Forms.DataGridView dataGridViewCaptureResult;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSeqNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCapTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMatch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnScore;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
     }
 }
