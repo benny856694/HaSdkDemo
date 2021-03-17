@@ -117,20 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button84.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button84.Location" type="System.Drawing.Point, System.Drawing">
-    <value>377, 22</value>
-  </data>
-  <data name="button84.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 25</value>
-  </data>
-  <data name="button84.Text" xml:space="preserve">
-    <value>Enable Tilt Correction</value>
-  </data>
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
     <value>725, 21</value>
   </data>
@@ -149,6 +136,7 @@
   <data name="label72.Text" xml:space="preserve">
     <value>SDK Password：</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>

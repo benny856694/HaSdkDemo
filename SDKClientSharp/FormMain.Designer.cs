@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button84 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.textBox60 = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
@@ -576,7 +575,6 @@
             // tabPage1
             // 
             resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Controls.Add(this.button84);
             this.tabPage1.Controls.Add(this.button34);
             this.tabPage1.Controls.Add(this.textBox60);
             this.tabPage1.Controls.Add(this.label72);
@@ -587,14 +585,6 @@
             this.tabPage1.Name = "tabPage1";
             this.toolTip1.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button84
-            // 
-            resources.ApplyResources(this.button84, "button84");
-            this.button84.Name = "button84";
-            this.toolTip1.SetToolTip(this.button84, resources.GetString("button84.ToolTip"));
-            this.button84.UseVisualStyleBackColor = true;
-            this.button84.Click += new System.EventHandler(this.button84_Click);
             // 
             // button34
             // 
@@ -4833,7 +4823,6 @@
         private System.Windows.Forms.Button button82;
         private System.Windows.Forms.CheckBox checkBox44;
         private System.Windows.Forms.Label label136;
-        private System.Windows.Forms.Button button84;
         private System.Windows.Forms.Button button85;
         private System.Windows.Forms.Button button86;
         private System.Windows.Forms.TextBox textBox104;
