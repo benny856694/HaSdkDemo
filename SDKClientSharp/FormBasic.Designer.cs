@@ -279,6 +279,7 @@ namespace SDKClientSharp
             this.buttonQueryFace.TabIndex = 3;
             this.buttonQueryFace.Text = "查询人脸";
             this.buttonQueryFace.UseVisualStyleBackColor = true;
+            this.buttonQueryFace.Click += new System.EventHandler(this.buttonQueryFace_Click);
             // 
             // splitContainer1
             // 
@@ -391,7 +392,7 @@ namespace SDKClientSharp
             this.dataGridViewCameraList.ReadOnly = true;
             this.dataGridViewCameraList.Size = new System.Drawing.Size(923, 221);
             this.dataGridViewCameraList.TabIndex = 0;
-            this.dataGridViewCameraList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCameraList_CellDoubleClick);
+            this.dataGridViewCameraList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCameraList_CellDoubleClick);
             // 
             // ColumnMac
             // 
@@ -509,6 +510,7 @@ namespace SDKClientSharp
             this.Name = "FormBasic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "基础演示";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBasic_FormClosing);
             this.Load += new System.EventHandler(this.FormBasic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveVideo)).EndInit();
             this.panel1.ResumeLayout(false);

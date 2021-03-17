@@ -46,6 +46,7 @@ namespace SDKClientSharp
 
         private void buttonSearchDevice_Click(object sender, EventArgs e)
         {
+            dataGridViewCameraList.Rows.Clear();
             HaCamera.DiscoverDevice();
         }
 
@@ -97,6 +98,27 @@ namespace SDKClientSharp
         {
             var msg = DateTime.Now.ToString() + ": " + string.Format(format, arguments);
             listBoxLog.Items.Insert(0, msg);
+        }
+
+        private void FormBasic_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            HaCamera.DeviceDiscovered -= HaCamera_DeviceDiscovered;
+
+            if (_cam != null)
+            {
+                _cam.FaceCaptured -= _cam_FaceCaptured;
+                _cam?.DisConnect();
+
+            }
+        }
+
+        private void buttonQueryFace_Click(object sender, EventArgs e)
+        {
+            using (var form = new FormFaceQuery())
+            {
+                form.Cam = _cam;
+                form.ShowDialog();
+            }
         }
     }
 }
