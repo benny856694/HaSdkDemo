@@ -29,9 +29,7 @@ namespace SDKClientSharp
                 new Tuple<int, string>(-1, "所有"),
             };
 
-            comboBoxType.DataSource = type;
-            comboBoxType.ValueMember = "Item1";
-            comboBoxType.DisplayMember = "Item2";
+            comboBoxType.InitComboBox(type);
 
             var queryMode = new Tuple<short, string>[]
             {
@@ -39,9 +37,7 @@ namespace SDKClientSharp
                 new Tuple<short, string>(1, "模糊"),
             };
 
-            comboBoxQueryMode.DataSource = queryMode;
-            comboBoxQueryMode.ValueMember = "Item1";
-            comboBoxQueryMode.DisplayMember = "Item2";
+            comboBoxQueryMode.InitComboBox(queryMode);
         }
 
         public HaCamera Cam { get; set; } 
@@ -66,6 +62,21 @@ namespace SDKClientSharp
         private void DoQuery()
         {
             var condition = new RecordQueryCondition();
+            condition.ById = checkBoxId.Checked;
+            condition.PersonId = textBoxId.Text;
+            condition.ByName = checkBoxName.Checked;
+            condition.PersonName = textBoxName.Text;
+            condition.WgNo = checkBoxWiegandNo.Checked;
+            if (checkBoxWiegandNo.Checked)
+            {
+                condition.WgNoc = int.Parse(textBoxWiegandNo.Text);
+            }
+            condition.ByCaptureTime2 = checkBoxValidTo.Checked;
+            condition.TimeStart2 = dateTimePickerValidToRangeStart.Value;
+            condition.TimeEnd2 = dateTimePickerValidToRangeEnd.Value;
+            condition.ByCaptureTime1 = checkBoxValidFrom.Checked;
+            condition.Time1Start = dateTimePickerValidFromRangeStart.Value;
+            condition.Time1End = dateTimePickerValidFromRangeEnd.Value;
             var total = 0;
             var pageSize = int.Parse(textBoxPageSize.Text);
             var result = Cam?.QueryFaces(
@@ -85,7 +96,7 @@ namespace SDKClientSharp
 
             }
 
-            CalcPageCount(pageSize, total);
+            UpdatePageIndicator(pageSize, total);
 
             dataGridViewFaceQueryResult.Rows.Clear();
             foreach (var item in result)
@@ -99,7 +110,7 @@ namespace SDKClientSharp
 
         }
 
-        private void CalcPageCount(int pageSize, int total)
+        private void UpdatePageIndicator(int pageSize, int total)
         {
             var pageCount = (total + pageSize - 1) / pageSize;
             labelPageIndicator.Text = $"{_curPage}/{pageCount}";

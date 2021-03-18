@@ -42,24 +42,10 @@ namespace SDKClientSharp
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxLiveVideo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonSearchDevice = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCaptureEvent = new System.Windows.Forms.TabPage();
-            this.buttonAddFace = new System.Windows.Forms.Button();
-            this.buttonRemoveFace = new System.Windows.Forms.Button();
-            this.buttonModifyFace = new System.Windows.Forms.Button();
-            this.buttonQueryFace = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.buttonSearchDevice = new System.Windows.Forms.Button();
-            this.dataGridViewCameraList = new System.Windows.Forms.DataGridView();
-            this.ColumnMac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageCameraSearchResult = new System.Windows.Forms.TabPage();
-            this.tabPageLog = new System.Windows.Forms.TabPage();
-            this.listBoxLog = new System.Windows.Forms.ListBox();
             this.dataGridViewCaptureResult = new System.Windows.Forms.DataGridView();
             this.ColumnSeqNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,10 +54,29 @@ namespace SDKClientSharp
             this.ColumnMatch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPageCameraSearchResult = new System.Windows.Forms.TabPage();
+            this.dataGridViewCameraList = new System.Windows.Forms.DataGridView();
+            this.ColumnIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPageLog = new System.Windows.Forms.TabPage();
+            this.listBoxLog = new System.Windows.Forms.ListBox();
+            this.buttonAddFace = new System.Windows.Forms.Button();
+            this.buttonRemoveFace = new System.Windows.Forms.Button();
+            this.buttonModifyFace = new System.Windows.Forms.Button();
+            this.buttonQueryFace = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveVideo)).BeginInit();
             this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageCaptureEvent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCaptureResult)).BeginInit();
+            this.tabPageCameraSearchResult.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).BeginInit();
+            this.tabPageLog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -80,13 +85,8 @@ namespace SDKClientSharp
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).BeginInit();
-            this.tabPageCameraSearchResult.SuspendLayout();
-            this.tabPageLog.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCaptureResult)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonConnect
@@ -221,6 +221,40 @@ namespace SDKClientSharp
             this.panel1.Size = new System.Drawing.Size(1148, 61);
             this.panel1.TabIndex = 62;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonSearchDevice);
+            this.groupBox2.Controls.Add(this.textBoxSDKPassword);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.textBoxUserName);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.textBoxPassword);
+            this.groupBox2.Controls.Add(this.buttonConnect);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.textBoxPort);
+            this.groupBox2.Controls.Add(this.textBoxIp);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1148, 61);
+            this.groupBox2.TabIndex = 61;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "连接相机";
+            // 
+            // buttonSearchDevice
+            // 
+            this.buttonSearchDevice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.buttonSearchDevice.Location = new System.Drawing.Point(1021, 20);
+            this.buttonSearchDevice.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSearchDevice.Name = "buttonSearchDevice";
+            this.buttonSearchDevice.Size = new System.Drawing.Size(75, 25);
+            this.buttonSearchDevice.TabIndex = 61;
+            this.buttonSearchDevice.Text = "搜索";
+            this.buttonSearchDevice.UseVisualStyleBackColor = true;
+            this.buttonSearchDevice.Click += new System.EventHandler(this.buttonSearchDevice_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPageCaptureEvent);
@@ -244,6 +278,129 @@ namespace SDKClientSharp
             this.tabPageCaptureEvent.Text = "抓拍事件";
             this.tabPageCaptureEvent.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewCaptureResult
+            // 
+            this.dataGridViewCaptureResult.AllowUserToAddRows = false;
+            this.dataGridViewCaptureResult.AllowUserToDeleteRows = false;
+            this.dataGridViewCaptureResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCaptureResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCaptureResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnSeqNo,
+            this.ColumnCapTime,
+            this.ColumnId,
+            this.ColumnName,
+            this.ColumnMatch,
+            this.ColumnScore,
+            this.ColumnType});
+            this.dataGridViewCaptureResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCaptureResult.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewCaptureResult.Name = "dataGridViewCaptureResult";
+            this.dataGridViewCaptureResult.ReadOnly = true;
+            this.dataGridViewCaptureResult.Size = new System.Drawing.Size(923, 221);
+            this.dataGridViewCaptureResult.TabIndex = 0;
+            // 
+            // ColumnSeqNo
+            // 
+            this.ColumnSeqNo.HeaderText = "Seq No";
+            this.ColumnSeqNo.Name = "ColumnSeqNo";
+            this.ColumnSeqNo.ReadOnly = true;
+            // 
+            // ColumnCapTime
+            // 
+            this.ColumnCapTime.HeaderText = "CaptureTime";
+            this.ColumnCapTime.Name = "ColumnCapTime";
+            this.ColumnCapTime.ReadOnly = true;
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
+            // 
+            // ColumnMatch
+            // 
+            this.ColumnMatch.HeaderText = "Match";
+            this.ColumnMatch.Name = "ColumnMatch";
+            this.ColumnMatch.ReadOnly = true;
+            // 
+            // ColumnScore
+            // 
+            this.ColumnScore.HeaderText = "Score";
+            this.ColumnScore.Name = "ColumnScore";
+            this.ColumnScore.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
+            // tabPageCameraSearchResult
+            // 
+            this.tabPageCameraSearchResult.Controls.Add(this.dataGridViewCameraList);
+            this.tabPageCameraSearchResult.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCameraSearchResult.Name = "tabPageCameraSearchResult";
+            this.tabPageCameraSearchResult.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCameraSearchResult.Size = new System.Drawing.Size(929, 227);
+            this.tabPageCameraSearchResult.TabIndex = 1;
+            this.tabPageCameraSearchResult.Text = "相机搜索";
+            this.tabPageCameraSearchResult.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewCameraList
+            // 
+            this.dataGridViewCameraList.AllowUserToAddRows = false;
+            this.dataGridViewCameraList.AllowUserToDeleteRows = false;
+            this.dataGridViewCameraList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCameraList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCameraList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnIP,
+            this.ColumnMac});
+            this.dataGridViewCameraList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCameraList.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewCameraList.Name = "dataGridViewCameraList";
+            this.dataGridViewCameraList.ReadOnly = true;
+            this.dataGridViewCameraList.Size = new System.Drawing.Size(923, 221);
+            this.dataGridViewCameraList.TabIndex = 0;
+            this.dataGridViewCameraList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCameraList_CellDoubleClick);
+            // 
+            // ColumnIP
+            // 
+            this.ColumnIP.HeaderText = "IP";
+            this.ColumnIP.Name = "ColumnIP";
+            this.ColumnIP.ReadOnly = true;
+            // 
+            // ColumnMac
+            // 
+            this.ColumnMac.HeaderText = "MAC";
+            this.ColumnMac.Name = "ColumnMac";
+            this.ColumnMac.ReadOnly = true;
+            // 
+            // tabPageLog
+            // 
+            this.tabPageLog.Controls.Add(this.listBoxLog);
+            this.tabPageLog.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLog.Name = "tabPageLog";
+            this.tabPageLog.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageLog.Size = new System.Drawing.Size(929, 227);
+            this.tabPageLog.TabIndex = 2;
+            this.tabPageLog.Text = "日志";
+            this.tabPageLog.UseVisualStyleBackColor = true;
+            // 
+            // listBoxLog
+            // 
+            this.listBoxLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxLog.FormattingEnabled = true;
+            this.listBoxLog.Location = new System.Drawing.Point(3, 3);
+            this.listBoxLog.Name = "listBoxLog";
+            this.listBoxLog.Size = new System.Drawing.Size(923, 221);
+            this.listBoxLog.TabIndex = 0;
+            // 
             // buttonAddFace
             // 
             this.buttonAddFace.Location = new System.Drawing.Point(15, 29);
@@ -252,6 +409,7 @@ namespace SDKClientSharp
             this.buttonAddFace.TabIndex = 0;
             this.buttonAddFace.Text = "添加人脸";
             this.buttonAddFace.UseVisualStyleBackColor = true;
+            this.buttonAddFace.Click += new System.EventHandler(this.buttonAddFace_Click);
             // 
             // buttonRemoveFace
             // 
@@ -318,6 +476,17 @@ namespace SDKClientSharp
             this.splitContainer2.SplitterDistance = 349;
             this.splitContainer2.TabIndex = 0;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.pictureBoxLiveVideo);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(937, 349);
+            this.groupBox3.TabIndex = 62;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "实时视频";
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.buttonAddFace);
@@ -331,174 +500,6 @@ namespace SDKClientSharp
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "人像管理";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.buttonSearchDevice);
-            this.groupBox2.Controls.Add(this.textBoxSDKPassword);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.textBoxUserName);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBoxPassword);
-            this.groupBox2.Controls.Add(this.buttonConnect);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBoxPort);
-            this.groupBox2.Controls.Add(this.textBoxIp);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1148, 61);
-            this.groupBox2.TabIndex = 61;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "连接相机";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.pictureBoxLiveVideo);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(0, 0);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(937, 349);
-            this.groupBox3.TabIndex = 62;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "实时视频";
-            // 
-            // buttonSearchDevice
-            // 
-            this.buttonSearchDevice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonSearchDevice.Location = new System.Drawing.Point(1021, 20);
-            this.buttonSearchDevice.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonSearchDevice.Name = "buttonSearchDevice";
-            this.buttonSearchDevice.Size = new System.Drawing.Size(75, 25);
-            this.buttonSearchDevice.TabIndex = 61;
-            this.buttonSearchDevice.Text = "搜索";
-            this.buttonSearchDevice.UseVisualStyleBackColor = true;
-            this.buttonSearchDevice.Click += new System.EventHandler(this.buttonSearchDevice_Click);
-            // 
-            // dataGridViewCameraList
-            // 
-            this.dataGridViewCameraList.AllowUserToAddRows = false;
-            this.dataGridViewCameraList.AllowUserToDeleteRows = false;
-            this.dataGridViewCameraList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewCameraList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCameraList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnIP,
-            this.ColumnMac});
-            this.dataGridViewCameraList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCameraList.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewCameraList.Name = "dataGridViewCameraList";
-            this.dataGridViewCameraList.ReadOnly = true;
-            this.dataGridViewCameraList.Size = new System.Drawing.Size(923, 221);
-            this.dataGridViewCameraList.TabIndex = 0;
-            this.dataGridViewCameraList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCameraList_CellDoubleClick);
-            // 
-            // ColumnMac
-            // 
-            this.ColumnMac.HeaderText = "MAC";
-            this.ColumnMac.Name = "ColumnMac";
-            this.ColumnMac.ReadOnly = true;
-            // 
-            // ColumnIP
-            // 
-            this.ColumnIP.HeaderText = "IP";
-            this.ColumnIP.Name = "ColumnIP";
-            this.ColumnIP.ReadOnly = true;
-            // 
-            // tabPageCameraSearchResult
-            // 
-            this.tabPageCameraSearchResult.Controls.Add(this.dataGridViewCameraList);
-            this.tabPageCameraSearchResult.Location = new System.Drawing.Point(4, 22);
-            this.tabPageCameraSearchResult.Name = "tabPageCameraSearchResult";
-            this.tabPageCameraSearchResult.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCameraSearchResult.Size = new System.Drawing.Size(929, 227);
-            this.tabPageCameraSearchResult.TabIndex = 1;
-            this.tabPageCameraSearchResult.Text = "相机搜索";
-            this.tabPageCameraSearchResult.UseVisualStyleBackColor = true;
-            // 
-            // tabPageLog
-            // 
-            this.tabPageLog.Controls.Add(this.listBoxLog);
-            this.tabPageLog.Location = new System.Drawing.Point(4, 22);
-            this.tabPageLog.Name = "tabPageLog";
-            this.tabPageLog.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLog.Size = new System.Drawing.Size(929, 227);
-            this.tabPageLog.TabIndex = 2;
-            this.tabPageLog.Text = "日志";
-            this.tabPageLog.UseVisualStyleBackColor = true;
-            // 
-            // listBoxLog
-            // 
-            this.listBoxLog.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxLog.FormattingEnabled = true;
-            this.listBoxLog.Location = new System.Drawing.Point(3, 3);
-            this.listBoxLog.Name = "listBoxLog";
-            this.listBoxLog.Size = new System.Drawing.Size(923, 221);
-            this.listBoxLog.TabIndex = 0;
-            // 
-            // dataGridViewCaptureResult
-            // 
-            this.dataGridViewCaptureResult.AllowUserToAddRows = false;
-            this.dataGridViewCaptureResult.AllowUserToDeleteRows = false;
-            this.dataGridViewCaptureResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewCaptureResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCaptureResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnSeqNo,
-            this.ColumnCapTime,
-            this.ColumnId,
-            this.ColumnName,
-            this.ColumnMatch,
-            this.ColumnScore,
-            this.ColumnType});
-            this.dataGridViewCaptureResult.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCaptureResult.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewCaptureResult.Name = "dataGridViewCaptureResult";
-            this.dataGridViewCaptureResult.ReadOnly = true;
-            this.dataGridViewCaptureResult.Size = new System.Drawing.Size(923, 221);
-            this.dataGridViewCaptureResult.TabIndex = 0;
-            // 
-            // ColumnSeqNo
-            // 
-            this.ColumnSeqNo.HeaderText = "Seq No";
-            this.ColumnSeqNo.Name = "ColumnSeqNo";
-            this.ColumnSeqNo.ReadOnly = true;
-            // 
-            // ColumnCapTime
-            // 
-            this.ColumnCapTime.HeaderText = "CaptureTime";
-            this.ColumnCapTime.Name = "ColumnCapTime";
-            this.ColumnCapTime.ReadOnly = true;
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.ReadOnly = true;
-            // 
-            // ColumnName
-            // 
-            this.ColumnName.HeaderText = "Name";
-            this.ColumnName.Name = "ColumnName";
-            this.ColumnName.ReadOnly = true;
-            // 
-            // ColumnMatch
-            // 
-            this.ColumnMatch.HeaderText = "Match";
-            this.ColumnMatch.Name = "ColumnMatch";
-            this.ColumnMatch.ReadOnly = true;
-            // 
-            // ColumnScore
-            // 
-            this.ColumnScore.HeaderText = "Score";
-            this.ColumnScore.Name = "ColumnScore";
-            this.ColumnScore.ReadOnly = true;
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
             // 
             // FormBasic
             // 
@@ -514,8 +515,14 @@ namespace SDKClientSharp
             this.Load += new System.EventHandler(this.FormBasic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveVideo)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPageCaptureEvent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCaptureResult)).EndInit();
+            this.tabPageCameraSearchResult.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).EndInit();
+            this.tabPageLog.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -524,14 +531,8 @@ namespace SDKClientSharp
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).EndInit();
-            this.tabPageCameraSearchResult.ResumeLayout(false);
-            this.tabPageLog.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCaptureResult)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

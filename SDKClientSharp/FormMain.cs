@@ -401,21 +401,21 @@ namespace SDKClientSharp
         {
             int totalCount = 0;
             RecordQueryCondition condition = new RecordQueryCondition();
-            //condition.ById = checkBox18.Checked;
-            //condition.PersonId = textBox62.Text;
-            //condition.ByName = checkBox19.Checked;
-            //condition.PersonName = textBox63.Text;
-            //condition.WgNo = checkBox20.Checked;
-            //if (checkBox20.Checked)
-            //{
-            //    condition.WgNoc = int.Parse(textBox64.Text);
-            //}
-            //condition.ByCaptureTime2 = checkBox21.Checked;
-            //condition.TimeStart2 = dateTimePicker6.Value;
-            //condition.TimeEnd2 = dateTimePicker7.Value;
-            //condition.ByCaptureTime1 = checkBox22.Checked;
-            //condition.Time1Start = dateTimePicker8.Value;
-            //condition.Time1End = dateTimePicker9.Value;
+            condition.ById = checkBox18.Checked;
+            condition.PersonId = textBox62.Text;
+            condition.ByName = checkBox19.Checked;
+            condition.PersonName = textBox63.Text;
+            condition.WgNo = checkBox20.Checked;
+            if (checkBox20.Checked)
+            {
+                condition.WgNoc = int.Parse(textBox64.Text);
+            }
+            condition.ByCaptureTime2 = checkBox21.Checked;
+            condition.TimeStart2 = dateTimePicker6.Value;
+            condition.TimeEnd2 = dateTimePicker7.Value;
+            condition.ByCaptureTime1 = checkBox22.Checked;
+            condition.Time1Start = dateTimePicker8.Value;
+            condition.Time1End = dateTimePicker9.Value;
 
             short query_mode=(short)comboBox11.SelectedIndex;
 

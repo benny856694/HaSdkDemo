@@ -31,7 +31,7 @@ namespace SDKClientSharp
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePickerValidFromRangeEnd = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerValidStartRangeFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerValidFromRangeStart = new System.Windows.Forms.DateTimePicker();
             this.checkBoxValidFrom = new System.Windows.Forms.CheckBox();
             this.comboBoxQueryMode = new System.Windows.Forms.ComboBox();
             this.dateTimePickerValidToRangeEnd = new System.Windows.Forms.DateTimePicker();
@@ -69,7 +69,7 @@ namespace SDKClientSharp
             this.groupBox1.Controls.Add(this.buttonNextPage);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dateTimePickerValidFromRangeEnd);
-            this.groupBox1.Controls.Add(this.dateTimePickerValidStartRangeFrom);
+            this.groupBox1.Controls.Add(this.dateTimePickerValidFromRangeStart);
             this.groupBox1.Controls.Add(this.checkBoxValidFrom);
             this.groupBox1.Controls.Add(this.comboBoxQueryMode);
             this.groupBox1.Controls.Add(this.dateTimePickerValidToRangeEnd);
@@ -108,12 +108,12 @@ namespace SDKClientSharp
             // 
             // dateTimePickerValidStartRangeFrom
             // 
-            this.dateTimePickerValidStartRangeFrom.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dateTimePickerValidStartRangeFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerValidStartRangeFrom.Location = new System.Drawing.Point(200, 76);
-            this.dateTimePickerValidStartRangeFrom.Name = "dateTimePickerValidStartRangeFrom";
-            this.dateTimePickerValidStartRangeFrom.Size = new System.Drawing.Size(164, 20);
-            this.dateTimePickerValidStartRangeFrom.TabIndex = 76;
+            this.dateTimePickerValidFromRangeStart.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dateTimePickerValidFromRangeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerValidFromRangeStart.Location = new System.Drawing.Point(200, 76);
+            this.dateTimePickerValidFromRangeStart.Name = "dateTimePickerValidStartRangeFrom";
+            this.dateTimePickerValidFromRangeStart.Size = new System.Drawing.Size(164, 20);
+            this.dateTimePickerValidFromRangeStart.TabIndex = 76;
             // 
             // checkBoxValidFrom
             // 
@@ -389,7 +389,7 @@ namespace SDKClientSharp
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dateTimePickerValidFromRangeEnd;
-        private System.Windows.Forms.DateTimePicker dateTimePickerValidStartRangeFrom;
+        private System.Windows.Forms.DateTimePicker dateTimePickerValidFromRangeStart;
         private System.Windows.Forms.CheckBox checkBoxValidFrom;
         private System.Windows.Forms.ComboBox comboBoxQueryMode;
         private System.Windows.Forms.DateTimePicker dateTimePickerValidToRangeEnd;

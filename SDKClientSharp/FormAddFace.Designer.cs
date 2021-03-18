@@ -29,47 +29,50 @@ namespace SDKClientSharp
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBoxScheduleMode = new System.Windows.Forms.ComboBox();
             this.label99 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.combTime_a = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerValidFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerValidTo = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxValidToType = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.txtwg_a = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFaceType = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAddFace = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxWiegandCardNo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonChoosePic = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox13
+            // comboBoxScheduleMode
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.comboBoxScheduleMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxScheduleMode.FormattingEnabled = true;
+            this.comboBoxScheduleMode.Items.AddRange(new object[] {
             "不使用",
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.comboBox13.Location = new System.Drawing.Point(102, 167);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(121, 21);
-            this.comboBox13.TabIndex = 45;
+            this.comboBoxScheduleMode.Location = new System.Drawing.Point(102, 167);
+            this.comboBoxScheduleMode.Name = "comboBoxScheduleMode";
+            this.comboBoxScheduleMode.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxScheduleMode.TabIndex = 45;
             // 
             // label99
             // 
@@ -91,36 +94,36 @@ namespace SDKClientSharp
             this.label77.TabIndex = 43;
             this.label77.Text = "起始时间";
             // 
-            // dateTimePicker10
+            // dateTimePickerValidFrom
             // 
-            this.dateTimePicker10.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker10.Location = new System.Drawing.Point(102, 212);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker10.TabIndex = 42;
+            this.dateTimePickerValidFrom.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dateTimePickerValidFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerValidFrom.Location = new System.Drawing.Point(102, 212);
+            this.dateTimePickerValidFrom.Name = "dateTimePickerValidFrom";
+            this.dateTimePickerValidFrom.Size = new System.Drawing.Size(121, 20);
+            this.dateTimePickerValidFrom.TabIndex = 42;
             // 
-            // dateTimePicker1
+            // dateTimePickerValidTo
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(102, 284);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker1.TabIndex = 41;
+            this.dateTimePickerValidTo.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dateTimePickerValidTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerValidTo.Location = new System.Drawing.Point(102, 284);
+            this.dateTimePickerValidTo.Name = "dateTimePickerValidTo";
+            this.dateTimePickerValidTo.Size = new System.Drawing.Size(121, 20);
+            this.dateTimePickerValidTo.TabIndex = 41;
             // 
-            // combTime_a
+            // comboBoxValidToType
             // 
-            this.combTime_a.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combTime_a.FormattingEnabled = true;
-            this.combTime_a.Items.AddRange(new object[] {
+            this.comboBoxValidToType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxValidToType.FormattingEnabled = true;
+            this.comboBoxValidToType.Items.AddRange(new object[] {
             "永不过期",
             "永久失效",
             "给定时间=>"});
-            this.combTime_a.Location = new System.Drawing.Point(102, 246);
-            this.combTime_a.Name = "combTime_a";
-            this.combTime_a.Size = new System.Drawing.Size(121, 21);
-            this.combTime_a.TabIndex = 40;
+            this.comboBoxValidToType.Location = new System.Drawing.Point(102, 246);
+            this.comboBoxValidToType.Name = "comboBoxValidToType";
+            this.comboBoxValidToType.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxValidToType.TabIndex = 40;
             // 
             // label25
             // 
@@ -150,18 +153,18 @@ namespace SDKClientSharp
             this.label26.TabIndex = 37;
             this.label26.Text = "韦根卡号：";
             // 
-            // comboBox1
+            // comboBoxFaceType
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxFaceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFaceType.FormattingEnabled = true;
+            this.comboBoxFaceType.Items.AddRange(new object[] {
             "普通人员",
             "白名单",
             "黑名单"});
-            this.comboBox1.Location = new System.Drawing.Point(102, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 36;
+            this.comboBoxFaceType.Location = new System.Drawing.Point(102, 91);
+            this.comboBoxFaceType.Name = "comboBoxFaceType";
+            this.comboBoxFaceType.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxFaceType.TabIndex = 36;
             // 
             // textBox5
             // 
@@ -189,12 +192,12 @@ namespace SDKClientSharp
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 32;
             // 
-            // textBox4
+            // textBoxName
             // 
-            this.textBox4.Location = new System.Drawing.Point(102, 52);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 33;
+            this.textBoxName.Location = new System.Drawing.Point(102, 52);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(121, 20);
+            this.textBoxName.TabIndex = 33;
             // 
             // label12
             // 
@@ -216,12 +219,12 @@ namespace SDKClientSharp
             this.label13.TabIndex = 31;
             this.label13.Text = "人员姓名：";
             // 
-            // textBox1
+            // textBoxId
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 47;
+            this.textBoxId.Location = new System.Drawing.Point(102, 20);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(121, 20);
+            this.textBoxId.TabIndex = 47;
             // 
             // label1
             // 
@@ -239,26 +242,28 @@ namespace SDKClientSharp
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(29, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 48;
-            this.label2.Text = "人员姓名：";
+            this.label2.Text = "类型：";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(263, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(157, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 49;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // buttonAddFace
             // 
-            this.button1.Location = new System.Drawing.Point(270, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "添加";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonAddFace.Location = new System.Drawing.Point(270, 318);
+            this.buttonAddFace.Name = "buttonAddFace";
+            this.buttonAddFace.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddFace.TabIndex = 50;
+            this.buttonAddFace.Text = "添加";
+            this.buttonAddFace.UseVisualStyleBackColor = true;
+            this.buttonAddFace.Click += new System.EventHandler(this.buttonAddFace_Click);
             // 
             // button2
             // 
@@ -268,14 +273,15 @@ namespace SDKClientSharp
             this.button2.TabIndex = 51;
             this.button2.Text = "完成";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox2
+            // textBoxWiegandCardNo
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 53;
-            this.textBox2.Text = "0";
+            this.textBoxWiegandCardNo.Location = new System.Drawing.Point(102, 128);
+            this.textBoxWiegandCardNo.Name = "textBoxWiegandCardNo";
+            this.textBoxWiegandCardNo.Size = new System.Drawing.Size(121, 20);
+            this.textBoxWiegandCardNo.TabIndex = 53;
+            this.textBoxWiegandCardNo.Text = "0";
             // 
             // label3
             // 
@@ -287,40 +293,58 @@ namespace SDKClientSharp
             this.label3.TabIndex = 52;
             this.label3.Text = "韦根卡号：";
             // 
+            // buttonChoosePic
+            // 
+            this.buttonChoosePic.Location = new System.Drawing.Point(333, 15);
+            this.buttonChoosePic.Name = "buttonChoosePic";
+            this.buttonChoosePic.Size = new System.Drawing.Size(87, 23);
+            this.buttonChoosePic.TabIndex = 54;
+            this.buttonChoosePic.Text = "选择图片";
+            this.buttonChoosePic.UseVisualStyleBackColor = true;
+            this.buttonChoosePic.Click += new System.EventHandler(this.buttonChoosePic_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "所有图片格式|*.jpg;*.png;*.bmp";
+            // 
             // FormAddFace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 353);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.buttonChoosePic);
+            this.Controls.Add(this.textBoxWiegandCardNo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonAddFace);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox13);
+            this.Controls.Add(this.comboBoxScheduleMode);
             this.Controls.Add(this.label99);
             this.Controls.Add(this.label77);
-            this.Controls.Add(this.dateTimePicker10);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.combTime_a);
+            this.Controls.Add(this.dateTimePickerValidFrom);
+            this.Controls.Add(this.dateTimePickerValidTo);
+            this.Controls.Add(this.comboBoxValidToType);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.txtwg_a);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxFaceType);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAddFace";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormAddFace";
+            this.Load += new System.EventHandler(this.FormAddFace_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -329,29 +353,31 @@ namespace SDKClientSharp
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBoxScheduleMode;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.DateTimePicker dateTimePicker10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox combTime_a;
+        private System.Windows.Forms.DateTimePicker dateTimePickerValidFrom;
+        private System.Windows.Forms.DateTimePicker dateTimePickerValidTo;
+        private System.Windows.Forms.ComboBox comboBoxValidToType;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtwg_a;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxFaceType;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAddFace;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxWiegandCardNo;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonChoosePic;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

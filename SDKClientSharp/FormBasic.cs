@@ -91,6 +91,7 @@ namespace SDKClientSharp
             if (e.RowIndex != -1)
             {
                 textBoxIp.Text = dataGridViewCameraList.Rows[e.RowIndex].Cells[0].Value as string;
+                buttonConnect.PerformClick();
             }
         }
 
@@ -115,6 +116,15 @@ namespace SDKClientSharp
         private void buttonQueryFace_Click(object sender, EventArgs e)
         {
             using (var form = new FormFaceQuery())
+            {
+                form.Cam = _cam;
+                form.ShowDialog();
+            }
+        }
+
+        private void buttonAddFace_Click(object sender, EventArgs e)
+        {
+            using (var form = new FormAddFace())
             {
                 form.Cam = _cam;
                 form.ShowDialog();
