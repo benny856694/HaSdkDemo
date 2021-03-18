@@ -113,12 +113,14 @@ namespace SDKClientSharp
             resources.ApplyResources(this.buttonPrevPage, "buttonPrevPage");
             this.buttonPrevPage.Name = "buttonPrevPage";
             this.buttonPrevPage.UseVisualStyleBackColor = true;
+            this.buttonPrevPage.Click += new System.EventHandler(this.buttonPrevPage_Click);
             // 
             // buttonNextPage
             // 
             resources.ApplyResources(this.buttonNextPage, "buttonNextPage");
             this.buttonNextPage.Name = "buttonNextPage";
             this.buttonNextPage.UseVisualStyleBackColor = true;
+            this.buttonNextPage.Click += new System.EventHandler(this.buttonNextPage_Click);
             // 
             // label1
             // 
@@ -146,6 +148,7 @@ namespace SDKClientSharp
             // comboBoxQueryMode
             // 
             resources.ApplyResources(this.comboBoxQueryMode, "comboBoxQueryMode");
+            this.comboBoxQueryMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxQueryMode.FormattingEnabled = true;
             this.comboBoxQueryMode.Items.AddRange(new object[] {
             resources.GetString("comboBoxQueryMode.Items"),

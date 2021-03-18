@@ -88,6 +88,15 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 发生错误：{0}.
+        /// </summary>
+        internal static string ErrorWithErrorMsg {
+            get {
+                return ResourceManager.GetString("ErrorWithErrorMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 所有.
         /// </summary>
         internal static string FaceType_All {

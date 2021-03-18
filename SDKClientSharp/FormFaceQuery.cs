@@ -25,7 +25,15 @@ namespace SDKClientSharp
             comboBoxQueryMode.InitAsMathingMode();
         }
 
-        public HaCamera Cam { get; set; } 
+        public HaCamera Cam { get; set; }
+        public int CurPage
+        { 
+            get => _curPage; 
+            set  {
+                _curPage = value;
+                UpdatePageIndicator(int.Parse(textBoxPageSize.Text), _curPage);
+            }
+        }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -39,7 +47,7 @@ namespace SDKClientSharp
 
         private void buttonQuery_Click(object sender, EventArgs e)
         {
-            _curPage = 1;
+            CurPage = 1;
             DoQuery();
         }
 
@@ -65,7 +73,7 @@ namespace SDKClientSharp
             var total = 0;
             var pageSize = int.Parse(textBoxPageSize.Text);
             var result = Cam?.QueryFaces(
-                _curPage,
+                CurPage,
                 pageSize,
                 (int)comboBoxType.SelectedValue,
                 checkBoxOutputFeature.Checked,
@@ -76,7 +84,13 @@ namespace SDKClientSharp
 
             if (result == null)
             {
-                MessageBox.Show(strings.Fail);
+                var lastError = Cam.GetLastError();
+                if (lastError != NativeConstants.ERR_NONE)
+                {
+                    var msg = string.Format(strings.ErrorWithErrorMsg, HaCamera.GetErrorDescribe(lastError));
+                    MessageBox.Show(msg);
+
+                }
                 return;
 
             }
@@ -98,7 +112,19 @@ namespace SDKClientSharp
         private void UpdatePageIndicator(int pageSize, int total)
         {
             var pageCount = (total + pageSize - 1) / pageSize;
-            labelPageIndicator.Text = $"{_curPage}/{pageCount}";
+            labelPageIndicator.Text = $"{CurPage}/{pageCount}";
+        }
+
+        private void buttonPrevPage_Click(object sender, EventArgs e)
+        {
+            CurPage--;
+            DoQuery();
+        }
+
+        private void buttonNextPage_Click(object sender, EventArgs e)
+        {
+            CurPage++;
+            DoQuery();
         }
     }
 }

@@ -126,6 +126,9 @@
   <data name="DeleteFaceMsg" xml:space="preserve">
     <value>Connect {0}</value>
   </data>
+  <data name="ErrorWithErrorMsg" xml:space="preserve">
+    <value>Error occurred：{0}</value>
+  </data>
   <data name="FaceType.All" xml:space="preserve">
     <value>All</value>
   </data>

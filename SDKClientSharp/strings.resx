@@ -126,6 +126,9 @@
   <data name="DeleteFaceMsg" xml:space="preserve">
     <value>删除 {0}</value>
   </data>
+  <data name="ErrorWithErrorMsg" xml:space="preserve">
+    <value>发生错误：{0}</value>
+  </data>
   <data name="FaceType.All" xml:space="preserve">
     <value>所有</value>
   </data>
