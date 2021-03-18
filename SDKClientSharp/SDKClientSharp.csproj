@@ -139,6 +139,12 @@
     <Compile Include="FormBasic.Designer.cs">
       <DependentUpon>FormBasic.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDeleteFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteFace.Designer.cs">
+      <DependentUpon>FormDeleteFace.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFaceQuery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -179,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBasic.resx">
       <DependentUpon>FormBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteFace.resx">
+      <DependentUpon>FormDeleteFace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFaceQuery.resx">
       <DependentUpon>FormFaceQuery.cs</DependentUpon>
@@ -215,6 +229,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

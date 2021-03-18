@@ -62,7 +62,6 @@ namespace SDKClientSharp
             this.listBoxLog = new System.Windows.Forms.ListBox();
             this.buttonAddFace = new System.Windows.Forms.Button();
             this.buttonRemoveFace = new System.Windows.Forms.Button();
-            this.buttonModifyFace = new System.Windows.Forms.Button();
             this.buttonQueryFace = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -419,19 +418,11 @@ namespace SDKClientSharp
             this.buttonRemoveFace.TabIndex = 1;
             this.buttonRemoveFace.Text = "删除人脸";
             this.buttonRemoveFace.UseVisualStyleBackColor = true;
-            // 
-            // buttonModifyFace
-            // 
-            this.buttonModifyFace.Location = new System.Drawing.Point(15, 58);
-            this.buttonModifyFace.Name = "buttonModifyFace";
-            this.buttonModifyFace.Size = new System.Drawing.Size(75, 23);
-            this.buttonModifyFace.TabIndex = 2;
-            this.buttonModifyFace.Text = "修改人脸";
-            this.buttonModifyFace.UseVisualStyleBackColor = true;
+            this.buttonRemoveFace.Click += new System.EventHandler(this.buttonRemoveFace_Click);
             // 
             // buttonQueryFace
             // 
-            this.buttonQueryFace.Location = new System.Drawing.Point(112, 58);
+            this.buttonQueryFace.Location = new System.Drawing.Point(15, 58);
             this.buttonQueryFace.Name = "buttonQueryFace";
             this.buttonQueryFace.Size = new System.Drawing.Size(75, 23);
             this.buttonQueryFace.TabIndex = 3;
@@ -492,7 +483,6 @@ namespace SDKClientSharp
             this.groupBox1.Controls.Add(this.buttonAddFace);
             this.groupBox1.Controls.Add(this.buttonQueryFace);
             this.groupBox1.Controls.Add(this.buttonRemoveFace);
-            this.groupBox1.Controls.Add(this.buttonModifyFace);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -557,7 +547,6 @@ namespace SDKClientSharp
         private System.Windows.Forms.TabPage tabPageCaptureEvent;
         private System.Windows.Forms.Button buttonRemoveFace;
         private System.Windows.Forms.Button buttonQueryFace;
-        private System.Windows.Forms.Button buttonModifyFace;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.GroupBox groupBox2;

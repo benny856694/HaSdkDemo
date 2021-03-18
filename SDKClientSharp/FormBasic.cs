@@ -130,5 +130,14 @@ namespace SDKClientSharp
                 form.ShowDialog();
             }
         }
+
+        private void buttonRemoveFace_Click(object sender, EventArgs e)
+        {
+            using (var form = new FormDeleteFace())
+            {
+                form.Cam = _cam;
+                form.ShowDialog();
+            }
+        }
     }
 }

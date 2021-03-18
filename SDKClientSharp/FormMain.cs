@@ -18,11 +18,7 @@ namespace SDKClientSharp
     {
         public FormMain()
         {
-            using (var form = new FormLang())
-            {
-                form.ShowDialog();
-
-            }
+          
 
             InitializeComponent();
 

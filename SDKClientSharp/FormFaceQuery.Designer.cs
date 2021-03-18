@@ -30,6 +30,10 @@ namespace SDKClientSharp
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelPageIndicator = new System.Windows.Forms.Label();
+            this.buttonPrevPage = new System.Windows.Forms.Button();
+            this.buttonNextPage = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.dateTimePickerValidFromRangeEnd = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerValidFromRangeStart = new System.Windows.Forms.DateTimePicker();
             this.checkBoxValidFrom = new System.Windows.Forms.CheckBox();
@@ -50,14 +54,10 @@ namespace SDKClientSharp
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewFaceQueryResult = new System.Windows.Forms.DataGridView();
-            this.buttonNextPage = new System.Windows.Forms.Button();
-            this.buttonPrevPage = new System.Windows.Forms.Button();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelPageIndicator = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFaceQueryResult)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,44 @@ namespace SDKClientSharp
             this.groupBox1.Text = "查询条件";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // labelPageIndicator
+            // 
+            this.labelPageIndicator.AutoSize = true;
+            this.labelPageIndicator.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelPageIndicator.Location = new System.Drawing.Point(1073, 112);
+            this.labelPageIndicator.Name = "labelPageIndicator";
+            this.labelPageIndicator.Size = new System.Drawing.Size(24, 13);
+            this.labelPageIndicator.TabIndex = 81;
+            this.labelPageIndicator.Text = "0/0";
+            // 
+            // buttonPrevPage
+            // 
+            this.buttonPrevPage.Location = new System.Drawing.Point(998, 107);
+            this.buttonPrevPage.Name = "buttonPrevPage";
+            this.buttonPrevPage.Size = new System.Drawing.Size(61, 23);
+            this.buttonPrevPage.TabIndex = 80;
+            this.buttonPrevPage.Text = "<上一页";
+            this.buttonPrevPage.UseVisualStyleBackColor = true;
+            // 
+            // buttonNextPage
+            // 
+            this.buttonNextPage.Location = new System.Drawing.Point(1114, 107);
+            this.buttonNextPage.Name = "buttonNextPage";
+            this.buttonNextPage.Size = new System.Drawing.Size(64, 23);
+            this.buttonNextPage.TabIndex = 79;
+            this.buttonNextPage.Text = "下一页>";
+            this.buttonNextPage.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(788, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 78;
+            this.label1.Text = "查询模式：";
+            // 
             // dateTimePickerValidFromRangeEnd
             // 
             this.dateTimePickerValidFromRangeEnd.CustomFormat = "yyyy-MM-dd HH:mm:ss";
@@ -106,12 +144,12 @@ namespace SDKClientSharp
             this.dateTimePickerValidFromRangeEnd.Size = new System.Drawing.Size(157, 20);
             this.dateTimePickerValidFromRangeEnd.TabIndex = 77;
             // 
-            // dateTimePickerValidStartRangeFrom
+            // dateTimePickerValidFromRangeStart
             // 
             this.dateTimePickerValidFromRangeStart.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dateTimePickerValidFromRangeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerValidFromRangeStart.Location = new System.Drawing.Point(200, 76);
-            this.dateTimePickerValidFromRangeStart.Name = "dateTimePickerValidStartRangeFrom";
+            this.dateTimePickerValidFromRangeStart.Name = "dateTimePickerValidFromRangeStart";
             this.dateTimePickerValidFromRangeStart.Size = new System.Drawing.Size(164, 20);
             this.dateTimePickerValidFromRangeStart.TabIndex = 76;
             // 
@@ -294,16 +332,6 @@ namespace SDKClientSharp
             this.comboBoxType.Size = new System.Drawing.Size(80, 21);
             this.comboBoxType.TabIndex = 55;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(788, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 78;
-            this.label1.Text = "查询模式：";
-            // 
             // dataGridViewFaceQueryResult
             // 
             this.dataGridViewFaceQueryResult.AllowUserToAddRows = false;
@@ -320,24 +348,6 @@ namespace SDKClientSharp
             this.dataGridViewFaceQueryResult.ReadOnly = true;
             this.dataGridViewFaceQueryResult.Size = new System.Drawing.Size(1190, 433);
             this.dataGridViewFaceQueryResult.TabIndex = 1;
-            // 
-            // buttonNextPage
-            // 
-            this.buttonNextPage.Location = new System.Drawing.Point(1114, 107);
-            this.buttonNextPage.Name = "buttonNextPage";
-            this.buttonNextPage.Size = new System.Drawing.Size(64, 23);
-            this.buttonNextPage.TabIndex = 79;
-            this.buttonNextPage.Text = "下一页>";
-            this.buttonNextPage.UseVisualStyleBackColor = true;
-            // 
-            // buttonPrevPage
-            // 
-            this.buttonPrevPage.Location = new System.Drawing.Point(998, 107);
-            this.buttonPrevPage.Name = "buttonPrevPage";
-            this.buttonPrevPage.Size = new System.Drawing.Size(61, 23);
-            this.buttonPrevPage.TabIndex = 80;
-            this.buttonPrevPage.Text = "<上一页";
-            this.buttonPrevPage.UseVisualStyleBackColor = true;
             // 
             // ColumnId
             // 
@@ -356,16 +366,6 @@ namespace SDKClientSharp
             this.ColumnType.HeaderText = "Type";
             this.ColumnType.Name = "ColumnType";
             this.ColumnType.ReadOnly = true;
-            // 
-            // labelPageIndicator
-            // 
-            this.labelPageIndicator.AutoSize = true;
-            this.labelPageIndicator.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPageIndicator.Location = new System.Drawing.Point(1073, 112);
-            this.labelPageIndicator.Name = "labelPageIndicator";
-            this.labelPageIndicator.Size = new System.Drawing.Size(24, 13);
-            this.labelPageIndicator.TabIndex = 81;
-            this.labelPageIndicator.Text = "0/0";
             // 
             // FormFaceQuery
             // 
