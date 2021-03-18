@@ -21,23 +21,8 @@ namespace SDKClientSharp
 
         private void Init()
         {
-            var type = new Tuple<int, string>[]
-            {
-                new Tuple<int, string>(0, "普通"),
-                new Tuple<int, string>(1, "白名单"),
-                new Tuple<int, string>(2, "黑名单"),
-                new Tuple<int, string>(-1, "所有"),
-            };
-
-            comboBoxType.InitComboBox(type);
-
-            var queryMode = new Tuple<short, string>[]
-            {
-                new Tuple<short, string>(0, "精确"),
-                new Tuple<short, string>(1, "模糊"),
-            };
-
-            comboBoxQueryMode.InitComboBox(queryMode);
+            comboBoxType.InitAsFaceQueryType();
+            comboBoxQueryMode.InitAsMathingMode();
         }
 
         public HaCamera Cam { get; set; } 
@@ -91,7 +76,7 @@ namespace SDKClientSharp
 
             if (result == null)
             {
-                MessageBox.Show("Failed");
+                MessageBox.Show(strings.Fail);
                 return;
 
             }

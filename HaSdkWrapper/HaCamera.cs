@@ -351,105 +351,105 @@ namespace HaSdkWrapper
             switch (errorCode)
             {
                 case NativeConstants.ERR_NONE:
-                    return "操作成功";
+                    return Strings.ERR_NONE;
                 case NativeConstants.ERR_INVALID_PARAM:
-                    return "参数非法（缺失或错误的参数）";
+                    return Strings.ERR_INVALID_PARAM;
                 case NativeConstants.ERR_TIMEOUT:
-                    return "操作超时（设备在规定时间内未响应当前操作）";
+                    return Strings.ERR_TIMEOUT;
                 case NativeConstants.ERR_SYS_NOT_MATCH:
-                    return "系统不匹配（操作设备不是人脸抓拍相机）";
+                    return Strings.ERR_SYS_NOT_MATCH;
                 case NativeConstants.ERR_UNCONNECTED:
-                    return "未连接（网络问题）";
+                    return Strings.ERR_UNCONNECTED;
                 case NativeConstants.ERR_NOT_IMPLEMENTED:
-                    return "未实现（设备版本较低不支持当前操作）";
+                    return Strings.ERR_NOT_IMPLEMENTED;
                 case NativeConstants.ERR_GET_FACE_FEATURE:
-                    return "提取人脸特征失败（须保证图像中有且仅有一张人脸）";
+                    return Strings.ERR_GET_FACE_FEATURE;
                 case NativeConstants.ERR_FACE_ID_REPEAT:
-                    return "添加人员失败（人员id重复）";
+                    return Strings.ERR_FACE_ID_REPEAT;
                 case NativeConstants.ERR_FACE_ID_NOT_EXITS:
-                    return "修改人脸特征失败（未找到对应ID）";
+                    return Strings.ERR_FACE_ID_NOT_EXITS;
                 case NativeConstants.ERR_GET_FACE_INIT:
-                    return "人脸提取器未初始化（请调用HA_InitFaceModel初始化）";
+                    return Strings.ERR_GET_FACE_INIT;
                 case NativeConstants.ERR_GET_FACE_ID:
-                    return "查询人脸失败（无当前记录）";
+                    return Strings.ERR_GET_FACE_ID;
                 case NativeConstants.ERR_SERIAL_INDEX:
-                    return "错误的串口编号（目前只支持HA_SERIAL_RS485和HA_SERIAL_RS232）";
+                    return Strings.ERR_SERIAL_INDEX;
                 case NativeConstants.ERR_SYSTEM_REBOOT:
-                    return "重启系统失败";
+                    return Strings.ERR_SYSTEM_REBOOT;
                 case NativeConstants.ERR_APP_REBOOT:
-                    return "重启应用程序失败";
+                    return Strings.ERR_APP_REBOOT;
                 case NativeConstants.ERR_ENCODE_JPG:
-                    return "压缩图像失败";
+                    return Strings.ERR_ENCODE_JPG;
                 case NativeConstants.ERR_FACES_NUM:
-                    return "单个人员最大支持5张图像";
+                    return Strings.ERR_FACES_NUM;
                 case NativeConstants.ERR_IMAGE_DECODE:
-                    return "图像解码失败";
+                    return Strings.ERR_IMAGE_DECODE;
                 case NativeConstants.ERR_IMAGE_SIZE:
-                    return "图像太大，用于提取特征的jpg图像不能超过10M，下发到相机的jpg图像 宽高不能超过128x128";
+                    return Strings.ERR_IMAGE_SIZE;
                 case NativeConstants.ERR_IMAGE_PATH:
-                    return "文件不存在，请检查图片路径是否正确";
+                    return Strings.ERR_IMAGE_PATH;
                 case NativeConstants.ERR_SAVE_IMG_NUM:
-                    return "目前相机只支持存一张模板图像，pictureFlags必须<=1";
+                    return Strings.ERR_SAVE_IMG_NUM;
                 case NativeConstants.ERR_PTZ_CTRL:
-                    return "不支持的云台控制，目前只支持5：变倍（放大） 6：变倍（缩小） 7：聚焦（拉近） 8：聚焦（拉远）";
+                    return Strings.ERR_PTZ_CTRL;
                 case NativeConstants.ERR_PTZ_CTRL_MODE:
-                    return "不支持的控制模式，1：一次运动 2：启动 3：停止";
+                    return Strings.ERR_PTZ_CTRL_MODE;
                 case NativeConstants.ERR_UPPER_LIMIT:
-                    return "人员数量已达上限";
+                    return Strings.ERR_UPPER_LIMIT;
                 case NativeConstants.ERR_PROTOCAL_VER:
-                    return "协议版本不匹配，请确认SDK和相机固件版本";
+                    return Strings.ERR_PROTOCAL_VER;
                 case NativeConstants.ERR_REQUEST_CMD:
-                    return "不支持的操作请求";
+                    return Strings.ERR_REQUEST_CMD;
                 case NativeConstants.ERR_PACKET_DATA:
-                    return "请求数据包包含不合法字段";
+                    return Strings.ERR_PACKET_DATA;
                 case NativeConstants.ERR_AUTH_FAILED:
-                    return "认证失败";
+                    return Strings.ERR_AUTH_FAILED;
                 case NativeConstants.ERR_WRITE_DATA:
-                    return "写入数据失败";
+                    return Strings.ERR_WRITE_DATA;
                 case NativeConstants.ERR_READ_DATA:
-                    return "读取数据失败";
+                    return Strings.ERR_READ_DATA;
                 case NativeConstants.ERR_TWIST_FACE:
-                    return "归一化图像失败";
+                    return Strings.ERR_TWIST_FACE;
                 case NativeConstants.ERR_EXTRACT_FEATURE:
-                    return "提取特征失败";
+                    return Strings.ERR_EXTRACT_FEATURE;
                 case NativeConstants.ERR_MIN_FACE:
-                    return "人脸尺寸太小，人脸轮廓必须大于96*96";
+                    return Strings.ERR_MIN_FACE;
                 case NativeConstants.ERR_QVALUE_TOO_SMALL:
-                    return "人像质量太差不满足注册条件";
+                    return Strings.ERR_QVALUE_TOO_SMALL;
                 case NativeConstants.ERR_INVALID_SYNC_MODE:
-                    return "无效的同步操作";
+                    return Strings.ERR_INVALID_SYNC_MODE;
                 case NativeConstants.ERR_WG_QUERY_MODE:
-                    return "韦根卡号不支持模糊查询";
+                    return Strings.ERR_WG_QUERY_MODE;
                 case NativeConstants.ERR_SYSTEM_BUSY:
-                    return "操作系统繁忙";
+                    return Strings.ERR_SYSTEM_BUSY;
                 case NativeConstants.ERR_VERSION_MATCH:
-                    return "版本不匹配";
+                    return Strings.ERR_VERSION_MATCH;
                 case NativeConstants.ERR_TOO_MUCH_FACE:
-                    return "图像中人脸数不为1";
+                    return Strings.ERR_TOO_MUCH_FACE;
                 case NativeConstants.ERR_FACE_INCOMPLETE:
-                    return "图像中人脸不完整";
+                    return Strings.ERR_FACE_INCOMPLETE;
                 case NativeConstants.ERR_ANGLE_PITCH:
-                    return "人脸俯仰角太大";
+                    return Strings.ERR_ANGLE_PITCH;
                 case NativeConstants.ERR_ANGLE_YAW:
-                    return "人脸侧偏角太大";
+                    return Strings.ERR_ANGLE_YAW;
                 case NativeConstants.ERR_ANGLE_ROLL:
-                    return "人脸不正";
+                    return Strings.ERR_ANGLE_ROLL;
                 case NativeConstants.ERR_MOUTH_OPEN:
-                    return "张嘴幅度过大";
+                    return Strings.ERR_MOUTH_OPEN;
                 case NativeConstants.ERR_YINYANG_FACE:
-                    return "光照不均匀";
+                    return Strings.ERR_YINYANG_FACE;
                 case NativeConstants.ERR_VISIBLE_TARGET:
-                    return "未检出指定个数可见光目标";
+                    return Strings.ERR_VISIBLE_TARGET;
                 case NativeConstants.ERR_INFRARED_TARGET:
-                    return "未检出指定个数红外光目标";
+                    return Strings.ERR_INFRARED_TARGET;
                 case NativeConstants.ERR_ABERRATION_TOO_BIG:
-                    return "可见光红外光像差过大";
+                    return Strings.ERR_ABERRATION_TOO_BIG;
                 case NativeConstants.ERR_REPLYCODE_FEATURE_VERSION:
-                    return "特征数据版本不匹配";
+                    return Strings.ERR_REPLYCODE_FEATURE_VERSION;
                 case NativeConstants.ERR_LACK_TWISTIMGE:
-                    return "缺少归一化图像";
+                    return Strings.ERR_LACK_TWISTIMGE;
                 default:
-                    return "未知";
+                    return Strings.ERR_UNDEFINED;
             }
         }
 

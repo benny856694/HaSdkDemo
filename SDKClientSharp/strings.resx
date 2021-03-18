@@ -126,10 +126,43 @@
   <data name="DeleteFaceMsg" xml:space="preserve">
     <value>删除 {0}</value>
   </data>
+  <data name="FaceType.All" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="FaceType.BlackName" xml:space="preserve">
+    <value>黑名单</value>
+  </data>
+  <data name="FaceType.Normal" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="FaceType.WhiteName" xml:space="preserve">
+    <value>白名单</value>
+  </data>
   <data name="Fail" xml:space="preserve">
     <value>失败</value>
   </data>
+  <data name="MatchingMode.Exactly" xml:space="preserve">
+    <value>精确匹配</value>
+  </data>
+  <data name="MatchingMode.Fuzzy" xml:space="preserve">
+    <value>模糊匹配</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Rule" xml:space="preserve">
+    <value>规则{0}</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>成功</value>
+  </data>
+  <data name="ValidTo.Expired" xml:space="preserve">
+    <value>已过期</value>
+  </data>
+  <data name="ValidTo.NeverExpire" xml:space="preserve">
+    <value>永不过期</value>
+  </data>
+  <data name="ValidTo.Specified" xml:space="preserve">
+    <value>指定时间</value>
   </data>
 </root>

@@ -88,6 +88,42 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 所有.
+        /// </summary>
+        internal static string FaceType_All {
+            get {
+                return ResourceManager.GetString("FaceType.All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 黑名单.
+        /// </summary>
+        internal static string FaceType_BlackName {
+            get {
+                return ResourceManager.GetString("FaceType.BlackName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 普通.
+        /// </summary>
+        internal static string FaceType_Normal {
+            get {
+                return ResourceManager.GetString("FaceType.Normal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 白名单.
+        /// </summary>
+        internal static string FaceType_WhiteName {
+            get {
+                return ResourceManager.GetString("FaceType.WhiteName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 失败.
         /// </summary>
         internal static string Fail {
@@ -97,11 +133,74 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 精确匹配.
+        /// </summary>
+        internal static string MatchingMode_Exactly {
+            get {
+                return ResourceManager.GetString("MatchingMode.Exactly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 模糊匹配.
+        /// </summary>
+        internal static string MatchingMode_Fuzzy {
+            get {
+                return ResourceManager.GetString("MatchingMode.Fuzzy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未使用.
+        /// </summary>
+        internal static string NA {
+            get {
+                return ResourceManager.GetString("NA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 规则{0}.
+        /// </summary>
+        internal static string Rule {
+            get {
+                return ResourceManager.GetString("Rule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 成功.
         /// </summary>
         internal static string Success {
             get {
                 return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 已过期.
+        /// </summary>
+        internal static string ValidTo_Expired {
+            get {
+                return ResourceManager.GetString("ValidTo.Expired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 永不过期.
+        /// </summary>
+        internal static string ValidTo_NeverExpire {
+            get {
+                return ResourceManager.GetString("ValidTo.NeverExpire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 指定时间.
+        /// </summary>
+        internal static string ValidTo_Specified {
+            get {
+                return ResourceManager.GetString("ValidTo.Specified", resourceCulture);
             }
         }
     }

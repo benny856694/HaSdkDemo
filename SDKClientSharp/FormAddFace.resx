@@ -267,8 +267,8 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
   </data>
   <data name="buttonAddFace.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -281,6 +281,9 @@
   </data>
   <data name="textBoxName.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
+  </data>
+  <data name="&gt;&gt;textBoxName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -321,8 +324,8 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label99.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 67</value>
@@ -444,11 +447,11 @@
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="comboBoxScheduleMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;textBoxName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBoxId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 20</value>
   </data>
   <data name="&gt;&gt;txtwg_a.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -470,9 +473,6 @@
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -513,6 +513,9 @@
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="buttonAddFace.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>所有图片格式|*.jpg;*.png;*.bmp</value>
   </data>
@@ -522,11 +525,8 @@
   <data name="&gt;&gt;dateTimePickerValidFrom.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 13</value>
+  <data name="&gt;&gt;buttonAddFace.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -537,8 +537,8 @@
   <data name="&gt;&gt;txtwg_a.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="textBoxId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 20</value>
+  <data name="comboBoxValidToType.Items2" xml:space="preserve">
+    <value>给定时间=&gt;</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -564,9 +564,6 @@
   <data name="&gt;&gt;comboBoxScheduleMode.Name" xml:space="preserve">
     <value>comboBoxScheduleMode</value>
   </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="buttonChoosePic.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 23</value>
   </data>
@@ -582,14 +579,11 @@
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonAddFace.Text" xml:space="preserve">
-    <value>添加</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label99.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;buttonAddFace.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="comboBoxScheduleMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
   <data name="txtwg_a.Text" xml:space="preserve">
     <value>0</value>
@@ -636,8 +630,8 @@
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="comboBoxValidToType.Items2" xml:space="preserve">
-    <value>给定时间=&gt;</value>
+  <data name="label14.Text" xml:space="preserve">
+    <value>模板图片：</value>
   </data>
   <data name="dateTimePickerValidTo.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
@@ -684,11 +678,14 @@
   <data name="comboBoxFaceType.Items2" xml:space="preserve">
     <value>黑名单</value>
   </data>
+  <data name="&gt;&gt;comboBoxValidToType.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
   <data name="&gt;&gt;comboBoxFaceType.Name" xml:space="preserve">
     <value>comboBoxFaceType</value>
   </data>
-  <data name="&gt;&gt;comboBoxValidToType.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="comboBoxScheduleMode.Items1" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;buttonAddFace.Parent" xml:space="preserve">
     <value>$this</value>
@@ -711,8 +708,8 @@
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>263, 46</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>人员姓名：</value>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -750,8 +747,8 @@
   <data name="dateTimePickerValidFrom.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>模板图片：</value>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label99.Parent" xml:space="preserve">
     <value>$this</value>
@@ -783,8 +780,8 @@
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
   </data>
-  <data name="comboBoxScheduleMode.Items1" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBoxWiegandCardNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
@@ -803,6 +800,9 @@
   </data>
   <data name="comboBoxFaceType.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 91</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>人员姓名：</value>
   </data>
   <data name="comboBoxScheduleMode.Items3" xml:space="preserve">
     <value>3</value>
@@ -829,7 +829,7 @@
     <value>$this</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en-US</value>
+    <value>en</value>
   </metadata>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

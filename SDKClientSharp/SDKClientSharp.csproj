@@ -208,6 +208,9 @@
     <EmbeddedResource Include="FormDeleteFace.resx">
       <DependentUpon>FormDeleteFace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFaceQuery.en.resx">
+      <DependentUpon>FormFaceQuery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFaceQuery.resx">
       <DependentUpon>FormFaceQuery.cs</DependentUpon>
     </EmbeddedResource>

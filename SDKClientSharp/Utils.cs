@@ -28,9 +28,9 @@ namespace SDKClientSharp
         {
             var options = new Tuple<int, string>[]
             {
-                new Tuple<int, string>(0, "普通"),
-                new Tuple<int, string>(1, "白名单"),
-                new Tuple<int, string>(2, "黑名单"),
+                new Tuple<int, string>(0, strings.FaceType_Normal),
+                new Tuple<int, string>(1, strings.FaceType_WhiteName),
+                new Tuple<int, string>(2, strings.FaceType_BlackName),
             };
 
             box.InitComboBox(options);
@@ -38,30 +38,51 @@ namespace SDKClientSharp
 
         public static void InitAsScheduleMode(this ComboBox box)
         {
-            var options = new Tuple<byte, string>[]
+            var options = new List<Tuple<byte, string>>();
+
+            options.Add(new Tuple<byte, string>(0, strings.NA));
+
+            for (int i = 1; i < 5; i++)
             {
-                new Tuple<byte, string>(0, "未使用"),
-                new Tuple<byte, string>(1, "调度规则1"),
-                new Tuple<byte, string>(2, "调度规则2"),
-                new Tuple<byte, string>(3, "调度规则3"),
-                new Tuple<byte, string>(4, "调度规则4"),
-                new Tuple<byte, string>(5, "调度规则5"),
+                options.Add(new Tuple<byte, string>(Convert.ToByte(i), string.Format(strings.Rule, i)));
+            }
+
+            box.InitComboBox(options.ToArray());
+        }
+
+
+        public static void InitAsValidToMode(this ComboBox box)
+        {
+            var options = new Tuple<int, string>[]
+            {
+                new Tuple<int, string>(0, strings.ValidTo_NeverExpire),
+                new Tuple<int, string>(1, strings.ValidTo_Expired),
+                new Tuple<int, string>(2, strings.ValidTo_Specified),
             };
 
             box.InitComboBox(options);
         }
 
 
-        public static void InitAsValidToMode(this ComboBox box)
+        public static void InitAsFaceQueryType(this ComboBox box)
         {
-            //永不过期
-            //永久失效
-            //给定时间
             var options = new Tuple<int, string>[]
             {
-                new Tuple<int, string>(0, "永不过期"),
-                new Tuple<int, string>(1, "永久失效"),
-                new Tuple<int, string>(2, "给定时间"),
+                new Tuple<int, string>(0, strings.FaceType_Normal),
+                new Tuple<int, string>(1, strings.FaceType_WhiteName),
+                new Tuple<int, string>(2, strings.FaceType_BlackName),
+                new Tuple<int, string>(-1, strings.FaceType_All),
+            };
+
+            box.InitComboBox(options);
+        }
+
+        public static void InitAsMathingMode(this ComboBox box)
+        {
+            var options = new Tuple<short, string>[]
+            {
+               new Tuple<short, string>(0, strings.MatchingMode_Exactly),
+                new Tuple<short, string>(1, strings.MatchingMode_Fuzzy),
             };
 
             box.InitComboBox(options);

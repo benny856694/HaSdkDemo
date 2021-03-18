@@ -29,7 +29,9 @@ namespace SDKClientSharp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFaceQuery));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.labelPageIndicator = new System.Windows.Forms.Label();
             this.buttonPrevPage = new System.Windows.Forms.Button();
             this.buttonNextPage = new System.Windows.Forms.Button();
@@ -64,6 +66,8 @@ namespace SDKClientSharp
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.labelPageIndicator);
             this.groupBox1.Controls.Add(this.buttonPrevPage);
             this.groupBox1.Controls.Add(this.buttonNextPage);
@@ -88,252 +92,164 @@ namespace SDKClientSharp
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.comboBoxType);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1190, 157);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "查询条件";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Name = "label2";
             // 
             // labelPageIndicator
             // 
-            this.labelPageIndicator.AutoSize = true;
-            this.labelPageIndicator.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPageIndicator.Location = new System.Drawing.Point(1073, 112);
+            resources.ApplyResources(this.labelPageIndicator, "labelPageIndicator");
             this.labelPageIndicator.Name = "labelPageIndicator";
-            this.labelPageIndicator.Size = new System.Drawing.Size(24, 13);
-            this.labelPageIndicator.TabIndex = 81;
-            this.labelPageIndicator.Text = "0/0";
             // 
             // buttonPrevPage
             // 
-            this.buttonPrevPage.Location = new System.Drawing.Point(998, 107);
+            resources.ApplyResources(this.buttonPrevPage, "buttonPrevPage");
             this.buttonPrevPage.Name = "buttonPrevPage";
-            this.buttonPrevPage.Size = new System.Drawing.Size(61, 23);
-            this.buttonPrevPage.TabIndex = 80;
-            this.buttonPrevPage.Text = "<上一页";
             this.buttonPrevPage.UseVisualStyleBackColor = true;
             // 
             // buttonNextPage
             // 
-            this.buttonNextPage.Location = new System.Drawing.Point(1114, 107);
+            resources.ApplyResources(this.buttonNextPage, "buttonNextPage");
             this.buttonNextPage.Name = "buttonNextPage";
-            this.buttonNextPage.Size = new System.Drawing.Size(64, 23);
-            this.buttonNextPage.TabIndex = 79;
-            this.buttonNextPage.Text = "下一页>";
             this.buttonNextPage.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(788, 39);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 78;
-            this.label1.Text = "查询模式：";
             // 
             // dateTimePickerValidFromRangeEnd
             // 
-            this.dateTimePickerValidFromRangeEnd.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePickerValidFromRangeEnd, "dateTimePickerValidFromRangeEnd");
             this.dateTimePickerValidFromRangeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerValidFromRangeEnd.Location = new System.Drawing.Point(384, 76);
             this.dateTimePickerValidFromRangeEnd.Name = "dateTimePickerValidFromRangeEnd";
-            this.dateTimePickerValidFromRangeEnd.Size = new System.Drawing.Size(157, 20);
-            this.dateTimePickerValidFromRangeEnd.TabIndex = 77;
             // 
             // dateTimePickerValidFromRangeStart
             // 
-            this.dateTimePickerValidFromRangeStart.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePickerValidFromRangeStart, "dateTimePickerValidFromRangeStart");
             this.dateTimePickerValidFromRangeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerValidFromRangeStart.Location = new System.Drawing.Point(200, 76);
             this.dateTimePickerValidFromRangeStart.Name = "dateTimePickerValidFromRangeStart";
-            this.dateTimePickerValidFromRangeStart.Size = new System.Drawing.Size(164, 20);
-            this.dateTimePickerValidFromRangeStart.TabIndex = 76;
             // 
             // checkBoxValidFrom
             // 
-            this.checkBoxValidFrom.AutoSize = true;
-            this.checkBoxValidFrom.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxValidFrom.Location = new System.Drawing.Point(40, 78);
+            resources.ApplyResources(this.checkBoxValidFrom, "checkBoxValidFrom");
             this.checkBoxValidFrom.Name = "checkBoxValidFrom";
-            this.checkBoxValidFrom.Size = new System.Drawing.Size(122, 17);
-            this.checkBoxValidFrom.TabIndex = 75;
-            this.checkBoxValidFrom.Text = "有效起始时间查询";
             this.checkBoxValidFrom.UseVisualStyleBackColor = true;
             // 
             // comboBoxQueryMode
             // 
+            resources.ApplyResources(this.comboBoxQueryMode, "comboBoxQueryMode");
             this.comboBoxQueryMode.FormattingEnabled = true;
             this.comboBoxQueryMode.Items.AddRange(new object[] {
-            "精确查询",
-            "模糊查询"});
-            this.comboBoxQueryMode.Location = new System.Drawing.Point(861, 35);
+            resources.GetString("comboBoxQueryMode.Items"),
+            resources.GetString("comboBoxQueryMode.Items1")});
             this.comboBoxQueryMode.Name = "comboBoxQueryMode";
-            this.comboBoxQueryMode.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxQueryMode.TabIndex = 74;
             // 
             // dateTimePickerValidToRangeEnd
             // 
-            this.dateTimePickerValidToRangeEnd.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePickerValidToRangeEnd, "dateTimePickerValidToRangeEnd");
             this.dateTimePickerValidToRangeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerValidToRangeEnd.Location = new System.Drawing.Point(384, 109);
             this.dateTimePickerValidToRangeEnd.Name = "dateTimePickerValidToRangeEnd";
-            this.dateTimePickerValidToRangeEnd.Size = new System.Drawing.Size(157, 20);
-            this.dateTimePickerValidToRangeEnd.TabIndex = 73;
             // 
             // dateTimePickerValidToRangeStart
             // 
-            this.dateTimePickerValidToRangeStart.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            resources.ApplyResources(this.dateTimePickerValidToRangeStart, "dateTimePickerValidToRangeStart");
             this.dateTimePickerValidToRangeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerValidToRangeStart.Location = new System.Drawing.Point(200, 109);
             this.dateTimePickerValidToRangeStart.Name = "dateTimePickerValidToRangeStart";
-            this.dateTimePickerValidToRangeStart.Size = new System.Drawing.Size(164, 20);
-            this.dateTimePickerValidToRangeStart.TabIndex = 72;
             // 
             // checkBoxValidTo
             // 
-            this.checkBoxValidTo.AutoSize = true;
-            this.checkBoxValidTo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxValidTo.Location = new System.Drawing.Point(40, 111);
+            resources.ApplyResources(this.checkBoxValidTo, "checkBoxValidTo");
             this.checkBoxValidTo.Name = "checkBoxValidTo";
-            this.checkBoxValidTo.Size = new System.Drawing.Size(122, 17);
-            this.checkBoxValidTo.TabIndex = 71;
-            this.checkBoxValidTo.Text = "有效截止时间查询";
             this.checkBoxValidTo.UseVisualStyleBackColor = true;
             // 
             // textBoxWiegandNo
             // 
-            this.textBoxWiegandNo.Location = new System.Drawing.Point(639, 35);
+            resources.ApplyResources(this.textBoxWiegandNo, "textBoxWiegandNo");
             this.textBoxWiegandNo.Name = "textBoxWiegandNo";
-            this.textBoxWiegandNo.Size = new System.Drawing.Size(100, 20);
-            this.textBoxWiegandNo.TabIndex = 70;
             // 
             // checkBoxWiegandNo
             // 
-            this.checkBoxWiegandNo.AutoSize = true;
-            this.checkBoxWiegandNo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxWiegandNo.Location = new System.Drawing.Point(571, 37);
+            resources.ApplyResources(this.checkBoxWiegandNo, "checkBoxWiegandNo");
             this.checkBoxWiegandNo.Name = "checkBoxWiegandNo";
-            this.checkBoxWiegandNo.Size = new System.Drawing.Size(62, 17);
-            this.checkBoxWiegandNo.TabIndex = 69;
-            this.checkBoxWiegandNo.Text = "伟根号";
             this.checkBoxWiegandNo.UseVisualStyleBackColor = true;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(435, 35);
+            resources.ApplyResources(this.textBoxName, "textBoxName");
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(106, 20);
-            this.textBoxName.TabIndex = 68;
             // 
             // checkBoxName
             // 
-            this.checkBoxName.AutoSize = true;
-            this.checkBoxName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxName.Location = new System.Drawing.Point(384, 37);
+            resources.ApplyResources(this.checkBoxName, "checkBoxName");
             this.checkBoxName.Name = "checkBoxName";
-            this.checkBoxName.Size = new System.Drawing.Size(50, 17);
-            this.checkBoxName.TabIndex = 67;
-            this.checkBoxName.Text = "姓名";
             this.checkBoxName.UseVisualStyleBackColor = true;
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(233, 35);
+            resources.ApplyResources(this.textBoxId, "textBoxId");
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(131, 20);
-            this.textBoxId.TabIndex = 66;
             // 
             // checkBoxId
             // 
-            this.checkBoxId.AutoSize = true;
-            this.checkBoxId.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxId.Location = new System.Drawing.Point(200, 37);
+            resources.ApplyResources(this.checkBoxId, "checkBoxId");
             this.checkBoxId.Name = "checkBoxId";
-            this.checkBoxId.Size = new System.Drawing.Size(37, 17);
-            this.checkBoxId.TabIndex = 65;
-            this.checkBoxId.Text = "ID";
             this.checkBoxId.UseVisualStyleBackColor = true;
             // 
             // label69
             // 
-            this.label69.AutoSize = true;
-            this.label69.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label69.Location = new System.Drawing.Point(1073, 49);
+            resources.ApplyResources(this.label69, "label69");
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(0, 13);
-            this.label69.TabIndex = 64;
             // 
             // buttonQuery
             // 
-            this.buttonQuery.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonQuery.Location = new System.Drawing.Point(998, 34);
+            resources.ApplyResources(this.buttonQuery, "buttonQuery");
             this.buttonQuery.Name = "buttonQuery";
-            this.buttonQuery.Size = new System.Drawing.Size(180, 25);
-            this.buttonQuery.TabIndex = 62;
-            this.buttonQuery.Text = "查询";
             this.buttonQuery.UseVisualStyleBackColor = true;
             this.buttonQuery.Click += new System.EventHandler(this.buttonQuery_Click);
             // 
             // checkBoxOutputFeature
             // 
-            this.checkBoxOutputFeature.AutoSize = true;
-            this.checkBoxOutputFeature.Checked = true;
-            this.checkBoxOutputFeature.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOutputFeature.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxOutputFeature.Location = new System.Drawing.Point(861, 111);
+            resources.ApplyResources(this.checkBoxOutputFeature, "checkBoxOutputFeature");
             this.checkBoxOutputFeature.Name = "checkBoxOutputFeature";
-            this.checkBoxOutputFeature.Size = new System.Drawing.Size(110, 17);
-            this.checkBoxOutputFeature.TabIndex = 61;
-            this.checkBoxOutputFeature.Text = "抓取特征值数据";
             this.checkBoxOutputFeature.UseVisualStyleBackColor = true;
             // 
             // textBoxPageSize
             // 
-            this.textBoxPageSize.Location = new System.Drawing.Point(861, 76);
+            resources.ApplyResources(this.textBoxPageSize, "textBoxPageSize");
             this.textBoxPageSize.Name = "textBoxPageSize";
-            this.textBoxPageSize.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPageSize.TabIndex = 60;
-            this.textBoxPageSize.Text = "19";
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(800, 80);
+            resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(55, 13);
-            this.label21.TabIndex = 59;
-            this.label21.Text = "页大小：";
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label19.Location = new System.Drawing.Point(37, 39);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 13);
-            this.label19.TabIndex = 56;
-            this.label19.Text = "角色：";
             // 
             // comboBoxType
             // 
+            resources.ApplyResources(this.comboBoxType, "comboBoxType");
             this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
-            "普通人员",
-            "白名单",
-            "黑名单"});
-            this.comboBoxType.Location = new System.Drawing.Point(82, 34);
+            resources.GetString("comboBoxType.Items"),
+            resources.GetString("comboBoxType.Items1"),
+            resources.GetString("comboBoxType.Items2")});
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(80, 21);
-            this.comboBoxType.TabIndex = 55;
             // 
             // dataGridViewFaceQueryResult
             // 
+            resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.AllowUserToAddRows = false;
             this.dataGridViewFaceQueryResult.AllowUserToDeleteRows = false;
             this.dataGridViewFaceQueryResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -342,41 +258,34 @@ namespace SDKClientSharp
             this.ColumnId,
             this.ColumnName,
             this.ColumnType});
-            this.dataGridViewFaceQueryResult.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewFaceQueryResult.Location = new System.Drawing.Point(0, 157);
             this.dataGridViewFaceQueryResult.Name = "dataGridViewFaceQueryResult";
             this.dataGridViewFaceQueryResult.ReadOnly = true;
-            this.dataGridViewFaceQueryResult.Size = new System.Drawing.Size(1190, 433);
-            this.dataGridViewFaceQueryResult.TabIndex = 1;
             // 
             // ColumnId
             // 
-            this.ColumnId.HeaderText = "Id";
+            resources.ApplyResources(this.ColumnId, "ColumnId");
             this.ColumnId.Name = "ColumnId";
             this.ColumnId.ReadOnly = true;
             // 
             // ColumnName
             // 
-            this.ColumnName.HeaderText = "Name";
+            resources.ApplyResources(this.ColumnName, "ColumnName");
             this.ColumnName.Name = "ColumnName";
             this.ColumnName.ReadOnly = true;
             // 
             // ColumnType
             // 
-            this.ColumnType.HeaderText = "Type";
+            resources.ApplyResources(this.ColumnType, "ColumnType");
             this.ColumnType.Name = "ColumnType";
             this.ColumnType.ReadOnly = true;
             // 
             // FormFaceQuery
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 590);
             this.Controls.Add(this.dataGridViewFaceQueryResult);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormFaceQuery";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormFaceQuery";
             this.Load += new System.EventHandler(this.FormFaceQuery_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -416,5 +325,6 @@ namespace SDKClientSharp
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
         private System.Windows.Forms.Label labelPageIndicator;
+        private System.Windows.Forms.Label label2;
     }
 }
