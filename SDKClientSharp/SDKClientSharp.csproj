@@ -176,6 +176,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="strings.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -185,6 +190,9 @@
       <DependentUpon>Form3.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddFace.en-US.resx">
+      <DependentUpon>FormAddFace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddFace.resx">
       <DependentUpon>FormAddFace.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBasic.resx">
       <DependentUpon>FormBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteFace.en.resx">
+      <DependentUpon>FormDeleteFace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeleteFace.resx">
       <DependentUpon>FormDeleteFace.cs</DependentUpon>
@@ -246,6 +257,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="strings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HaSdkWrapper\HaSdkWrapper.csproj">

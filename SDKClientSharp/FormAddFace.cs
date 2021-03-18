@@ -46,8 +46,6 @@ namespace SDKClientSharp
 
         private void buttonAddFace_Click(object sender, EventArgs e)
         {
-
-
            var res =  Cam.AddFace(
                 textBoxId.Text,
                 textBoxName.Text,
@@ -60,7 +58,7 @@ namespace SDKClientSharp
                 null
                 );
 
-            var msg = res ? "成功" : "失败";
+            var msg = string.Format(strings.AddFaceMsg,  res ? strings.Success : strings.Fail);
             MessageBox.Show(msg);
         }
 

@@ -61,6 +61,15 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 添加人像 {0}.
+        /// </summary>
+        internal static string AddFaceMsg {
+            get {
+                return ResourceManager.GetString("AddFaceMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 连接相机 {0} {1}.
         /// </summary>
         internal static string ConnectCamMsg {

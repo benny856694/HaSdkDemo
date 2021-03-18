@@ -120,9 +120,6 @@
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Video</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Face Management</value>
-  </data>
   <data name="tabPageCaptureEvent.Text" xml:space="preserve">
     <value>Capture Event</value>
   </data>
@@ -140,6 +137,9 @@
   </data>
   <data name="buttonRemoveFace.Text" xml:space="preserve">
     <value>Delete Face</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Face Management</value>
   </data>
   <data name="buttonConnect.Text" xml:space="preserve">
     <value>Connect</value>
@@ -178,11 +178,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>SDK Password：</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Connect to Camera</value>
-  </data>
   <data name="buttonSearchDevice.Text" xml:space="preserve">
     <value>Search</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Connect to Camera</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Basic Demo</value>

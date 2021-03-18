@@ -117,19 +117,128 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddFaceMsg" xml:space="preserve">
-    <value>添加人像 {0}</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="comboBoxScheduleMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 167</value>
   </data>
-  <data name="ConnectCamMsg" xml:space="preserve">
-    <value>连接相机 {0} {1}</value>
+  <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
   </data>
-  <data name="DeleteFaceMsg" xml:space="preserve">
-    <value>删除 {0}</value>
+  <data name="label99.Text" xml:space="preserve">
+    <value>Schedule Mode:</value>
   </data>
-  <data name="Fail" xml:space="preserve">
-    <value>失败</value>
+  <data name="label77.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 214</value>
   </data>
-  <data name="Success" xml:space="preserve">
-    <value>成功</value>
+  <data name="label77.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label77.Text" xml:space="preserve">
+    <value>Valid From:</value>
+  </data>
+  <data name="dateTimePickerValidFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 212</value>
+  </data>
+  <data name="dateTimePickerValidTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 284</value>
+  </data>
+  <data name="comboBoxValidToType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 246</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 249</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Valid To：</value>
+  </data>
+  <data name="comboBoxFaceType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 91</value>
+  </data>
+  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 200</value>
+  </data>
+  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 86</value>
+  </data>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>There can only be one face in the picture. The width and height of the face should be greater than 100 pixels, and the front face should be clear</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 20</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Face Image：</value>
+  </data>
+  <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 52</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 55</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Name：</value>
+  </data>
+  <data name="textBoxId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 23</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Face Id：</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 94</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Type：</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 46</value>
+  </data>
+  <data name="buttonAddFace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 318</value>
+  </data>
+  <data name="buttonAddFace.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 318</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="textBoxWiegandCardNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 128</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 131</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Wiegand Card No.：</value>
+  </data>
+  <data name="buttonChoosePic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 15</value>
+  </data>
+  <data name="buttonChoosePic.Text" xml:space="preserve">
+    <value>Choose Pic</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>504, 353</value>
   </data>
 </root>
