@@ -17,6 +17,7 @@ namespace SDKClientSharp
         public FormBasic()
         {
             InitializeComponent();
+            groupBoxFaceManagement.EnableAllButtons(false);
         }
 
         private void FormBasic_Load(object sender, EventArgs e)
@@ -62,6 +63,7 @@ namespace SDKClientSharp
 
             _cam.FaceCaptured += _cam_FaceCaptured;
             var suc = _cam.Connect(pictureBoxLiveVideo.Handle);
+            groupBoxFaceManagement.EnableAllButtons(suc);
             LogMessage(strings.ConnectCamMsg, _cam.Ip,  suc ? strings.Success : strings.Fail);
             
 

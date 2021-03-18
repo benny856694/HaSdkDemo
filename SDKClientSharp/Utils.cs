@@ -103,5 +103,14 @@ namespace SDKClientSharp
             }
         }
 
+        public static void EnableAllButtons(this GroupBox box, bool enable)
+        {
+            foreach (var item in box.Controls.OfType<Button>())
+            {
+                item.Enabled = enable;
+            } 
+        }
+
+
     }
 }

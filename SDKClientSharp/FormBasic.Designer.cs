@@ -50,7 +50,7 @@ namespace SDKClientSharp
             this.ColumnMac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageLog = new System.Windows.Forms.TabPage();
             this.listBoxLog = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxFaceManagement = new System.Windows.Forms.GroupBox();
             this.buttonAddFace = new System.Windows.Forms.Button();
             this.buttonQueryFace = new System.Windows.Forms.Button();
             this.buttonRemoveFace = new System.Windows.Forms.Button();
@@ -84,7 +84,7 @@ namespace SDKClientSharp
             this.tabPageCameraSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).BeginInit();
             this.tabPageLog.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxFaceManagement.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -97,13 +97,11 @@ namespace SDKClientSharp
             // 
             // splitContainer1.Panel1
             // 
-            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
             // 
             // splitContainer1.Panel2
             // 
-            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.groupBoxFaceManagement);
             // 
             // splitContainer2
             // 
@@ -113,18 +111,16 @@ namespace SDKClientSharp
             // 
             // splitContainer2.Panel1
             // 
-            resources.ApplyResources(this.splitContainer2.Panel1, "splitContainer2.Panel1");
             this.splitContainer2.Panel1.Controls.Add(this.groupBox3);
             // 
             // splitContainer2.Panel2
             // 
-            resources.ApplyResources(this.splitContainer2.Panel2, "splitContainer2.Panel2");
             this.splitContainer2.Panel2.Controls.Add(this.tabControl1);
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.pictureBoxLiveVideo);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -136,23 +132,22 @@ namespace SDKClientSharp
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPageCaptureEvent);
             this.tabControl1.Controls.Add(this.tabPageCameraSearchResult);
             this.tabControl1.Controls.Add(this.tabPageLog);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPageCaptureEvent
             // 
-            resources.ApplyResources(this.tabPageCaptureEvent, "tabPageCaptureEvent");
             this.tabPageCaptureEvent.Controls.Add(this.dataGridViewCaptureResult);
+            resources.ApplyResources(this.tabPageCaptureEvent, "tabPageCaptureEvent");
             this.tabPageCaptureEvent.Name = "tabPageCaptureEvent";
             this.tabPageCaptureEvent.UseVisualStyleBackColor = true;
             // 
             // dataGridViewCaptureResult
             // 
-            resources.ApplyResources(this.dataGridViewCaptureResult, "dataGridViewCaptureResult");
             this.dataGridViewCaptureResult.AllowUserToAddRows = false;
             this.dataGridViewCaptureResult.AllowUserToDeleteRows = false;
             this.dataGridViewCaptureResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -165,6 +160,7 @@ namespace SDKClientSharp
             this.ColumnMatch,
             this.ColumnScore,
             this.ColumnType});
+            resources.ApplyResources(this.dataGridViewCaptureResult, "dataGridViewCaptureResult");
             this.dataGridViewCaptureResult.Name = "dataGridViewCaptureResult";
             this.dataGridViewCaptureResult.ReadOnly = true;
             // 
@@ -212,14 +208,13 @@ namespace SDKClientSharp
             // 
             // tabPageCameraSearchResult
             // 
-            resources.ApplyResources(this.tabPageCameraSearchResult, "tabPageCameraSearchResult");
             this.tabPageCameraSearchResult.Controls.Add(this.dataGridViewCameraList);
+            resources.ApplyResources(this.tabPageCameraSearchResult, "tabPageCameraSearchResult");
             this.tabPageCameraSearchResult.Name = "tabPageCameraSearchResult";
             this.tabPageCameraSearchResult.UseVisualStyleBackColor = true;
             // 
             // dataGridViewCameraList
             // 
-            resources.ApplyResources(this.dataGridViewCameraList, "dataGridViewCameraList");
             this.dataGridViewCameraList.AllowUserToAddRows = false;
             this.dataGridViewCameraList.AllowUserToDeleteRows = false;
             this.dataGridViewCameraList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -227,6 +222,7 @@ namespace SDKClientSharp
             this.dataGridViewCameraList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnIP,
             this.ColumnMac});
+            resources.ApplyResources(this.dataGridViewCameraList, "dataGridViewCameraList");
             this.dataGridViewCameraList.Name = "dataGridViewCameraList";
             this.dataGridViewCameraList.ReadOnly = true;
             this.dataGridViewCameraList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCameraList_CellDoubleClick);
@@ -245,8 +241,8 @@ namespace SDKClientSharp
             // 
             // tabPageLog
             // 
-            resources.ApplyResources(this.tabPageLog, "tabPageLog");
             this.tabPageLog.Controls.Add(this.listBoxLog);
+            resources.ApplyResources(this.tabPageLog, "tabPageLog");
             this.tabPageLog.Name = "tabPageLog";
             this.tabPageLog.UseVisualStyleBackColor = true;
             // 
@@ -256,14 +252,14 @@ namespace SDKClientSharp
             this.listBoxLog.FormattingEnabled = true;
             this.listBoxLog.Name = "listBoxLog";
             // 
-            // groupBox1
+            // groupBoxFaceManagement
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.buttonAddFace);
-            this.groupBox1.Controls.Add(this.buttonQueryFace);
-            this.groupBox1.Controls.Add(this.buttonRemoveFace);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            this.groupBoxFaceManagement.Controls.Add(this.buttonAddFace);
+            this.groupBoxFaceManagement.Controls.Add(this.buttonQueryFace);
+            this.groupBoxFaceManagement.Controls.Add(this.buttonRemoveFace);
+            resources.ApplyResources(this.groupBoxFaceManagement, "groupBoxFaceManagement");
+            this.groupBoxFaceManagement.Name = "groupBoxFaceManagement";
+            this.groupBoxFaceManagement.TabStop = false;
             // 
             // buttonAddFace
             // 
@@ -345,13 +341,12 @@ namespace SDKClientSharp
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.groupBox2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.buttonSearchDevice);
             this.groupBox2.Controls.Add(this.textBoxSDKPassword);
             this.groupBox2.Controls.Add(this.label1);
@@ -364,6 +359,7 @@ namespace SDKClientSharp
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.textBoxPort);
             this.groupBox2.Controls.Add(this.textBoxIp);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -399,7 +395,7 @@ namespace SDKClientSharp
             this.tabPageCameraSearchResult.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCameraList)).EndInit();
             this.tabPageLog.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.groupBoxFaceManagement.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -430,7 +426,7 @@ namespace SDKClientSharp
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxFaceManagement;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button buttonSearchDevice;
         private System.Windows.Forms.TabPage tabPageCameraSearchResult;
