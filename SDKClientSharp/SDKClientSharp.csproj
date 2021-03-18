@@ -188,6 +188,9 @@
     <EmbeddedResource Include="FormAddFace.resx">
       <DependentUpon>FormAddFace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBasic.en-US.resx">
+      <DependentUpon>FormBasic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBasic.resx">
       <DependentUpon>FormBasic.cs</DependentUpon>
     </EmbeddedResource>

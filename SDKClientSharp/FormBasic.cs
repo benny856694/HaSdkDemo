@@ -62,7 +62,7 @@ namespace SDKClientSharp
 
             _cam.FaceCaptured += _cam_FaceCaptured;
             var suc = _cam.Connect(pictureBoxLiveVideo.Handle);
-            LogMessage("connect to camera {0} {1}", _cam.Ip,  suc ? "success" : "fail");
+            LogMessage(strings.ConnectCamMsg, _cam.Ip,  suc ? strings.Success : strings.Fail);
             
 
         }
