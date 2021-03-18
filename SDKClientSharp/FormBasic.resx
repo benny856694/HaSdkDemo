@@ -565,7 +565,7 @@
     <value>64</value>
   </data>
   <data name="groupBoxFaceManagement.Text" xml:space="preserve">
-    <value>Face Management</value>
+    <value>人像管理</value>
   </data>
   <data name="&gt;&gt;groupBoxFaceManagement.Name" xml:space="preserve">
     <value>groupBoxFaceManagement</value>
@@ -1023,6 +1023,9 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
