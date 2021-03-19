@@ -10,7 +10,7 @@ namespace SDKClientSharp
     {
         public static uint ToUtcSecondsFromEpochTime(this DateTime localTime) 
         {
-           return (uint)localTime.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds;
+           return (uint)localTime.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds;
         }
     }
 
