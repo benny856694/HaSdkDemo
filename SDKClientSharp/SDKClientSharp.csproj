@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SDKClientSharp</RootNamespace>
     <AssemblyName>SDKClientSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>
     </StartupObject>
@@ -157,6 +157,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.en.resx</DependentUpon>
     </Compile>
+    <Compile Include="MyTuple.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="FormAddFace.en.resx">
       <DependentUpon>FormAddFace.cs</DependentUpon>

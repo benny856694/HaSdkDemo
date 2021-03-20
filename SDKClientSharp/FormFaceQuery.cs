@@ -27,8 +27,8 @@ namespace SDKClientSharp
 
         public HaCamera Cam { get; set; }
         public int CurPage
-        { 
-            get => _curPage; 
+        {
+            get { return _curPage; } 
             set  {
                 _curPage = value;
                 UpdatePageIndicator(int.Parse(textBoxPageSize.Text), _curPage);
@@ -72,7 +72,7 @@ namespace SDKClientSharp
             condition.Time1End = dateTimePickerValidFromRangeEnd.Value;
             var total = 0;
             var pageSize = int.Parse(textBoxPageSize.Text);
-            var result = Cam?.QueryFaces(
+            var result = Cam.QueryFaces(
                 CurPage,
                 pageSize,
                 (int)comboBoxType.SelectedValue,
@@ -112,7 +112,7 @@ namespace SDKClientSharp
         private void UpdatePageIndicator(int pageSize, int total)
         {
             var pageCount = (total + pageSize - 1) / pageSize;
-            labelPageIndicator.Text = $"{CurPage}/{pageCount}";
+            labelPageIndicator.Text = string.Format("{0}/{1}", CurPage, pageCount);
         }
 
         private void buttonPrevPage_Click(object sender, EventArgs e)

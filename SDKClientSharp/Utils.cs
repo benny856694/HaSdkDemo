@@ -17,7 +17,7 @@ namespace SDKClientSharp
 
     static class Utils
     {
-        public static void InitComboBox<T>(this ComboBox box, Tuple<T, string>[] options)
+        public static void InitComboBox<T>(this ComboBox box, MyTuple<T, string>[] options)
         {
             box.DataSource = options;
             box.ValueMember = "Item1";
@@ -26,11 +26,11 @@ namespace SDKClientSharp
 
         public static void InitAsFaceType(this ComboBox box)
         {
-            var options = new Tuple<int, string>[]
+            var options = new MyTuple<int, string>[]
             {
-                new Tuple<int, string>(0, strings.FaceType_Normal),
-                new Tuple<int, string>(1, strings.FaceType_WhiteName),
-                new Tuple<int, string>(2, strings.FaceType_BlackName),
+                new MyTuple<int, string>(0, strings.FaceType_Normal),
+                new MyTuple<int, string>(1, strings.FaceType_WhiteName),
+                new MyTuple<int, string>(2, strings.FaceType_BlackName),
             };
 
             box.InitComboBox(options);
@@ -38,13 +38,13 @@ namespace SDKClientSharp
 
         public static void InitAsScheduleMode(this ComboBox box)
         {
-            var options = new List<Tuple<byte, string>>();
+            var options = new List<MyTuple<byte, string>>();
 
-            options.Add(new Tuple<byte, string>(0, strings.NA));
+            options.Add(new MyTuple<byte, string>(0, strings.NA));
 
             for (int i = 1; i < 5; i++)
             {
-                options.Add(new Tuple<byte, string>(Convert.ToByte(i), string.Format(strings.Rule, i)));
+                options.Add(new MyTuple<byte, string>(Convert.ToByte(i), string.Format(strings.Rule, i)));
             }
 
             box.InitComboBox(options.ToArray());
@@ -53,11 +53,11 @@ namespace SDKClientSharp
 
         public static void InitAsValidToMode(this ComboBox box)
         {
-            var options = new Tuple<int, string>[]
+            var options = new MyTuple<int, string>[]
             {
-                new Tuple<int, string>(0, strings.ValidTo_NeverExpire),
-                new Tuple<int, string>(1, strings.ValidTo_Expired),
-                new Tuple<int, string>(2, strings.ValidTo_Specified),
+                new MyTuple<int, string>(0, strings.ValidTo_NeverExpire),
+                new MyTuple<int, string>(1, strings.ValidTo_Expired),
+                new MyTuple<int, string>(2, strings.ValidTo_Specified),
             };
 
             box.InitComboBox(options);
@@ -66,12 +66,12 @@ namespace SDKClientSharp
 
         public static void InitAsFaceQueryType(this ComboBox box)
         {
-            var options = new Tuple<int, string>[]
+            var options = new MyTuple<int, string>[]
             {
-                new Tuple<int, string>(0, strings.FaceType_Normal),
-                new Tuple<int, string>(1, strings.FaceType_WhiteName),
-                new Tuple<int, string>(2, strings.FaceType_BlackName),
-                new Tuple<int, string>(-1, strings.FaceType_All),
+                new MyTuple<int, string>(0, strings.FaceType_Normal),
+                new MyTuple<int, string>(1, strings.FaceType_WhiteName),
+                new MyTuple<int, string>(2, strings.FaceType_BlackName),
+                new MyTuple<int, string>(-1, strings.FaceType_All),
             };
 
             box.InitComboBox(options);
@@ -79,10 +79,10 @@ namespace SDKClientSharp
 
         public static void InitAsMathingMode(this ComboBox box)
         {
-            var options = new Tuple<short, string>[]
+            var options = new MyTuple<short, string>[]
             {
-               new Tuple<short, string>(0, strings.MatchingMode_Exactly),
-                new Tuple<short, string>(1, strings.MatchingMode_Fuzzy),
+               new MyTuple<short, string>(0, strings.MatchingMode_Exactly),
+                new MyTuple<short, string>(1, strings.MatchingMode_Fuzzy),
             };
 
             box.InitComboBox(options);

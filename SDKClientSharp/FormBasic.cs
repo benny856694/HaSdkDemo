@@ -53,7 +53,10 @@ namespace SDKClientSharp
 
         private void buttonConnect_Click(object sender, EventArgs e)
         {
-            _cam?.DisConnect();
+            if (_cam != null)
+            {
+                _cam.DisConnect();
+            }
 
             _cam = new HaCamera();
             _cam.Ip = textBoxIp.Text;
@@ -110,7 +113,7 @@ namespace SDKClientSharp
             if (_cam != null)
             {
                 _cam.FaceCaptured -= _cam_FaceCaptured;
-                _cam?.DisConnect();
+                _cam.DisConnect();
 
             }
         }
