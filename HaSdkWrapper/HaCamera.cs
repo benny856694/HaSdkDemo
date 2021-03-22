@@ -476,14 +476,16 @@ namespace HaSdkWrapper
             return Connect(IntPtr.Zero);
         }
         /// <summary>
-        /// <para>连接相机 - Connect Camera</para>
+        /// <para>连接相机</para>
+        /// <EN>Connect to the Camera</EN>
         /// </summary>
         /// <param name="hwnd">
-        /// <para>窗口的句柄，显示实时视频用，不需要显示视频的时候，传入default(IntPtr) - 
-        /// Handle to the window in which live video is rendered</para>
+        /// <para>窗口的句柄，显示实时视频用，不需要显示视频的时候，传入default(IntPtr)</para>
+        /// <EN>Handle to the window in which live video is rendered</EN>
         /// </param>
         /// <returns>
-        /// <para>是否连接成功 - True: connect successfully, False: failed to connect</para>
+        /// <para>是否连接成功</para>
+        /// <EN>True: connect successfully, False: failed to connect</EN>
         /// </returns>
         public bool Connect(IntPtr hwnd)
         {
