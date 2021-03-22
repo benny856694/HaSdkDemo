@@ -66,7 +66,6 @@ namespace SDKClientSharp
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.labelPageIndicator);
             this.groupBox1.Controls.Add(this.buttonPrevPage);
@@ -92,15 +91,16 @@ namespace SDKClientSharp
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.comboBoxType);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
             // labelPageIndicator
@@ -147,12 +147,12 @@ namespace SDKClientSharp
             // 
             // comboBoxQueryMode
             // 
-            resources.ApplyResources(this.comboBoxQueryMode, "comboBoxQueryMode");
             this.comboBoxQueryMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxQueryMode.FormattingEnabled = true;
             this.comboBoxQueryMode.Items.AddRange(new object[] {
             resources.GetString("comboBoxQueryMode.Items"),
             resources.GetString("comboBoxQueryMode.Items1")});
+            resources.ApplyResources(this.comboBoxQueryMode, "comboBoxQueryMode");
             this.comboBoxQueryMode.Name = "comboBoxQueryMode";
             // 
             // dateTimePickerValidToRangeEnd
@@ -241,18 +241,17 @@ namespace SDKClientSharp
             // 
             // comboBoxType
             // 
-            resources.ApplyResources(this.comboBoxType, "comboBoxType");
             this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             resources.GetString("comboBoxType.Items"),
             resources.GetString("comboBoxType.Items1"),
             resources.GetString("comboBoxType.Items2")});
+            resources.ApplyResources(this.comboBoxType, "comboBoxType");
             this.comboBoxType.Name = "comboBoxType";
             // 
             // dataGridViewFaceQueryResult
             // 
-            resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.AllowUserToAddRows = false;
             this.dataGridViewFaceQueryResult.AllowUserToDeleteRows = false;
             this.dataGridViewFaceQueryResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -261,6 +260,7 @@ namespace SDKClientSharp
             this.ColumnId,
             this.ColumnName,
             this.ColumnType});
+            resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.Name = "dataGridViewFaceQueryResult";
             this.dataGridViewFaceQueryResult.ReadOnly = true;
             // 
