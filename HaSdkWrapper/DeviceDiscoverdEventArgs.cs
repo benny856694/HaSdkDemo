@@ -8,31 +8,38 @@ namespace HaSdkWrapper
     public class DeviceDiscoverdEventArgs : EventArgs
     {
         /// <summary>
-        /// 设备IP
+        /// <para>设备IP</para>
+        /// <EN>Ip address</EN>
         /// </summary>
         public string IP { internal set; get; }
         /// <summary>
-        /// 设备Mac地址
+        /// <para>设备Mac地址</para>
+        /// <EN>Mac address</EN>
         /// </summary>
         public string Mac { internal set; get; }
         /// <summary>
-        /// 子网掩码
+        /// <para>子网掩码</para>
+        /// <EN>Subnet mask</EN>
         /// </summary>
         public string NetMask { internal set; get; }
         /// <summary>
-        /// 厂商
+        /// <para>厂商</para>
+        /// <EN>Manufacturer of the device</EN>
         /// </summary>
         public string Manufacturer { internal set; get; }
         /// <summary>
-        /// 平台
+        /// <para>平台</para>
+        /// <EN>Platform</EN>
         /// </summary>
         public string Plateform { internal set; get; }
         /// <summary>
-        /// 系统
+        /// <para>系统</para>
+        /// <EN>System</EN>
         /// </summary>
         public string System { internal set; get; }
         /// <summary>
-        /// 版本
+        /// <para>版本</para>
+        /// <EN>Version</EN>
         /// </summary>
         public string Version { internal set; get; }
     }

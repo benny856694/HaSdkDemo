@@ -38,7 +38,8 @@ namespace HaSdkWrapper
         /// </summary>
         public event EventHandler<ConnectEventArgs> ConnectStateChanged;
         /// <summary>
-        /// 收到人脸抓拍触发的事件
+        /// <para>收到人脸抓拍触发的事件</para>
+        /// <EN>Face captured event</EN>
         /// </summary>
         public event EventHandler<FaceCapturedEventArgs> FaceCaptured;
         /// <summary>
@@ -51,7 +52,8 @@ namespace HaSdkWrapper
         public event EventHandler<Qrcode> egQRcodeInput;
 
         /// <summary>
-        /// 搜索设备得到一条结果时触发的事件
+        /// <para>搜索设备得到一条结果时触发的事件</para>
+        /// <EN>Device discovered event</EN>
         /// </summary>
         public static event EventHandler<DeviceDiscoverdEventArgs> DeviceDiscovered;
         /// <summary>
@@ -70,23 +72,27 @@ namespace HaSdkWrapper
 
         #region properties
         /// <summary>
-        /// 相机ip
+        /// <para>相机ip</para>
+        /// <EN>IP of the camera</EN>
         /// </summary>
         public string Ip { get; set; }
 
 
         /// <summary>
         /// 相机的端口号，缺省为9527
+        /// <EN>Port number, default 9527</EN>
         /// </summary>
         public int Port { get; set; }
 
         /// <summary>
-        /// 登录用户名
+        /// <para>登录用户名</para>
+        /// <EN>User name</EN>
         /// </summary>
         public string Username { get; set; }
 
         /// <summary>
         /// 登录密码
+        /// <EN>Password</EN>
         /// </summary>
         public string Password { get; set; }
         public IntPtr NativeHandle { get { return _cam; } }
@@ -110,7 +116,8 @@ namespace HaSdkWrapper
 
         #region methods
         /// <summary>
-        /// <para>新版的sdk底层自行管理内存，无需设置预期连接数 - Initialize the SDK</para>
+        /// <para>新版的sdk底层自行管理内存，无需设置预期连接数</para>
+        /// <EN>Initialize the SDK</EN>
         /// </summary>
         public static void InitEnvironment()
         {
@@ -118,11 +125,11 @@ namespace HaSdkWrapper
         }
         /// <summary>
         /// <para>初始化SDK底层库，在进程中应该只需要调用一次，除非是需要在不关闭进程的情况下更改连接数或者清理内存。如果需要更改连接数或者清理内存，则需要先DeInit之后再行Init</para>
-        /// <para> - Initialize the SDK, should be called only once unless you want to change connection number without exiting the process, if you want to change connection number, you should DeInit then call Init again</para>
+        /// <EN>Initialize the SDK, should be called only once unless you want to change connection number without exiting the process, if you want to change connection number, you should DeInit then call Init again</EN>
         /// </summary>
         /// <param name="maxConnectNum">
-        /// <para>需要最大连接的设备数量；请尽量设置小额数量，因为程序会为每一个预期的连接立即分配内存 - 
-        /// Max number of connections: SDK preallocates memory for every connection, bigger number consumes more memory</para>
+        /// <para>需要最大连接的设备数量；请尽量设置小额数量，因为程序会为每一个预期的连接立即分配内存</para>
+        /// <EN>Max number of connections: SDK preallocates memory for every connection, bigger number consumes more memory</EN>
         /// </param>
         public static void InitEnvironment(uint maxConnectNum)
         {
@@ -158,18 +165,25 @@ namespace HaSdkWrapper
             return NativeMethods.HA_GetVersion();
         }
         /// <summary>
-        /// <para>设置sdk二级密码, sdk内部会用这个密码去连接设备 - SDK password, used to authenticate connection to camera</para>
+        /// <para>设置sdk二级密码, sdk内部会用这个密码去连接设备</para>
+        /// <EN>SDK password, used to authenticate connection to camera</EN>
         /// </summary>
-        /// <param name="password">二级密码 - SDK Password</param>
-        /// <returns>是否设置成功 - True: success, False: fail</returns>
+        /// <param name="password">
+        /// 二级密码
+        /// <EN>SDK Password</EN>
+        /// </param>
+        /// <returns>
+        /// 是否设置成功
+        /// <EN>True: success, False: fail</EN>
+        /// </returns>
         public static bool SetSDKPazzword(string password)
         {
             return NativeMethods.HA_SetSDKPassword(password) == 0;
         }
 
         /// <summary>
-        /// <para>搜索设备</para>
-        /// <para>需要通过DeviceDiscovered事件接收发现的设备</para>
+        /// <para>搜索设备，需要通过DeviceDiscovered事件接收发现的设备</para>
+        /// <EN>Start searching devices, the result will be notified through DeviceDiscovered event</EN>
         /// </summary>
         public static void DiscoverDevice()
         {
@@ -579,28 +593,36 @@ namespace HaSdkWrapper
         }
 
         /// <summary>
-        /// <para>添加一张人脸模板到设备库中 - Add one face to camera database</para>
+        /// <para>添加一张人脸模板到设备库中</para>
+        /// <EN>Add one face to camera database</EN>
         /// </summary>
         /// <param name="personID">
-        /// <para>人员编号 - Id of the face</para>
+        /// <para>人员编号</para>
+        /// <EN>Id of the face</EN>
         /// </param>
         /// <param name="personName">
-        /// <para>人员姓名 - Name</para>
+        /// <para>人员姓名</para>
+        /// <EN>Name</EN>
         /// </param>
         /// <param name="picPath">
-        /// <para>图片路径 - Path to the image</para>
+        /// <para>图片路径</para>
+        /// <EN>Full path to the image</EN>
         /// </param>
         /// <param name="personRole">
-        /// <para>人员角色，0：普通人员。 1：白名单人员。 2：黑名单人员。- type, 0: normal, 1: white name, 2: black name</para>
+        /// <para>人员角色，0：普通人员。 1：白名单人员。 2：黑名单人员。</para>
+        /// <EN>Type of the face - 0: normal, 1: white name, 2: black name</EN>
         /// </param>
         /// <param name="wgNo">
-        /// <para>韦根卡号 - Wiegand card no</para>
+        /// <para>韦根卡号</para>
+        /// <EN>Wiegand card number</EN>
         /// </param>
         /// <param name="effectTime">
-        /// <para>过期时间 0xFFFFFFFF永不过期 0永久失效 其他值UTC秒数 - Expiration time, 0xFFFFFFFF: never expire, 0: always expired, other value: utc seconds</para>
+        /// <para>过期时间 0xFFFFFFFF永不过期 0永久失效 其他值UTC秒数</para>
+        /// <EN>Expiration time - 0xFFFFFFFF: never expire, 0: always expired, other value: utc seconds</EN>
         /// </param>
         /// <returns>
-        /// <para>是否添加成功 - true: success, false: fail</para>
+        /// <para>是否添加成功</para>
+        /// <EN>True: success, False: fail</EN>
         /// </returns>
         public bool AddFace(string personID, string personName, int personRole, string picPath, uint wgNo, uint effectTime, uint effectstarttime, byte ScheduleMode, String userParam)
         {
@@ -1803,10 +1825,17 @@ namespace HaSdkWrapper
             return ret == 0;
         }
         /// <summary>
-        /// 删除指定人脸模板
+        /// <para>删除指定人脸模板</para>
+        /// <EN>Delete face by id</EN>
         /// </summary>
-        /// <param name="personID">模板编号</param>
-        /// <returns>是否删除成功</returns>
+        /// <param name="personID">
+        /// <para>模板编号</para>
+        /// <EN>Face id to delete</EN>
+        /// </param>
+        /// <returns>
+        /// <para>是否删除成功</para>
+        /// <EN>True: success, False: fail</EN>
+        /// </returns>
         public bool DeleteFace(string personID)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
@@ -2134,7 +2163,8 @@ namespace HaSdkWrapper
             return ret == 0;
         }
         /// <summary>
-        /// <para>断开和相机的连接 - Disconnect from camera</para>
+        /// <para>断开和相机的连接</para>
+        /// <EN>Disconnect from camera</EN>
         /// </summary>
         public void DisConnect()
         {
@@ -2192,15 +2222,37 @@ namespace HaSdkWrapper
             return null;
         }
         /// <summary>
-        /// 分页查询人脸模板数据
+        /// <para>分页查询人脸模板数据</para>
+        /// <EN>Paged query face</EN>
         /// </summary>
-        /// <param name="pageNo">页码，从1开始</param>
-        /// <param name="pageSize">页大小，1~100之间的数值</param>
-        /// <param name="role">要查询的人员角色 0：普通人员。 1：白名单人员。 2：黑名单人员。 -1：所有人员。</param>
-        /// <param name="fetchFeatures">是否要获取人员的特征值</param>
-        /// <param name="totalCount">符合条件的记录总数</param>
-        /// <param name="timeOutInMilli">超时时间</param>
-        /// <returns>查询到的模板数据；可能返回null，返回null时可能是出错了，需要排查</returns>
+        /// <param name="pageNo">
+        /// <para>页码，从1开始</para>
+        /// <EN>Page number, 1-based</EN>
+        /// </param>
+        /// <param name="pageSize">
+        /// <para>页大小，1~100之间的数值</para>
+        /// <EN>Page size (1-100)</EN>
+        /// </param>
+        /// <param name="role">
+        /// <para>要查询的人员角色 0：普通人员。 1：白名单人员。 2：黑名单人员。 -1：所有人员。</para>
+        /// <EN>Type - 0：normal, 1：white name, 2：black name, -1：all</EN>
+        /// </param>
+        /// <param name="fetchFeatures">
+        /// <para>是否要获取人员的特征值</para>
+        /// <EN>Whether to include feature in the query result</EN>
+        /// </param>
+        /// <param name="totalCount">
+        /// <para>符合条件的记录总数</para>
+        /// <EN>Total count of result</EN>
+        /// </param>
+        /// <param name="timeOutInMilli">
+        /// <para>超时时间</para>
+        /// <EN>Timeout in milliseconds</EN>
+        /// </param>
+        /// <returns>
+        /// <para>查询到的模板数据，可能返回null，返回null时可能是出错了，需要排查</para>
+        /// <EN>Query result, null in case of any error occurred</EN>
+        /// </returns>
         public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, ref int totalCount, int timeOutInMilli, RecordQueryCondition condition,short query_mode)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
