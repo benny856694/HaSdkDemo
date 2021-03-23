@@ -61,11 +61,11 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 添加人像 {0}.
+        ///   Looks up a localized string similar to 添加人像.
         /// </summary>
-        internal static string AddFaceMsg {
+        internal static string AddFaceAction {
             get {
-                return ResourceManager.GetString("AddFaceMsg", resourceCulture);
+                return ResourceManager.GetString("AddFaceAction", resourceCulture);
             }
         }
         
@@ -88,7 +88,7 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 发生错误：{0}.
+        ///   Looks up a localized string similar to 发生错误：{0} ({1}).
         /// </summary>
         internal static string ErrorWithErrorMsg {
             get {
@@ -183,6 +183,15 @@ namespace SDKClientSharp {
         internal static string Success {
             get {
                 return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 检测图像：{0}.
+        /// </summary>
+        internal static string ValidateImageMsg {
+            get {
+                return ResourceManager.GetString("ValidateImageMsg", resourceCulture);
             }
         }
         

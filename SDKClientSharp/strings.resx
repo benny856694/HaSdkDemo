@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddFaceMsg" xml:space="preserve">
-    <value>添加人像 {0}</value>
+  <data name="AddFaceAction" xml:space="preserve">
+    <value>添加人像</value>
   </data>
   <data name="ConnectCamMsg" xml:space="preserve">
     <value>连接相机 {0} {1}</value>
@@ -127,7 +127,7 @@
     <value>删除 {0}</value>
   </data>
   <data name="ErrorWithErrorMsg" xml:space="preserve">
-    <value>发生错误：{0}</value>
+    <value>发生错误：{0} ({1})</value>
   </data>
   <data name="FaceType.All" xml:space="preserve">
     <value>所有</value>
@@ -158,6 +158,9 @@
   </data>
   <data name="Success" xml:space="preserve">
     <value>成功</value>
+  </data>
+  <data name="ValidateImageMsg" xml:space="preserve">
+    <value>检测图像：{0}</value>
   </data>
   <data name="ValidTo.Expired" xml:space="preserve">
     <value>已过期</value>

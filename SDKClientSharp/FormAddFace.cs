@@ -40,6 +40,9 @@ namespace SDKClientSharp
                 pictureBox1.Image = Image.FromStream(
                     new MemoryStream(File.ReadAllBytes(openFileDialog1.FileName))
                     );
+                buttonVerifyFaceImg.Visible = 
+                    pathToPic.EndsWith(".jpg", StringComparison.InvariantCultureIgnoreCase) ||
+                    pathToPic.EndsWith(".png", StringComparison.InvariantCultureIgnoreCase);
 
             }
         }
@@ -55,10 +58,18 @@ namespace SDKClientSharp
                 Utils.GetUtcSecondsBasedOnValidToType((int)comboBoxValidToType.SelectedValue, dateTimePickerValidTo.Value),
                 dateTimePickerValidFrom.Value.ToUtcSecondsFromEpochTime(),
                 (byte)comboBoxScheduleMode.SelectedValue,
-                null
+                ""
                 );
 
-            var msg = string.Format(strings.AddFaceMsg,  res ? strings.Success : strings.Fail);
+            var errorCode = 0;
+            string errorMsg = null;
+            if(!res)
+            {
+                errorCode = Cam.GetLastError();
+                errorMsg = HaCamera.GetErrorDescribe(errorCode);
+            }
+
+            var msg = Utils.FormatErrorMsg(strings.AddFaceAction, res, errorCode, errorMsg);
             MessageBox.Show(msg);
         }
 
@@ -70,6 +81,13 @@ namespace SDKClientSharp
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonVerifyFaceImg_Click(object sender, EventArgs e)
+        {
+            var suc = Cam.HA_FaceJpgLegal(File.ReadAllBytes(pathToPic));
+            var msg = suc == 0 ? strings.Success : strings.Fail;
+            MessageBox.Show(string.Format(strings.ValidateImageMsg, msg));
         }
     }
 }

@@ -111,6 +111,21 @@ namespace SDKClientSharp
             } 
         }
 
+        public static string FormatErrorMsg(string operation, bool success = true, int errorCode = 0, string errorMsg = null)
+        {
+            if(success)
+            {
+                return string.Format("{0} {1}", operation, strings.Success);
+            }
+
+            var sb = new StringBuilder();
+            sb.AppendLine(string.Format("{0} {1}", operation, strings.Fail));
+            sb.AppendLine("-------------------");
+            sb.Append(string.Format(strings.ErrorWithErrorMsg, errorCode, errorMsg));
+            return sb.ToString();
+
+        }
+
 
     }
 }

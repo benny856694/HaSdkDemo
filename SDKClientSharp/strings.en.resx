@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddFaceMsg" xml:space="preserve">
-    <value>Add face {0}</value>
+  <data name="AddFaceAction" xml:space="preserve">
+    <value>Add face</value>
   </data>
   <data name="ConnectCamMsg" xml:space="preserve">
     <value>Connect to camera  {0} {1}</value>
@@ -127,7 +127,7 @@
     <value>Connect {0}</value>
   </data>
   <data name="ErrorWithErrorMsg" xml:space="preserve">
-    <value>Error occurred：{0}</value>
+    <value>Error occurred：{0} ({1})</value>
   </data>
   <data name="FaceType.All" xml:space="preserve">
     <value>All</value>
@@ -158,6 +158,9 @@
   </data>
   <data name="Success" xml:space="preserve">
     <value>Success</value>
+  </data>
+  <data name="ValidateImageMsg" xml:space="preserve">
+    <value>Validate Image：{0}</value>
   </data>
   <data name="ValidTo.Expired" xml:space="preserve">
     <value>Expired</value>

@@ -158,10 +158,10 @@
     <value>142, 91</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 200</value>
+    <value>303, 231</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 86</value>
+    <value>157, 73</value>
   </data>
   <data name="textBox5.Text" xml:space="preserve">
     <value>There can only be one face in the picture. The width and height of the face should be greater than 100 pixels, and the front face should be clear</value>
@@ -240,6 +240,16 @@
   </data>
   <data name="buttonChoosePic.Text" xml:space="preserve">
     <value>Choose Pic</value>
+  </data>
+  <data name="buttonVerifyFaceImg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 189</value>
+  </data>
+  <data name="buttonVerifyFaceImg.Text" xml:space="preserve">
+    <value>Test Pic</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonVerifyFaceImg.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>504, 353</value>
