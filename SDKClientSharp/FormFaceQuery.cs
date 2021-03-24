@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -102,7 +103,12 @@ namespace SDKClientSharp
                 dataGridViewFaceQueryResult.Rows.Add(
                     item.PersonID,
                     item.PersonName,
-                    item.PersonRole);
+                    item.PersonRole,
+                    item.WiegandNo,
+                    null,
+                    item.EffectTime.ToLocalDateTime(),
+                    item.ImageData == null ? new Bitmap(1,1) : Image.FromStream(new MemoryStream(item.ImageData[0]))
+                    );
             }
 
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -77,18 +78,42 @@ namespace SDKClientSharp
             BeginInvoke(
                 new Action(() =>
                 {
+                    Image realtimeFace = null;
+                    Image templateFace = null;
+                    if(e.FeatureImageData != null)
+                    {
+                        realtimeFace = Image.FromStream(new MemoryStream(e.FeatureImageData));
+                    }
+                    if(e.ModelFaceImageData != null)
+                    {
+                        templateFace = Image.FromStream(new MemoryStream(e.ModelFaceImageData));
+                    }
+                    else
+                    {
+                        templateFace = new Bitmap(1, 1);
+                    }
+
+
                     dataGridViewCaptureResult.Rows.Insert(0,
                         e.SequenceID,
                         e.CaptureTime,
-                        e.PersonID, 
+                        e.PersonID,
                         e.PersonName,
                         e.IsPersonMatched,
-                        e.MatchScore, 
-                        e.PersonRole
-                        );
+                        e.MatchScore,
+                        e.PersonRole,
+                        e.temperature,
+                        templateFace,
+                        realtimeFace
+                        ) ;
+
+                    var count = dataGridViewCaptureResult.Rows.Count;
+                    if (count > 20)
+                    {
+                        dataGridViewCaptureResult.Rows.RemoveAt(count - 1);
+                    }
                 })
            );
-                
         }
 
         private void dataGridViewCameraList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

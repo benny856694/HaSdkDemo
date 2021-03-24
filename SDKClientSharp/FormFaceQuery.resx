@@ -843,6 +843,30 @@
   <data name="ColumnType.HeaderText" xml:space="preserve">
     <value>Type</value>
   </data>
+  <metadata name="ColumnWiegandNo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnWiegandNo.HeaderText" xml:space="preserve">
+    <value>Wiegand No.</value>
+  </data>
+  <metadata name="ColumnValidFrom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnValidFrom.HeaderText" xml:space="preserve">
+    <value>Valid From</value>
+  </data>
+  <metadata name="ColumnValidTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnValidTo.HeaderText" xml:space="preserve">
+    <value>Valid To</value>
+  </data>
+  <metadata name="ColumnFaceImage.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnFaceImage.HeaderText" xml:space="preserve">
+    <value>Face Image</value>
+  </data>
   <data name="dataGridViewFaceQueryResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -899,6 +923,30 @@
   </data>
   <data name="&gt;&gt;ColumnType.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnWiegandNo.Name" xml:space="preserve">
+    <value>ColumnWiegandNo</value>
+  </data>
+  <data name="&gt;&gt;ColumnWiegandNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnValidFrom.Name" xml:space="preserve">
+    <value>ColumnValidFrom</value>
+  </data>
+  <data name="&gt;&gt;ColumnValidFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnValidTo.Name" xml:space="preserve">
+    <value>ColumnValidTo</value>
+  </data>
+  <data name="&gt;&gt;ColumnValidTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnFaceImage.Name" xml:space="preserve">
+    <value>ColumnFaceImage</value>
+  </data>
+  <data name="&gt;&gt;ColumnFaceImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormFaceQuery</value>

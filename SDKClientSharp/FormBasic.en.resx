@@ -120,17 +120,6 @@
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Video</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBoxFaceManagement.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBoxFaceManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 606</value>
-  </data>
-  <data name="groupBoxFaceManagement.Text" xml:space="preserve">
-    <value>Face Management</value>
-  </data>
   <data name="tabPageCaptureEvent.Text" xml:space="preserve">
     <value>Capture Event</value>
   </data>
@@ -149,9 +138,13 @@
   <data name="buttonRemoveFace.Text" xml:space="preserve">
     <value>Delete Face</value>
   </data>
+  <data name="groupBoxFaceManagement.Text" xml:space="preserve">
+    <value>Face Management</value>
+  </data>
   <data name="buttonConnect.Text" xml:space="preserve">
     <value>Connect</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 13</value>
   </data>
@@ -185,11 +178,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>SDK Password：</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Connect to Camera</value>
-  </data>
   <data name="buttonSearchDevice.Text" xml:space="preserve">
     <value>Search</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Connect to Camera</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Basic Demo</value>

@@ -75,7 +75,7 @@ namespace HaSdkWrapper
         public Rectangle FaceInEnvironment { internal set; get; }
         /// <summary>
         /// <para>特写图数据（JPEG格式图片的全部数据，包括文件头），可能为空表示没有传输特写图，一般来说特写图就是人脸图，不过不排除是头肩部的截取</para>
-        /// <EN>Close-up image</EN>
+        /// <EN>Close-up face image</EN>
         /// </summary>
         public byte[] FeatureImageData { internal set; get; }
         /// <summary>

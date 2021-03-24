@@ -60,6 +60,10 @@ namespace SDKClientSharp
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnWiegandNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnValidFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnValidTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFaceImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFaceQueryResult)).BeginInit();
             this.SuspendLayout();
@@ -255,11 +259,16 @@ namespace SDKClientSharp
             this.dataGridViewFaceQueryResult.AllowUserToAddRows = false;
             this.dataGridViewFaceQueryResult.AllowUserToDeleteRows = false;
             this.dataGridViewFaceQueryResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewFaceQueryResult.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewFaceQueryResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFaceQueryResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId,
             this.ColumnName,
-            this.ColumnType});
+            this.ColumnType,
+            this.ColumnWiegandNo,
+            this.ColumnValidFrom,
+            this.ColumnValidTo,
+            this.ColumnFaceImage});
             resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.Name = "dataGridViewFaceQueryResult";
             this.dataGridViewFaceQueryResult.ReadOnly = true;
@@ -281,6 +290,32 @@ namespace SDKClientSharp
             resources.ApplyResources(this.ColumnType, "ColumnType");
             this.ColumnType.Name = "ColumnType";
             this.ColumnType.ReadOnly = true;
+            // 
+            // ColumnWiegandNo
+            // 
+            resources.ApplyResources(this.ColumnWiegandNo, "ColumnWiegandNo");
+            this.ColumnWiegandNo.Name = "ColumnWiegandNo";
+            this.ColumnWiegandNo.ReadOnly = true;
+            // 
+            // ColumnValidFrom
+            // 
+            resources.ApplyResources(this.ColumnValidFrom, "ColumnValidFrom");
+            this.ColumnValidFrom.Name = "ColumnValidFrom";
+            this.ColumnValidFrom.ReadOnly = true;
+            // 
+            // ColumnValidTo
+            // 
+            resources.ApplyResources(this.ColumnValidTo, "ColumnValidTo");
+            this.ColumnValidTo.Name = "ColumnValidTo";
+            this.ColumnValidTo.ReadOnly = true;
+            // 
+            // ColumnFaceImage
+            // 
+            resources.ApplyResources(this.ColumnFaceImage, "ColumnFaceImage");
+            this.ColumnFaceImage.Name = "ColumnFaceImage";
+            this.ColumnFaceImage.ReadOnly = true;
+            this.ColumnFaceImage.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnFaceImage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // FormFaceQuery
             // 
@@ -324,10 +359,14 @@ namespace SDKClientSharp
         private System.Windows.Forms.DataGridView dataGridViewFaceQueryResult;
         private System.Windows.Forms.Button buttonPrevPage;
         private System.Windows.Forms.Button buttonNextPage;
+        private System.Windows.Forms.Label labelPageIndicator;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
-        private System.Windows.Forms.Label labelPageIndicator;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnWiegandNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValidFrom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValidTo;
+        private System.Windows.Forms.DataGridViewImageColumn ColumnFaceImage;
     }
 }

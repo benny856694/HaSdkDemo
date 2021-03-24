@@ -246,6 +246,24 @@
   <data name="ColumnType.HeaderText" xml:space="preserve">
     <value>Type</value>
   </data>
+  <metadata name="ColumnTemperature.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnTemperature.HeaderText" xml:space="preserve">
+    <value>Temperature</value>
+  </data>
+  <metadata name="ColumnTemplateFace.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnTemplateFace.HeaderText" xml:space="preserve">
+    <value>Template Face</value>
+  </data>
+  <metadata name="ColumnRealtimeFace.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColumnRealtimeFace.HeaderText" xml:space="preserve">
+    <value>Real Time Face</value>
+  </data>
   <data name="dataGridViewCaptureResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1023,9 +1041,6 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1082,6 +1097,24 @@
   </data>
   <data name="&gt;&gt;ColumnType.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnTemperature.Name" xml:space="preserve">
+    <value>ColumnTemperature</value>
+  </data>
+  <data name="&gt;&gt;ColumnTemperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnTemplateFace.Name" xml:space="preserve">
+    <value>ColumnTemplateFace</value>
+  </data>
+  <data name="&gt;&gt;ColumnTemplateFace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnRealtimeFace.Name" xml:space="preserve">
+    <value>ColumnRealtimeFace</value>
+  </data>
+  <data name="&gt;&gt;ColumnRealtimeFace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColumnIP.Name" xml:space="preserve">
     <value>ColumnIP</value>

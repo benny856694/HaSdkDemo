@@ -6,11 +6,22 @@ using System.Windows.Forms;
 
 namespace SDKClientSharp
 {
-    static class DateTimeExtension
+    static class Extensions
     {
+        public static DateTime EpochTime()
+        {
+            return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        }
+
         public static uint ToUtcSecondsFromEpochTime(this DateTime localTime) 
         {
-           return (uint)localTime.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds;
+           return (uint)localTime.ToUniversalTime().Subtract(EpochTime()).TotalSeconds;
+        }
+
+
+        public static DateTime ToLocalDateTime(this uint secondsFromEpochTime)
+        {
+            return EpochTime().AddSeconds(secondsFromEpochTime).ToLocalTime();
         }
     }
 
