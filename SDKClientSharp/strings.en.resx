@@ -123,6 +123,9 @@
   <data name="ConnectCamMsg" xml:space="preserve">
     <value>Connect to camera  {0} {1}</value>
   </data>
+  <data name="DeleteFaceAction" xml:space="preserve">
+    <value>Delete Face</value>
+  </data>
   <data name="DeleteFaceMsg" xml:space="preserve">
     <value>Connect {0}</value>
   </data>

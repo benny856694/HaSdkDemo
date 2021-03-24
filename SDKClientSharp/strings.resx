@@ -123,6 +123,9 @@
   <data name="ConnectCamMsg" xml:space="preserve">
     <value>连接相机 {0} {1}</value>
   </data>
+  <data name="DeleteFaceAction" xml:space="preserve">
+    <value>删除人像</value>
+  </data>
   <data name="DeleteFaceMsg" xml:space="preserve">
     <value>删除 {0}</value>
   </data>

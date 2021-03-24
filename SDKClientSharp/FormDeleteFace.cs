@@ -27,8 +27,17 @@ namespace SDKClientSharp
         {
             var res = Cam.DeleteFace(textBoxFaceId.Text);
             if (res) textBoxFaceId.Clear();
-            var msg = string.Format(strings.DeleteFaceMsg, res ? strings.Success : strings.Fail);
-            MessageBox.Show(msg);
+
+            int errorCode = 0;
+            string errorMsg = null;
+            if (!res)
+            {
+                errorCode = Cam.GetLastError();
+                errorMsg = HaCamera.GetErrorDescribe(errorCode);
+            }
+
+            Utils.ShowMsg(strings.DeleteFaceAction, res, errorCode, errorMsg);
+           
         }
     }
 }

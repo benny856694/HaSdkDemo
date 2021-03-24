@@ -79,6 +79,15 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 删除人像.
+        /// </summary>
+        internal static string DeleteFaceAction {
+            get {
+                return ResourceManager.GetString("DeleteFaceAction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 删除 {0}.
         /// </summary>
         internal static string DeleteFaceMsg {
