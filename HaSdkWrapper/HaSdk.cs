@@ -5079,6 +5079,7 @@ namespace HaSdkWrapper
 
         /// unsigned int
         public uint effectTime;
+        public uint effectStartTime;
 
     }
 

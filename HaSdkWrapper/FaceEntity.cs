@@ -36,6 +36,11 @@ namespace HaSdkWrapper
         /// </summary>
         public uint EffectTime { get; internal set; }
 
+        /// <summary>
+        /// 有效起始
+        /// </summary>
+        public uint effectStartTime { get; internal set; }
+
         public FaceEntity()
         {
             PersonRole = -1;

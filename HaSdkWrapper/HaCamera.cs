@@ -4355,6 +4355,7 @@ namespace HaSdkWrapper
             fe.PersonRole = qfi.role;
             fe.WiegandNo = qfi.wgCardNO;
             fe.EffectTime = qfi.effectTime;
+            fe.effectStartTime = qfi.effectStartTime;
             if (qfi.feature_count > 0)
             {
                 fe.FeatureData = new float[qfi.feature_count][];
