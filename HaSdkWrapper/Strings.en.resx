@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ERR_ABERRATION_TOO_BIG" xml:space="preserve">
+    <value>Aberration of visible infrared light is too large</value>
+  </data>
+  <data name="ERR_ANGLE_PITCH" xml:space="preserve">
+    <value>Face pitch is too large</value>
+  </data>
+  <data name="ERR_ANGLE_ROLL" xml:space="preserve">
+    <value>Facial Incorrectness</value>
+  </data>
+  <data name="ERR_ANGLE_YAW" xml:space="preserve">
+    <value>Face side deflection is too large</value>
+  </data>
+  <data name="ERR_APP_REBOOT" xml:space="preserve">
+    <value>Failed to restart application</value>
+  </data>
+  <data name="ERR_AUTH_FAILED" xml:space="preserve">
+    <value>Authentication Failure</value>
+  </data>
+  <data name="ERR_ENCODE_JPG" xml:space="preserve">
+    <value>Failed to compress image</value>
+  </data>
+  <data name="ERR_EXTRACT_FEATURE" xml:space="preserve">
+    <value>Failed to extract features</value>
+  </data>
+  <data name="ERR_FACES_NUM" xml:space="preserve">
+    <value>Maximum of 5 images supported by a single person</value>
+  </data>
+  <data name="ERR_FACE_ID_NOT_EXITS" xml:space="preserve">
+    <value>Failed to modify face feature (no corresponding ID found)</value>
+  </data>
+  <data name="ERR_FACE_ID_REPEAT" xml:space="preserve">
+    <value>Failed to add person (duplicate person id)</value>
+  </data>
+  <data name="ERR_FACE_INCOMPLETE" xml:space="preserve">
+    <value>Incomplete face in image</value>
+  </data>
+  <data name="ERR_GET_FACE_FEATURE" xml:space="preserve">
+    <value>Failed to extract face features (only one face must be present in the image)</value>
+  </data>
+  <data name="ERR_GET_FACE_ID" xml:space="preserve">
+    <value>Query face failed (no current record)</value>
+  </data>
+  <data name="ERR_GET_FACE_INIT" xml:space="preserve">
+    <value>Face extractor is not initialized (call HA_InitFaceModel Initialization)</value>
+  </data>
+  <data name="ERR_IMAGE_DECODE" xml:space="preserve">
+    <value>Image decoding failed</value>
+  </data>
+  <data name="ERR_IMAGE_PATH" xml:space="preserve">
+    <value>File does not exist, check that the picture path is correct</value>
+  </data>
+  <data name="ERR_IMAGE_SIZE" xml:space="preserve">
+    <value>The image is too large, the JPG image used to extract features cannot exceed 10M, and the JPG image sent to the camera cannot exceed 128x128 in width and height</value>
+  </data>
+  <data name="ERR_INFRARED_TARGET" xml:space="preserve">
+    <value>No specified number of infrared targets detected</value>
+  </data>
+  <data name="ERR_INVALID_PARAM" xml:space="preserve">
+    <value>Illegal parameters (missing or incorrect parameters)</value>
+  </data>
+  <data name="ERR_INVALID_SYNC_MODE" xml:space="preserve">
+    <value>Invalid synchronization operation</value>
+  </data>
+  <data name="ERR_LACK_TWISTIMGE" xml:space="preserve">
+    <value>Missing Normalized Image</value>
+  </data>
+  <data name="ERR_MIN_FACE" xml:space="preserve">
+    <value>Face size is too small, face contour must be greater than 96*96</value>
+  </data>
+  <data name="ERR_MOUTH_OPEN" xml:space="preserve">
+    <value>Open mouth too wide</value>
+  </data>
+  <data name="ERR_NONE" xml:space="preserve">
+    <value>Operation Successful</value>
+  </data>
+  <data name="ERR_NOT_IMPLEMENTED" xml:space="preserve">
+    <value>Not implemented (lower device version does not support current operation)</value>
+  </data>
+  <data name="ERR_PACKET_DATA" xml:space="preserve">
+    <value>Request packet contains illegal fields</value>
+  </data>
+  <data name="ERR_PROTOCAL_VER" xml:space="preserve">
+    <value>Protocol version does not match, please confirm SDK and camera firmware version</value>
+  </data>
+  <data name="ERR_PTZ_CTRL" xml:space="preserve">
+    <value>Unsupported cloud control, currently only supports 5: zoom in (zoom in) 6: zoom in (zoom out) 7: focus (zoom in) 8: focus (zoom out)</value>
+  </data>
+  <data name="ERR_PTZ_CTRL_MODE" xml:space="preserve">
+    <value>Unsupported control mode, 1:One movement 2:Start 3:Stop</value>
+  </data>
+  <data name="ERR_QVALUE_TOO_SMALL" xml:space="preserve">
+    <value>Poor portrait quality does not meet registration requirements</value>
+  </data>
+  <data name="ERR_READ_DATA" xml:space="preserve">
+    <value>Failed to read data</value>
+  </data>
+  <data name="ERR_REPLYCODE_FEATURE_VERSION" xml:space="preserve">
+    <value>Feature data version mismatch</value>
+  </data>
+  <data name="ERR_REQUEST_CMD" xml:space="preserve">
+    <value>Unsupported operation request</value>
+  </data>
+  <data name="ERR_SAVE_IMG_NUM" xml:space="preserve">
+    <value>Currently the camera only supports storing one template image, pictureFlags must be &lt;=1</value>
+  </data>
+  <data name="ERR_SERIAL_INDEX" xml:space="preserve">
+    <value>Bad serial number (only HA_is currently supported)SERIAL_RS485 and HA_SERIAL_RS232)</value>
+  </data>
+  <data name="ERR_SYSTEM_BUSY" xml:space="preserve">
+    <value>Operating system busy</value>
+  </data>
+  <data name="ERR_SYSTEM_REBOOT" xml:space="preserve">
+    <value>Failed to restart the system</value>
+  </data>
+  <data name="ERR_SYS_NOT_MATCH" xml:space="preserve">
+    <value>System mismatch (operating device is not a face capture camera)</value>
+  </data>
+  <data name="ERR_TIMEOUT" xml:space="preserve">
+    <value>Operation timed out (the device did not respond to the current operation within the specified time)</value>
+  </data>
+  <data name="ERR_TOO_MUCH_FACE" xml:space="preserve">
+    <value>The number of faces in the image is not 1</value>
+  </data>
+  <data name="ERR_TWIST_FACE" xml:space="preserve">
+    <value>Failed to normalize image</value>
+  </data>
+  <data name="ERR_UNCONNECTED" xml:space="preserve">
+    <value>Not connected (network problem)</value>
+  </data>
+  <data name="ERR_UNDEFINED" xml:space="preserve">
+    <value>unknown error</value>
+  </data>
+  <data name="ERR_UPPER_LIMIT" xml:space="preserve">
+    <value>Maximum number of people reached</value>
+  </data>
+  <data name="ERR_VERSION_MATCH" xml:space="preserve">
+    <value>Version mismatch</value>
+  </data>
+  <data name="ERR_VISIBLE_TARGET" xml:space="preserve">
+    <value>No specified number of visible targets detected</value>
+  </data>
+  <data name="ERR_WG_QUERY_MODE" xml:space="preserve">
+    <value>Wigan card number does not support fuzzy query</value>
+  </data>
+  <data name="ERR_WRITE_DATA" xml:space="preserve">
+    <value>Failed to write data</value>
+  </data>
+  <data name="ERR_YINYANG_FACE" xml:space="preserve">
+    <value>Uneven lighting</value>
+  </data>
+</root>

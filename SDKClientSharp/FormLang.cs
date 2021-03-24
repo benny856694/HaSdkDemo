@@ -14,8 +14,8 @@ namespace SDKClientSharp
     {
         const string chinese = "简体中文";
         const string english = "English";
-        const string chineseCultureName = "zh-CN";
-        const string englishCultureName = "en-US";
+        const string chineseCultureName = "zh";
+        const string englishCultureName = "en";
         readonly string[] _languages =  { english, chinese };
         public FormLang()
         {

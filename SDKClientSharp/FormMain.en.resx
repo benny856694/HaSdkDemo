@@ -117,6 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button84.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -131,6 +132,9 @@
   <data name="button84.Text" xml:space="preserve">
     <value>Enable Rotation</value>
   </data>
+=======
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
     <value>725, 19</value>
   </data>
@@ -155,12 +159,16 @@
   <data name="label72.Text" xml:space="preserve">
     <value>SDK Password：</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 80</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
   </data>
+=======
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   <data name="button1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -189,7 +197,11 @@
     <value>Expected  Camera Count：</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Ste 1:  Initialization</value>
@@ -285,10 +297,14 @@
     <value>3, 107</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1171, 482</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 28</value>
+=======
+    <value>1253, 522</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 12</value>
@@ -306,7 +322,11 @@
     <value>Search Camera</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Step 2:  Search Devices（can skip）</value>
@@ -447,6 +467,7 @@
     <value>Connect</value>
   </data>
   <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>129, 52</value>
   </data>
   <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
@@ -457,9 +478,21 @@
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 12</value>
+=======
+    <value>132, 56</value>
+  </data>
+  <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 20</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 59</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>User name password：</value>
+    <value>User name &amp;&amp; password：</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>257, 55</value>
@@ -483,10 +516,14 @@
     <value>18, 22</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>59, 12</value>
+=======
+    <value>59, 13</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>IP port：</value>
+    <value>IP &amp;&amp; port：</value>
   </data>
   <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>276, 19</value>
@@ -501,12 +538,17 @@
     <value>148, 21</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Step 3:  Connect Device</value>
   </data>
   <data name="dateTimePicker9.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>862, 88</value>
   </data>
   <data name="dateTimePicker9.Size" type="System.Drawing.Size, System.Drawing">
@@ -520,6 +562,15 @@
   </data>
   <data name="checkBox22.Location" type="System.Drawing.Point, System.Drawing">
     <value>538, 93</value>
+=======
+    <value>899, 95</value>
+  </data>
+  <data name="dateTimePicker8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 95</value>
+  </data>
+  <data name="checkBox22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 98</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="checkBox22.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 16</value>
@@ -527,6 +578,7 @@
   <data name="checkBox22.Text" xml:space="preserve">
     <value>Valid From</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="comboBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>659, 26</value>
   </data>
@@ -547,6 +599,16 @@
   </data>
   <data name="checkBox21.Location" type="System.Drawing.Point, System.Drawing">
     <value>538, 61</value>
+=======
+  <data name="dateTimePicker7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>899, 61</value>
+  </data>
+  <data name="dateTimePicker6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 61</value>
+  </data>
+  <data name="checkBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 63</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="checkBox21.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
@@ -555,19 +617,30 @@
     <value>Valid To</value>
   </data>
   <data name="textBox64.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>413, 56</value>
   </data>
   <data name="textBox64.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 21</value>
+=======
+    <value>465, 61</value>
+  </data>
+  <data name="textBox64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="checkBox20.Location" type="System.Drawing.Point, System.Drawing">
     <value>345, 58</value>
   </data>
   <data name="checkBox20.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>90, 16</value>
+=======
+    <value>114, 17</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="checkBox20.Text" xml:space="preserve">
-    <value>Wiegand No.</value>
+    <value>Wiegand Card No.</value>
   </data>
   <data name="textBox63.Location" type="System.Drawing.Point, System.Drawing">
     <value>230, 56</value>
@@ -668,11 +741,22 @@
   <data name="label19.Text" xml:space="preserve">
     <value>Role：</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 25</value>
   </data>
   <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
+=======
+  <data name="comboBox3.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox3.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox3.Items2" xml:space="preserve">
+    <value>Black Name</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>No</value>
@@ -696,6 +780,7 @@
     <value>3, 115</value>
   </data>
   <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1171, 275</value>
   </data>
   <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
@@ -703,9 +788,15 @@
   </data>
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>1177, 393</value>
+=======
+    <value>1253, 298</value>
+  </data>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1259, 428</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox8.Text" xml:space="preserve">
-    <value>Query Features（in page）</value>
+    <value>Paged Record Query</value>
   </data>
   <data name="button57.Location" type="System.Drawing.Point, System.Drawing">
     <value>1007, 27</value>
@@ -771,10 +862,14 @@
     <value>0, 129</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 70</value>
+=======
+    <value>1259, 76</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
-    <value>Delete Feature</value>
+    <value>Delete Face</value>
   </data>
   <data name="button89.Location" type="System.Drawing.Point, System.Drawing">
     <value>1016, 42</value>
@@ -830,6 +925,15 @@
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
     <value>190, 44</value>
   </data>
+  <data name="combTime_m.Items" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="combTime_m.Items1" xml:space="preserve">
+    <value>Always Expired</value>
+  </data>
+  <data name="combTime_m.Items2" xml:space="preserve">
+    <value>Custom Defined=&gt;</value>
+  </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
   </data>
@@ -837,6 +941,7 @@
     <value>Valid To：</value>
   </data>
   <data name="txtwg_m.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>84, 41</value>
   </data>
   <data name="txtwg_m.Size" type="System.Drawing.Size, System.Drawing">
@@ -844,6 +949,15 @@
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 44</value>
+=======
+    <value>108, 44</value>
+  </data>
+  <data name="txtwg_m.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 48</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 12</value>
@@ -851,6 +965,7 @@
   <data name="label23.Text" xml:space="preserve">
     <value>Wiegand Card No.：</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 17</value>
   </data>
@@ -862,6 +977,16 @@
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
+=======
+  <data name="comboBox2.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox2.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox2.Items2" xml:space="preserve">
+    <value>Black Name</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>Modify</value>
@@ -918,10 +1043,14 @@
     <value>0, 62</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 67</value>
+=======
+    <value>1259, 73</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
-    <value>Modify Feature</value>
+    <value>Modify Face</value>
   </data>
   <data name="button88.Location" type="System.Drawing.Point, System.Drawing">
     <value>1017, 35</value>
@@ -956,6 +1085,7 @@
   <data name="label77.Text" xml:space="preserve">
     <value>Valid From</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="dateTimePicker10.Location" type="System.Drawing.Point, System.Drawing">
     <value>626, 34</value>
   </data>
@@ -976,6 +1106,16 @@
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>190, 38</value>
+=======
+  <data name="combTime_a.Items" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="combTime_a.Items1" xml:space="preserve">
+    <value>Always Expired</value>
+  </data>
+  <data name="combTime_a.Items2" xml:space="preserve">
+    <value>User Defined=&gt;</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
@@ -984,6 +1124,7 @@
     <value>Valid To：</value>
   </data>
   <data name="txtwg_a.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>84, 35</value>
   </data>
   <data name="txtwg_a.Size" type="System.Drawing.Size, System.Drawing">
@@ -994,9 +1135,30 @@
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 12</value>
+=======
+    <value>108, 38</value>
+  </data>
+  <data name="txtwg_a.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 41</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label26.Text" xml:space="preserve">
-    <value>Wiegand No.：</value>
+    <value>Wiegand Card No.：</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>Black Name</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 13</value>
@@ -1062,16 +1224,24 @@
     <value>Person Name：</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 62</value>
+=======
+    <value>1259, 67</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>Add Feature</value>
+    <value>Add Face</value>
   </data>
   <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage4.Text" xml:space="preserve">
-    <value>Feature Management</value>
+    <value>Face Management</value>
   </data>
   <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
     <value>693, 40</value>
@@ -1155,7 +1325,11 @@
     <value>0, 476</value>
   </data>
   <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 116</value>
+=======
+    <value>1259, 128</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox13.Text" xml:space="preserve">
     <value>Login Authentication</value>
@@ -1227,7 +1401,11 @@
     <value>0, 336</value>
   </data>
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 140</value>
+=======
+    <value>1259, 152</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox12.Text" xml:space="preserve">
     <value>Configure Time</value>
@@ -1332,7 +1510,11 @@
     <value>0, 226</value>
   </data>
   <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 110</value>
+=======
+    <value>1259, 119</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox10.Text" xml:space="preserve">
     <value>Device Info</value>
@@ -1359,7 +1541,11 @@
     <value>0, 126</value>
   </data>
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 100</value>
+=======
+    <value>1259, 108</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox9.Text" xml:space="preserve">
     <value>IO</value>
@@ -1464,13 +1650,21 @@
     <value>29, 12</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 126</value>
+=======
+    <value>1259, 137</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox7.Text" xml:space="preserve">
     <value>Configure IP</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage5.Text" xml:space="preserve">
     <value>Misc</value>
@@ -1620,7 +1814,11 @@
     <value>Template Image Quality Verify</value>
   </data>
   <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage8.Text" xml:space="preserve">
     <value>Misc 2</value>
@@ -2514,7 +2712,11 @@
     <value>Liveness Detect：</value>
   </data>
   <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage10.Text" xml:space="preserve">
     <value>Misc 3</value>
@@ -2747,6 +2949,15 @@
   <data name="button49.Text" xml:space="preserve">
     <value>Force Open</value>
   </data>
+  <data name="comboBox5.Items" xml:space="preserve">
+    <value>Everyone can pass</value>
+  </data>
+  <data name="comboBox5.Items1" xml:space="preserve">
+    <value>No one can pass</value>
+  </data>
+  <data name="comboBox5.Items2" xml:space="preserve">
+    <value>Self determination</value>
+  </data>
   <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>170, 152</value>
   </data>
@@ -2768,9 +2979,9 @@
 Only when the server authorized can the gate be opened.
 
 In the following options:
-    if "release all" is selected, all opening requests will be responded
-    If "disable all" is selected, all opening requests are rejected
-    If "self determination" is selected, an option dialog box will pop up</value>
+    if "Every one can pass" is selected, all opening requests will be responded
+    If "No one can pass" is selected, all opening requests are rejected
+    If "Self determination" is selected, an option dialog box will pop up</value>
   </data>
   <data name="groupBox15.Location" type="System.Drawing.Point, System.Drawing">
     <value>445, 44</value>
@@ -2814,11 +3025,22 @@ In the following options:
   <data name="button23.Text" xml:space="preserve">
     <value>Get</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 18</value>
   </data>
   <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
+=======
+  <data name="comboBox4.Items" xml:space="preserve">
+    <value>Auto Mode</value>
+  </data>
+  <data name="comboBox4.Items1" xml:space="preserve">
+    <value>Online Mode</value>
+  </data>
+  <data name="comboBox4.Items2" xml:space="preserve">
+    <value>Offline Mode</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 23</value>
@@ -2830,7 +3052,11 @@ In the following options:
     <value>Working Mode：</value>
   </data>
   <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage6.Text" xml:space="preserve">
     <value>Working Mode</value>
@@ -3246,6 +3472,15 @@ In the following options:
   <data name="label48.Text" xml:space="preserve">
     <value>Wiegand Card No.：</value>
   </data>
+  <data name="comboBox7.Items" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox7.Items1" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="comboBox7.Items2" xml:space="preserve">
+    <value>Black Name</value>
+  </data>
   <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>406, 13</value>
   </data>
@@ -3283,13 +3518,21 @@ In the following options:
     <value>Name：</value>
   </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 258</value>
+=======
+    <value>1259, 280</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox16.Text" xml:space="preserve">
     <value>Add Feature</value>
   </data>
   <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage7.Text" xml:space="preserve">
     <value>Bulk Register</value>
@@ -3318,6 +3561,7 @@ In the following options:
   <data name="checkBox15.Text" xml:space="preserve">
     <value>Fuzzy Query（Name or number）</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 96</value>
   </data>
@@ -3326,6 +3570,13 @@ In the following options:
   </data>
   <data name="checkBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>286, 98</value>
+=======
+  <data name="comboBox9.Items" xml:space="preserve">
+    <value>Uploaded</value>
+  </data>
+  <data name="comboBox9.Items1" xml:space="preserve">
+    <value>Not uploaded</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="checkBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 16</value>
@@ -3417,11 +3668,19 @@ In the following options:
   <data name="checkBox10.Text" xml:space="preserve">
     <value>Age</value>
   </data>
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
   <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>887, 24</value>
   </data>
   <data name="comboBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
+=======
+  <data name="comboBox8.Items" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="comboBox8.Items1" xml:space="preserve">
+    <value>Female</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>811, 28</value>
@@ -3553,13 +3812,21 @@ In the following options:
     <value>3, 208</value>
   </data>
   <data name="dataGridView3.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1171, 329</value>
+=======
+    <value>1253, 356</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 52</value>
   </data>
   <data name="groupBox17.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 540</value>
+=======
+    <value>1259, 585</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="groupBox17.Text" xml:space="preserve">
     <value>Query Capture Record</value>
@@ -3592,7 +3859,11 @@ In the following options:
     <value>Save Capture Record to TF Card</value>
   </data>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage9.Text" xml:space="preserve">
     <value>Record Query</value>
@@ -3616,12 +3887,17 @@ In the following options:
     <value>Set Open Gate Time Schedule</value>
   </data>
   <data name="tabPage11.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1177, 592</value>
+=======
+    <value>1259, 644</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="tabPage11.Text" xml:space="preserve">
     <value>Gate Open Scheduling</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD:SDKClientSharp/FormMain.en-US.resx
     <value>1185, 618</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -3629,6 +3905,12 @@ In the following options:
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1185, 618</value>
+=======
+    <value>1267, 670</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1267, 670</value>
+>>>>>>> e909a90c53e2b92321b110ca7986d46f1ee85b0b:SDKClientSharp/FormMain.en.resx
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>SDK Demo</value>

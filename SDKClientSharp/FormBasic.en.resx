@@ -117,4 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="tabPageCaptureEvent.Text" xml:space="preserve">
+    <value>Capture Event</value>
+  </data>
+  <data name="tabPageCameraSearchResult.Text" xml:space="preserve">
+    <value>Camera Search Result</value>
+  </data>
+  <data name="tabPageLog.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="buttonAddFace.Text" xml:space="preserve">
+    <value>Add Face</value>
+  </data>
+  <data name="buttonQueryFace.Text" xml:space="preserve">
+    <value>Query Face</value>
+  </data>
+  <data name="buttonRemoveFace.Text" xml:space="preserve">
+    <value>Delete Face</value>
+  </data>
+  <data name="groupBoxFaceManagement.Text" xml:space="preserve">
+    <value>Face Management</value>
+  </data>
+  <data name="buttonConnect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>IP &amp;&amp; Port：</value>
+  </data>
+  <data name="textBoxUserName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>455, 22</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 26</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>UserName &amp;&amp; Password：</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 26</value>
+  </data>
+  <data name="textBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 22</value>
+  </data>
+  <data name="textBoxSDKPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>798, 22</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>SDK Password：</value>
+  </data>
+  <data name="buttonSearchDevice.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Connect to Camera</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Basic Demo</value>
+  </data>
 </root>

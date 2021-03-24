@@ -17,8 +17,14 @@ namespace SDKClientSharp
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-         
-            Application.Run(new FormMain());
+
+
+            using (var form = new FormLang())
+            {
+                form.ShowDialog();
+            }
+
+            Application.Run(new FormBasic());
             
         }
     }

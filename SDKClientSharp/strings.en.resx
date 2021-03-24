@@ -117,4 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddFaceAction" xml:space="preserve">
+    <value>Add face</value>
+  </data>
+  <data name="ConnectCamMsg" xml:space="preserve">
+    <value>Connect to camera  {0} {1}</value>
+  </data>
+  <data name="DeleteFaceAction" xml:space="preserve">
+    <value>Delete Face</value>
+  </data>
+  <data name="DeleteFaceMsg" xml:space="preserve">
+    <value>Connect {0}</value>
+  </data>
+  <data name="ErrorWithErrorMsg" xml:space="preserve">
+    <value>Error occurred：{0} ({1})</value>
+  </data>
+  <data name="FaceType.All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FaceType.BlackName" xml:space="preserve">
+    <value>Black Name</value>
+  </data>
+  <data name="FaceType.Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="FaceType.WhiteName" xml:space="preserve">
+    <value>White Name</value>
+  </data>
+  <data name="Fail" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="MatchingMode.Exactly" xml:space="preserve">
+    <value>Match Exactly</value>
+  </data>
+  <data name="MatchingMode.Fuzzy" xml:space="preserve">
+    <value>Match Partly</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="QueryFaceAction" xml:space="preserve">
+    <value>Query Face</value>
+  </data>
+  <data name="Rule" xml:space="preserve">
+    <value>Rule {0}</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="ValidateImageMsg" xml:space="preserve">
+    <value>Validate Image：{0}</value>
+  </data>
+  <data name="ValidTo.Expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="ValidTo.NeverExpire" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="ValidTo.Specified" xml:space="preserve">
+    <value>Specified</value>
+  </data>
 </root>

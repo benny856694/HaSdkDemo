@@ -370,3 +370,5 @@ FodyWeavers.xsd
 
 lib
 lib64
+*.rar
+*.zip
