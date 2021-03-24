@@ -35,11 +35,11 @@ namespace SDKClientSharp
                     int rowIdx = dataGridViewCameraList.Rows.Add();
                     dataGridViewCameraList.Rows[rowIdx].Cells[0].Value = e.IP;
                     dataGridViewCameraList.Rows[rowIdx].Cells[1].Value = e.Mac;
-                    //dataGridView1.Rows[rowIdx].Cells[2].Value = e.NetMask;
-                    //dataGridView1.Rows[rowIdx].Cells[3].Value = e.Manufacturer;
-                    //dataGridView1.Rows[rowIdx].Cells[4].Value = e.Plateform;
-                    //dataGridView1.Rows[rowIdx].Cells[5].Value = e.System;
-                    //dataGridView1.Rows[rowIdx].Cells[6].Value = e.Version;
+                    dataGridViewCameraList.Rows[rowIdx].Cells[2].Value = e.NetMask;
+                    dataGridViewCameraList.Rows[rowIdx].Cells[3].Value = e.Manufacturer;
+                    dataGridViewCameraList.Rows[rowIdx].Cells[4].Value = e.Plateform;
+                    dataGridViewCameraList.Rows[rowIdx].Cells[5].Value = e.System;
+                    dataGridViewCameraList.Rows[rowIdx].Cells[6].Value = e.Version;
 
                     tabControl1.SelectedTab = tabPageCameraSearchResult;
                 }));
