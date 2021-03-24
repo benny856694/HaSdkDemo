@@ -169,6 +169,15 @@ namespace SDKClientSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 查询人像.
+        /// </summary>
+        internal static string QueryFaceAction {
+            get {
+                return ResourceManager.GetString("QueryFaceAction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 规则{0}.
         /// </summary>
         internal static string Rule {

@@ -111,18 +111,24 @@ namespace SDKClientSharp
             } 
         }
 
-        public static string FormatErrorMsg(string operation, bool success = true, int errorCode = 0, string errorMsg = null)
+        public static void  ShowMsg(string operation, bool success = true, int errorCode = 0, string errorMsg = null)
         {
+            var msg = string.Empty;
             if(success)
             {
-                return string.Format("{0} {1}", operation, strings.Success);
+                msg = string.Format("{0} {1}", operation, strings.Success);
+            }
+            else
+            {
+                var sb = new StringBuilder();
+                sb.AppendLine(string.Format("{0} {1}", operation, strings.Fail));
+                sb.AppendLine("-------------------");
+                sb.Append(string.Format(strings.ErrorWithErrorMsg, errorCode, errorMsg));
+                msg = sb.ToString();
             }
 
-            var sb = new StringBuilder();
-            sb.AppendLine(string.Format("{0} {1}", operation, strings.Fail));
-            sb.AppendLine("-------------------");
-            sb.Append(string.Format(strings.ErrorWithErrorMsg, errorCode, errorMsg));
-            return sb.ToString();
+            MessageBox.Show(msg, string.Empty, MessageBoxButtons.OK, errorCode == 0 ? MessageBoxIcon.Information : MessageBoxIcon.Error);
+
 
         }
 

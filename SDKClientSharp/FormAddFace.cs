@@ -69,8 +69,8 @@ namespace SDKClientSharp
                 errorMsg = HaCamera.GetErrorDescribe(errorCode);
             }
 
-            var msg = Utils.FormatErrorMsg(strings.AddFaceAction, res, errorCode, errorMsg);
-            MessageBox.Show(msg);
+            Utils.ShowMsg(strings.AddFaceAction, res, errorCode, errorMsg);
+            
         }
 
         private void FormAddFace_Load(object sender, EventArgs e)

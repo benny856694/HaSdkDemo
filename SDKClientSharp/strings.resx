@@ -153,6 +153,9 @@
   <data name="NA" xml:space="preserve">
     <value>未使用</value>
   </data>
+  <data name="QueryFaceAction" xml:space="preserve">
+    <value>查询人像</value>
+  </data>
   <data name="Rule" xml:space="preserve">
     <value>规则{0}</value>
   </data>

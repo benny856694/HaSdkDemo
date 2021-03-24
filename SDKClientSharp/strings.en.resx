@@ -153,6 +153,9 @@
   <data name="NA" xml:space="preserve">
     <value>N/A</value>
   </data>
+  <data name="QueryFaceAction" xml:space="preserve">
+    <value>Query Face</value>
+  </data>
   <data name="Rule" xml:space="preserve">
     <value>Rule {0}</value>
   </data>

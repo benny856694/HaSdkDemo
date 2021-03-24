@@ -87,8 +87,7 @@ namespace SDKClientSharp
                 var lastError = Cam.GetLastError();
                 if (lastError != NativeConstants.ERR_NONE)
                 {
-                    var msg = string.Format(strings.ErrorWithErrorMsg, HaCamera.GetErrorDescribe(lastError));
-                    MessageBox.Show(msg);
+                    Utils.ShowMsg(strings.QueryFaceAction, lastError == 0, lastError, HaCamera.GetErrorDescribe(lastError));
 
                 }
                 return;
@@ -112,6 +111,8 @@ namespace SDKClientSharp
         private void UpdatePageIndicator(int pageSize, int total)
         {
             var pageCount = (total + pageSize - 1) / pageSize;
+            buttonPrevPage.Enabled = CurPage > 1;
+            buttonNextPage.Enabled = CurPage < pageCount;
             labelPageIndicator.Text = string.Format("{0}/{1}", CurPage, pageCount);
         }
 
