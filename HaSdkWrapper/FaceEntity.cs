@@ -39,7 +39,7 @@ namespace HaSdkWrapper
         /// <summary>
         /// 有效起始
         /// </summary>
-        public uint effectStartTime { get; internal set; }
+        public uint EffectStartTime { get; internal set; }
 
         public FaceEntity()
         {

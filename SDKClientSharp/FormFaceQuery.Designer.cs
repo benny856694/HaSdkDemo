@@ -272,6 +272,7 @@ namespace SDKClientSharp
             resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.Name = "dataGridViewFaceQueryResult";
             this.dataGridViewFaceQueryResult.ReadOnly = true;
+            this.dataGridViewFaceQueryResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
             // ColumnId
             // 

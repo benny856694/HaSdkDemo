@@ -37,8 +37,25 @@ namespace SDKClientSharp
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCaptureEvent = new System.Windows.Forms.TabPage();
             this.dataGridViewCaptureResult = new System.Windows.Forms.DataGridView();
+            this.ColumnSeqNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMatch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTemperature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTemplateFace = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ColumnRealtimeFace = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabPageCameraSearchResult = new System.Windows.Forms.TabPage();
             this.dataGridViewCameraList = new System.Windows.Forms.DataGridView();
+            this.ColumnIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnManufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageLog = new System.Windows.Forms.TabPage();
             this.listBoxLog = new System.Windows.Forms.ListBox();
             this.groupBoxFaceManagement = new System.Windows.Forms.GroupBox();
@@ -59,23 +76,6 @@ namespace SDKClientSharp
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonSearchDevice = new System.Windows.Forms.Button();
-            this.ColumnSeqNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMatch = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTemperature = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTemplateFace = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ColumnRealtimeFace = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ColumnIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnManufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -175,6 +175,69 @@ namespace SDKClientSharp
             resources.ApplyResources(this.dataGridViewCaptureResult, "dataGridViewCaptureResult");
             this.dataGridViewCaptureResult.Name = "dataGridViewCaptureResult";
             this.dataGridViewCaptureResult.ReadOnly = true;
+            this.dataGridViewCaptureResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // ColumnSeqNo
+            // 
+            resources.ApplyResources(this.ColumnSeqNo, "ColumnSeqNo");
+            this.ColumnSeqNo.Name = "ColumnSeqNo";
+            this.ColumnSeqNo.ReadOnly = true;
+            // 
+            // ColumnCapTime
+            // 
+            resources.ApplyResources(this.ColumnCapTime, "ColumnCapTime");
+            this.ColumnCapTime.Name = "ColumnCapTime";
+            this.ColumnCapTime.ReadOnly = true;
+            // 
+            // ColumnId
+            // 
+            resources.ApplyResources(this.ColumnId, "ColumnId");
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            // 
+            // ColumnName
+            // 
+            resources.ApplyResources(this.ColumnName, "ColumnName");
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
+            // 
+            // ColumnMatch
+            // 
+            resources.ApplyResources(this.ColumnMatch, "ColumnMatch");
+            this.ColumnMatch.Name = "ColumnMatch";
+            this.ColumnMatch.ReadOnly = true;
+            // 
+            // ColumnScore
+            // 
+            resources.ApplyResources(this.ColumnScore, "ColumnScore");
+            this.ColumnScore.Name = "ColumnScore";
+            this.ColumnScore.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            resources.ApplyResources(this.ColumnType, "ColumnType");
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
+            // ColumnTemperature
+            // 
+            resources.ApplyResources(this.ColumnTemperature, "ColumnTemperature");
+            this.ColumnTemperature.Name = "ColumnTemperature";
+            this.ColumnTemperature.ReadOnly = true;
+            // 
+            // ColumnTemplateFace
+            // 
+            resources.ApplyResources(this.ColumnTemplateFace, "ColumnTemplateFace");
+            this.ColumnTemplateFace.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ColumnTemplateFace.Name = "ColumnTemplateFace";
+            this.ColumnTemplateFace.ReadOnly = true;
+            // 
+            // ColumnRealtimeFace
+            // 
+            resources.ApplyResources(this.ColumnRealtimeFace, "ColumnRealtimeFace");
+            this.ColumnRealtimeFace.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ColumnRealtimeFace.Name = "ColumnRealtimeFace";
+            this.ColumnRealtimeFace.ReadOnly = true;
             // 
             // tabPageCameraSearchResult
             // 
@@ -200,7 +263,50 @@ namespace SDKClientSharp
             resources.ApplyResources(this.dataGridViewCameraList, "dataGridViewCameraList");
             this.dataGridViewCameraList.Name = "dataGridViewCameraList";
             this.dataGridViewCameraList.ReadOnly = true;
+            this.dataGridViewCameraList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCameraList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCameraList_CellDoubleClick);
+            // 
+            // ColumnIP
+            // 
+            resources.ApplyResources(this.ColumnIP, "ColumnIP");
+            this.ColumnIP.Name = "ColumnIP";
+            this.ColumnIP.ReadOnly = true;
+            // 
+            // ColumnMac
+            // 
+            resources.ApplyResources(this.ColumnMac, "ColumnMac");
+            this.ColumnMac.Name = "ColumnMac";
+            this.ColumnMac.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            resources.ApplyResources(this.Column4, "Column4");
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // ColumnManufacturer
+            // 
+            resources.ApplyResources(this.ColumnManufacturer, "ColumnManufacturer");
+            this.ColumnManufacturer.Name = "ColumnManufacturer";
+            this.ColumnManufacturer.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            resources.ApplyResources(this.Column3, "Column3");
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // tabPageLog
             // 
@@ -332,110 +438,6 @@ namespace SDKClientSharp
             this.buttonSearchDevice.Name = "buttonSearchDevice";
             this.buttonSearchDevice.UseVisualStyleBackColor = true;
             this.buttonSearchDevice.Click += new System.EventHandler(this.buttonSearchDevice_Click);
-            // 
-            // ColumnSeqNo
-            // 
-            resources.ApplyResources(this.ColumnSeqNo, "ColumnSeqNo");
-            this.ColumnSeqNo.Name = "ColumnSeqNo";
-            this.ColumnSeqNo.ReadOnly = true;
-            // 
-            // ColumnCapTime
-            // 
-            resources.ApplyResources(this.ColumnCapTime, "ColumnCapTime");
-            this.ColumnCapTime.Name = "ColumnCapTime";
-            this.ColumnCapTime.ReadOnly = true;
-            // 
-            // ColumnId
-            // 
-            resources.ApplyResources(this.ColumnId, "ColumnId");
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.ReadOnly = true;
-            // 
-            // ColumnName
-            // 
-            resources.ApplyResources(this.ColumnName, "ColumnName");
-            this.ColumnName.Name = "ColumnName";
-            this.ColumnName.ReadOnly = true;
-            // 
-            // ColumnMatch
-            // 
-            resources.ApplyResources(this.ColumnMatch, "ColumnMatch");
-            this.ColumnMatch.Name = "ColumnMatch";
-            this.ColumnMatch.ReadOnly = true;
-            // 
-            // ColumnScore
-            // 
-            resources.ApplyResources(this.ColumnScore, "ColumnScore");
-            this.ColumnScore.Name = "ColumnScore";
-            this.ColumnScore.ReadOnly = true;
-            // 
-            // ColumnType
-            // 
-            resources.ApplyResources(this.ColumnType, "ColumnType");
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
-            // 
-            // ColumnTemperature
-            // 
-            resources.ApplyResources(this.ColumnTemperature, "ColumnTemperature");
-            this.ColumnTemperature.Name = "ColumnTemperature";
-            this.ColumnTemperature.ReadOnly = true;
-            // 
-            // ColumnTemplateFace
-            // 
-            resources.ApplyResources(this.ColumnTemplateFace, "ColumnTemplateFace");
-            this.ColumnTemplateFace.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ColumnTemplateFace.Name = "ColumnTemplateFace";
-            this.ColumnTemplateFace.ReadOnly = true;
-            // 
-            // ColumnRealtimeFace
-            // 
-            resources.ApplyResources(this.ColumnRealtimeFace, "ColumnRealtimeFace");
-            this.ColumnRealtimeFace.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ColumnRealtimeFace.Name = "ColumnRealtimeFace";
-            this.ColumnRealtimeFace.ReadOnly = true;
-            // 
-            // ColumnIP
-            // 
-            resources.ApplyResources(this.ColumnIP, "ColumnIP");
-            this.ColumnIP.Name = "ColumnIP";
-            this.ColumnIP.ReadOnly = true;
-            // 
-            // ColumnMac
-            // 
-            resources.ApplyResources(this.ColumnMac, "ColumnMac");
-            this.ColumnMac.Name = "ColumnMac";
-            this.ColumnMac.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // ColumnManufacturer
-            // 
-            resources.ApplyResources(this.ColumnManufacturer, "ColumnManufacturer");
-            this.ColumnManufacturer.Name = "ColumnManufacturer";
-            this.ColumnManufacturer.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            resources.ApplyResources(this.Column3, "Column3");
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // FormBasic
             // 

@@ -105,7 +105,7 @@ namespace SDKClientSharp
                     item.PersonName,
                     item.PersonRole,
                     item.WiegandNo,
-                    item.effectStartTime.ToLocalDateTime(),
+                    item.EffectStartTime.ToLocalDateTime(),
                     item.EffectTime.ToLocalDateTime(),
                     item.ImageData == null ? new Bitmap(1,1) : Image.FromStream(new MemoryStream(item.ImageData[0]))
                     );
