@@ -118,6 +118,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="VideoParmReceivedArgs.cs" />
     <Compile Include="WeiGangno.cs" />
   </ItemGroup>
   <ItemGroup>

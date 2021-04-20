@@ -15,6 +15,9 @@ namespace HaSdkWrapper
     public unsafe class HaCamera
     {
 
+
+        private bool _videoParmReceivedEventFired = false;
+
         #region callback defines
         private HA_FaceRecoCb_t _faceRecoCallback;
         private HA_ConnectEventCb_t _connectEventCallback;
@@ -25,6 +28,7 @@ namespace HaSdkWrapper
         private HA_AlarmRequestCb_t _alarmRequestCallback;
         private HA_FaceRecordCb_t _faceRecordQueryCallback;
         private HA_SnapshotCb_t _snapshotCallback;
+        private HA_DecodeImageCb_t _decodeImageCallback;
 
         private HA_GpioInputCb_t _gpioInputCb_t;
 
@@ -68,6 +72,9 @@ namespace HaSdkWrapper
         /// 收到设备开闸记录时产生的事件
         /// </summary>
         public event EventHandler<AlarmRecordEventArgs> AlarmRecordReceived;
+
+        public event EventHandler<VideoParmReceivedArgs> VideoParmReceived;
+
         #endregion events
 
         #region properties
@@ -515,7 +522,7 @@ namespace HaSdkWrapper
             HookCallbackEx(_cam);
             
             if(hwnd != default(IntPtr))
-                NativeMethods.HA_StartStreamEx(_cam, hwnd, null, 0);
+                NativeMethods.HA_StartStreamEx(_cam, hwnd, _decodeImageCallback, 0);
 
             if (errorNum != 0)
             {
@@ -4414,6 +4421,21 @@ namespace HaSdkWrapper
 
             _snapshotCallback = SnapshotCb;
             NativeMethods.HA_RegSnapshotCb(_cam, _snapshotCallback, IntPtr.Zero);
+
+            _decodeImageCallback = DecodeImageCb;
+        }
+
+        private void DecodeImageCb(IntPtr cam, IntPtr rgb, int width, int height, int usrParam)
+        {
+            if (!_videoParmReceivedEventFired)
+            {
+                var e = new VideoParmReceivedArgs(width, height);
+                OnVideoParmReceived(e);
+
+                _videoParmReceivedEventFired = true;
+            }
+
+
         }
 
         #region callback methods
@@ -4881,6 +4903,19 @@ namespace HaSdkWrapper
                 AlarmRecordReceived.Invoke(this, e);
             }
         }
+
+
+        protected virtual void OnVideoParmReceived(VideoParmReceivedArgs e)
+        {
+            if (VideoParmReceived != null)
+            {
+                VideoParmReceived.Invoke(this, e);
+
+            }
+        }
+
+
+
         #endregion event triggers
     }
 }

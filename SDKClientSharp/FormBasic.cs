@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -66,11 +67,18 @@ namespace SDKClientSharp
             _cam.Password = textBoxPassword.Text;
 
             _cam.FaceCaptured += _cam_FaceCaptured;
+            _cam.VideoParmReceived += this._cam_VideoParmReceived;
+
             var suc = _cam.Connect(pictureBoxLiveVideo.Handle);
             groupBoxFaceManagement.EnableAllButtons(suc);
             LogMessage(strings.ConnectCamMsg, _cam.Ip,  suc ? strings.Success : strings.Fail);
             
 
+        }
+
+        private void _cam_VideoParmReceived(object sender, VideoParmReceivedArgs e)
+        {
+            Debug.WriteLine(string.Format("width: {0} x height: {1}", e.Width, e.Height));
         }
 
         private void _cam_FaceCaptured(object sender, FaceCapturedEventArgs e)
