@@ -521,8 +521,7 @@ namespace HaSdkWrapper
 
             HookCallbackEx(_cam);
             
-            if(hwnd != default(IntPtr))
-                NativeMethods.HA_StartStreamEx(_cam, hwnd, _decodeImageCallback, 0);
+            NativeMethods.HA_StartStreamEx(_cam, hwnd, _decodeImageCallback, 0);
 
             if (errorNum != 0)
             {
