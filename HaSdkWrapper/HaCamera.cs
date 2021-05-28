@@ -78,6 +78,9 @@ namespace HaSdkWrapper
         #endregion events
 
         #region properties
+
+        public object Tag { get; set; }
+
         /// <summary>
         /// <para>相机ip</para>
         /// <EN>IP of the camera</EN>
