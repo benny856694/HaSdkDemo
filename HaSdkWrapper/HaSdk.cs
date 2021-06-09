@@ -1370,12 +1370,13 @@ namespace HaSdkWrapper
         /// </summary>
         [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValTStr, SizeConst = 17)]
         public string IDCardvalid_date_end;
+        
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 68)]
+        private byte[] _userParam;
+
         /// <summary>
         /// 自定义字段
         /// </summary>
-        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 68)]
-        public byte[] _userParam;
-
         public string userParam
         {
             get
