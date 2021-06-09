@@ -78,7 +78,7 @@ namespace HaSdkWrapper
         #endregion events
 
         #region properties
-
+        public string Name { get; set; }
         public object Tag { get; set; }
 
         /// <summary>
