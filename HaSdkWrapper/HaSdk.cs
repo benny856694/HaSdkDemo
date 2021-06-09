@@ -1373,8 +1373,17 @@ namespace HaSdkWrapper
         /// <summary>
         /// 自定义字段
         /// </summary>
-        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValTStr, SizeConst = 68)]
-        public string userParam;
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 68)]
+        public byte[] _userParam;
+
+        public string userParam
+        {
+            get
+            {
+                var s = Encoding.UTF8.GetString(_userParam).Replace("\0","");
+                return s;
+            }
+        }
        
        
     }
