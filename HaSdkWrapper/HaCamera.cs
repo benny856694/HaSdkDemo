@@ -4757,7 +4757,7 @@ namespace HaSdkWrapper
             if (e.IsPersonMatched)
             {
                 e.PersonID = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.matchPersonId));
-                e.PersonName = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.matchPersonName));
+                e.PersonName = info.matchPersonName;
                 e.MatchScore = info.matched;
             }
             if (info.existImg != 0 && info.imgLen > 0)

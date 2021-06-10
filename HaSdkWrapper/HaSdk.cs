@@ -1191,7 +1191,7 @@ namespace HaSdkWrapper
 
         /// char[16]
         [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 16)]
-        public byte[] matchPersonName;
+        private byte[] _matchPersonName;
 
         /// int
         public int matchRole;
@@ -1371,8 +1371,19 @@ namespace HaSdkWrapper
         [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValTStr, SizeConst = 17)]
         public string IDCardvalid_date_end;
         
-        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 68)]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 68)]
         private byte[] _userParam;
+
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 64)]
+        private byte[] _matchPersonIDEx; //id 加密后密文
+
+
+        byte person_name_aes_len;  // 加密后姓名密文长度
+        byte person_id_aes_len;  // 加密后id密文长度
+
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 512)]
+        private byte[] _trip_info;
+
 
         /// <summary>
         /// 自定义字段
@@ -1381,12 +1392,41 @@ namespace HaSdkWrapper
         {
             get
             {
-                var s = Encoding.UTF8.GetString(_userParam).Replace("\0","");
+                var s = Encoding.UTF8.GetString(_userParam).TrimZeroChar();
                 return s;
             }
         }
-       
-       
+
+        public string matchPersonIDEx
+        {
+            get
+            {
+                return Encoding.UTF8.GetString(_matchPersonIDEx).TrimZeroChar();
+            }
+        }
+
+        public string trip_info
+        {
+            get
+            {
+                return Encoding.UTF8.GetString(_trip_info).TrimZeroChar();
+            }
+        }
+
+        
+        public string matchPersonName
+        {
+            get
+            {
+                var isNullString = _matchPersonName[0];
+                if (isNullString != 0) return Encoding.UTF8.GetString(_matchPersonName).TrimZeroChar();
+
+                isNullString = _matchPersonIDEx[0];
+                if (isNullString != 0) return Encoding.UTF8.GetString(_matchPersonIDEx).TrimZeroChar();
+
+                return null;
+            }
+        }
     }
 
     [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential, CharSet = System.Runtime.InteropServices.CharSet.Ansi)]
