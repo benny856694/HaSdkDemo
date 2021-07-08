@@ -2192,7 +2192,7 @@ namespace HaSdkWrapper
         /// <param name="fetchFeatures">是否要获取人员的特征值</param>
         /// <param name="timeOutInMilli">超时时间</param>
         /// <returns>查询到的模板数据；可能返回null，返回null时可能是出错了，需要排查</returns>
-        public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, int timeOutInMilli)
+        public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, bool includeImage, int timeOutInMilli)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
             _queriedFaces.Clear();
@@ -2215,7 +2215,7 @@ namespace HaSdkWrapper
             short conditionflag=0;
 
             QueryCondition rc = ConvertRecordConditionToNativenew(condition,ref conditionflag);
-            int ret = NativeMethods.HA_QueryFaceEx(_cam, role, pageNo, pageSize, fetchFeatures, false, conditionflag,0, ref rc);
+            int ret = NativeMethods.HA_QueryFaceEx(_cam, role, pageNo, pageSize, fetchFeatures, includeImage, conditionflag,0, ref rc);
 
 
 
@@ -2264,7 +2264,7 @@ namespace HaSdkWrapper
         /// <para>查询到的模板数据，可能返回null，返回null时可能是出错了，需要排查</para>
         /// <EN>Query result, null in case of any error occurred</EN>
         /// </returns>
-        public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, ref int totalCount, int timeOutInMilli, RecordQueryCondition condition,short query_mode)
+        public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, bool includeImage, ref int totalCount, int timeOutInMilli, RecordQueryCondition condition,short query_mode)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
             totalCount = 0;
@@ -2289,7 +2289,7 @@ namespace HaSdkWrapper
             short conditionflag = 0;
 
             QueryCondition rc = ConvertRecordConditionToNativenew(condition, ref conditionflag);
-            int ret = NativeMethods.HA_QueryFaceEx(_cam, role, pageNo, pageSize, fetchFeatures, false, conditionflag, query_mode, ref rc);
+            int ret = NativeMethods.HA_QueryFaceEx(_cam, role, pageNo, pageSize, fetchFeatures, includeImage, conditionflag, query_mode, ref rc);
 
             //int ret = NativeMethods.HA_QueryByRole(_cam, role, pageNo, pageSize, fetchFeatures, false);
             if (ret != 0)

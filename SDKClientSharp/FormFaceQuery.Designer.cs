@@ -31,6 +31,7 @@ namespace SDKClientSharp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFaceQuery));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxIncludeImage = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelPageIndicator = new System.Windows.Forms.Label();
             this.buttonPrevPage = new System.Windows.Forms.Button();
@@ -70,6 +71,8 @@ namespace SDKClientSharp
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.checkBoxIncludeImage);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.labelPageIndicator);
             this.groupBox1.Controls.Add(this.buttonPrevPage);
@@ -95,16 +98,21 @@ namespace SDKClientSharp
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.comboBoxType);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // checkBoxIncludeImage
+            // 
+            resources.ApplyResources(this.checkBoxIncludeImage, "checkBoxIncludeImage");
+            this.checkBoxIncludeImage.Name = "checkBoxIncludeImage";
+            this.checkBoxIncludeImage.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
             // labelPageIndicator
@@ -151,12 +159,12 @@ namespace SDKClientSharp
             // 
             // comboBoxQueryMode
             // 
+            resources.ApplyResources(this.comboBoxQueryMode, "comboBoxQueryMode");
             this.comboBoxQueryMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxQueryMode.FormattingEnabled = true;
             this.comboBoxQueryMode.Items.AddRange(new object[] {
             resources.GetString("comboBoxQueryMode.Items"),
             resources.GetString("comboBoxQueryMode.Items1")});
-            resources.ApplyResources(this.comboBoxQueryMode, "comboBoxQueryMode");
             this.comboBoxQueryMode.Name = "comboBoxQueryMode";
             // 
             // dateTimePickerValidToRangeEnd
@@ -245,17 +253,18 @@ namespace SDKClientSharp
             // 
             // comboBoxType
             // 
+            resources.ApplyResources(this.comboBoxType, "comboBoxType");
             this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             resources.GetString("comboBoxType.Items"),
             resources.GetString("comboBoxType.Items1"),
             resources.GetString("comboBoxType.Items2")});
-            resources.ApplyResources(this.comboBoxType, "comboBoxType");
             this.comboBoxType.Name = "comboBoxType";
             // 
             // dataGridViewFaceQueryResult
             // 
+            resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.AllowUserToAddRows = false;
             this.dataGridViewFaceQueryResult.AllowUserToDeleteRows = false;
             this.dataGridViewFaceQueryResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -269,7 +278,6 @@ namespace SDKClientSharp
             this.ColumnValidFrom,
             this.ColumnValidTo,
             this.ColumnFaceImage});
-            resources.ApplyResources(this.dataGridViewFaceQueryResult, "dataGridViewFaceQueryResult");
             this.dataGridViewFaceQueryResult.Name = "dataGridViewFaceQueryResult";
             this.dataGridViewFaceQueryResult.ReadOnly = true;
             this.dataGridViewFaceQueryResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -369,5 +377,6 @@ namespace SDKClientSharp
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValidFrom;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValidTo;
         private System.Windows.Forms.DataGridViewImageColumn ColumnFaceImage;
+        private System.Windows.Forms.CheckBox checkBoxIncludeImage;
     }
 }

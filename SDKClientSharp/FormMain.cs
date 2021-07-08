@@ -416,7 +416,7 @@ namespace SDKClientSharp
             short query_mode=(short)comboBox11.SelectedIndex;
 
 
-            FaceEntity[] fes = _cam.QueryFaces(int.Parse(textBox15.Text), int.Parse(textBox16.Text), comboBox3.SelectedIndex, checkBox1.Checked, ref totalCount, 7000, condition ,query_mode);
+            FaceEntity[] fes = _cam.QueryFaces(int.Parse(textBox15.Text), int.Parse(textBox16.Text), comboBox3.SelectedIndex, checkBox1.Checked, false, ref totalCount, 7000, condition ,query_mode);
             label69.Text = totalCount.ToString();
             if (fes == null)
             {

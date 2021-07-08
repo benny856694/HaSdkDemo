@@ -78,6 +78,7 @@ namespace SDKClientSharp
                 pageSize,
                 (int)comboBoxType.SelectedValue,
                 checkBoxOutputFeature.Checked,
+                checkBoxIncludeImage.Checked,
                 ref total, 
                 1000 * 10,
                 condition,
