@@ -978,13 +978,14 @@ namespace SDKClientSharp
         private void button28_Click(object sender, EventArgs e)
         {
            
-                Image snapshot = _cam.Snapshot(3000);
-                if (snapshot == null)
+                var snapshots = _cam.Snapshot(3000);
+                if (snapshots.Item1 == null && snapshots.Item2 == null)
                 {
                     MessageBox.Show("从设备截图失败！" + HaCamera.GetErrorDescribe(_cam.GetLastError()));
                     return;
                 }
-                pictureBox2.Image = snapshot;
+
+                pictureBox2.Image = snapshots.Item2 ?? snapshots.Item1;
 
                 Console.WriteLine("截图成功");
            

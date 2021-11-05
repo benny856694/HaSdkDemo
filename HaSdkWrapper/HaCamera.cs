@@ -122,6 +122,7 @@ namespace HaSdkWrapper
         private Semaphore _queryRecordPageSemaphore = new Semaphore(0, 1);
         private Semaphore _snapshotSemaphore = new Semaphore(0, 1);
         private Image _snapshotImage = null;
+        private Image _infraredImage = null;
         #endregion properties
 
         #region methods
@@ -3120,7 +3121,7 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="timeOutInMilli">超时时间</param>
         /// <returns>设备实时画面截图；返回null表示截图失败</returns>
-        public  Image Snapshot(int timeOutInMilli)
+        public  Tuple<Image, Image> Snapshot(int timeOutInMilli)
         {
             object x = new object();
             lock (x)
@@ -3135,7 +3136,7 @@ namespace HaSdkWrapper
                 }
                 if (_snapshotSemaphore.WaitOne(timeOutInMilli))
                 {
-                    return _snapshotImage;
+                    return new Tuple<Image, Image>(_snapshotImage, _infraredImage);
                 }
                 lastErrorCode = NativeConstants.ERR_TIMEOUT;
                 return null;
@@ -4450,6 +4451,14 @@ namespace HaSdkWrapper
                 Marshal.Copy(snapImage.snapImage, b, 0, b.Length);
                 _snapshotImage = Image.FromStream(new MemoryStream(b));
             }
+            if (snapImage.infraredImageSize > 0)
+            {
+                byte[] b = new byte[snapImage.infraredImageSize];
+                //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
+                Marshal.Copy(snapImage.infraredImage, b, 0, b.Length);
+                _infraredImage = Image.FromStream(new MemoryStream(b));
+            }
+
             _snapshotSemaphore.Release();
         }
         private void RecordQueryCb(IntPtr cam, IntPtr data, IntPtr usrParam)

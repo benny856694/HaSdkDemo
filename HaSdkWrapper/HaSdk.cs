@@ -5866,6 +5866,10 @@ namespace HaSdkWrapper
         //[System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray)]
         //public byte[] snapImage;
         public IntPtr snapImage;
+
+        public int infraredImageSize;
+
+        public IntPtr infraredImage;
     }
 
     /// Return Type: void
