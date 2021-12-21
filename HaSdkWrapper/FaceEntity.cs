@@ -30,7 +30,7 @@ namespace HaSdkWrapper
         /// <summary>
         /// 韦根门禁卡号
         /// </summary>
-        public uint WiegandNo { get; internal set; }
+        public UInt64 WiegandNo { get; internal set; }
         /// <summary>
         /// 有效期止
         /// </summary>

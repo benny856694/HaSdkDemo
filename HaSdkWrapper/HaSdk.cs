@@ -5130,6 +5130,25 @@ namespace HaSdkWrapper
         /// unsigned int
         public uint effectTime;
         public uint effectStartTime;
+        public short version;                 //非0:当前特征数据版本 0:不支持版本查询
+        public byte ScheduleMode;  //调度模式 0:不使用调度模式  1~5 对应 Struct KindSchedule->ScheduleNameCode模式
+        public byte resv;
+        public int twistImgNum;//归一化图像数量
+        [MarshalAs(UnmanagedType.ByValArray,  SizeConst =5)]
+        public short[] twistwidth;                    //归一化图像宽度
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 5)]
+        public short[] twistheight;                   //归一化图像高度
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 5)]
+        public int[] twischannel;                   //归一化图像通道
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 5)]
+        public IntPtr[] twistimgBuff;          //归一化图像第i张图片给数据首地址
+        public UInt64 wgCardNOLong;   // 韦根门禁卡号加长 在wgCardNO长度不满足时使用此成员
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 68)]
+        public byte[] userParam;  //用户自定义文本内容，可用于相机TTS播放、LCD显示，也可作为用户平台自定义属性使用
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
+        public byte[] faceNameEx; //用户名拓展 当用户名不字段长于15字节使用此字段
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 372)]
+        public byte[] resv1;
 
     }
 

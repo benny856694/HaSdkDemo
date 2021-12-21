@@ -4520,8 +4520,12 @@ namespace HaSdkWrapper
             FaceEntity fe = new FaceEntity();
             fe.PersonID = Encoding.Default.GetString(Converter.ConvertStringToDefault(qfi.personID));
             fe.PersonName = Encoding.Default.GetString(Converter.ConvertStringToDefault(qfi.personName));
+            if (string.IsNullOrEmpty(fe.PersonName))
+            {
+                fe.PersonName = Encoding.Default.GetString(Converter.ConvertStringToDefault(qfi.faceNameEx));
+            }
             fe.PersonRole = qfi.role;
-            fe.WiegandNo = qfi.wgCardNO;
+            fe.WiegandNo = qfi.wgCardNO == 0 ? qfi.wgCardNOLong : qfi.wgCardNO;
             fe.EffectTime = qfi.effectTime;
             fe.EffectStartTime = qfi.effectStartTime;
             if (qfi.feature_count > 0)
