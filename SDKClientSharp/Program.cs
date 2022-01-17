@@ -19,12 +19,20 @@ namespace SDKClientSharp
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            using (var form = new FormLang())
+            FormLang form = new FormLang();
+            form.ShowDialog();
+
+            Form mainForm = null;
+            if(form.DemoType == DemoType.Basic)
             {
-                form.ShowDialog();
+                mainForm = new FormBasic();
+            }
+            else
+            {
+                mainForm = new FormMain();
             }
 
-            Application.Run(new FormBasic());
+            Application.Run(mainForm);
             
         }
     }

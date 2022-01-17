@@ -17,6 +17,22 @@ namespace SDKClientSharp
         const string chineseCultureName = "zh";
         const string englishCultureName = "en";
         readonly string[] _languages =  { english, chinese };
+
+        public DemoType DemoType
+        {
+            get
+            {
+                if (this.radioButtonBasic.Checked)
+                {
+                    return DemoType.Basic;
+
+                }
+
+                return DemoType.Advanced;
+            }
+
+        }
+
         public FormLang()
         {
             InitializeComponent();
