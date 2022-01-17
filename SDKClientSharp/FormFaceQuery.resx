@@ -117,8 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1190, 590</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
@@ -131,12 +132,11 @@
   <data name="labelPageIndicator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1190, 590</value>
+  <data name="textBoxPageSize.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
   </data>
-  <data name="checkBoxValidFrom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="checkBoxValidFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 78</value>
   </data>
   <data name="dateTimePickerValidToRangeStart.CustomFormat" xml:space="preserve">
     <value>yyyy-MM-dd HH:mm:ss</value>
@@ -144,26 +144,20 @@
   <data name="checkBoxValidTo.Text" xml:space="preserve">
     <value>有效截止时间查询</value>
   </data>
-  <data name="checkBoxValidTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 17</value>
-  </data>
-  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;dateTimePickerValidFromRangeEnd.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="&gt;&gt;textBoxWiegandNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 172</value>
+  <data name="&gt;&gt;dateTimePickerValidFromRangeEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dateTimePickerValidToRangeEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
   </data>
   <data name="buttonQuery.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
-  </data>
-  <data name="checkBoxId.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -180,8 +174,14 @@
   <data name="checkBoxWiegandNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="comboBoxType.Items1" xml:space="preserve">
-    <value>白名单</value>
+  <data name="&gt;&gt;checkBoxIncludeImage.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="labelPageIndicator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;textBoxName.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="buttonNextPage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -189,14 +189,17 @@
   <data name="checkBoxName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBoxPageSize.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
+  <data name="&gt;&gt;ColumnWiegandNo.Name" xml:space="preserve">
+    <value>ColumnWiegandNo</value>
   </data>
   <data name="&gt;&gt;dataGridViewFaceQueryResult.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBoxType.ZOrder" xml:space="preserve">
     <value>25</value>
+  </data>
+  <data name="&gt;&gt;checkBoxId.Name" xml:space="preserve">
+    <value>checkBoxId</value>
   </data>
   <data name="textBoxPageSize.Location" type="System.Drawing.Point, System.Drawing">
     <value>291, 168</value>
@@ -219,9 +222,6 @@
   <data name="ColumnValidTo.HeaderText" xml:space="preserve">
     <value>Valid To</value>
   </data>
-  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
   <data name="&gt;&gt;checkBoxName.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -243,8 +243,11 @@
   <data name="textBoxWiegandNo.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
   </data>
-  <data name="checkBoxOutputFeature.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="checkBoxName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;dateTimePickerValidToRangeEnd.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -261,11 +264,11 @@
   <data name="&gt;&gt;checkBoxValidTo.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;checkBoxId.Name" xml:space="preserve">
-    <value>checkBoxId</value>
+  <data name="checkBoxName.Text" xml:space="preserve">
+    <value>姓名</value>
   </data>
-  <data name="buttonNextPage.Text" xml:space="preserve">
-    <value>下一页&gt;</value>
+  <data name="textBoxId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 20</value>
   </data>
   <data name="&gt;&gt;label69.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -273,11 +276,8 @@
   <data name="label69.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="dateTimePickerValidFromRangeEnd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 76</value>
-  </data>
-  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 39</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonNextPage.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -288,8 +288,11 @@
   <data name="&gt;&gt;dateTimePickerValidFromRangeStart.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonPrevPage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;textBoxId.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="&gt;&gt;ColumnFaceImage.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -306,9 +309,6 @@
   <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBoxWiegandNo.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
   <data name="checkBoxWiegandNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 17</value>
   </data>
@@ -318,11 +318,11 @@
   <data name="&gt;&gt;dateTimePickerValidFromRangeEnd.Name" xml:space="preserve">
     <value>dateTimePickerValidFromRangeEnd</value>
   </data>
+  <data name="buttonPrevPage.Text" xml:space="preserve">
+    <value>&lt;上一页</value>
+  </data>
   <data name="&gt;&gt;textBoxName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBoxIncludeImage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;comboBoxType.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -339,20 +339,26 @@
   <data name="dataGridViewFaceQueryResult.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 214</value>
   </data>
-  <data name="buttonQuery.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;label69.Name" xml:space="preserve">
+    <value>label69</value>
   </data>
-  <data name="checkBoxName.Text" xml:space="preserve">
-    <value>姓名</value>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
   </data>
   <data name="&gt;&gt;ColumnValidFrom.Name" xml:space="preserve">
     <value>ColumnValidFrom</value>
+  </data>
+  <data name="&gt;&gt;Custom.Name" xml:space="preserve">
+    <value>Custom</value>
   </data>
   <data name="&gt;&gt;dateTimePickerValidToRangeEnd.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelPageIndicator.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;Custom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -363,9 +369,6 @@
   <data name="&gt;&gt;checkBoxWiegandNo.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="checkBoxIncludeImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 170</value>
-  </data>
   <data name="checkBoxId.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
@@ -374,9 +377,6 @@
   </data>
   <data name="&gt;&gt;buttonNextPage.Name" xml:space="preserve">
     <value>buttonNextPage</value>
-  </data>
-  <data name="dateTimePickerValidToRangeStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 109</value>
   </data>
   <data name="&gt;&gt;checkBoxName.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -389,9 +389,6 @@
   </data>
   <data name="dateTimePickerValidFromRangeStart.CustomFormat" xml:space="preserve">
     <value>yyyy-MM-dd HH:mm:ss</value>
-  </data>
-  <data name="dataGridViewFaceQueryResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 13</value>
@@ -414,8 +411,8 @@
   <data name="textBoxPageSize.Text" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="checkBoxName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 17</value>
+  <data name="buttonPrevPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 23</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>查询条件</value>
@@ -426,8 +423,8 @@
   <data name="checkBoxValidTo.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
   </data>
-  <data name="&gt;&gt;textBoxName.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="checkBoxId.Text" xml:space="preserve">
+    <value>ID</value>
   </data>
   <data name="comboBoxQueryMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 168</value>
@@ -438,9 +435,6 @@
   <data name="&gt;&gt;textBoxId.Name" xml:space="preserve">
     <value>textBoxId</value>
   </data>
-  <data name="dateTimePickerValidToRangeStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 20</value>
-  </data>
   <data name="&gt;&gt;dateTimePickerValidToRangeStart.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
@@ -450,8 +444,8 @@
   <data name="buttonQuery.Text" xml:space="preserve">
     <value>查询</value>
   </data>
-  <data name="label19.Text" xml:space="preserve">
-    <value>角色：</value>
+  <data name="buttonPrevPage.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormFaceQuery</value>
@@ -459,23 +453,26 @@
   <data name="comboBoxType.Items2" xml:space="preserve">
     <value>黑名单</value>
   </data>
-  <data name="&gt;&gt;comboBoxType.Parent" xml:space="preserve">
+  <data name="comboBoxType.Items1" xml:space="preserve">
+    <value>白名单</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="checkBoxIncludeImage.Text" xml:space="preserve">
-    <value>人像图片</value>
+  <data name="checkBoxValidFrom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;dateTimePickerValidFromRangeEnd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxWiegandNo.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;checkBoxOutputFeature.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;ColumnId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxId.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonQuery.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 25</value>
+  <data name="dateTimePickerValidFromRangeStart.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
   </data>
   <data name="&gt;&gt;comboBoxQueryMode.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -483,8 +480,8 @@
   <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
     <value>435, 35</value>
   </data>
-  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="ColumnValidFrom.HeaderText" xml:space="preserve">
+    <value>Valid From</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -492,11 +489,11 @@
   <data name="checkBoxOutputFeature.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;ColumnId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;label21.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -507,11 +504,8 @@
   <data name="comboBoxType.Items" xml:space="preserve">
     <value>普通人员</value>
   </data>
-  <data name="ColumnName.HeaderText" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="ColumnWiegandNo.HeaderText" xml:space="preserve">
-    <value>Wiegand No.</value>
+  <data name="comboBoxQueryMode.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
   </data>
   <data name="&gt;&gt;label69.ZOrder" xml:space="preserve">
     <value>19</value>
@@ -525,14 +519,11 @@
   <data name="&gt;&gt;ColumnValidFrom.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBoxId.Text" xml:space="preserve">
-    <value>ID</value>
+  <data name="&gt;&gt;dateTimePickerValidFromRangeEnd.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonQuery.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="textBoxWiegandNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>639, 35</value>
   </data>
   <data name="&gt;&gt;buttonQuery.ZOrder" xml:space="preserve">
     <value>20</value>
@@ -570,29 +561,32 @@
   <data name="ColumnId.HeaderText" xml:space="preserve">
     <value>Id</value>
   </data>
-  <data name="buttonPrevPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>998, 105</value>
+  <data name="checkBoxId.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="labelPageIndicator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="dateTimePickerValidToRangeStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 109</value>
+  </data>
+  <data name="buttonQuery.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="checkBoxValidTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 111</value>
   </data>
   <data name="&gt;&gt;textBoxId.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="comboBoxQueryMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 21</value>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 172</value>
   </data>
   <data name="&gt;&gt;textBoxName.Name" xml:space="preserve">
     <value>textBoxName</value>
   </data>
-  <data name="checkBoxName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="checkBoxIncludeImage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="comboBoxType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 34</value>
+  <data name="&gt;&gt;textBoxId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxIncludeImage.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -600,17 +594,20 @@
   <data name="&gt;&gt;label21.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;textBoxWiegandNo.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="buttonNextPage.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;checkBoxOutputFeature.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;ColumnId.Name" xml:space="preserve">
     <value>ColumnId</value>
   </data>
-  <data name="buttonNextPage.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
+  <data name="dateTimePickerValidFromRangeEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 76</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1190, 214</value>
@@ -618,14 +615,11 @@
   <data name="dateTimePickerValidFromRangeEnd.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
   </data>
-  <data name="&gt;&gt;checkBoxWiegandNo.Name" xml:space="preserve">
-    <value>checkBoxWiegandNo</value>
+  <data name="buttonNextPage.Text" xml:space="preserve">
+    <value>下一页&gt;</value>
   </data>
-  <data name="buttonPrevPage.Text" xml:space="preserve">
-    <value>&lt;上一页</value>
-  </data>
-  <data name="&gt;&gt;label19.Name" xml:space="preserve">
-    <value>label19</value>
+  <data name="checkBoxOutputFeature.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;buttonQuery.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -639,11 +633,8 @@
   <data name="checkBoxId.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
   </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxOutputFeature.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkBoxValidTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 17</value>
   </data>
   <data name="checkBoxValidFrom.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -651,11 +642,14 @@
   <data name="&gt;&gt;checkBoxValidTo.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;comboBoxQueryMode.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>702, 2</value>
   </data>
-  <data name="&gt;&gt;textBoxPageSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buttonQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 25</value>
   </data>
   <data name="comboBoxType.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 21</value>
@@ -663,20 +657,23 @@
   <data name="&gt;&gt;buttonQuery.Name" xml:space="preserve">
     <value>buttonQuery</value>
   </data>
+  <data name="comboBoxQueryMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
   <data name="label69.Location" type="System.Drawing.Point, System.Drawing">
     <value>1073, 49</value>
   </data>
   <data name="&gt;&gt;dataGridViewFaceQueryResult.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxId.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="checkBoxWiegandNo.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="comboBoxQueryMode.TabIndex" type="System.Int32, mscorlib">
-    <value>74</value>
+  <data name="checkBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 17</value>
   </data>
   <data name="checkBoxIncludeImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 17</value>
@@ -687,8 +684,8 @@
   <data name="&gt;&gt;buttonPrevPage.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;comboBoxQueryMode.Name" xml:space="preserve">
-    <value>comboBoxQueryMode</value>
+  <data name="comboBoxType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 34</value>
   </data>
   <data name="&gt;&gt;checkBoxValidFrom.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -699,10 +696,10 @@
   <data name="buttonNextPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>1114, 105</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="dateTimePickerValidToRangeStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
   </data>
-  <data name="&gt;&gt;dateTimePickerValidFromRangeEnd.Parent" xml:space="preserve">
+  <data name="&gt;&gt;comboBoxType.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -711,8 +708,8 @@
   <data name="checkBoxOutputFeature.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
-  <data name="label21.Text" xml:space="preserve">
-    <value>页大小：</value>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColumnWiegandNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -735,8 +732,14 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="checkBoxValidTo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerValidToRangeStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelPageIndicator.Name" xml:space="preserve">
     <value>labelPageIndicator</value>
@@ -744,14 +747,14 @@
   <data name="checkBoxOutputFeature.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 17</value>
   </data>
-  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;dateTimePickerValidFromRangeStart.Name" xml:space="preserve">
+    <value>dateTimePickerValidFromRangeStart</value>
   </data>
-  <data name="textBoxWiegandNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>639, 35</value>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 39</value>
   </data>
-  <data name="checkBoxValidFrom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 78</value>
+  <data name="&gt;&gt;textBoxPageSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxOutputFeature.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -771,9 +774,6 @@
   <data name="checkBoxValidFrom.Text" xml:space="preserve">
     <value>有效起始时间查询</value>
   </data>
-  <data name="&gt;&gt;labelPageIndicator.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="dateTimePickerValidToRangeEnd.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
   </data>
@@ -783,8 +783,8 @@
   <data name="&gt;&gt;dateTimePickerValidToRangeStart.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="buttonQuery.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="textBoxName.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 20</value>
@@ -792,8 +792,8 @@
   <data name="dateTimePickerValidFromRangeStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 76</value>
   </data>
-  <data name="&gt;&gt;dateTimePickerValidToRangeStart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;checkBoxOutputFeature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxId.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -801,20 +801,20 @@
   <data name="&gt;&gt;ColumnFaceImage.Name" xml:space="preserve">
     <value>ColumnFaceImage</value>
   </data>
-  <data name="&gt;&gt;checkBoxIncludeImage.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
   </data>
-  <data name="ColumnValidFrom.HeaderText" xml:space="preserve">
-    <value>Valid From</value>
-  </data>
-  <data name="&gt;&gt;ColumnWiegandNo.Name" xml:space="preserve">
-    <value>ColumnWiegandNo</value>
+  <data name="checkBoxIncludeImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>547, 170</value>
   </data>
   <data name="dateTimePickerValidFromRangeEnd.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
   </data>
-  <data name="&gt;&gt;comboBoxType.Name" xml:space="preserve">
-    <value>comboBoxType</value>
+  <data name="&gt;&gt;checkBoxOutputFeature.Name" xml:space="preserve">
+    <value>checkBoxOutputFeature</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;ColumnType.Name" xml:space="preserve">
     <value>ColumnType</value>
@@ -825,17 +825,17 @@
   <data name="labelPageIndicator.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 13</value>
   </data>
-  <data name="&gt;&gt;label69.Name" xml:space="preserve">
-    <value>label69</value>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="buttonPrevPage.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
+  <data name="&gt;&gt;checkBoxWiegandNo.Name" xml:space="preserve">
+    <value>checkBoxWiegandNo</value>
   </data>
   <data name="textBoxId.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
   </data>
-  <data name="buttonPrevPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 23</value>
+  <data name="buttonPrevPage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="checkBoxWiegandNo.Text" xml:space="preserve">
     <value>伟根号</value>
@@ -846,14 +846,14 @@
   <data name="comboBoxType.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
+  <data name="dataGridViewFaceQueryResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1190, 376</value>
+  </data>
   <data name="&gt;&gt;label69.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxIncludeImage.Name" xml:space="preserve">
     <value>checkBoxIncludeImage</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColumnName.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -864,8 +864,8 @@
   <data name="ColumnFaceImage.HeaderText" xml:space="preserve">
     <value>Face Image</value>
   </data>
-  <data name="&gt;&gt;textBoxId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;labelPageIndicator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -876,8 +876,8 @@
   <data name="labelPageIndicator.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
   </data>
-  <data name="dateTimePickerValidToRangeEnd.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
+  <data name="dataGridViewFaceQueryResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="checkBoxName.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -885,35 +885,38 @@
   <data name="label69.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="buttonPrevPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>998, 105</value>
+  </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="textBoxPageSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+  <data name="checkBoxIncludeImage.Text" xml:space="preserve">
+    <value>人像图片</value>
   </data>
-  <data name="&gt;&gt;checkBoxOutputFeature.Name" xml:space="preserve">
-    <value>checkBoxOutputFeature</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxName.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="buttonNextPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 23</value>
+  <data name="ColumnName.HeaderText" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="textBoxId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 20</value>
-  </data>
-  <data name="comboBoxQueryMode.Items1" xml:space="preserve">
-    <value>模糊查询</value>
+  <data name="ColumnWiegandNo.HeaderText" xml:space="preserve">
+    <value>Wiegand No.</value>
   </data>
   <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 13</value>
   </data>
-  <data name="&gt;&gt;comboBoxQueryMode.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="label19.Text" xml:space="preserve">
+    <value>角色：</value>
+  </data>
+  <data name="buttonNextPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 23</value>
   </data>
   <data name="checkBoxId.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 37</value>
@@ -927,8 +930,8 @@
   <data name="checkBoxIncludeImage.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
   </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
+  <data name="comboBoxQueryMode.Items1" xml:space="preserve">
+    <value>模糊查询</value>
   </data>
   <data name="checkBoxId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -936,20 +939,26 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 145</value>
   </data>
-  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;comboBoxQueryMode.Name" xml:space="preserve">
+    <value>comboBoxQueryMode</value>
   </data>
   <data name="&gt;&gt;ColumnValidTo.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dateTimePickerValidFromRangeStart.Name" xml:space="preserve">
-    <value>dateTimePickerValidFromRangeStart</value>
+  <data name="&gt;&gt;comboBoxType.Name" xml:space="preserve">
+    <value>comboBoxType</value>
   </data>
-  <data name="checkBoxValidTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 111</value>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="dataGridViewFaceQueryResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1190, 376</value>
+  <data name="textBoxPageSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Custom.HeaderText" xml:space="preserve">
+    <value>Custom</value>
   </data>
   <data name="&gt;&gt;buttonQuery.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -957,34 +966,37 @@
   <data name="&gt;&gt;dataGridViewFaceQueryResult.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dateTimePickerValidFromRangeStart.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
+  <data name="label21.Text" xml:space="preserve">
+    <value>页大小：</value>
   </data>
-  <metadata name="ColumnValidTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
   </metadata>
   <metadata name="ColumnWiegandNo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColumnType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColumnFaceImage.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ColumnName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Custom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ColumnType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColumnValidTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColumnId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColumnValidFrom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ColumnId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColumnName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

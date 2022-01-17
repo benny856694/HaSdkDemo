@@ -64,6 +64,7 @@ namespace SDKClientSharp
             this.ColumnWiegandNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnValidFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnValidTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Custom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFaceImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFaceQueryResult)).BeginInit();
@@ -277,6 +278,7 @@ namespace SDKClientSharp
             this.ColumnWiegandNo,
             this.ColumnValidFrom,
             this.ColumnValidTo,
+            this.Custom,
             this.ColumnFaceImage});
             this.dataGridViewFaceQueryResult.Name = "dataGridViewFaceQueryResult";
             this.dataGridViewFaceQueryResult.ReadOnly = true;
@@ -317,6 +319,12 @@ namespace SDKClientSharp
             resources.ApplyResources(this.ColumnValidTo, "ColumnValidTo");
             this.ColumnValidTo.Name = "ColumnValidTo";
             this.ColumnValidTo.ReadOnly = true;
+            // 
+            // Custom
+            // 
+            resources.ApplyResources(this.Custom, "Custom");
+            this.Custom.Name = "Custom";
+            this.Custom.ReadOnly = true;
             // 
             // ColumnFaceImage
             // 
@@ -370,13 +378,14 @@ namespace SDKClientSharp
         private System.Windows.Forms.Button buttonNextPage;
         private System.Windows.Forms.Label labelPageIndicator;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBoxIncludeImage;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnWiegandNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValidFrom;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValidTo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Custom;
         private System.Windows.Forms.DataGridViewImageColumn ColumnFaceImage;
-        private System.Windows.Forms.CheckBox checkBoxIncludeImage;
     }
 }

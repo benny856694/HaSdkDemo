@@ -108,6 +108,7 @@ namespace SDKClientSharp
                     item.WiegandNo,
                     item.EffectStartTime.ToLocalDateTime(),
                     item.EffectTime.ToLocalDateTime(),
+                    item.UserParam,
                     item.ImageData == null ? new Bitmap(1,1) : Image.FromStream(new MemoryStream(item.ImageData[0]))
                     );
             }

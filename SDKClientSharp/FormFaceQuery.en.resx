@@ -235,4 +235,7 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="Custom.HeaderText" xml:space="preserve">
+    <value>Custom</value>
+  </data>
 </root>
