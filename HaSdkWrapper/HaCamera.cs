@@ -4565,6 +4565,7 @@ namespace HaSdkWrapper
                     Marshal.Copy(imgData, fe.ImageData[i], 0, qfi.imgSize[i]);
                 }
             }
+            fe.UserParam = Encoding.UTF8.GetString(qfi.userParam);
             _queriedFaces.Add(fe);
         }
         private void ConnectEventCb(IntPtr cam, string ip, ushort port, int evt, int usrParam)
