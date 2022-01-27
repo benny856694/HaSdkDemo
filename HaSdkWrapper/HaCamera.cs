@@ -4488,6 +4488,7 @@ namespace HaSdkWrapper
             {
                 rde.PersonID = Encoding.Default.GetString(Converter.ConvertStringToDefault(rd.person_id));
                 rde.PersonName = Encoding.Default.GetString(Converter.ConvertStringToDefault(rd.person_name));
+                rde.customer_txt = Encoding.Default.GetString(Converter.ConvertStringToDefault(rd.customer_txt));
                 rde.MatchScore = rd.matched;
             }
             if (rd.face_image_len > 0)

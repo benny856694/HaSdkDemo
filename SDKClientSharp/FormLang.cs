@@ -17,6 +17,7 @@ namespace SDKClientSharp
         const string chineseCultureName = "zh";
         const string englishCultureName = "en";
         readonly string[] _languages =  { english, chinese };
+        readonly string[] _cultureName = { englishCultureName, chineseCultureName };
 
         public DemoType DemoType
         {
@@ -77,6 +78,36 @@ namespace SDKClientSharp
             }
 
             this.Close();
+        }
+
+        /// <summary>
+        /// 为窗体更新资源文件内容
+        /// </summary>
+        /// <param name="form"></param>
+        public static void ApplyResources(Form form)
+        {
+            ComponentResourceManager rm = new System.ComponentModel.ComponentResourceManager(form.GetType());
+            foreach (Control ctl in form.Controls)
+            {
+                rm.ApplyResources(ctl, ctl.Name);
+                form.ResumeLayout(false);
+                form.PerformLayout();
+            }
+            //Caption
+            rm.ApplyResources(form, "$this");
+        }
+
+        private bool flag = false;
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (flag)
+            {
+                var lan = _cultureName[comboBox1.SelectedIndex];
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
+                ApplyResources(this);
+            }
+            flag = true;
+            
         }
     }
 }
