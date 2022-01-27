@@ -69,5 +69,9 @@ namespace HaSdkWrapper
         /// 体温
         /// </summary>
         public float temperature { internal set; get; }
+        /// <summary>
+        /// 自定义字段
+        /// </summary>
+        public string customer_txt { internal set; get; }
     }
 }

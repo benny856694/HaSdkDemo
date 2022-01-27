@@ -939,6 +939,7 @@ namespace SDKClientSharp
                 dataGridView3.Rows[rowIdx].Cells[2].Value = rd.PersonID;
                 dataGridView3.Rows[rowIdx].Cells[3].Value = rd.PersonName;
                 dataGridView3.Rows[rowIdx].Cells[4].Value = rd.Age;
+                
                 switch (rd.Sex)
                 {
                     case 1:
@@ -953,6 +954,8 @@ namespace SDKClientSharp
                 }
                 dataGridView3.Rows[rowIdx].Cells[6].Value = rd.MatchScore;
                 dataGridView3.Rows[rowIdx].Cells[7].Value = rd.PersonRole;
+                dataGridView3.Rows[rowIdx].Cells[8].Value = rd.temperature;
+                dataGridView3.Rows[rowIdx].Cells[9].Value = rd.customer_txt;
             }
         }
 
