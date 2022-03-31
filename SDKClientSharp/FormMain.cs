@@ -161,8 +161,6 @@ namespace SDKClientSharp
             {
                 BeginInvoke(new Action(() =>
                 {
-                   
-
                     textBox2.AppendText("收到人脸抓拍！");
                     textBox2.AppendText(Environment.NewLine);
                     /*if (e.FeatureData != null)
@@ -176,7 +174,7 @@ namespace SDKClientSharp
                     }*/
                     if (e.FeatureImageData != null)
                     {
-                        pictureBox1.Image = Image.FromStream(new MemoryStream(e.FeatureImageData));
+                         pictureBox1.Image = Image.FromStream(new MemoryStream(e.FeatureImageData));
                     }
                     label8.Text = "收录时间：" + e.CaptureTime.ToString("g");
                     label9.Text = "陌生人";
@@ -452,6 +450,7 @@ namespace SDKClientSharp
                 {
                     dataGridView2.Rows[rowIdx].Cells[5].Value = Converter.ConvertToDateTime(fe.EffectTime, 0).ToString("g");
                 }
+                dataGridView2.Rows[rowIdx].Cells[6].Value = fe.ScheduleMode;
             }
         }
 

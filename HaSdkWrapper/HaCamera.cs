@@ -4529,6 +4529,7 @@ namespace HaSdkWrapper
             fe.WiegandNo = qfi.wgCardNO == 0 ? qfi.wgCardNOLong : qfi.wgCardNO;
             fe.EffectTime = qfi.effectTime;
             fe.EffectStartTime = qfi.effectStartTime;
+            fe.ScheduleMode = qfi.ScheduleMode;
             if (qfi.feature_count > 0)
             {
                 fe.FeatureData = new float[qfi.feature_count][];

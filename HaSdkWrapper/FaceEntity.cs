@@ -43,6 +43,8 @@ namespace HaSdkWrapper
 
         public string UserParam { get; internal set; }
 
+        public byte ScheduleMode { get; internal set; }
+
         public FaceEntity()
         {
             PersonRole = -1;
