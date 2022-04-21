@@ -265,6 +265,8 @@ namespace SDKClientSharp
             {
                 (sender as TextBox).Text = openFileDialog1.FileName;
             }
+            bool b = HaCamera.ValidImage(File.ReadAllBytes(textBox5.Text));
+            Console.WriteLine("检测结果：" + b);
         }
 
         private void button4_Click(object sender, EventArgs e)
