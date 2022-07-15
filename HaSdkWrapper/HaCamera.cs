@@ -2648,6 +2648,38 @@ namespace HaSdkWrapper
             return true;
         }
         /// <summary>
+        /// 设置低温修正
+        /// </summary>
+        /// <returns></returns>
+        public bool SetMinTempFix(bool enable=true, float minTemp=36.0f, float fix_rang=0.5f)
+        {
+            int ret = NativeMethods.HA_SetMinTempFix(_cam,enable,minTemp,fix_rang);
+            return ret == 0 ? true:false ;
+        }
+        /// <summary>
+        /// 设置DHCP
+        /// </summary>
+        /// <returns></returns>
+        public bool SetDHCP()
+        {
+            lastErrorCode = NativeConstants.ERR_NONE;
+            SystemNetInfoEx sni = new SystemNetInfoEx();
+            int ret = NativeMethods.HA_GetNetConfigEx(_cam, ref sni);
+            if (ret != 0)
+            {
+                lastErrorCode = ret;
+                return false;
+            }
+            sni.dhcp_enable = true;
+            ret = NativeMethods.HA_SetNetConfigEx(_cam, ref sni);
+            if (ret != 0)
+            {
+                lastErrorCode = ret;
+                return false;
+            }
+            return true;
+        }
+        /// <summary>
         /// 获取设备识别区域，相对于设备可见画面区域
         /// </summary>
         /// <returns>设备识别区域；可能为null</returns>

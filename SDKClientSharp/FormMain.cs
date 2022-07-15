@@ -240,7 +240,8 @@ namespace SDKClientSharp
 
         private void button22_Click(object sender, EventArgs e)
         {
-            _cam.DisConnect();
+            _cam.SetMinTempFix();
+            //_cam.DisConnect();
         }
 
         private void button3_Click(object sender, EventArgs e)

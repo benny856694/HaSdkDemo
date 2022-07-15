@@ -4755,13 +4755,38 @@ namespace HaSdkWrapper
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_GetNetConfig", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
         public static extern int HA_GetNetConfig(System.IntPtr cam, ref SystemNetInfo netInfo);
 
-
         /// Return Type: int
         ///cam: void*
         ///netInfo: SystemNetInfo*
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_SetNetConfig", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
         public static extern int HA_SetNetConfig(System.IntPtr cam, ref SystemNetInfo netInfo);
 
+        /// <summary>
+        /// 获取网络Ex
+        /// </summary>
+        /// <param name="cam"></param>
+        /// <param name="netInfo"></param>
+        /// <returns></returns>
+        [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_GetNetConfigEx", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        public static extern int HA_GetNetConfigEx(System.IntPtr cam, ref SystemNetInfoEx netInfo);
+        /// <summary>
+        /// 设置网络Ex
+        /// </summary>
+        /// <param name="cam"></param>
+        /// <param name="netInfo"></param>
+        /// <returns></returns>
+        [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_SetNetConfigEx", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        public static extern int HA_SetNetConfigEx(System.IntPtr cam, ref SystemNetInfoEx netInfo);
+        /// <summary>
+        /// 设置低温修正
+        /// </summary>
+        /// <param name="cam">相机句柄</param>
+        /// <param name="enable">0关，1开</param>
+        /// <param name="minTemp">最低人体温度</param>
+        /// <param name="fix_rang">修正范围</param>
+        /// <returns></returns>
+        [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_SetMinTempFix", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        public static extern int HA_SetMinTempFix(System.IntPtr cam, bool enable, float minTemp, float fix_rang);
 
         /// Return Type: int
         ///cam: void*
@@ -5215,6 +5240,49 @@ namespace HaSdkWrapper
         [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 14)]
         public byte[] resv;
     }
+    [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential, CharSet = System.Runtime.InteropServices.CharSet.Ansi)]
+    public struct SystemNetInfoEx
+    {
+        //char[20]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 20)]
+        public byte[] mac;
+        //char[20]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 20)]
+        public byte[] ip;
+        //char[20]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 20)]
+        public byte[] netmask;
+        //char[20]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 20)]
+        public byte[] gateway;
+        //char [16]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 16)]
+        public byte[] manufacturer;
+        //char[32]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 32)]
+        public byte[] platform;
+        //char[32]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 32)]
+        public byte[] system;
+        //char [64]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 64)]
+        public byte[] version;
+        //char [16]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 16)]
+        public byte[] ip_2;
+        //char [16]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 16)]
+        public byte[] netmask_2;
+        //char [16]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 16)]
+        public byte[] dns;
+        //char [1]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.U1)]
+        public bool dhcp_enable;
+        //char [64]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 64)]
+        public byte[] resv;
+    };
 
     [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential, CharSet = System.Runtime.InteropServices.CharSet.Ansi)]
     public struct SystemVersionInfo
