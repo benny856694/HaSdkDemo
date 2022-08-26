@@ -2898,18 +2898,18 @@ namespace HaSdkWrapper
                 return false;
             }
             AuthParam ap = new AuthParam();
-            int ret = NativeMethods.HA_GetAuthInfo(_cam, origin_username, origin_password, ref ap);
-            if (ret != 0)
-            {
-                lastErrorCode = ret;
-                return false;
-            }
+            //int ret = NativeMethods.HA_GetAuthInfo(_cam, origin_username, origin_password, ref ap);
+            //if (ret != 0)
+            //{
+            //    lastErrorCode = ret;
+            //    return false;
+            //}
             if (!string.IsNullOrEmpty(new_username))
                 ap.user_name = new_username;
             if (!string.IsNullOrEmpty(new_password))
                 ap.passwd = new_password;
             ap.enable = (byte)(auth_enable ? 1 : 0);
-            ret = NativeMethods.HA_SetAuthInfo(_cam, origin_username, origin_password, ref ap);
+            var ret = NativeMethods.HA_SetAuthInfo(_cam, origin_username, origin_password, ref ap);
             if (ret != 0)
             {
                 lastErrorCode = ret;
