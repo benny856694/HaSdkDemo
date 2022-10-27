@@ -56,9 +56,18 @@ namespace SDKClientSharp
         private void button1_Click(object sender, EventArgs e)
         {
             //HaCamera.InitEnvironment(uint.Parse(textBox1.Text));
-            HaCamera.InitEnvironment();
+
+            try
+            {
+                HaCamera.InitEnvironment();
+                _cams = new HaCamera[9];
+                button1.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
            
-            _cams = new HaCamera[9];
             
             //label2.Text = "SDK版本：" + HaCamera.GetEnvironmentVersion();
             //tabControl1.SelectedIndex = 1;
