@@ -6572,12 +6572,23 @@ namespace HaSdkWrapper
           [DllImport("libHasdk.dll", EntryPoint = "HA_SendJson", CallingConvention = CallingConvention.StdCall)]
           public static extern int HA_SendJson(IntPtr cam, byte[] cmd,byte[] json, int jsonSize,  byte[] replyJson , int buffSize);
 
-         /// <summary>
-         /// 获取口罩检查开关
-         /// </summary>
-         /// <param name="cam"></param>
-         /// <param name="enable"></param>
-         /// <returns></returns>
+        /// <summary>
+        /// 功能授权
+        /// </summary>
+        /// <param name="cam"></param>
+        /// <param name="number"></param>
+        /// <param name="data"></param>
+        /// <param name="size"></param>
+        /// <returns></returns>
+        [DllImport("libHasdk.dll", EntryPoint = "HA_FunctionAuth", CallingConvention = CallingConvention.StdCall)]
+        public static extern int HA_FunctionAuth(IntPtr cam, short number, byte[] data,short size);
+
+          /// <summary>
+          /// 获取口罩检查开关
+          /// </summary>
+          /// <param name="cam"></param>
+          /// <param name="enable"></param>
+          /// <returns></returns>
           [DllImport("libHasdk.dll", EntryPoint = "HA_GetMaskInspectEnable", CallingConvention = CallingConvention.StdCall)]
           public static extern int HA_GetMaskInspectEnable(IntPtr cam, ref int enable);
 

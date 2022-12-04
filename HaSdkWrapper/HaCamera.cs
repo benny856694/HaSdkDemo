@@ -4270,7 +4270,25 @@ namespace HaSdkWrapper
             }
             return true;
         }
-
+        /// <summary>
+        /// 功能授权
+        /// </summary>
+        /// <param name="number">授权编号</param>
+        /// <param name="data">授权码</param>
+        /// <param name="replyCode">返回结果</param>
+        /// <returns></returns>
+        public bool HA_FunctionAuth(short number,string data,ref int replyCode)
+        {
+            UTF8Encoding utf8 = new UTF8Encoding();
+            lastErrorCode = NativeConstants.ERR_NONE;
+            int _ret = NativeMethods.HA_FunctionAuth(_cam, number, utf8.GetBytes(data), (short)data.Length);
+            if (_ret != 0)
+            {
+                lastErrorCode = _ret;
+                return false;
+            }
+            return true;
+        }
         /// <summary>
         /// 发送json命令
         /// </summary>
