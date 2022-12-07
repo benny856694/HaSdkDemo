@@ -2680,6 +2680,93 @@ namespace HaSdkWrapper
             return true;
         }
         /// <summary>
+        /// 字节数组转结构体
+        /// </summary>
+        /// <param name="bytes"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        private object BytesToDataStruct(byte[] bytes, Type type)
+        {
+            //DataStruct data = new DataStruct();
+
+            int size = Marshal.SizeOf(type);
+
+            if (size > bytes.Length)
+            {
+                return null;
+            }
+
+            IntPtr structPtr = Marshal.AllocHGlobal(size);
+            Marshal.Copy(bytes, 0, structPtr, size);
+            object obj = Marshal.PtrToStructure(structPtr, type);
+            Marshal.FreeHGlobal(structPtr);
+            return obj;
+        }
+        /// <summary>
+        /// 结构体转字节数组
+        /// </summary>
+        /// <param name="anyStruct"></param>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
+        private byte[] StructToBytes(object anyStruct, byte[] bytes)
+        {
+            int size = Marshal.SizeOf(anyStruct);
+            IntPtr bytesPtr = Marshal.AllocHGlobal(size);
+            Marshal.StructureToPtr(anyStruct, bytesPtr, false);
+            Marshal.Copy(bytesPtr, bytes, 0, size);
+            Marshal.FreeHGlobal(bytesPtr);
+
+            return bytes;
+        }
+
+        /// <summary>
+        /// 设置人脸最小尺寸
+        /// </summary>
+        /// <param name="size"></param>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public bool SetMinFaceSize(short size)
+        {
+            lastErrorCode = NativeConstants.ERR_NONE;
+            FaceSystemConfig fsc = new FaceSystemConfig();
+            int ret = NativeMethods.HA_GetFaceSystemCfg(_cam, ref fsc);
+            if (ret != 0)
+            {
+                Console.WriteLine("获取人脸参数失败！");
+                return false;
+            }
+            byte[] priv = fsc.app.priv.resv;
+            GCHandle pinnedPacket = GCHandle.Alloc(priv, GCHandleType.Pinned);
+            FacePrivateParam fpp = (FacePrivateParam)Marshal.PtrToStructure(pinnedPacket.AddrOfPinnedObject(), typeof(FacePrivateParam));
+            fpp.min_face_size = size;
+            StructToBytes(fpp, priv);
+            int code=NativeMethods.HA_SetFaceSystemCfg(_cam, ref fsc);
+            Console.WriteLine("设置参数返回：" + code);
+            return code==0;
+        }
+
+        /// <summary>
+        /// 获取人脸过滤大小
+        /// </summary>
+        /// <returns>大于0代表成功</returns>
+        public short GetMinFaceSize()
+        {
+            lastErrorCode = NativeConstants.ERR_NONE;
+            FaceSystemConfig fsc = new FaceSystemConfig();
+            int ret = NativeMethods.HA_GetFaceSystemCfg(_cam, ref fsc);
+            if (ret != 0)
+            {
+                lastErrorCode = ret;
+                return -1;
+            }
+            
+            byte[] priv = fsc.app.priv.resv;
+            GCHandle pinnedPacket = GCHandle.Alloc(priv, GCHandleType.Pinned);
+            FacePrivateParam fpp = (FacePrivateParam)Marshal.PtrToStructure(pinnedPacket.AddrOfPinnedObject(), typeof(FacePrivateParam));
+
+            return fpp.min_face_size;
+        }
+        /// <summary>
         /// 获取设备识别区域，相对于设备可见画面区域
         /// </summary>
         /// <returns>设备识别区域；可能为null</returns>

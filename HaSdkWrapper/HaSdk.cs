@@ -2988,16 +2988,164 @@ namespace HaSdkWrapper
         /// unsigned char
         public byte light_threshold;
 
-        /// char[89]
-        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 89)]
-        public byte[] resv2;
+        //unsigned char
+        public byte audio_volume;
+
+        //char audio_index;
+        public byte audio_index;
+
+        //char auto_score_enable;
+        public byte auto_score_enable;
+
+        //char gateway_control_type
+        public byte gateway_control_type;
+
+        //char alarm_index
+        public byte alarm_index;
+
+        //short alarm_duration
+        public short alarm_duration;
+
+        //char wiegand_type
+        public byte wiegand_type;
+
+        //char wiegand_dcode
+        public byte wiegand_dcode;
+
+        //int wiegand_public_cardid
+        public int wiegand_public_cardid;
+
+        //int wiegand_card_id_min
+        public int wiegand_card_id_min;
+
+        //int wiegand_card_id_max
+        public int wiegand_card_id_max;
+
+        //char work_mode;
+        public byte work_mode;
+
+        //char gpio_state;
+        public byte gpio_state;
+
+        //char cluster_enable
+        public byte cluster_enable;
+
+        //char max_pass_times;
+        public byte max_pass_times;
+
+        //int calc_times_interval;
+        public int calc_times_interval;
+
+        //char record_enable;
+        public byte record_enable;
+
+        //char record_resume_enable;
+        public byte record_resume_enable;
+
+        //  char face_alarm_enable
+        public byte face_alarm_enable;
+
+        //  char lcd_light_level;
+        public byte lcd_light_level;
+
+        //  int gpio_input_type
+        public int gpio_input_type;
+
+        //  char gpio_input_enable;
+        public byte gpio_input_enable;
+
+        // char filter_not_match;
+        public byte filter_not_match;
+
+        //  char must_wear_hat;
+        public byte must_wear_hat;
+
+        //  char audio_interval;
+        public byte audio_interval;
+
+        //  char ctrl_wiegand_io;
+        public byte ctrl_wiegand_io;
+
+        //  char no_twist_image;
+        public byte no_twist_image;
+
+        //  char multipleFaceMod;
+        public byte multipleFaceMod;
+
+        //  char namePrivacy;
+        public byte namePrivacy;
+
+        //  unsigned int expire_alarm; 
+        public int expire_alarm;
+
+        //  char allGpioOut;
+        public byte allGpioOut;
+
+        //  char record_path;
+        public byte record_path;
+
+        //  char qr_code_enable;
+        public byte qr_code_enable;
+
+        // unsigned char qr_code_interval;
+        public byte qr_code_interval;
+
+        //unsigned char serial_parse;
+        public byte serial_parse;//50了
+
+        //char resv_serial[1];
+        public byte resv_serial;
+
+        //  char temperature_unit;
+        public byte temperature_unit;
+
+        //  char heat_map_rorate; 
+        public byte heat_map_rorate;
+
+        //float temperature_limit; 
+        public float temperature_limit;
+
+        // char temLimit_enable; 
+        public byte temLimit_enable;
+
+        //  char must_wear_mask;
+        public byte must_wear_mask;
+
+        //char high_temp_multi_confirm;
+        public byte high_temp_multi_confirm;
+
+        //char id_card_register;
+        public byte id_card_register;
+
+        //  int enable_matchEx;
+        public int enable_matchEx;
+
+        //  unsigned char mache_mode;
+        public byte mache_mode;
+
+        //  unsigned char wiegand_input_id;
+        public byte wiegand_input_id;
+
+        //unsigned short intervaltime;
+        public short intervaltime;
+
+        //char resv_mface[16];
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 16)]
+        public byte[] resv_mface;
+
+        /// char[89] 以上扩展了其他字段
+        //[System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 89)]
+        //public byte[] resv2;
 
         /// Point[6]
         [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 6, ArraySubType = System.Runtime.InteropServices.UnmanagedType.Struct)]
         public Point[] roi;
 
-        /// char[336]
-        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 336)]
+        //short min_face_size;
+        public short min_face_size;
+
+        /// char[334]
+        [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValArray, SizeConst = 334)]
         public byte[] resv;
     }
 
