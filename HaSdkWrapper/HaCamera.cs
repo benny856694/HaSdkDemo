@@ -473,6 +473,14 @@ namespace HaSdkWrapper
                     return Strings.ERR_REPLYCODE_FEATURE_VERSION;
                 case NativeConstants.ERR_LACK_TWISTIMGE:
                     return Strings.ERR_LACK_TWISTIMGE;
+                case NativeConstants.ERR_FACE_EXISTED:
+                    return Strings.ERR_FACE_EXISTED;
+                case NativeConstants.ERR_FUNC_AUTH:
+                    return Strings.ERR_FUNC_AUTH;
+                case NativeConstants.ERR_FUNC_AUTHORIZED:
+                    return Strings.ERR_FUNC_AUTHORIZED;
+                case NativeConstants.ERR_UN_AUTH:
+                    return Strings.ERR_UN_AUTH;
                 default:
                     return Strings.ERR_UNDEFINED;
             }
@@ -4367,11 +4375,10 @@ namespace HaSdkWrapper
         public bool HA_FunctionAuth(short number,string data,ref int replyCode)
         {
             UTF8Encoding utf8 = new UTF8Encoding();
-            lastErrorCode = NativeConstants.ERR_NONE;
             int _ret = NativeMethods.HA_FunctionAuth(_cam, number, utf8.GetBytes(data), (short)data.Length);
             if (_ret != 0)
             {
-                lastErrorCode = _ret;
+                replyCode = _ret;
                 return false;
             }
             return true;

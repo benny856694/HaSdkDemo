@@ -187,6 +187,15 @@ namespace HaSdkWrapper
         /// ERR_LACK_TWISTIMGE -> -61
         public const int ERR_LACK_TWISTIMGE = -61;
 
+        ///ERR_FACE_EXISTED
+        public const int ERR_FACE_EXISTED = -62;
+        ///ERR_FUNC_AUTH -70   
+        public const int ERR_FUNC_AUTH = -70;
+        ///ERR_FUNC_AUTHORIZED          -71   //功能已授权
+        public const int ERR_FUNC_AUTHORIZED = -71;
+        ///ERR_UN_AUTH					 -72   //功能未授权
+        public const int ERR_UN_AUTH = -72;
+
         /// ERR_UNKNOWN -> -1000
         public const int ERR_UNKNOWN = -1000;
 
@@ -6881,7 +6890,7 @@ namespace HaSdkWrapper
 
      [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential, CharSet = System.Runtime.InteropServices.CharSet.Ansi)]
      public struct ClientParam { 
-     public byte mode; /*0 未初始化。 1 TCP协议上传。 2 FTP协议上传。 3 HTTP协议上传。4 WebService上传 */
+     public byte mode; /*0 未初始化。 1 TCP协议上传。 2 FTP协议上传。 3 HTTP协议上传。4 WebService上传 5 mqtt上传*/
 
      public byte  enable_heart; //心跳开关 目前只控制http
 

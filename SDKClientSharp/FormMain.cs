@@ -148,6 +148,7 @@ namespace SDKClientSharp
         }
         void _cam_egQRcodeInput(object sender, Qrcode e)
         {
+            Console.WriteLine(_cam.Ip+"收到二维码：" + e.code);
 
             if (InvokeRequired)
             {
@@ -170,7 +171,9 @@ namespace SDKClientSharp
             {
                 BeginInvoke(new Action(() =>
                 {
-                    textBox2.AppendText("收到人脸抓拍！");
+                    HaCamera hc=(HaCamera)sender;
+                    Console.WriteLine(hc.Ip + " 收到人脸抓拍！"+e.matchtype);
+                    textBox2.AppendText(hc.Ip+" 收到人脸抓拍！"+e.matchtype);
                     textBox2.AppendText(Environment.NewLine);
                     /*if (e.FeatureData != null)
                     {

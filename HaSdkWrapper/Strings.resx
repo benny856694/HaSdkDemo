@@ -144,6 +144,9 @@
   <data name="ERR_FACES_NUM" xml:space="preserve">
     <value>单个人员最大支持5张图像</value>
   </data>
+  <data name="ERR_FACE_EXISTED" xml:space="preserve">
+    <value>存在相似人脸</value>
+  </data>
   <data name="ERR_FACE_ID_NOT_EXITS" xml:space="preserve">
     <value>修改人脸特征失败（未找到对应ID）</value>
   </data>
@@ -152,6 +155,12 @@
   </data>
   <data name="ERR_FACE_INCOMPLETE" xml:space="preserve">
     <value>图像中人脸不完整</value>
+  </data>
+  <data name="ERR_FUNC_AUTH" xml:space="preserve">
+    <value>功能授权失败</value>
+  </data>
+  <data name="ERR_FUNC_AUTHORIZED" xml:space="preserve">
+    <value>功能已授权</value>
   </data>
   <data name="ERR_GET_FACE_FEATURE" xml:space="preserve">
     <value>提取人脸特征失败（须保证图像中有且仅有一张人脸）</value>
@@ -248,6 +257,9 @@
   </data>
   <data name="ERR_UNDEFINED" xml:space="preserve">
     <value>未知错误</value>
+  </data>
+  <data name="ERR_UN_AUTH" xml:space="preserve">
+    <value>功能未授权</value>
   </data>
   <data name="ERR_UPPER_LIMIT" xml:space="preserve">
     <value>人员数量已达上限</value>

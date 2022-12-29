@@ -133,6 +133,15 @@ namespace HaSdkWrapper {
         }
         
         /// <summary>
+        ///   查找类似 存在相似人脸 的本地化字符串。
+        /// </summary>
+        internal static string ERR_FACE_EXISTED {
+            get {
+                return ResourceManager.GetString("ERR_FACE_EXISTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 修改人脸特征失败（未找到对应ID） 的本地化字符串。
         /// </summary>
         internal static string ERR_FACE_ID_NOT_EXITS {
@@ -165,6 +174,24 @@ namespace HaSdkWrapper {
         internal static string ERR_FACES_NUM {
             get {
                 return ResourceManager.GetString("ERR_FACES_NUM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 功能授权失败 的本地化字符串。
+        /// </summary>
+        internal static string ERR_FUNC_AUTH {
+            get {
+                return ResourceManager.GetString("ERR_FUNC_AUTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 功能已授权 的本地化字符串。
+        /// </summary>
+        internal static string ERR_FUNC_AUTHORIZED {
+            get {
+                return ResourceManager.GetString("ERR_FUNC_AUTHORIZED", resourceCulture);
             }
         }
         
@@ -435,6 +462,15 @@ namespace HaSdkWrapper {
         internal static string ERR_TWIST_FACE {
             get {
                 return ResourceManager.GetString("ERR_TWIST_FACE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 功能未授权 的本地化字符串。
+        /// </summary>
+        internal static string ERR_UN_AUTH {
+            get {
+                return ResourceManager.GetString("ERR_UN_AUTH", resourceCulture);
             }
         }
         
