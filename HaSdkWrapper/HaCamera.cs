@@ -134,6 +134,15 @@ namespace HaSdkWrapper
         {
             InitEnvironment(9);
         }
+
+        /// <summary>
+        /// Asp.net下初始化，需传入App_Data的绝对路径(Server.MapPath("~/App_Data"))，SDK用到的模型(id,pos,sh)文件要拷贝到App_Data目录下面去
+        /// </summary>
+        /// <param name="absoluteAppDataPath">系统模型文件所在的绝对路径</param>
+        public static void InitEnvironmentWeb(string absoluteAppDataPath)
+        {
+            InitEnvironment(9, absoluteAppDataPath);
+        }
         /// <summary>
         /// <para>初始化SDK底层库，在进程中应该只需要调用一次，除非是需要在不关闭进程的情况下更改连接数或者清理内存。如果需要更改连接数或者清理内存，则需要先DeInit之后再行Init</para>
         /// <EN>Initialize the SDK, should be called only once unless you want to change connection number without exiting the process, if you want to change connection number, you should DeInit then call Init again</EN>
@@ -142,13 +151,14 @@ namespace HaSdkWrapper
         /// <para>需要最大连接的设备数量；请尽量设置小额数量，因为程序会为每一个预期的连接立即分配内存</para>
         /// <EN>Max number of connections: SDK preallocates memory for every connection, bigger number consumes more memory</EN>
         /// </param>
-        public static void InitEnvironment(uint maxConnectNum)
+        /// <param name="absoluteModelDirectory"></param>
+        public static void InitEnvironment(uint maxConnectNum, string absoluteModelDirectory = null)
         {
 
-            Console.WriteLine("初始" + Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            Console.WriteLine("初始" + absoluteModelDirectory ?? Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             NativeMethods.HA_Init();
             //if (maxConnectNum < 10)
-            NativeMethods.HA_InitFaceModel(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            NativeMethods.HA_InitFaceModel(absoluteModelDirectory ?? Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
            // else
              //   NativeMethods.HA_InitEx(maxConnectNum);
             NativeMethods.HA_SetCharEncode(CHAR_ENCODE.CHAR_ENCODE_UTF8);
