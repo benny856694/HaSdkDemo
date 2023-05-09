@@ -754,9 +754,16 @@ namespace HaSdkWrapper
             ff.effectStartTime = effectstarttime;
             ff.ScheduleMode = ScheduleMode;
             ff.userParam = Converter.ConvertStringToUTF8(userParam, 68);
+
             IntPtr picDataPtr = Marshal.AllocHGlobal(picData.Length);
             Marshal.Copy(picData, 0, picDataPtr, picData.Length);
-            int ret = NativeMethods.HA_AddJpgFace(_cam, ref ff, picDataPtr, picData.Length);
+            var img = new FaceImage();
+            img.img_seq = 0;
+            img.img_fmt = 1;
+            img.img = picDataPtr;
+            img.img_len = picData.Length;
+
+            int ret = NativeMethods.HA_AddFacesByJpg(_cam, ref ff, ref img, 1);
             Marshal.FreeHGlobal(picDataPtr);
             if (ret != 0)
                 lastErrorCode = ret;
@@ -913,7 +920,7 @@ namespace HaSdkWrapper
         /// <param name="personID">人员编号</param>
         /// <param name="personName">人员姓名</param>
         /// <param name="personRole">人员角色</param>
-        /// <param name="picDatas">图片数据（最多五张图片，需要图片完整数据，通过File.ReadAllBytes读出来的）</param>
+        /// <param name="picDatas">图片数据（最多1张图片，需要图片完整数据，通过File.ReadAllBytes读出来的）</param>
         /// <param name="wgNo">韦根卡号</param>
         /// <param name="effectTime">过期时间</param>
         /// <returns>是否添加成功(成功标识位与传入设备一致)</returns>
@@ -935,7 +942,7 @@ namespace HaSdkWrapper
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return new bool[cameras.Length];
             }
-            if (picDatas.Length > 5)
+            if (picDatas.Length > 1)
             {
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return new bool[cameras.Length];
@@ -979,7 +986,13 @@ namespace HaSdkWrapper
                   
                 IntPtr picDataPtr = Marshal.AllocHGlobal(picData.Length);
                 Marshal.Copy(picData, 0, picDataPtr, picData.Length);
-                int _ret = NativeMethods.HA_AddJpgFace(cam._cam, ref ff, picDataPtr, picData.Length);
+                var img = new FaceImage();
+                img.img_seq = 0;
+                img.img_fmt = 1;
+                img.img = picDataPtr;
+                img.img_len = picData.Length;
+
+                int _ret = NativeMethods.HA_AddFacesByJpg(cam._cam, ref ff, ref img, 1);
                 Marshal.FreeHGlobal(picDataPtr);
 
                 if (_ret != 0)
@@ -1336,7 +1349,7 @@ namespace HaSdkWrapper
         /// <param name="personID">人员编号</param>
         /// <param name="personName">人员姓名</param>
         /// <param name="personRole">人员角色</param>
-        /// <param name="picPaths">图片数据（最多五张图片，需要图片完整数据，通过File.ReadAllBytes读出来的）</param>
+        /// <param name="picPaths">图片数据（最多1张图片，需要图片完整数据，通过File.ReadAllBytes读出来的）</param>
         /// <param name="wgNo">韦根卡号</param>
         /// <param name="effectTime">过期时间</param>
         /// <param name="err_codes">错误码，需要在外部分配与picDatas长度相等的数组</param>
@@ -1349,7 +1362,7 @@ namespace HaSdkWrapper
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return false;
             }
-            if (picDatas.Length > 5)
+            if (picDatas.Length > 1)
             {
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return false;
@@ -1395,7 +1408,7 @@ namespace HaSdkWrapper
             }
             ErrorFaceImage[] _err_codes = new ErrorFaceImage[picDatas.Length];
             int err_count = 0;
-            int ret = NativeMethods.HA_JpgFacesEx(_cam, 0, ref ff, faceImages, picDatas.Length, 1, _err_codes, ref err_count);
+            int ret = NativeMethods.HA_AddFacesByJpg(_cam, ref ff, ref faceImages[0], 1);
             if (ret != 0)
                 lastErrorCode = ret;
             if (err_count > 0)
@@ -1544,9 +1557,17 @@ namespace HaSdkWrapper
             ff.role = personRole;
             ff.effectStartTime = effectStartTime;
             ff.ScheduleMode = ScheduleMode;
+
             IntPtr picDataPtr = Marshal.AllocHGlobal(picData.Length);
             Marshal.Copy(picData, 0, picDataPtr, picData.Length);
-            int ret = NativeMethods.HA_ModifyJpgFace(_cam, ref ff, picDataPtr, picData.Length);
+            var img = new FaceImage();
+            img.img_seq = 0;
+            img.img_fmt = 1;
+            img.img = picDataPtr;
+            img.img_len = picData.Length;
+
+
+            int ret = NativeMethods.HA_ModifyFacesByJpg(_cam, ref ff, ref img, 1);
             Marshal.FreeHGlobal(picDataPtr);
             if (ret != 0)
                 lastErrorCode = ret;
@@ -1776,7 +1797,7 @@ namespace HaSdkWrapper
         /// <param name="personID">人员编号</param>
         /// <param name="personName">人员姓名</param>
         /// <param name="personRole">人员角色</param>
-        /// <param name="picDatas">图片数据（最多五张图片，需要图片完整数据，通过File.ReadAllBytes读出来的）</param>
+        /// <param name="picDatas">图片数据（最多1张图片，需要图片完整数据，通过File.ReadAllBytes读出来的）</param>
         /// <param name="wgNo">韦根卡号</param>
         /// <param name="effectTime">过期时间</param>
         /// <param name="err_codes">错误码，需要在外部分配与picPaths长度相等的数组</param>
@@ -1789,7 +1810,7 @@ namespace HaSdkWrapper
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return false;
             }
-            if (picDatas.Length > 5)
+            if (picDatas.Length > 1)
             {
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return false;
@@ -1835,7 +1856,7 @@ namespace HaSdkWrapper
             }
             ErrorFaceImage[] _err_codes = new ErrorFaceImage[picDatas.Length];
             int err_count = 0;
-            int ret = NativeMethods.HA_JpgFacesEx(_cam, 1, ref ff, faceImages, picDatas.Length, 1, _err_codes, ref err_count);
+            int ret = NativeMethods.HA_AddFacesByJpg(_cam, ref ff, ref faceImages[0], 1);
             if (ret != 0)
                 lastErrorCode = ret;
             if (err_count > 0)

@@ -4739,7 +4739,22 @@ namespace HaSdkWrapper
         ///jpg: char*
         ///len: int
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_AddJpgFace", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        [Obsolete("use HA_AddFacesByJpg instead (请使用HA_AddFacesByJpg函数)", true)]
         public static extern int HA_AddJpgFace(IntPtr cam, ref FaceFlags faceID, IntPtr jpg, int len);
+
+
+
+        /// <summary>
+        /// Add face in jpg format (用jpg原图注册人脸)
+        /// </summary>
+        /// <param name="cam">handle to camera (相机句柄)</param>
+        /// <param name="faceID"></param>
+        /// <param name="imgs"></param>
+        /// <param name="img_count">count of images, only 1 is supported (图片数量，仅支持1张图片)</param>
+        /// <returns></returns>
+        [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_AddFacesByJpg", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        public static extern int HA_AddFacesByJpg(IntPtr cam, ref FaceFlags faceID, ref FaceImage imgs, int img_count);
+
 
         /// <summary>
         /// 只添加人脸信息
@@ -4780,7 +4795,20 @@ namespace HaSdkWrapper
         ///jpg: char*
         ///len: int
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_ModifyJpgFace", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        [Obsolete("use HA_ModifyFacesByJpg instead (请使用HA_ModifyFacesByJpg函数)", true)]
         public static extern int HA_ModifyJpgFace(IntPtr cam, ref FaceFlags faceID, IntPtr jpg, int len);
+
+
+       /// <summary>
+       /// modify face by jpg image (原图修改注册的人像)
+       /// </summary>
+       /// <param name="cam"></param>
+       /// <param name="faceID"></param>
+       /// <param name="img"></param>
+       /// <param name="len"></param>
+       /// <returns></returns>
+        [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_ModifyFacesByJpg", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        public static extern int HA_ModifyFacesByJpg(IntPtr cam, ref FaceFlags faceID, ref FaceImage img, int len);
 
 
         /// Return Type: int
@@ -5802,6 +5830,7 @@ namespace HaSdkWrapper
         ///err_imgs: ErrorFaceImage*
         ///err_imgs_count: int*
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_JpgFacesEx", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        [Obsolete("use HA_AddFacesByJpg instead (请使用HA_AddFacesByJpg函数)", true)]
         public static extern int HA_JpgFacesEx(System.IntPtr cam, int type, ref FaceFlags faceID, FaceImage[] imgs, int img_count, int picture_flags,[Out] ErrorFaceImage[] err_imgs, ref int err_imgs_count);
 
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_AddFacePacket", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
