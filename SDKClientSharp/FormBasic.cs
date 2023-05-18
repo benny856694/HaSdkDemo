@@ -122,6 +122,11 @@ namespace SDKClientSharp
                     }
                 })
            );
+
+            var cam = sender as HaCamera;
+            cam.WhiteListAlarm();
+            cam.TTSPlayAudio("播放测试语音");
+            
         }
 
         private void dataGridViewCameraList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
