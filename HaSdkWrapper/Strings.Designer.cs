@@ -61,6 +61,15 @@ namespace HaSdkWrapper {
         }
         
         /// <summary>
+        ///   查找类似 获取4G信号消息失败 的本地化字符串。
+        /// </summary>
+        internal static string ERR_4GINFO {
+            get {
+                return ResourceManager.GetString("ERR_4GINFO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 可见光红外光像差过大 的本地化字符串。
         /// </summary>
         internal static string ERR_ABERRATION_TOO_BIG {
@@ -115,6 +124,24 @@ namespace HaSdkWrapper {
         }
         
         /// <summary>
+        ///   查找类似 光线太亮 的本地化字符串。
+        /// </summary>
+        internal static string ERR_BRIGHT_LIGHT {
+            get {
+                return ResourceManager.GetString("ERR_BRIGHT_LIGHT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 光照太暗 的本地化字符串。
+        /// </summary>
+        internal static string ERR_DARK_LIGHT {
+            get {
+                return ResourceManager.GetString("ERR_DARK_LIGHT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 压缩图像失败 的本地化字符串。
         /// </summary>
         internal static string ERR_ENCODE_JPG {
@@ -138,6 +165,15 @@ namespace HaSdkWrapper {
         internal static string ERR_FACE_EXISTED {
             get {
                 return ResourceManager.GetString("ERR_FACE_EXISTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 人脸模糊 的本地化字符串。
+        /// </summary>
+        internal static string ERR_FACE_FUZZY {
+            get {
+                return ResourceManager.GetString("ERR_FACE_FUZZY", resourceCulture);
             }
         }
         
@@ -327,6 +363,15 @@ namespace HaSdkWrapper {
         internal static string ERR_PACKET_DATA {
             get {
                 return ResourceManager.GetString("ERR_PACKET_DATA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 ping网址失败 的本地化字符串。
+        /// </summary>
+        internal static string ERR_PING_BLOCK {
+            get {
+                return ResourceManager.GetString("ERR_PING_BLOCK", resourceCulture);
             }
         }
         
@@ -525,6 +570,15 @@ namespace HaSdkWrapper {
         internal static string ERR_WG_QUERY_MODE {
             get {
                 return ResourceManager.GetString("ERR_WG_QUERY_MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 wifi未连接 的本地化字符串。
+        /// </summary>
+        internal static string ERR_WIFIUNCONNECTED {
+            get {
+                return ResourceManager.GetString("ERR_WIFIUNCONNECTED", resourceCulture);
             }
         }
         

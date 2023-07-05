@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ERR_4GINFO" xml:space="preserve">
+    <value>Failed to get 4g info</value>
+  </data>
   <data name="ERR_ABERRATION_TOO_BIG" xml:space="preserve">
     <value>Aberration of visible infrared light is too large</value>
   </data>
@@ -135,6 +138,12 @@
   <data name="ERR_AUTH_FAILED" xml:space="preserve">
     <value>Authentication Failure</value>
   </data>
+  <data name="ERR_BRIGHT_LIGHT" xml:space="preserve">
+    <value>Bright light</value>
+  </data>
+  <data name="ERR_DARK_LIGHT" xml:space="preserve">
+    <value>Dark light</value>
+  </data>
   <data name="ERR_ENCODE_JPG" xml:space="preserve">
     <value>Failed to compress image</value>
   </data>
@@ -143,6 +152,9 @@
   </data>
   <data name="ERR_FACES_NUM" xml:space="preserve">
     <value>Maximum of 5 images supported by a single person</value>
+  </data>
+  <data name="ERR_FACE_FUZZY" xml:space="preserve">
+    <value>Face fuzzy</value>
   </data>
   <data name="ERR_FACE_ID_NOT_EXITS" xml:space="preserve">
     <value>Failed to modify face feature (no corresponding ID found)</value>
@@ -197,6 +209,9 @@
   </data>
   <data name="ERR_PACKET_DATA" xml:space="preserve">
     <value>Request packet contains illegal fields</value>
+  </data>
+  <data name="ERR_PING_BLOCK" xml:space="preserve">
+    <value>Failed to ping</value>
   </data>
   <data name="ERR_PROTOCAL_VER" xml:space="preserve">
     <value>Protocol version does not match, please confirm SDK and camera firmware version</value>
@@ -260,6 +275,9 @@
   </data>
   <data name="ERR_WG_QUERY_MODE" xml:space="preserve">
     <value>Wigan card number does not support fuzzy query</value>
+  </data>
+  <data name="ERR_WIFIUNCONNECTED" xml:space="preserve">
+    <value>Wifi unconnected</value>
   </data>
   <data name="ERR_WRITE_DATA" xml:space="preserve">
     <value>Failed to write data</value>

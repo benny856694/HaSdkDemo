@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ERR_4GINFO" xml:space="preserve">
+    <value>获取4G信号消息失败</value>
+  </data>
   <data name="ERR_ABERRATION_TOO_BIG" xml:space="preserve">
     <value>可见光红外光像差过大</value>
   </data>
@@ -135,6 +138,12 @@
   <data name="ERR_AUTH_FAILED" xml:space="preserve">
     <value>认证失败</value>
   </data>
+  <data name="ERR_BRIGHT_LIGHT" xml:space="preserve">
+    <value>光线太亮</value>
+  </data>
+  <data name="ERR_DARK_LIGHT" xml:space="preserve">
+    <value>光照太暗</value>
+  </data>
   <data name="ERR_ENCODE_JPG" xml:space="preserve">
     <value>压缩图像失败</value>
   </data>
@@ -146,6 +155,9 @@
   </data>
   <data name="ERR_FACE_EXISTED" xml:space="preserve">
     <value>存在相似人脸</value>
+  </data>
+  <data name="ERR_FACE_FUZZY" xml:space="preserve">
+    <value>人脸模糊</value>
   </data>
   <data name="ERR_FACE_ID_NOT_EXITS" xml:space="preserve">
     <value>修改人脸特征失败（未找到对应ID）</value>
@@ -206,6 +218,9 @@
   </data>
   <data name="ERR_PACKET_DATA" xml:space="preserve">
     <value>请求数据包包含不合法字段</value>
+  </data>
+  <data name="ERR_PING_BLOCK" xml:space="preserve">
+    <value>ping网址失败</value>
   </data>
   <data name="ERR_PROTOCAL_VER" xml:space="preserve">
     <value>协议版本不匹配，请确认SDK和相机固件版本</value>
@@ -272,6 +287,9 @@
   </data>
   <data name="ERR_WG_QUERY_MODE" xml:space="preserve">
     <value>韦根卡号不支持模糊查询</value>
+  </data>
+  <data name="ERR_WIFIUNCONNECTED" xml:space="preserve">
+    <value>wifi未连接</value>
   </data>
   <data name="ERR_WRITE_DATA" xml:space="preserve">
     <value>写入数据失败</value>

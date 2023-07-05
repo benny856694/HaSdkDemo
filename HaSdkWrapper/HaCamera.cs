@@ -228,6 +228,24 @@ namespace HaSdkWrapper
             Marshal.FreeHGlobal(twist);
             return ret == 0;
         }
+        /// <summary>
+        /// 校验人脸图片
+        /// </summary>
+        /// <param name="imgData">图片数据(使用File.RadAllBytes直接读取文件内容传入)</param>
+        /// <param name="code">错误码</param>
+        /// <returns></returns>
+        public static bool ValidImage(byte[] imgData,ref int code)
+        {
+            IntPtr data = Marshal.AllocHGlobal(imgData.Length);
+            Marshal.Copy(imgData, 0, data, imgData.Length);
+            IntPtr twist = Marshal.AllocHGlobal(150 * 150 * 3);
+            int a = 0, b = 0, c = 0;
+            int ret = NativeMethods.HA_GetJpgFaceTwist(data, imgData.Length, twist, ref a, ref b, ref c);
+            Marshal.FreeHGlobal(data);
+            Marshal.FreeHGlobal(twist);
+            code = ret;
+            return ret == 0;
+        }
 
         /// <summary>
         /// 从图片生成缩略图和归一化图（用于用于纯协议对接）
@@ -491,6 +509,18 @@ namespace HaSdkWrapper
                     return Strings.ERR_FUNC_AUTHORIZED;
                 case NativeConstants.ERR_UN_AUTH:
                     return Strings.ERR_UN_AUTH;
+                case NativeConstants.ERR_DARK_LIGHT:
+                    return Strings.ERR_DARK_LIGHT;
+                case NativeConstants.ERR_BRIGHT_LIGHT:
+                    return Strings.ERR_BRIGHT_LIGHT;
+                case NativeConstants.ERR_FACE_FUZZY:
+                    return Strings.ERR_FACE_FUZZY;
+                case NativeConstants.ERR_4GINFO:
+                    return Strings.ERR_4GINFO;
+                case NativeConstants.ERR_PING_BLOCK:
+                    return Strings.ERR_PING_BLOCK;
+                case NativeConstants.ERR_WIFIUNCONNECTED:
+                    return Strings.ERR_WIFIUNCONNECTED;
                 default:
                     return Strings.ERR_UNDEFINED;
             }

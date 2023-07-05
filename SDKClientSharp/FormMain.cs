@@ -40,10 +40,6 @@ namespace SDKClientSharp
             _cam.egGpioInput += new EventHandler<WeiGangno>(_cam_egGpioInput);
             _cam.egQRcodeInput += new EventHandler<Qrcode>(_cam_egQRcodeInput);
 
-
-
-          
-
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
             combTime_a.SelectedIndex = 0;
@@ -67,8 +63,7 @@ namespace SDKClientSharp
             {
                 MessageBox.Show(ex.Message);
             }
-           
-            
+            label2.Text = "初始化成功";
             //label2.Text = "SDK版本：" + HaCamera.GetEnvironmentVersion();
             //tabControl1.SelectedIndex = 1;
             //button2.Focus();
@@ -119,14 +114,14 @@ namespace SDKClientSharp
            // bool ret = _cam.Connect(default(IntPtr));
             if (ret)
             {
-                textBox2.AppendText("连接设备成功！");
+                textBox2.AppendText(_cam.Ip+"连接设备成功！");
                 textBox2.AppendText(Environment.NewLine);
                 checkBox5.Checked = _cam.RecorderEnable;
                 checkBox6.Checked = _cam.RecorderResumeEnable;
             }
             else
             {
-                textBox2.AppendText("连接设备失败！" + HaCamera.GetErrorDescribe(_cam.GetLastError()));
+                textBox2.AppendText(_cam.Ip+"连接设备失败！" + HaCamera.GetErrorDescribe(_cam.GetLastError()));
                 textBox2.AppendText(Environment.NewLine);
             }
         }
@@ -172,8 +167,8 @@ namespace SDKClientSharp
                 BeginInvoke(new Action(() =>
                 {
                     HaCamera hc=(HaCamera)sender;
-                    Console.WriteLine(hc.Ip + " 收到人脸抓拍！"+e.matchtype);
-                    textBox2.AppendText(hc.Ip+" 收到人脸抓拍！"+e.matchtype);
+                    Console.WriteLine(hc.Ip + " 收到人脸抓拍！");
+                    textBox2.AppendText(hc.Ip+" 收到人脸抓拍！");
                     textBox2.AppendText(Environment.NewLine);
                     /*if (e.FeatureData != null)
                     {
@@ -252,8 +247,8 @@ namespace SDKClientSharp
 
         private void button22_Click(object sender, EventArgs e)
         {
-            _cam.SetMinTempFix();
-            //_cam.DisConnect();
+            _cam.DisConnect();
+            textBox2.AppendText(_cam.Ip + "已断开连接");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -278,8 +273,17 @@ namespace SDKClientSharp
             {
                 (sender as TextBox).Text = openFileDialog1.FileName;
             }
-            bool b = HaCamera.ValidImage(File.ReadAllBytes(textBox5.Text));
-            Console.WriteLine("检测结果：" + b);
+            int code = 0;
+            bool b = HaCamera.ValidImage(File.ReadAllBytes(textBox5.Text),ref code);
+            if (b)
+            {
+                Console.WriteLine("检测通过");
+            }
+            else
+            {
+                Console.WriteLine("检测未通过，错误码："+ code + "，失败原因：" + HaCamera.GetErrorDescribe(code));
+            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -429,7 +433,7 @@ namespace SDKClientSharp
             short query_mode=(short)comboBox11.SelectedIndex;
 
 
-            FaceEntity[] fes = _cam.QueryFaces(int.Parse(textBox15.Text), int.Parse(textBox16.Text), comboBox3.SelectedIndex, checkBox1.Checked, false, ref totalCount, 7000, condition ,query_mode);
+            FaceEntity[] fes = _cam.QueryFaces(int.Parse(textBox15.Text), int.Parse(textBox16.Text), comboBox3.SelectedIndex, checkBox1.Checked, true, ref totalCount, 7000, condition ,query_mode);
             label69.Text = totalCount.ToString();
             if (fes == null)
             {
@@ -1856,14 +1860,14 @@ namespace SDKClientSharp
                 if (ret)
                 {
                     _cams[camscount].FaceCaptured += new EventHandler<FaceCapturedEventArgs>(_cam_FaceCaptured);
-                    textBox2.AppendText("连接设备成功！");
+                    textBox2.AppendText(textBox11.Text+"连接设备成功！");
                     textBox2.AppendText(Environment.NewLine);
                     camscount++;
 
                 }
                 else
                 {
-                    textBox2.AppendText("连接设备失败！" + HaCamera.GetErrorDescribe(_cams[camscount].GetLastError()));
+                    textBox2.AppendText(textBox11.Text+"连接设备失败！" + HaCamera.GetErrorDescribe(_cams[camscount].GetLastError()));
                     textBox2.AppendText(Environment.NewLine);
                 }
             }
@@ -2173,6 +2177,8 @@ namespace SDKClientSharp
         {
             String cmd="request date time";
             String json = "{\"version\": \"0.15\",\"cmd\":\"request date time\", \"cammand_id\":\"dummy\"}";
+            //String cmd = "text display";
+            //string json = "{\"version\":\"0.2\",\"cmd\":\"text display\",\"coding_type\":\"gb2312\",\"text_list\":[{\"position\":{\"x\":10,\"y\":100},\"alive_time\":10000,\"font_size\":100,\"font_spacing\":1,\"font_color\":\"0xffffffff\",\"text\":\"测试\"},{\"position\":{\"x\":100,\"y\":300},\"alive_time\":10000,\"font_size\":80,\"font_spacing\":1,\"font_color\":\"0xffffffff\",\"text\":\"2 line\"},{\"position\":{\"x\":100,\"y\":600},\"alive_time\":10000,\"font_size\":60,\"font_spacing\":1,\"font_color\":\"0xffffffff\",\"text\":\"3 line\"}]}";
             String rejson = "";
 
             if (_cam.HA_SendJson(cmd,json,ref rejson))

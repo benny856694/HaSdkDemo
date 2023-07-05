@@ -172,6 +172,8 @@ namespace HaSdkWrapper
         /// ERR_YINYANG_FACE -> -52
         public const int ERR_YINYANG_FACE = -52;
 
+        public const int ERR_DARK_LIGHT = -53;     //光照太暗
+
         /// ERR_VISIBLE_TARGET -> -54
         public const int ERR_VISIBLE_TARGET = -54;
 
@@ -180,6 +182,10 @@ namespace HaSdkWrapper
 
         /// ERR_ABERRATION_TOO_BIG -> -56
         public const int ERR_ABERRATION_TOO_BIG = -56;
+
+        public const int ERR_BRIGHT_LIGHT=-57 ;    //  光线太亮
+
+        public const int ERR_FACE_FUZZY = -58;  //  人脸模糊
 
         /// ERR_REPLYCODE_FEATURE_VERSION -> -60
         public const int ERR_REPLYCODE_FEATURE_VERSION = -60;
@@ -195,6 +201,12 @@ namespace HaSdkWrapper
         public const int ERR_FUNC_AUTHORIZED = -71;
         ///ERR_UN_AUTH					 -72   //功能未授权
         public const int ERR_UN_AUTH = -72;
+
+        public const int ERR_4GINFO = -75;   //获取4G信号消息失败
+
+        public const int ERR_PING_BLOCK = -76;   //ping网址失败
+
+        public const int ERR_WIFIUNCONNECTED = -80;   //wifi未连接
 
         /// ERR_UNKNOWN -> -1000
         public const int ERR_UNKNOWN = -1000;
