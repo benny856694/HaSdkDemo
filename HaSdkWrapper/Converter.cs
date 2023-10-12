@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace HaSdkWrapper
 {
@@ -18,9 +16,9 @@ namespace HaSdkWrapper
 
         public static byte[] ConvertStringToUTF8(string src)
         {
-            if(string.IsNullOrEmpty(src) || string.IsNullOrEmpty(src.Trim()))
-                return new byte[1]{0};
-            return Encoding.Convert(Encoding.Default, Encoding.UTF8, Encoding.Default.GetBytes(src));
+            if (string.IsNullOrEmpty(src) || string.IsNullOrEmpty(src.Trim()))
+                return new byte[1] { 0 };
+            return Encoding.UTF8.GetBytes(src);
         }
 
         public static byte[] ConvertStringToUTF8(string src, int retLen)
