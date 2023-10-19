@@ -122,7 +122,7 @@
     <value>142, 167</value>
   </data>
   <data name="label99.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+    <value>89, 12</value>
   </data>
   <data name="label99.Text" xml:space="preserve">
     <value>Schedule Mode:</value>
@@ -131,7 +131,7 @@
     <value>57, 214</value>
   </data>
   <data name="label77.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
+    <value>71, 12</value>
   </data>
   <data name="label77.Text" xml:space="preserve">
     <value>Valid From:</value>
@@ -149,7 +149,7 @@
     <value>67, 249</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+    <value>59, 12</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
     <value>Valid To:</value>
@@ -158,19 +158,19 @@
     <value>142, 91</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 231</value>
+    <value>303, 216</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 73</value>
+    <value>157, 88</value>
   </data>
   <data name="textBox5.Text" xml:space="preserve">
-    <value>There can only be one face in the picture. The width and height of the face should be greater than 100 pixels, and the front face should be clear</value>
+    <value>There can only be one face in the picture. The width the face should be smaller than 260 pixels, and the front face should be clear</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>300, 20</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 13</value>
+    <value>77, 12</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Face Image：</value>
@@ -182,7 +182,7 @@
     <value>78, 55</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
+    <value>35, 12</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Name:</value>
@@ -194,7 +194,7 @@
     <value>70, 23</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 13</value>
+    <value>53, 12</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Face Id:</value>
@@ -203,7 +203,7 @@
     <value>82, 94</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 13</value>
+    <value>35, 12</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Type:</value>
@@ -212,13 +212,13 @@
     <value>303, 46</value>
   </data>
   <data name="buttonAddFace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 318</value>
+    <value>303, 332</value>
   </data>
   <data name="buttonAddFace.Text" xml:space="preserve">
-    <value>Add</value>
+    <value>Add(SDK)</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 318</value>
+    <value>302, 359</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Done</value>
@@ -230,7 +230,7 @@
     <value>18, 131</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
+    <value>107, 12</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Wiegand Card No.:</value>
@@ -247,11 +247,13 @@
   <data name="buttonVerifyFaceImg.Text" xml:space="preserve">
     <value>Test Pic</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonVerifyFaceImg.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="buttonAddFaceByHttp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 310</value>
+  </data>
+  <data name="buttonAddFaceByHttp.Text" xml:space="preserve">
+    <value>Add(HTTP)</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>504, 353</value>
+    <value>504, 388</value>
   </data>
 </root>

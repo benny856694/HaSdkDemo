@@ -1,10 +1,11 @@
-﻿
+﻿using Newtonsoft.Json;
 using System;
+using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace huaanClient.Api
+namespace HaSdkWrapper.Api
 {
     public class Client : IDisposable
     {
@@ -36,19 +37,32 @@ namespace huaanClient.Api
         }
 
 
-        public async Task<T> Post<R, T>(R data)
+        public async Task<UploadPersonResponse> AddFaceAsync(string personID, string personName, int personRole, string picPath, uint wgNo, uint effectTime, uint effectstarttime, byte ScheduleMode, String userParam)
         {
-
             if (_client == null)
             {
                 BuildClient();
             }
 
+            var req = new UploadPersonRequest
+            {
+                id = personID,
+                name = personName,
+                role = personRole,
+                kind = ScheduleMode,
+                reg_image = Convert.ToBase64String(File.ReadAllBytes(picPath)),
+                wg_card_id = (int)wgNo,
+                term_start = effectstarttime.ToDateTime().ToString("yyyy/MM/dd HH:mm:ss"),
+                term = effectTime == uint.MaxValue ? "never" : effectTime.ToDateTime().ToString("yyyy/MM/dd HH:mm:ss"),
+                customer_text = string.IsNullOrEmpty(userParam) ? null : userParam,
+            };
 
+            var json = JsonConvert.SerializeObject(req);
 
-            var resp = await _client.PostAsJsonAsync("", data);
+            var resp = await _client.PostAsJsonAsync("", req);
+            resp.EnsureSuccessStatusCode();
+            return await resp.Content.ReadAsAsync<UploadPersonResponse>();
 
-            return default(T);
         }
 
         protected virtual void Dispose(bool disposing)

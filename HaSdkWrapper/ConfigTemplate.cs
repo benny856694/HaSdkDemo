@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -440,8 +438,8 @@ namespace HaSdkWrapper
             set
             {
                 byte[] new_device_id = Converter.ConvertStringToUTF8(value, 32);
-                fixed(byte* pnew = &new_device_id[0])
-                fixed(byte* pold = faceSystemConfig.app.common.description.device_id)
+                fixed (byte* pnew = &new_device_id[0])
+                fixed (byte* pold = faceSystemConfig.app.common.description.device_id)
                 {
                     memcpy(pold, pnew, 32);
                 }
@@ -556,7 +554,7 @@ namespace HaSdkWrapper
         {
             byte[] ret = new byte[Marshal.SizeOf(typeof(FaceSystemConfig))];
             fixed (byte* pRet = &ret[0])
-            fixed(FaceSystemConfig* pfaceSystemConfig = &_this.faceSystemConfig)
+            fixed (FaceSystemConfig* pfaceSystemConfig = &_this.faceSystemConfig)
             {
                 memcpy(pRet, pfaceSystemConfig, ret.Length);
             }
