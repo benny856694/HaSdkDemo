@@ -63,6 +63,7 @@ namespace SDKClientSharp
             // 
             // comboBoxScheduleMode
             // 
+            resources.ApplyResources(this.comboBoxScheduleMode, "comboBoxScheduleMode");
             this.comboBoxScheduleMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxScheduleMode.FormattingEnabled = true;
             this.comboBoxScheduleMode.Items.AddRange(new object[] {
@@ -72,7 +73,6 @@ namespace SDKClientSharp
             resources.GetString("comboBoxScheduleMode.Items3"),
             resources.GetString("comboBoxScheduleMode.Items4"),
             resources.GetString("comboBoxScheduleMode.Items5")});
-            resources.ApplyResources(this.comboBoxScheduleMode, "comboBoxScheduleMode");
             this.comboBoxScheduleMode.Name = "comboBoxScheduleMode";
             // 
             // label99
@@ -99,13 +99,13 @@ namespace SDKClientSharp
             // 
             // comboBoxValidToType
             // 
+            resources.ApplyResources(this.comboBoxValidToType, "comboBoxValidToType");
             this.comboBoxValidToType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxValidToType.FormattingEnabled = true;
             this.comboBoxValidToType.Items.AddRange(new object[] {
             resources.GetString("comboBoxValidToType.Items"),
             resources.GetString("comboBoxValidToType.Items1"),
             resources.GetString("comboBoxValidToType.Items2")});
-            resources.ApplyResources(this.comboBoxValidToType, "comboBoxValidToType");
             this.comboBoxValidToType.Name = "comboBoxValidToType";
             // 
             // label25
@@ -125,13 +125,13 @@ namespace SDKClientSharp
             // 
             // comboBoxFaceType
             // 
+            resources.ApplyResources(this.comboBoxFaceType, "comboBoxFaceType");
             this.comboBoxFaceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFaceType.FormattingEnabled = true;
             this.comboBoxFaceType.Items.AddRange(new object[] {
             resources.GetString("comboBoxFaceType.Items"),
             resources.GetString("comboBoxFaceType.Items1"),
             resources.GetString("comboBoxFaceType.Items2")});
-            resources.ApplyResources(this.comboBoxFaceType, "comboBoxFaceType");
             this.comboBoxFaceType.Name = "comboBoxFaceType";
             // 
             // textBox5

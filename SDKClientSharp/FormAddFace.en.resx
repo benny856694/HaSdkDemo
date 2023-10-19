@@ -164,7 +164,7 @@
     <value>157, 88</value>
   </data>
   <data name="textBox5.Text" xml:space="preserve">
-    <value>There can only be one face in the picture. The width the face should be smaller than 260 pixels, and the front face should be clear</value>
+    <value>There can only be one face in the picture. The width the face should be bigger than 260 pixels, and the front face should be clear</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>300, 20</value>
