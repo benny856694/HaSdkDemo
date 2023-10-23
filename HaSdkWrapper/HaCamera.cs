@@ -4668,7 +4668,14 @@ namespace HaSdkWrapper
                 byte[] b = new byte[snapImage.infraredImageSize];
                 //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
                 Marshal.Copy(snapImage.infraredImage, b, 0, b.Length);
-                _infraredImage = Image.FromStream(new MemoryStream(b));
+                try
+                {
+                    _infraredImage = Image.FromStream(new MemoryStream(b));
+                }
+                catch (Exception)
+                {
+                    _infraredImage = null;
+                }
             }
 
             _snapshotSemaphore.Release();
