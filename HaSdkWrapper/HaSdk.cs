@@ -4751,7 +4751,7 @@ namespace HaSdkWrapper
         ///jpg: char*
         ///len: int
         [System.Runtime.InteropServices.DllImportAttribute("libHasdk.dll", EntryPoint = "HA_AddJpgFace", CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
-        [Obsolete("use HA_AddFacesByJpg instead (请使用HA_AddFacesByJpg函数)", true)]
+        //[Obsolete("use HA_AddFacesByJpg instead (请使用HA_AddFacesByJpg函数)", true)]
         public static extern int HA_AddJpgFace(IntPtr cam, ref FaceFlags faceID, IntPtr jpg, int len);
 
 

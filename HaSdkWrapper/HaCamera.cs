@@ -793,7 +793,18 @@ namespace HaSdkWrapper
             img.img = picDataPtr;
             img.img_len = picData.Length;
 
-            int ret = NativeMethods.HA_AddFacesByJpg(_cam, ref ff, ref img, 1);
+            SystemVersionInfo systemVersion = new SystemVersionInfo();
+            this.HA_GetFaceSystemVersionEx(ref systemVersion);
+            string platForm=Encoding.Default.GetString(Converter.ConvertStringToDefault(systemVersion.plateform));
+            int ret = 0;
+            if (platForm.ToUpper().Contains("DV300") || platForm.ToUpper().Contains("CV500") || platForm.ToUpper().Contains("DV350PRO"))
+            {
+                ret = NativeMethods.HA_AddFacesByJpg(_cam, ref ff, ref img, 1);
+            }
+            else
+            {
+                ret = NativeMethods.HA_AddJpgFace(_cam, ref ff, picDataPtr, picData.Length);
+            }
             Marshal.FreeHGlobal(picDataPtr);
             if (ret != 0)
                 lastErrorCode = ret;
@@ -4651,17 +4662,31 @@ namespace HaSdkWrapper
         {
             if (snapImage.snapImageSize > 0)
             {
-                byte[] b = new byte[snapImage.snapImageSize];
-                //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
-                Marshal.Copy(snapImage.snapImage, b, 0, b.Length);
-                _snapshotImage = Image.FromStream(new MemoryStream(b));
+                try
+                {
+                    byte[] b = new byte[snapImage.snapImageSize];
+                    //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
+                    Marshal.Copy(snapImage.snapImage, b, 0, b.Length);
+                    _snapshotImage = Image.FromStream(new MemoryStream(b));
+                }catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                
             }
             if (snapImage.infraredImageSize > 0)
             {
-                byte[] b = new byte[snapImage.infraredImageSize];
-                //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
-                Marshal.Copy(snapImage.infraredImage, b, 0, b.Length);
-                _infraredImage = Image.FromStream(new MemoryStream(b));
+                try
+                {
+                    byte[] b = new byte[snapImage.infraredImageSize];
+                    //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
+                    Marshal.Copy(snapImage.infraredImage, b, 0, b.Length);
+                    _infraredImage = Image.FromStream(new MemoryStream(b));
+                }catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                
             }
 
             _snapshotSemaphore.Release();

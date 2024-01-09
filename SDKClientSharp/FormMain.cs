@@ -111,7 +111,8 @@ namespace SDKClientSharp
             _cam.Password = textBox14.Text;
             bool ret = _cam.Connect(pictureBox11.Handle);
 
-           // bool ret = _cam.Connect(default(IntPtr));
+            //bool ret = _cam.Connect(default(IntPtr));
+            //bool ret = _cam.Connectnovideo();
             if (ret)
             {
                 textBox2.AppendText(_cam.Ip+"连接设备成功！");
@@ -143,7 +144,8 @@ namespace SDKClientSharp
         }
         void _cam_egQRcodeInput(object sender, Qrcode e)
         {
-            Console.WriteLine(_cam.Ip+"收到二维码：" + e.code);
+            HaCamera haCam = (HaCamera)sender;
+            Console.WriteLine(haCam.Ip+"收到二维码：" + e.code+","+e.res);
 
             if (InvokeRequired)
             {
@@ -1006,7 +1008,7 @@ namespace SDKClientSharp
                     return;
                 }
 
-                pictureBox2.Image = snapshots.Item2 ?? snapshots.Item1;
+                pictureBox2.Image = snapshots.Item1 ?? snapshots.Item2;
 
                 Console.WriteLine("截图成功");
            
