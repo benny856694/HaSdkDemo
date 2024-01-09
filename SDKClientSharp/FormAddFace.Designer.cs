@@ -57,11 +57,13 @@ namespace SDKClientSharp
             this.buttonChoosePic = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.buttonVerifyFaceImg = new System.Windows.Forms.Button();
+            this.buttonAddFaceByHttp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxScheduleMode
             // 
+            resources.ApplyResources(this.comboBoxScheduleMode, "comboBoxScheduleMode");
             this.comboBoxScheduleMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxScheduleMode.FormattingEnabled = true;
             this.comboBoxScheduleMode.Items.AddRange(new object[] {
@@ -71,7 +73,6 @@ namespace SDKClientSharp
             resources.GetString("comboBoxScheduleMode.Items3"),
             resources.GetString("comboBoxScheduleMode.Items4"),
             resources.GetString("comboBoxScheduleMode.Items5")});
-            resources.ApplyResources(this.comboBoxScheduleMode, "comboBoxScheduleMode");
             this.comboBoxScheduleMode.Name = "comboBoxScheduleMode";
             // 
             // label99
@@ -98,13 +99,13 @@ namespace SDKClientSharp
             // 
             // comboBoxValidToType
             // 
+            resources.ApplyResources(this.comboBoxValidToType, "comboBoxValidToType");
             this.comboBoxValidToType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxValidToType.FormattingEnabled = true;
             this.comboBoxValidToType.Items.AddRange(new object[] {
             resources.GetString("comboBoxValidToType.Items"),
             resources.GetString("comboBoxValidToType.Items1"),
             resources.GetString("comboBoxValidToType.Items2")});
-            resources.ApplyResources(this.comboBoxValidToType, "comboBoxValidToType");
             this.comboBoxValidToType.Name = "comboBoxValidToType";
             // 
             // label25
@@ -124,13 +125,13 @@ namespace SDKClientSharp
             // 
             // comboBoxFaceType
             // 
+            resources.ApplyResources(this.comboBoxFaceType, "comboBoxFaceType");
             this.comboBoxFaceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFaceType.FormattingEnabled = true;
             this.comboBoxFaceType.Items.AddRange(new object[] {
             resources.GetString("comboBoxFaceType.Items"),
             resources.GetString("comboBoxFaceType.Items1"),
             resources.GetString("comboBoxFaceType.Items2")});
-            resources.ApplyResources(this.comboBoxFaceType, "comboBoxFaceType");
             this.comboBoxFaceType.Name = "comboBoxFaceType";
             // 
             // textBox5
@@ -227,10 +228,18 @@ namespace SDKClientSharp
             this.buttonVerifyFaceImg.UseVisualStyleBackColor = true;
             this.buttonVerifyFaceImg.Click += new System.EventHandler(this.buttonVerifyFaceImg_Click);
             // 
+            // buttonAddFaceByHttp
+            // 
+            resources.ApplyResources(this.buttonAddFaceByHttp, "buttonAddFaceByHttp");
+            this.buttonAddFaceByHttp.Name = "buttonAddFaceByHttp";
+            this.buttonAddFaceByHttp.UseVisualStyleBackColor = true;
+            this.buttonAddFaceByHttp.Click += new System.EventHandler(this.buttonAddFaceByHttp_Click);
+            // 
             // FormAddFace
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonAddFaceByHttp);
             this.Controls.Add(this.buttonVerifyFaceImg);
             this.Controls.Add(this.buttonChoosePic);
             this.Controls.Add(this.textBoxWiegandCardNo);
@@ -297,5 +306,6 @@ namespace SDKClientSharp
         private System.Windows.Forms.Button buttonChoosePic;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button buttonVerifyFaceImg;
+        private System.Windows.Forms.Button buttonAddFaceByHttp;
     }
 }

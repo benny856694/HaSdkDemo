@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Runtime.InteropServices;
-using System.Reflection;
-using System.IO;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Threading;
 using System.Globalization;
+using System.IO;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading;
 
 namespace HaSdkWrapper
 {
@@ -159,12 +157,12 @@ namespace HaSdkWrapper
             NativeMethods.HA_Init();
             //if (maxConnectNum < 10)
             NativeMethods.HA_InitFaceModel(absoluteModelDirectory ?? Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-           // else
-             //   NativeMethods.HA_InitEx(maxConnectNum);
+            // else
+            //   NativeMethods.HA_InitEx(maxConnectNum);
             NativeMethods.HA_SetCharEncode(CHAR_ENCODE.CHAR_ENCODE_UTF8);
             NativeMethods.HA_SetNotifyConnected(1);
             //NativeMethods.HA_InitFaceModel(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "face.dat"));
-            
+
             _discoverIpscanCallback = DiscoverIpCb;
             NativeMethods.HA_RegDiscoverIpscanCb(_discoverIpscanCallback, 0);
         }
@@ -222,7 +220,7 @@ namespace HaSdkWrapper
             IntPtr data = Marshal.AllocHGlobal(imgData.Length);
             Marshal.Copy(imgData, 0, data, imgData.Length);
             IntPtr twist = Marshal.AllocHGlobal(150 * 150 * 3);
-            int a = 0,b = 0,c = 0;
+            int a = 0, b = 0, c = 0;
             int ret = NativeMethods.HA_GetJpgFaceTwist(data, imgData.Length, twist, ref a, ref b, ref c);
             Marshal.FreeHGlobal(data);
             Marshal.FreeHGlobal(twist);
@@ -234,7 +232,7 @@ namespace HaSdkWrapper
         /// <param name="imgData">图片数据(使用File.RadAllBytes直接读取文件内容传入)</param>
         /// <param name="code">错误码</param>
         /// <returns></returns>
-        public static bool ValidImage(byte[] imgData,ref int code)
+        public static bool ValidImage(byte[] imgData, ref int code)
         {
             IntPtr data = Marshal.AllocHGlobal(imgData.Length);
             Marshal.Copy(imgData, 0, data, imgData.Length);
@@ -278,7 +276,8 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="jpg">如果检测到人脸且符合要求，则返回两个元素的数组，第一个元素是缩略图，第二个元素是归一化图,第三个为错误码</param>
         /// <returns></returns>
-        public static byte[][] HA_GetJpgFeatureImageNew(byte[] jpg) {
+        public static byte[][] HA_GetJpgFeatureImageNew(byte[] jpg)
+        {
             UTF8Encoding utf8 = new UTF8Encoding();
             byte[][] ret = null;
             if (jpg == null) return ret;
@@ -287,20 +286,20 @@ namespace HaSdkWrapper
             int twist_size = twist_image.Length;
             int thumb_size = thumb_image.Length;
             ret = new byte[3][];
-            int _ret = NativeMethods.HA_GetJpgFeatureImageNew(jpg, jpg.Length, twist_image, ref twist_size, thumb_image, ref thumb_size,utf8.GetBytes( "HV10"));
+            int _ret = NativeMethods.HA_GetJpgFeatureImageNew(jpg, jpg.Length, twist_image, ref twist_size, thumb_image, ref thumb_size, utf8.GetBytes("HV10"));
             ret[2] = new byte[] { (byte)_ret };
             if (_ret != 0)
             {
-                
+
                 return ret;
             }
-           
+
             ret[1] = new byte[twist_size];
             Array.Copy(twist_image, ret[1], twist_size);
             ret[0] = new byte[thumb_size];
             Array.Copy(thumb_image, ret[0], thumb_size);
             return ret;
-        
+
         }
 
         /// <summary>
@@ -326,12 +325,12 @@ namespace HaSdkWrapper
                 return ret;
             }
 
-            ret[1] = new byte[twist_size-20];
-            Array.Copy(twist_image,20, ret[1], 0,twist_size-20);
+            ret[1] = new byte[twist_size - 20];
+            Array.Copy(twist_image, 20, ret[1], 0, twist_size - 20);
             ret[0] = new byte[thumb_size];
             Array.Copy(thumb_image, ret[0], thumb_size);
 
-            
+
             return ret;
 
         }
@@ -342,21 +341,22 @@ namespace HaSdkWrapper
         /// <param name="twist_image">新归一化图</param>
         /// <param name="twist_version">版本信息 由设备获得</param>
         /// <returns></returns>
-        public static byte[] HA_FeatureConvert(byte[] twist_image, string twist_version) {
-          
-            FaceImage face=new FaceImage();
-            face.img=  Marshal.AllocHGlobal(1024*1024);
+        public static byte[] HA_FeatureConvert(byte[] twist_image, string twist_version)
+        {
+
+            FaceImage face = new FaceImage();
+            face.img = Marshal.AllocHGlobal(1024 * 1024);
             face.img_len = 1024 * 1024;
 
             face.img_seq = 0;
             face.img_fmt = 1;
 
             IntPtr ca = IntPtr.Zero;
-            int _ret = NativeMethods.HA_FeatureConvert(ca, twist_image, twist_image.Length,ref face, twist_version);
+            int _ret = NativeMethods.HA_FeatureConvert(ca, twist_image, twist_image.Length, ref face, twist_version);
             if (_ret != 0)
             {
-           
-                return null; 
+
+                return null;
             }
 
             byte[] twist = new byte[face.img_len];
@@ -365,7 +365,7 @@ namespace HaSdkWrapper
             Marshal.Copy(face.img, twist, 0, face.img_len);
 
             return twist;
-        
+
         }
 
 
@@ -572,7 +572,7 @@ namespace HaSdkWrapper
             if (_cam == IntPtr.Zero) return false;
 
             HookCallbackEx(_cam);
-            
+
             NativeMethods.HA_StartStreamEx(_cam, hwnd, _decodeImageCallback, 0);
 
             if (errorNum != 0)
@@ -614,7 +614,7 @@ namespace HaSdkWrapper
 
             HookCallbackEx(_cam);
 
-            
+
 
             if (errorNum != 0)
             {
@@ -816,10 +816,10 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="picData"></param>
         /// <returns></returns>
-        public int HA_FaceJpgLegal( byte[] picData)
+        public int HA_FaceJpgLegal(byte[] picData)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-           
+
             IntPtr picDataPtr = Marshal.AllocHGlobal(picData.Length);
             Marshal.Copy(picData, 0, picDataPtr, picData.Length);
             int ret = NativeMethods.HA_FaceJpgLegal(picDataPtr, picData.Length);
@@ -1012,19 +1012,19 @@ namespace HaSdkWrapper
                 return new bool[cameras.Length];
             }
             byte[] picData = picDatas[0];
-            
+
             FaceFlags ff = new FaceFlags();
             ff.wgCardNO = wgNo;
             ff.effectTime = effectTime;
             ff.faceID = Converter.ConvertStringToUTF8(personID, 20);
             ff.faceName = Converter.ConvertStringToUTF8(personName, 16);
             ff.role = personRole;
-           
+
             bool[] ret = new bool[cameras.Length];
             int i = 0;
             foreach (HaCamera cam in cameras)
             {
-                  
+
                 IntPtr picDataPtr = Marshal.AllocHGlobal(picData.Length);
                 Marshal.Copy(picData, 0, picDataPtr, picData.Length);
                 var img = new FaceImage();
@@ -1039,10 +1039,10 @@ namespace HaSdkWrapper
                 if (_ret != 0)
                 {
                     cam.lastErrorCode = _ret;
-                    lastErrorCode=_ret;
+                    lastErrorCode = _ret;
                     if (!wrongContinue)
                     {
-                        
+
                         return ret;
                     }
                 }
@@ -1052,7 +1052,7 @@ namespace HaSdkWrapper
                 }
                 i++;
             }
-           
+
             return ret;
         }
         /// <summary>
@@ -1499,7 +1499,7 @@ namespace HaSdkWrapper
         /// <para>是否修改成功 - True: success, False: fail</para>
         /// <para></para>
         /// </returns>
-        public bool ModifyFace(string personID, string personName, int personRole, string picPath, uint wgNo, uint effectTime, uint effectStartTime,byte ScheduleMode)
+        public bool ModifyFace(string personID, string personName, int personRole, string picPath, uint wgNo, uint effectTime, uint effectStartTime, byte ScheduleMode)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
             if (string.IsNullOrEmpty(picPath))
@@ -2293,10 +2293,10 @@ namespace HaSdkWrapper
                 return null;
             }
             RecordQueryCondition condition = new RecordQueryCondition();
-            short conditionflag=0;
+            short conditionflag = 0;
 
-            QueryCondition rc = ConvertRecordConditionToNativenew(condition,ref conditionflag);
-            int ret = NativeMethods.HA_QueryFaceEx(_cam, role, pageNo, pageSize, fetchFeatures, includeImage, conditionflag,0, ref rc);
+            QueryCondition rc = ConvertRecordConditionToNativenew(condition, ref conditionflag);
+            int ret = NativeMethods.HA_QueryFaceEx(_cam, role, pageNo, pageSize, fetchFeatures, includeImage, conditionflag, 0, ref rc);
 
 
 
@@ -2345,7 +2345,7 @@ namespace HaSdkWrapper
         /// <para>查询到的模板数据，可能返回null，返回null时可能是出错了，需要排查</para>
         /// <EN>Query result, null in case of any error occurred</EN>
         /// </returns>
-        public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, bool includeImage, ref int totalCount, int timeOutInMilli, RecordQueryCondition condition,short query_mode)
+        public FaceEntity[] QueryFaces(int pageNo, int pageSize, int role, bool fetchFeatures, bool includeImage, ref int totalCount, int timeOutInMilli, RecordQueryCondition condition, short query_mode)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
             totalCount = 0;
@@ -2366,7 +2366,7 @@ namespace HaSdkWrapper
                 return null;
             }
 
-           
+
             short conditionflag = 0;
 
             QueryCondition rc = ConvertRecordConditionToNativenew(condition, ref conditionflag);
@@ -2391,8 +2391,9 @@ namespace HaSdkWrapper
         /// 获取时间调度
         /// </summary>
         /// 
-     
-        public KindSchedule[] GetScheduleModeCfg() {
+
+        public KindSchedule[] GetScheduleModeCfg()
+        {
             lastErrorCode = NativeConstants.ERR_NONE;
 
             int size = Marshal.SizeOf(typeof(KindSchedule)) * 5;
@@ -2400,7 +2401,7 @@ namespace HaSdkWrapper
             IntPtr pBuff = Marshal.AllocHGlobal(size); // 
             int ScheduleCount = 5;
 
-            int ret = NativeMethods.HA_GetScheduleModeCfgEx(_cam, pBuff,ref ScheduleCount);
+            int ret = NativeMethods.HA_GetScheduleModeCfgEx(_cam, pBuff, ref ScheduleCount);
 
 
 
@@ -2469,7 +2470,8 @@ namespace HaSdkWrapper
         /// 设置时间调度
         /// </summary>
         /// 
-        public Boolean SetScheduleModeCfg(KindSchedule[] kind) {
+        public Boolean SetScheduleModeCfg(KindSchedule[] kind)
+        {
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
@@ -2482,7 +2484,7 @@ namespace HaSdkWrapper
             //byte[] buffer = new byte[size];
 
 
-            
+
 
 
             for (int i = 0; i < kind.Length; i++)
@@ -2503,14 +2505,15 @@ namespace HaSdkWrapper
                 return false;
             }
             return true;
-        
+
         }
         /// <summary>
         /// 查看过期自动清理开关
         /// </summary>
-        public bool GetAutoCleanEnable() {
+        public bool GetAutoCleanEnable()
+        {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int enable=0;
+            int enable = 0;
 
             int ret = NativeMethods.HA_GetAutoCleanEnable(_cam, ref enable);
 
@@ -2520,10 +2523,10 @@ namespace HaSdkWrapper
                 return false;
             }
 
-            
 
 
-            return enable==0?false:true;
+
+            return enable == 0 ? false : true;
         }
 
         /// <summary>
@@ -2532,9 +2535,9 @@ namespace HaSdkWrapper
         public bool SetAutoCleanEnable(int enable)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            
 
-            int ret = NativeMethods.HA_SetAutoCleanEnable(_cam,  enable);
+
+            int ret = NativeMethods.HA_SetAutoCleanEnable(_cam, enable);
 
             if (ret != 0)
             {
@@ -2603,7 +2606,7 @@ namespace HaSdkWrapper
             lastErrorCode = NativeConstants.ERR_NONE;
 
 
-            int ret = NativeMethods.HA_GetExtranetParam(_cam,ref extr);
+            int ret = NativeMethods.HA_GetExtranetParam(_cam, ref extr);
 
             if (ret != 0)
             {
@@ -2621,12 +2624,12 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="extr"></param>
         /// <returns></returns>
-        public bool HA_GetExtranetParam( ExtranetParam extr)
+        public bool HA_GetExtranetParam(ExtranetParam extr)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
 
 
-            int ret = NativeMethods.HA_SetExtranetParam(_cam,  extr);
+            int ret = NativeMethods.HA_SetExtranetParam(_cam, extr);
 
             if (ret != 0)
             {
@@ -2731,10 +2734,10 @@ namespace HaSdkWrapper
         /// 设置低温修正
         /// </summary>
         /// <returns></returns>
-        public bool SetMinTempFix(bool enable=true, float minTemp=36.0f, float fix_rang=0.5f)
+        public bool SetMinTempFix(bool enable = true, float minTemp = 36.0f, float fix_rang = 0.5f)
         {
-            int ret = NativeMethods.HA_SetMinTempFix(_cam,enable,minTemp,fix_rang);
-            return ret == 0 ? true:false ;
+            int ret = NativeMethods.HA_SetMinTempFix(_cam, enable, minTemp, fix_rang);
+            return ret == 0 ? true : false;
         }
         /// <summary>
         /// 设置DHCP
@@ -2820,9 +2823,9 @@ namespace HaSdkWrapper
             FacePrivateParam fpp = (FacePrivateParam)Marshal.PtrToStructure(pinnedPacket.AddrOfPinnedObject(), typeof(FacePrivateParam));
             fpp.min_face_size = size;
             StructToBytes(fpp, priv);
-            int code=NativeMethods.HA_SetFaceSystemCfg(_cam, ref fsc);
+            int code = NativeMethods.HA_SetFaceSystemCfg(_cam, ref fsc);
             Console.WriteLine("设置参数返回：" + code);
-            return code==0;
+            return code == 0;
         }
 
         /// <summary>
@@ -2839,7 +2842,7 @@ namespace HaSdkWrapper
                 lastErrorCode = ret;
                 return -1;
             }
-            
+
             byte[] priv = fsc.app.priv.resv;
             GCHandle pinnedPacket = GCHandle.Alloc(priv, GCHandleType.Pinned);
             FacePrivateParam fpp = (FacePrivateParam)Marshal.PtrToStructure(pinnedPacket.AddrOfPinnedObject(), typeof(FacePrivateParam));
@@ -3137,7 +3140,7 @@ namespace HaSdkWrapper
             }
             fap.cam_mode = (byte)camMode;
             ret = NativeMethods.HA_SetFaceAppParam(_cam, ref fap);
-            if(ret != 0)
+            if (ret != 0)
             {
                 lastErrorCode = NativeConstants.ERR_INVALID_PARAM;
                 return false;
@@ -3152,7 +3155,7 @@ namespace HaSdkWrapper
         public bool SwitchStreamTrans(bool open)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int ret = NativeMethods.HA_LiveStreamCtl(_cam, open?1:0);
+            int ret = NativeMethods.HA_LiveStreamCtl(_cam, open ? 1 : 0);
             if (ret != 0)
             {
                 lastErrorCode = ret;
@@ -3164,13 +3167,16 @@ namespace HaSdkWrapper
         /// <para>获取或设置脱机记录存储启用标识</para>
         /// <para>设备是否存储未成功上传的抓拍记录到TF卡</para>
         /// </summary>
-        public bool RecorderEnable {
-            get{
+        public bool RecorderEnable
+        {
+            get
+            {
                 byte _val = 0;
                 NativeMethods.HA_GetRecorderEnable(_cam, ref _val);
                 return _val == 1;
             }
-            set{
+            set
+            {
                 byte _val = (byte)(value ? 1 : 0);
                 NativeMethods.HA_SetRecorderEnable(_cam, _val);
             }
@@ -3304,7 +3310,7 @@ namespace HaSdkWrapper
                 lastErrorCode = _ret;
                 return null;
             }
-            if(_count == 0 || _total == 0)
+            if (_count == 0 || _total == 0)
             {
                 return new string[0];
             }
@@ -3320,7 +3326,7 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="timeOutInMilli">超时时间</param>
         /// <returns>设备实时画面截图；返回null表示截图失败</returns>
-        public  Tuple<Image, Image> Snapshot(int timeOutInMilli)
+        public Tuple<Image, Image> Snapshot(int timeOutInMilli)
         {
             object x = new object();
             lock (x)
@@ -3340,7 +3346,7 @@ namespace HaSdkWrapper
                 lastErrorCode = NativeConstants.ERR_TIMEOUT;
                 return null;
             }
-            
+
         }
         /// <summary>
         /// 重启设备
@@ -3559,13 +3565,13 @@ namespace HaSdkWrapper
         /// <param name="items"></param>
         /// <param name="itemNum"></param>
         /// <returns></returns>
-        public AudioItem[] HA_GetAudioList( ref int itemNum)
+        public AudioItem[] HA_GetAudioList(ref int itemNum)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
             int size = Marshal.SizeOf(typeof(AudioItem)) * 5;
 
             IntPtr pBuff = Marshal.AllocHGlobal(size); // 
-          
+
 
             int _ret = NativeMethods.HA_GetAudioList(_cam, pBuff, 5, ref itemNum);
             if (_ret != 0)
@@ -3590,15 +3596,15 @@ namespace HaSdkWrapper
 
             return pClass;
         }
-      /// <summary>
-      /// 播放内置音频
-      /// </summary>
-      /// <param name="items"></param>
-      /// <returns></returns>
+        /// <summary>
+        /// 播放内置音频
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
         public bool HA_TestAudioItemByName(ref AudioItem items)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_TestAudioItemByName(_cam,ref items);
+            int _ret = NativeMethods.HA_TestAudioItemByName(_cam, ref items);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3630,10 +3636,10 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="itme"></param>
         /// <returns></returns>
-        public bool HA_SetLcdDisplayItems( int itme)
+        public bool HA_SetLcdDisplayItems(int itme)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_SetLcdDisplayItems(_cam,  itme);
+            int _ret = NativeMethods.HA_SetLcdDisplayItems(_cam, itme);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3654,7 +3660,7 @@ namespace HaSdkWrapper
         public bool GetUploadConfig(ref ClientParam UploadParam)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_GetUploadConfig(_cam,ref UploadParam);
+            int _ret = NativeMethods.HA_GetUploadConfig(_cam, ref UploadParam);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3738,10 +3744,10 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="enable"></param>
         /// <returns></returns>
-        public bool HA_SetflipEnable( byte enable)
+        public bool HA_SetflipEnable(byte enable)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_SetflipEnable(_cam,  enable);
+            int _ret = NativeMethods.HA_SetflipEnable(_cam, enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3807,10 +3813,10 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="enable"></param>
         /// <returns></returns>
-        public bool HA_SetGpioWorkState( byte enable)
+        public bool HA_SetGpioWorkState(byte enable)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_SetGpioWorkState(_cam,  enable);
+            int _ret = NativeMethods.HA_SetGpioWorkState(_cam, enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3829,7 +3835,7 @@ namespace HaSdkWrapper
         public bool HA_SetFaceCheckRotate(int enable)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_SetFaceCheckRotate( enable);
+            int _ret = NativeMethods.HA_SetFaceCheckRotate(enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3845,7 +3851,7 @@ namespace HaSdkWrapper
         public bool HA_GetVersion(ref HaSdkVersion version)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_GetVersion(ref  version);
+            int _ret = NativeMethods.HA_GetVersion(ref version);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3864,7 +3870,7 @@ namespace HaSdkWrapper
         public bool HA_GetFaceSystemCfgmatch(ref byte filter_not_match)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            FaceSystemConfigex conf=new FaceSystemConfigex();
+            FaceSystemConfigex conf = new FaceSystemConfigex();
 
             int _ret = NativeMethods.HA_GetFaceSystemCfgEx(_cam, ref conf);
             if (_ret != 0)
@@ -3893,13 +3899,14 @@ namespace HaSdkWrapper
             FaceSystemConfigex conf = new FaceSystemConfigex();
 
             int _ret = NativeMethods.HA_GetFaceSystemCfgEx(_cam, ref conf);
-            if (_ret != 0) {
+            if (_ret != 0)
+            {
                 lastErrorCode = _ret;
                 return false;
             }
             conf.filter_not_match = filter_not_match;
 
-             _ret = NativeMethods.HA_SetFaceSystemCfgEx(_cam,ref  conf);
+            _ret = NativeMethods.HA_SetFaceSystemCfgEx(_cam, ref conf);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3952,7 +3959,7 @@ namespace HaSdkWrapper
             }
             conf.gpio_enable_white = gpio_enable_white;
 
-            _ret = NativeMethods.HA_SetFaceSystemCfgEx(_cam, ref  conf);
+            _ret = NativeMethods.HA_SetFaceSystemCfgEx(_cam, ref conf);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3973,10 +3980,10 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="domain"></param>
         /// <returns></returns>
-        public bool HA_GetUploadDomain( byte[] domain)
+        public bool HA_GetUploadDomain(byte[] domain)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_GetUploadDomain(_cam,  domain);
+            int _ret = NativeMethods.HA_GetUploadDomain(_cam, domain);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -3990,10 +3997,10 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="domain"></param>
         /// <returns></returns>
-        public bool HA_SetUploadDomain( byte[] domain)
+        public bool HA_SetUploadDomain(byte[] domain)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_SetUploadDomain(_cam,  domain);
+            int _ret = NativeMethods.HA_SetUploadDomain(_cam, domain);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4052,7 +4059,7 @@ namespace HaSdkWrapper
         {
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_GetWDR(_cam, ref enable,ref t_wdr);
+            int _ret = NativeMethods.HA_GetWDR(_cam, ref enable, ref t_wdr);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4068,7 +4075,7 @@ namespace HaSdkWrapper
         public bool SetWDR(byte enable, HourSchedule t_wdr)
         {
             lastErrorCode = NativeConstants.ERR_NONE;
-            int _ret = NativeMethods.HA_SetWDR(_cam, enable,t_wdr);
+            int _ret = NativeMethods.HA_SetWDR(_cam, enable, t_wdr);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4130,7 +4137,7 @@ namespace HaSdkWrapper
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_GetFaceSystemVersionEx(_cam,ref version);
+            int _ret = NativeMethods.HA_GetFaceSystemVersionEx(_cam, ref version);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4152,7 +4159,7 @@ namespace HaSdkWrapper
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_GetDereplicationgConfig(_cam,ref enable,ref timeout);
+            int _ret = NativeMethods.HA_GetDereplicationgConfig(_cam, ref enable, ref timeout);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4167,13 +4174,13 @@ namespace HaSdkWrapper
         /// <param name="enable"></param>
         /// <param name="timeout"></param>
         /// <returns></returns>
-        public bool HA_SetDereplicationEnable( int enable,  int timeout)
+        public bool HA_SetDereplicationEnable(int enable, int timeout)
         {
 
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_SetDereplicationEnable(_cam,  enable,  timeout);
+            int _ret = NativeMethods.HA_SetDereplicationEnable(_cam, enable, timeout);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4201,18 +4208,18 @@ namespace HaSdkWrapper
             }
             return true;
         }
-       /// <summary>
+        /// <summary>
         /// 获取体温检测开关
-       /// </summary>
-       /// <param name="enable"></param>
-       /// <returns></returns>
+        /// </summary>
+        /// <param name="enable"></param>
+        /// <returns></returns>
         public bool HA_GetTemperaturEnable(ref int enable)
         {
 
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_GetTemperaturEnable(_cam,ref enable);
+            int _ret = NativeMethods.HA_GetTemperaturEnable(_cam, ref enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4226,13 +4233,13 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="enable"></param>
         /// <returns></returns>
-        public bool HA_SetTemperaturEnable( int enable)
+        public bool HA_SetTemperaturEnable(int enable)
         {
 
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_SetTemperaturEnable(_cam,  enable);
+            int _ret = NativeMethods.HA_SetTemperaturEnable(_cam, enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4243,11 +4250,11 @@ namespace HaSdkWrapper
 
 
 
-       /// <summary>
-       /// 获取口罩检查开关
-       /// </summary>
-       /// <param name="enable">0关 1开</param>
-       /// <returns></returns>
+        /// <summary>
+        /// 获取口罩检查开关
+        /// </summary>
+        /// <param name="enable">0关 1开</param>
+        /// <returns></returns>
         public bool HA_GetMaskInspectEnable(ref int enable)
         {
 
@@ -4321,7 +4328,7 @@ namespace HaSdkWrapper
             ff.ScheduleMode = ScheduleMode;
             ff.userParam = Converter.ConvertStringToUTF8(userParam, 68);
 
-            int ret = NativeMethods.HA_AddFaceFlags(_cam, ref  ff, mod);
+            int ret = NativeMethods.HA_AddFaceFlags(_cam, ref ff, mod);
 
             if (ret != 0)
                 lastErrorCode = ret;
@@ -4382,7 +4389,7 @@ namespace HaSdkWrapper
 
 
 
-            int ret = NativeMethods.HA_SeparateModifyFace(_cam, ref  ff, null, 0, null, 0, update_flags);
+            int ret = NativeMethods.HA_SeparateModifyFace(_cam, ref ff, null, 0, null, 0, update_flags);
 
             if (ret != 0)
                 lastErrorCode = ret;
@@ -4407,7 +4414,7 @@ namespace HaSdkWrapper
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_GetTemperaturLimit(_cam, ref  temperatur,ref  enable);
+            int _ret = NativeMethods.HA_GetTemperaturLimit(_cam, ref temperatur, ref enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4429,7 +4436,7 @@ namespace HaSdkWrapper
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_SetTemperaturLimit(_cam,   temperatur,  enable);
+            int _ret = NativeMethods.HA_SetTemperaturLimit(_cam, temperatur, enable);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4444,7 +4451,7 @@ namespace HaSdkWrapper
         /// <param name="data">授权码</param>
         /// <param name="replyCode">返回结果</param>
         /// <returns></returns>
-        public bool HA_FunctionAuth(short number,string data,ref int replyCode)
+        public bool HA_FunctionAuth(short number, string data, ref int replyCode)
         {
             UTF8Encoding utf8 = new UTF8Encoding();
             int _ret = NativeMethods.HA_FunctionAuth(_cam, number, utf8.GetBytes(data), (short)data.Length);
@@ -4466,12 +4473,12 @@ namespace HaSdkWrapper
         {
 
             UTF8Encoding utf8 = new UTF8Encoding();
-            byte[] relyjs=new byte[1024*1024*2];
+            byte[] relyjs = new byte[1024 * 1024 * 2];
             int buffSize = relyjs.Length;
-           
+
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_SendJson(_cam, utf8.GetBytes(cmd), utf8.GetBytes(json), utf8.GetBytes(json).Length,  relyjs,  buffSize);
+            int _ret = NativeMethods.HA_SendJson(_cam, utf8.GetBytes(cmd), utf8.GetBytes(json), utf8.GetBytes(json).Length, relyjs, buffSize);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4517,7 +4524,7 @@ namespace HaSdkWrapper
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_GetPersonDisplayOptions(_cam,ref Options);
+            int _ret = NativeMethods.HA_GetPersonDisplayOptions(_cam, ref Options);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4530,13 +4537,13 @@ namespace HaSdkWrapper
         /// </summary>
         /// <param name="Options"></param>
         /// <returns></returns>
-        public bool HA_SetPersonDisplayOptions( int Options)
+        public bool HA_SetPersonDisplayOptions(int Options)
         {
 
 
             lastErrorCode = NativeConstants.ERR_NONE;
 
-            int _ret = NativeMethods.HA_SetPersonDisplayOptions(_cam,  Options);
+            int _ret = NativeMethods.HA_SetPersonDisplayOptions(_cam, Options);
             if (_ret != 0)
             {
                 lastErrorCode = _ret;
@@ -4568,7 +4575,7 @@ namespace HaSdkWrapper
             }
             catch (Exception ex)
             {
-               
+
                 return null;
             }
             finally
@@ -4592,7 +4599,7 @@ namespace HaSdkWrapper
             }
             catch (Exception ex)
             {
-               // Debug.LogError("Type: " + strcutType.ToString() + "---TypeSize:" + size + "----packetSize:" + nSize);
+                // Debug.LogError("Type: " + strcutType.ToString() + "---TypeSize:" + size + "----packetSize:" + nSize);
                 return null;
             }
             finally
@@ -4620,7 +4627,7 @@ namespace HaSdkWrapper
             _qRCodeCb_t = QRCodeCb;
             NativeMethods.HA_RegQRCodeCb(cam, _qRCodeCb_t, IntPtr.Zero);
 
-           
+
 
 
             _serialDataCallback = SerialDataReadCb;
@@ -4676,7 +4683,10 @@ namespace HaSdkWrapper
             }
             if (snapImage.infraredImageSize > 0)
             {
-                try
+                //byte[] b = new byte[snapImage.infraredImageSize];
+                //Marshal.Copy(snapImage.infraredImage, b, 0, b.Length);
+                //_infraredImage = Image.FromStream(new MemoryStream(b));
+				try
                 {
                     byte[] b = new byte[snapImage.infraredImageSize];
                     //Array.Copy(snapImage.snapImage, b, snapImage.snapImageSize);
@@ -4686,7 +4696,6 @@ namespace HaSdkWrapper
                 {
                     Console.WriteLine(e.Message);
                 }
-                
             }
 
             _snapshotSemaphore.Release();
@@ -4750,10 +4759,10 @@ namespace HaSdkWrapper
             _faceCount = qfi.record_count;
             FaceEntity fe = new FaceEntity();
             fe.PersonID = Encoding.Default.GetString(Converter.ConvertStringToDefault(qfi.personID));
-            fe.PersonName = Encoding.Default.GetString(Converter.ConvertStringToDefault(qfi.personName));
+            fe.PersonName = Encoding.UTF8.GetString(qfi.personName).Replace("\0", "");
             if (string.IsNullOrEmpty(fe.PersonName))
             {
-                fe.PersonName = Encoding.Default.GetString(Converter.ConvertStringToDefault(qfi.faceNameEx));
+                fe.PersonName = Encoding.UTF8.GetString(qfi.faceNameEx).Replace("\0", "");
             }
             fe.PersonRole = qfi.role;
             fe.WiegandNo = qfi.wgCardNO == 0 ? qfi.wgCardNOLong : qfi.wgCardNO;
@@ -4811,17 +4820,18 @@ namespace HaSdkWrapper
             OnFaceCaptured(ConvertStructureToEventArgs(fri));
         }
 
-        private void GpioInputCb(IntPtr cam, int type, uint data, IntPtr usrParam) {
+        private void GpioInputCb(IntPtr cam, int type, uint data, IntPtr usrParam)
+        {
 
 
             OnegGpioInput(egGpioInputCbtoweiganno(type, data));
         }
 
-        private void QRCodeCb(IntPtr cam,byte* code, byte[] res, IntPtr usrParam)
+        private void QRCodeCb(IntPtr cam, byte* code, byte[] res, IntPtr usrParam)
         {
 
             OnegQrcode(egQRcode(code, res));
-           
+
         }
 
 
@@ -4834,7 +4844,7 @@ namespace HaSdkWrapper
             if (rqc.ByAge)
             {
                 rc.condition_flag |= RecordQueryFlag.RECORD_QUERY_FLAG_AGE;
-                
+
                 rc.age_start = (byte)rqc.AgeStart;
                 rc.age_end = (byte)rqc.AgeEnd;
             }
@@ -4844,7 +4854,7 @@ namespace HaSdkWrapper
                 rc.time_start = Convert.ToUInt32(rqc.TimeStart.ToUniversalTime().Subtract(DateTime.Parse("1970-1-1")).TotalSeconds);
                 rc.time_end = Convert.ToUInt32(rqc.TimeEnd.ToUniversalTime().Subtract(DateTime.Parse("1970-1-1")).TotalSeconds);
             }
-            rc.query_mode = rqc.FuzzyMode? QueryMode.QUERY_FUZZY : QueryMode.QUERY_EXACT;
+            rc.query_mode = rqc.FuzzyMode ? QueryMode.QUERY_FUZZY : QueryMode.QUERY_EXACT;
             if (rqc.ById)
             {
                 rc.condition_flag |= RecordQueryFlag.RECORD_QUERY_FLAG_ID;
@@ -4888,61 +4898,67 @@ namespace HaSdkWrapper
 
         private QueryCondition ConvertRecordConditionToNativenew(RecordQueryCondition rqc, ref short condition_flag)
         {
-         
+
             QueryCondition qc = new QueryCondition();
 
-            if (rqc.ById) {
-                condition_flag |=(short) ConditionFlag.QUERY_BY_ID;
+            if (rqc.ById)
+            {
+                condition_flag |= (short)ConditionFlag.QUERY_BY_ID;
                 byte[] idStrBytes = Encoding.UTF8.GetBytes(rqc.PersonId);
                 qc.faceID = new byte[20];
                 Array.Copy(idStrBytes, qc.faceID, Math.Min(idStrBytes.Length, 20));
-            
-            
+
+
             }
-            if (rqc.ByName) {
+            if (rqc.ByName)
+            {
                 condition_flag |= (short)ConditionFlag.QUERY_BY_NAME;
                 byte[] nameStrBytes = Encoding.UTF8.GetBytes(rqc.PersonName);
                 qc.faceName = new byte[20];
                 Array.Copy(nameStrBytes, qc.faceName, Math.Min(nameStrBytes.Length, 20));
-            
-            
+
+
             }
 
-            if (rqc.WgNo) {
+            if (rqc.WgNo)
+            {
                 condition_flag |= (short)ConditionFlag.QUERY_BY_WGNO;
                 qc.wgCardNO = Convert.ToUInt32(rqc.WgNoc);
-            
-            
+
+
             }
-            if (rqc.ByCaptureTime2) {
+            if (rqc.ByCaptureTime2)
+            {
                 condition_flag |= (short)ConditionFlag.QUERY_BY_EFFECT_TIME;
                 qc.timeStart = Convert.ToUInt32(rqc.TimeStart2.ToUniversalTime().Subtract(DateTime.Parse("1970-1-1")).TotalSeconds);
                 qc.timeEnd = Convert.ToUInt32(rqc.TimeEnd2.ToUniversalTime().Subtract(DateTime.Parse("1970-1-1")).TotalSeconds);
             }
 
-            if (rqc.ByCaptureTime1) {
+            if (rqc.ByCaptureTime1)
+            {
                 condition_flag |= (short)ConditionFlag.QUERY_BY_EFFECT_START_TIME;
                 qc.time1Start = Convert.ToUInt32(rqc.Time1Start.ToUniversalTime().Subtract(DateTime.Parse("1970-1-1")).TotalSeconds);
                 qc.time1End = Convert.ToUInt32(rqc.Time1End.ToUniversalTime().Subtract(DateTime.Parse("1970-1-1")).TotalSeconds);
-            
-            
+
+
             }
 
 
 
 
-            
+
             return qc;
         }
 
-        private WeiGangno egGpioInputCbtoweiganno(int type, uint data) {
+        private WeiGangno egGpioInputCbtoweiganno(int type, uint data)
+        {
             WeiGangno wei = new WeiGangno();
             wei.type = type;
             wei.data = data;
             return wei;
         }
 
-        private Qrcode egQRcode(byte* code,byte[] res )
+        private Qrcode egQRcode(byte* code, byte[] res)
         {
             Qrcode qr = new Qrcode();
             byte[] codearr = new byte[1024];
@@ -4961,7 +4977,7 @@ namespace HaSdkWrapper
 
         private FaceCapturedEventArgs ConvertStructureToEventArgs(FaceRecoInfo info)
         {
-            
+
             FaceCapturedEventArgs e = new FaceCapturedEventArgs();
             e.SequenceID = info.sequence;
             e.CameraID = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.camId));
@@ -4975,7 +4991,7 @@ namespace HaSdkWrapper
             e.QValue = info.qValue;
             e.PersonRole = info.matchRole;
             e.living = info.living;
-           
+
             e.hatColour = info.hatColour;
             e.dev_id = info.dev_id;
             e.existIDCard = info.existIDCard;
@@ -4984,7 +5000,7 @@ namespace HaSdkWrapper
             e.IDCardsex = info.IDCardsex;
             e.IDCardnational = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.IDCardnational));
             e.IDCardbirth = info.IDCardbirth;
-            e.IDCardresidence_address = Encoding.Default.GetString(Converter.ConvertStringToDefault( info.IDCardresidence_address));
+            e.IDCardresidence_address = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.IDCardresidence_address));
             e.IDCardorgan_issue = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.IDCardorgan_issue));
             e.IDCardvalid_date_start = info.IDCardvalid_date_start;
             e.IDCardvalid_date_end = info.IDCardvalid_date_end;
@@ -4997,9 +5013,9 @@ namespace HaSdkWrapper
             e.temperature = info.temperature;
             e.hasMask = info.hasMask;
 
-           // Console.WriteLine ("CameraID" + e.CameraID + ",是否比对成功" + e.IsPersonMatched + "mactype" + info.math_type + "addrid" + e.AddrID + "userParam"+e.userParam);
+            // Console.WriteLine ("CameraID" + e.CameraID + ",是否比对成功" + e.IsPersonMatched + "mactype" + info.math_type + "addrid" + e.AddrID + "userParam"+e.userParam);
 
-           // Console.WriteLine("wgcard" + e.wgCardNO + "," + e.wgCardNOLong);
+            // Console.WriteLine("wgcard" + e.wgCardNO + "," + e.wgCardNOLong);
             if (e.IsPersonMatched)
             {
                 e.PersonID = Encoding.Default.GetString(Converter.ConvertStringToDefault(info.matchPersonId));
@@ -5012,7 +5028,7 @@ namespace HaSdkWrapper
                 Marshal.Copy(info.img, e.EnvironmentImageData, 0, info.imgLen);
                 e.FaceInEnvironment = new System.Drawing.Rectangle(info.faceXInImg, info.faceYInImg, info.faceWInImg, info.faceHInImg);
             }
-            if (  info.existFaceImg != 0 && info.faceImgLen > 0)
+            if (info.existFaceImg != 0 && info.faceImgLen > 0)
             {
                 e.FeatureImageData = new byte[info.faceImgLen];
                 Marshal.Copy(info.faceImg, e.FeatureImageData, 0, info.faceImgLen);
