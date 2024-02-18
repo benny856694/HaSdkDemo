@@ -4,4 +4,4 @@
 
 ### Note
 
-This code does not include the `lib` and `lib64` directories. Before compiling, please download from [here](https://www.123pan.com/s/d9PZVv-GzGoA.html). After decompression, copy these two directories to the root directory of the project, otherwise, compilation will not be possible
+This code does not include the `lib` and `lib64` directories. Before compiling, please download from [here](https://mega.nz/file/K4MUSTgJ#7yDaCpwAZbDPLRWbzkQgpAZK6DZlkWJ-ngggabVyDoo). After decompression, copy these two directories to the root directory of the project, otherwise, compilation will not be possible
